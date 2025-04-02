@@ -1,5 +1,5 @@
 {
-	"name": "home-assistant/partner.home-assistant",
+	"name": "home-assistant/works-with.home-assistant.io",
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"forwardPorts": [
 		8080
