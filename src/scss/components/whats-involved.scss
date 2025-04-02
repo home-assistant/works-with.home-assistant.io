@@ -375,24 +375,26 @@ section.whats-involved {
                     }
                 }
 
+                .step-text {
+                    font-weight: 400;
+                    font-size: 10px;
+                    opacity: .5;
+
+                    @include mixins.bp(desktop) {
+                        font-size: 14px;
+                    }
+                }
+
                 .title {
                     font-size: 20px;
                     font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: .5rem;
 
                     @include mixins.bp(desktop) {
                         font-size: 32px;
                     }
 
-                    span {
-                        font-weight: 400;
-                        font-size: 10px;
-                        opacity: .5;
-
-                        @include mixins.bp(desktop) {
-                            font-size: 14px;
-                        }
-
-                    }
                 }
 
                 .description {

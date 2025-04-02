@@ -8,7 +8,7 @@ import pluginFilters from "./_config/filters.js";
 export default async function (eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/",
+			"public": "/",
 			"src/img": "img",
 			"src/js": "js",
 			"src/svg": "svg",

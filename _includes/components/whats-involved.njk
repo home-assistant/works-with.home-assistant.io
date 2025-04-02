@@ -17,8 +17,11 @@
                 <use xlink:href="#{{ step.icon }}-current" class="current" />
               </svg>
             </div>
+            <div class="step-text">
+              Step {{ loop.index }} <span> of {{ involved_steps.length }}</span>
+            </div>
             <div class="title">
-              {{ step.title }} <span> of {{ involved_steps.length }}</span>
+              {{ step.title }}
             </div>
             <div class="description">{{ step.description }}</div>
           </div>
