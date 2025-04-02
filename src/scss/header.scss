@@ -72,6 +72,10 @@
             flex-direction: column;
             padding: 20px 0;
             gap: 10px;
+
+            a {
+                align-self: unset;
+            }
         }
     }
 
