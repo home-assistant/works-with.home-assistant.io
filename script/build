@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+mkdir -p dist
+
+npm run build
+
+cp -r _site/* dist

@@ -1,0 +1,33 @@
+[
+    {
+        "icon": "choose",
+        "title": "Step 1",
+        "description": "We can advise on our testing availability and help you prioritize your device list."
+    },
+    {
+        "icon": "sign",
+        "title": "Step 2",
+        "description": "This lays out clearly each party’s responsibilities to each other."
+    },
+    {
+        "icon": "fee",
+        "title": "Step 3",
+        "description": "Designed to cover admin only, so the program can still be a great fit for start-up companies.",
+        "note": "* Approx. 566 USD"
+    },
+    {
+        "icon": "tested",
+        "title": "Step 4",
+        "description": "Let us know if you require any customizations to help our team start using your devices."
+    },
+    {
+        "icon": "feedback",
+        "title": "Step 5",
+        "description": "Not simply a pass/fail: Feedback rounds are imperative to help us address issues and keep user experience a top priority."
+    },
+    {
+        "icon": "approval",
+        "title": "Step 6",
+        "description": "Use the badge on product listings, web pages, packaging, and other marketing material to showcase your connection with our community."
+    }
+]

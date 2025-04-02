@@ -1,0 +1,24 @@
+@use "mixins";
+
+.container {
+    margin: 0 auto;
+    max-width: var(--layout-container-max-width);
+    width: 100%;
+    padding: 0 var(--layout-container-padding);
+
+    .inner {
+        margin: 0 auto;
+        max-width: 1130px;
+        width: 100%;
+    }
+}
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--layout-columns-gap);
+
+    .col {
+        flex: 1;
+    }
+}

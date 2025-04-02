@@ -1,0 +1,30 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ title or metadata.title }}</title>
+<meta name="description" content="{{ description or metadata.description }}" />
+<meta
+  property="og:image"
+  content="https://www.nabucasa.com/img/default-social.png"
+/>
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Nabu Casa" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<meta name="generator" content="{{ eleventy.generator }}" />
+<!-- Fonts -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="/css/index.css" />
+{% include "../src/svg/slide-sprites.svg" %}

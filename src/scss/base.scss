@@ -1,0 +1,18 @@
+@use "mixins";
+
+html {
+    scroll-padding-top: 100px;
+
+    @include mixins.bp(tablet) {
+        scroll-padding-top: 130px;
+    }
+
+    @include mixins.bp(large-desktop) {
+        scroll-padding-top: 150px;
+    }
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}

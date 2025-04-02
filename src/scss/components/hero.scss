@@ -1,0 +1,38 @@
+@use "../mixins";
+
+section.hero {
+
+    margin: 60px 0;
+
+    @include mixins.bp(desktop) {
+        margin: 60px 0;
+    }
+
+    align-items: center;
+    text-align: center;
+
+    .subtitle {
+        color: var(--brand-color-home-assistant-blue);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        font-size: 30px;
+        justify-content: center;
+        font-weight: 400;
+        margin-top: 28px;
+
+        div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .5rem 0;
+        }
+
+
+        img {
+            margin-left: .75rem;
+            max-width: 100%;
+        }
+    }
+}
