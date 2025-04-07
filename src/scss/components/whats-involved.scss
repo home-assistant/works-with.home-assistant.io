@@ -24,13 +24,34 @@ section.whats-involved {
         gap: 20px;
         flex-direction: column;
 
+        &-pagination {
+            align-items: center;
+            justify-content: center;
+            display: none;
+            gap: 10px;
+            margin-top: 60px;
+
+            @include mixins.bp(desktop) {
+                display: flex;
+            }
+
+            span {
+                background: white;
+                box-shadow: inset 0 0 0 1px #72787E;
+                border-radius: 50%;
+                height: 12px;
+                width: 12px;
+                cursor: pointer;
+            }
+        }
+
         @include mixins.bp(desktop) {
             --size: calc(4/12);
             flex-direction: row;
 
         }
 
-        @for $i from 1 through 5 {
+        @for $i from 0 through 5 {
             &[data-step="#{$i}"] {
                 .step {
                     @if $i >(5 - 2) {
@@ -43,6 +64,13 @@ section.whats-involved {
                         @include mixins.bp(desktop) {
                             transform: translateX(calc((-100% - 20px) * ($i)));
                         }
+                    }
+                }
+
+                +.steps-pagination {
+                    span:nth-child(#{$i + 1}) {
+                        background: linear-gradient(90deg, #0898C7 0%, #006BA8 100%);
+                        pointer-events: none;
                     }
                 }
             }
@@ -326,8 +354,11 @@ section.whats-involved {
 
                 @include mixins.bp(desktop) {
                     border-radius: 20px;
-                    height: 400px;
                     padding: 40px;
+                }
+
+                @include mixins.bp(large-desktop) {
+                    height: 400px;
                 }
 
                 &:before {

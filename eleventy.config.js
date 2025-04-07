@@ -20,7 +20,6 @@ export default async function (eleventyConfig) {
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
-	//eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
 	eleventyConfig.addWatchTarget("src/scss/**/*.scss");
 	eleventyConfig.addWatchTarget("src/js/**/*.js");
 	eleventyConfig.addWatchTarget("src/svg/**/*");

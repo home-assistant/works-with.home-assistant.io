@@ -13,7 +13,7 @@
     --typography-base-font: "Figtree", serif;
     --typography-heading-line-height: 1.25;
 
-    --typography-h1-font-size: 45px;
+    --typography-h1-font-size: 36px;
     --typography-h1-font-weight: 700;
     --typography-h1-line-height: var(--typography-heading-line-height);
 
@@ -41,6 +41,12 @@
     --layout-container-max-width: 1360px;
     --layout-container-padding: 16px;
     --layout-columns-gap: 16px 32px;
+}
+
+@include mixins.bp(large-mobile) {
+    :root {
+        --typography-h1-font-size: 45px;
+    }
 }
 
 @include mixins.bp(tablet) {
