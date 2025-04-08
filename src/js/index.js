@@ -97,3 +97,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+let copyTargets = document.querySelectorAll("[data-copy]");
+if (copyTargets) {
+    copyTargets.forEach(copyTarget => {
+        copyTarget.addEventListener('click', () => {
+            let text = copyTarget.getAttribute('data-copy');
+            let innerHTML = copyTarget.innerHTML;
+            navigator.clipboard.writeText(text).then(() => {
+                copyTarget.classList.add('copied');
+                copyTarget.innerHTML = "Copied!";
+                setTimeout(() => {
+                    copyTarget.classList.remove('copied');
+                    copyTarget.innerHTML = innerHTML;
+                }, 2000);
+            });
+        });
+    });
+}

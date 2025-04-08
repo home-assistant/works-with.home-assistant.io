@@ -1,5 +1,5 @@
 {
-	"name": "works-with.home-assistant.io.io",
+	"name": "works-with.home-assistant.io",
 	"version": "2.0.0",
 	"description": "The website for the Home Assistant Partner website",
 	"type": "module",
