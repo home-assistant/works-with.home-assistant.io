@@ -7,7 +7,8 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--body-background-color);
+    background-color: color-mix(in srgb, var(--body-background-color), transparent 50%);
+    backdrop-filter: blur(10px);
     transition: padding 0.25s;
 
     @include mixins.bp(tablet) {
