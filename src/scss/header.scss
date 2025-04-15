@@ -7,8 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(245, 246, 250, 0.5); // Fallback for browsers that don't support color-mix
-    background-color: color-mix(in srgb, var(--body-background-color), transparent 50%);
+    background-color: rgba(var(--body-background-color-rgb), 0.5);
     backdrop-filter: blur(10px);
     transition: padding 0.25s;
 
