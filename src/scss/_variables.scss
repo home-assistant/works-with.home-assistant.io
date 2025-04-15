@@ -6,7 +6,8 @@
     --color-secondary: #4F606E;
 
     // Body
-    --body-background-color: #F5F6FA;
+    --body-background-color-rgb: 245, 246, 250;
+    --body-background-color: rgb(var(--body-background-color-rgb));
     --body-color: var(--color-primary);
 
     // Typography
