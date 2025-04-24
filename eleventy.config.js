@@ -46,6 +46,11 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addFilter("stringify", function (value) {
 		return JSON.stringify(value);
 	});
+
+	eleventyConfig.setChokidarConfig({
+		usePolling: true,
+		interval: 200,
+	});
 };
 
 export const config = {
