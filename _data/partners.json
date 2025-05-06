@@ -13,7 +13,8 @@
         },
         {
             "name": "Eve",
-            "logo": "eve.png"
+            "logo": "eve.png",
+            "link": "https://www.home-assistant.io/integrations/eve/"
         },
         {
             "name": "Heltun",
