@@ -3,43 +3,53 @@
     "partners": [
         {
             "name": "Aqara",
-            "logo": "aqara.png"
+            "logo": "aqara.png",
+            "link": "https://www.home-assistant.io/integrations/aqara/"
         },
         {
             "name": "Apollo",
-            "logo": "apollo.png"
+            "logo": "apollo.png",
+            "link": "https://www.home-assistant.io/integrations/apollo_automation/"
         },
         {
             "name": "Heltun",
-            "logo": "heltun.png"
+            "logo": "heltun.png",
+            "link": "https://www.home-assistant.io/integrations/heltun/"
         },
         {
             "name": "HomeSeer",
-            "logo": "homeseer.png"
+            "logo": "homeseer.png",
+            "link": "https://www.home-assistant.io/integrations/homeseer/"
         },
         {
             "name": "HomeWizard",
-            "logo": "homewizard.png"
+            "logo": "homewizard.png",
+            "link": "https://www.home-assistant.io/integrations/homewizard/"
         },
         {
             "name": "Jasco",
-            "logo": "jasco.png"
+            "logo": "jasco.png",
+            "link": "https://www.home-assistant.io/integrations/jasco/"
         },
         {
             "name": "Leviton",
-            "logo": "leviton.png"
+            "logo": "leviton.png",
+            "link": "https://www.home-assistant.io/integrations/leviton_z_wave/"
         },
         {
             "name": "Reolink",
-            "logo": "reolink.png"
+            "logo": "reolink.png",
+            "link": "https://www.home-assistant.io/integrations/reolink/"
         },
         {
             "name": "Third Reality",
-            "logo": "thirdreality.png"
+            "logo": "thirdreality.png",
+            "link": "https://www.home-assistant.io/integrations/third_reality/"
         },
         {
             "name": "Ultraloq",
-            "logo": "ultraloq.png"
+            "logo": "ultraloq.png",
+            "link": "https://www.home-assistant.io/integrations/ultraloq/"
         }
     ]
 }
