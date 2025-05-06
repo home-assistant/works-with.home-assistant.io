@@ -12,6 +12,11 @@
             "link": "https://www.home-assistant.io/integrations/apollo_automation/"
         },
         {
+            "name": "Eve",
+            "logo": "eve.png",
+            "link": "https://www.home-assistant.io/integrations/eve/"
+        },
+        {
             "name": "Heltun",
             "logo": "heltun.png",
             "link": "https://www.home-assistant.io/integrations/heltun/"
