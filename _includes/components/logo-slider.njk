@@ -7,10 +7,16 @@
           <!-- Slides -->
           {% for partner in partners.partners %}
           <div class="swiper-slide">
-            <img
-              src="{{ partners.logo_path }}{{ partner.logo }}"
-              alt="{{ partner.name }}"
-            />
+            {% if partner.link %}
+            <a href="{{ partner.link }}" target="_blank" rel="noopener">
+              {% endif %}
+              <img
+                src="{{ partners.logo_path }}{{ partner.logo }}"
+                alt="{{ partner.name }}"
+              />
+              {% if partner.link %}
+            </a>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
