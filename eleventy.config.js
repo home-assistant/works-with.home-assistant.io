@@ -8,17 +8,18 @@ import pluginFilters from "./_config/filters.js";
 export default async function (eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/",
+			"public": "/",
 			"src/img": "img",
 			"src/js": "js",
 			"src/svg": "svg",
 		});
 
+	eleventyConfig.addGlobalData("CACHE_KEY", btoa("" + new Date().valueOf()).replaceAll("=", ""));
+
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
-	//eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpeg}");
 	eleventyConfig.addWatchTarget("src/scss/**/*.scss");
 	eleventyConfig.addWatchTarget("src/js/**/*.js");
 	eleventyConfig.addWatchTarget("src/svg/**/*");
@@ -44,6 +45,11 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addFilter("stringify", function (value) {
 		return JSON.stringify(value);
+	});
+
+	eleventyConfig.setChokidarConfig({
+		usePolling: true,
+		interval: 200,
 	});
 };
 

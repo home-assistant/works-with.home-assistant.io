@@ -19,9 +19,10 @@ section.benefits {
     .benefits-card {
         max-width: 1280px;
         aspect-ratio: 1360/800;
-        background: url('/img/globe-bg.webp');
+        background: url('/img/globe-bg.webp') no-repeat;
         color: #ffffff;
         background-position: 85% 0;
+        background-size: cover;
         padding: 60px 0 200px 0;
         width: 100%;
 

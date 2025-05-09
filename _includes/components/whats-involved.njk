@@ -17,13 +17,21 @@
                 <use xlink:href="#{{ step.icon }}-current" class="current" />
               </svg>
             </div>
+            <div class="step-text">
+              Step {{ loop.index }} <span> of {{ involved_steps.length }}</span>
+            </div>
             <div class="title">
-              {{ step.title }} <span> of {{ involved_steps.length }}</span>
+              {{ step.title }}
             </div>
             <div class="description">{{ step.description }}</div>
           </div>
         </div>
       </div>
+      {% endfor %}
+    </div>
+    <div class="steps-pagination">
+      {% for step in involved_steps %}
+      <span role="button"></span>
       {% endfor %}
     </div>
   </div>

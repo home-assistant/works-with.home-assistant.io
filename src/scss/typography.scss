@@ -85,3 +85,13 @@ a:not(.button) {
         }
     }
 }
+
+[data-copy] {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+
+    &.copied {
+        pointer-events: none;
+    }
+}

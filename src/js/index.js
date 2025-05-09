@@ -28,18 +28,40 @@ if (logoCarousels) {
 }
 
 let stepsWrapper = document.querySelector('.whats-involved .steps');
+let stepsPagination = document.querySelector('.whats-involved .steps-pagination');
 let steps = stepsWrapper.querySelectorAll('.step');
 let currentStep = 1;
+let stepInterval = null;
 if (steps) {
-    setInterval(() => {
-        steps.forEach(step => {
-            step.classList.remove('active');
-        });
-        steps[currentStep].classList.add('active');
-        stepsWrapper.setAttribute('data-step', currentStep);
-        currentStep = currentStep === steps.length - 1 ? 0 : currentStep + 1;
+    stepInterval = setInterval(() => {
+        doStepSlide(currentStep);
     }, 4000);
+
+    if (stepsPagination) {
+        let pageItem = stepsPagination.querySelectorAll('span');
+        if (pageItem) {
+            pageItem.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    clearInterval(stepInterval);
+                    doStepSlide(index);
+                    stepInterval = setInterval(() => {
+                        doStepSlide(currentStep);
+                    }, 4000);
+                });
+            });
+        }
+    }
 }
+
+function doStepSlide(index = 0) {
+    steps.forEach(step => {
+        step.classList.remove('active');
+    });
+    steps[index].classList.add('active');
+    stepsWrapper.setAttribute('data-step', index);
+    currentStep = index === steps.length - 1 ? 0 : index + 1;
+}
+
 
 let header = document.querySelector('.header');
 let burger = header.querySelector('.burger');
@@ -75,3 +97,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+let copyTargets = document.querySelectorAll("[data-copy]");
+if (copyTargets) {
+    copyTargets.forEach(copyTarget => {
+        copyTarget.addEventListener('click', () => {
+            let text = copyTarget.getAttribute('data-copy');
+            let innerHTML = copyTarget.innerHTML;
+            navigator.clipboard.writeText(text).then(() => {
+                copyTarget.classList.add('copied');
+                copyTarget.innerHTML = "Copied!";
+                setTimeout(() => {
+                    copyTarget.classList.remove('copied');
+                    copyTarget.innerHTML = innerHTML;
+                }, 2000);
+            });
+        });
+    });
+}

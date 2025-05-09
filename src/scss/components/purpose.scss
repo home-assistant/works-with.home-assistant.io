@@ -32,29 +32,30 @@ section.purpose {
         p {
             color: #6E7B91;
             font-weight: 400;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .button {
+            margin-top: 30px;
+
+            @include mixins.bp(desktop) {
+                margin-top: 60px;
+            }
         }
     }
 
     .purpose-graphic {
-        aspect-ratio: 2/1;
+        aspect-ratio: 1.5/1;
         width: 100%;
         position: relative;
         z-index: -1;
         order: -1;
 
-        &:before {
-            content: '';
-            position: absolute;
-            left: -10%;
-            right: -10%;
-            aspect-ratio: 1/1;
-            top: 50%;
-            transform: translateY(-50%);
-            // circle gradient from transparent to body background color
-            background: radial-gradient(circle, transparent 0%, var(--body-background-color) 100%);
-        }
-
         @include mixins.bp(tablet) {
+            aspect-ratio: 2/1;
             order: 1;
         }
 
@@ -64,10 +65,11 @@ section.purpose {
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -1;
-            width: 250%;
+            width: 160%;
 
             @include mixins.bp(desktop) {
-                width: 230%;
+                width: 115%;
+                top: 40%;
             }
         }
     }
