@@ -22,6 +22,7 @@ section.logo-slider {
             position: absolute;
             top: 0;
             bottom: 0;
+            pointer-events: none;
             width: 5rem;
             z-index: 2;
         }
@@ -53,10 +54,16 @@ section.logo-slider {
         justify-content: center;
         padding: 1rem;
 
+        a {
+            align-self: unset;
+
+            &:after {
+                content: unset;
+            }
+        }
 
         img {
             max-width: 120px;
-            width: 100%;
         }
     }
 }
