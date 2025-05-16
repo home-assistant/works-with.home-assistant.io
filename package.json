@@ -18,7 +18,7 @@
 		"watch:scss": "sass --watch --poll src/scss/_index.scss:_site/css/index.css"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "3.0.0",
+		"@11ty/eleventy": "3.1.0",
 		"@11ty/eleventy-img": "6.0.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "5.0.1",
 		"cross-env": "7.0.3"
