@@ -55,6 +55,11 @@
             "name": "Ultraloq",
             "logo": "ultraloq.png",
             "link": "https://www.home-assistant.io/integrations/ultraloq/"
+        },
+        {
+            "name": "Switchbot",
+            "logo": "switchbot.png",
+            "link": "https://www.home-assistant.io/integrations/switchbot/"
         }
     ]
 }
