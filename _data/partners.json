@@ -60,6 +60,11 @@
             "name": "Nuki",
             "logo": "nuki.png",
             "link": "https://www.home-assistant.io/integrations/nuki/"
+        },
+        {
+            "name": "Switchbot",
+            "logo": "switchbot.png",
+            "link": "https://www.home-assistant.io/integrations/switchbot/"
         }
     ]
 }

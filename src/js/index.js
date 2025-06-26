@@ -1,5 +1,18 @@
 let logoCarousels = document.querySelectorAll('.logo-slider .swiper');
 if (logoCarousels) {
+    // Randomise the order of logo slides to avoid bias
+    logoCarousels.forEach(logoCarousel => {
+        const wrapper = logoCarousel.querySelector('.swiper-wrapper');
+        if (wrapper) {
+            const slides = Array.from(wrapper.children);
+            // Fisher-Yates shuffle
+            for (let i = slides.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                wrapper.appendChild(slides[j]);
+                slides[j] = slides[i];
+            }
+        }
+    });
     let r = true;
     logoCarousels.forEach(logoCarousel => {
         r = !r;

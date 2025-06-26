@@ -17,7 +17,6 @@ section.logo-slider {
         &:after {
             --to: left;
             content: '';
-            //
             background: linear-gradient(to var(--to), transparent 0%, var(--body-background-color) 100%);
             position: absolute;
             top: 0;
