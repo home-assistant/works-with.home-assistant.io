@@ -55,6 +55,11 @@
             "name": "Ultraloq",
             "logo": "ultraloq.png",
             "link": "https://www.home-assistant.io/integrations/ultraloq/"
+        },
+        {
+            "name": "Nuki",
+            "logo": "nuki.png",
+            "link": "https://www.home-assistant.io/integrations/nuki/"
         }
     ]
 }
