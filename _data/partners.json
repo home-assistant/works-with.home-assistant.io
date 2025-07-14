@@ -65,6 +65,11 @@
             "name": "Switchbot",
             "logo": "switchbot.png",
             "link": "https://www.home-assistant.io/integrations/switchbot/"
+        },
+        {
+            "name": "Zooz",
+            "logo": "zooz.png",
+            "link": "https://www.home-assistant.io/integrations/zooz/"
         }
     ]
 }
