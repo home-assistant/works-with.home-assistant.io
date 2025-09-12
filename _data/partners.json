@@ -70,6 +70,11 @@
             "name": "Zooz",
             "logo": "zooz.png",
             "link": "https://www.home-assistant.io/integrations/zooz/"
+        },
+        {
+            "name": "Frient",
+            "logo": "frient.png",
+            "link": "https://www.home-assistant.io/integrations/frient/"
         }
     ]
 }
