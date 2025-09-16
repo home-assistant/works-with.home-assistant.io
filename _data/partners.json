@@ -75,6 +75,11 @@
             "name": "Frient",
             "logo": "frient.png",
             "link": "https://www.home-assistant.io/integrations/frient/"
+        },
+        {
+            "name": "AirGradient",
+            "logo": "airgradient.png",
+            "link": "https://www.home-assistant.io/integrations/airgradient/"
         }
     ]
 }
