@@ -80,6 +80,11 @@
             "name": "AirGradient",
             "logo": "airgradient.png",
             "link": "https://www.home-assistant.io/integrations/airgradient/"
+        },
+        {
+            "name": "Konnected",
+            "logo": "konnected.png",
+            "link": "https://www.home-assistant.io/integrations/konnected/"
         }
     ]
 }
