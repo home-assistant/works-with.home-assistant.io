@@ -1,0 +1,245 @@
+.devices-page {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.devices-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: #666;
+  }
+}
+
+.devices-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+
+  input,
+  select {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: white;
+
+    &:focus {
+      outline: none;
+      border-color: #18bcf2;
+      box-shadow: 0 0 0 3px rgba(24, 188, 242, 0.1);
+    }
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.devices-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.95rem;
+
+  thead {
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+
+      &.sortable {
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        padding-right: 2rem;
+
+        &:hover {
+          background: #34495e;
+        }
+
+        .sort-icon {
+          position: absolute;
+          right: 0.75rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          opacity: 0.3;
+        }
+
+        .sort-icon::before {
+          content: '';
+          position: absolute;
+          left: -5px;
+          top: -10px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid white;
+        }
+
+        .sort-icon::after {
+          content: '';
+          position: absolute;
+          left: -5px;
+          top: 2px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid white;
+        }
+
+        &.sort-asc .sort-icon::before {
+          opacity: 1;
+          border-bottom-color: #18bcf2;
+        }
+
+        &.sort-desc .sort-icon::after {
+          opacity: 1;
+          border-top-color: #18bcf2;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #e9ecef;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #f8f9fa;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        padding: 1rem;
+        vertical-align: middle;
+
+        &:empty::after {
+          content: '—';
+          color: #999;
+        }
+
+        a {
+          color: #18bcf2;
+          text-decoration: none;
+          font-weight: 500;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.devices-count {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  padding: 1rem;
+
+  span {
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+// Responsive design
+@media (max-width: 1200px) {
+  .devices-table {
+    font-size: 0.875rem;
+
+    thead th,
+    tbody td {
+      padding: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .devices-page {
+    padding: 2rem 1rem;
+  }
+
+  .devices-header h1 {
+    font-size: 1.875rem;
+  }
+
+  .devices-filters {
+    flex-direction: column;
+
+    input,
+    select {
+      min-width: 100%;
+    }
+  }
+
+  .devices-table {
+    display: block;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 1rem;
+
+      &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    td {
+      display: block;
+      padding: 0.5rem 0;
+      border: none;
+
+      &::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: inline-block;
+        width: 140px;
+        color: #2c3e50;
+      }
+    }
+  }
+}

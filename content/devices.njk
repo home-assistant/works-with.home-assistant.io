@@ -1,0 +1,105 @@
+---
+layout: base.njk
+title: Certified Devices
+permalink: /devices/
+---
+
+<div class="wrapper wrapper-a">
+  <div class="devices-page">
+    <div class="devices-header">
+      <h1>Works with Home Assistant Devices</h1>
+      <p>
+        Browse all certified devices that are part of Works with Home Assistant
+      </p>
+    </div>
+
+    <div class="devices-filters">
+      <input type="text" id="searchInput" placeholder="Search by brand, device name, model number..." />
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+        {% for filename, data in collections.all[0].data.devices %}
+        <option value="{{ data.brand }}">{{ data.brand | capitalize }}</option>
+        {% endfor %}
+      </select>
+      <select id="protocolFilter">
+        <option value="">All Protocols</option>
+      </select>
+      <select id="deviceTypeFilter">
+        <option value="">All Device Types</option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table id="devicesTable" class="devices-table">
+        <thead>
+          <tr>
+            <th data-sort="brand" class="sortable">
+              Brand <span class="sort-icon"></span>
+            </th>
+            <th data-sort="deviceName" class="sortable">
+              Device Name <span class="sort-icon"></span>
+            </th>
+            <th data-sort="modelNumber" class="sortable">
+              Model Number <span class="sort-icon"></span>
+            </th>
+            <th data-sort="protocol" class="sortable">
+              Protocol <span class="sort-icon"></span>
+            </th>
+            <th data-sort="deviceType" class="sortable">
+              Device Type <span class="sort-icon"></span>
+            </th>
+            <th data-sort="certificationDate" class="sortable">
+              Certification Date <span class="sort-icon"></span>
+            </th>
+            <th data-sort="region">Region</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="devicesTableBody">
+          {% for filename, data in collections.all[0].data.devices %} {% for
+          device in data.devices %}
+          <tr
+            data-brand="{{ data.brand }}"
+            data-protocol="{{ device.protocol }}"
+            data-device-type="{{ device.deviceType }}"
+            data-search="{{
+              (data.brand +
+                ' ' +
+                device.deviceName +
+                ' ' +
+                device.modelNumber +
+                ' ' +
+                device.deviceType) | lower
+            }}"
+          >
+            <td>{{ data.brand }}</td>
+            <td>{{ device.deviceName }}</td>
+            <td>{{ device.modelNumber }}</td>
+            <td>{{ device.protocol }}</td>
+            <td>{{ device.deviceType }}</td>
+            <td>{{ device.certificationDate }}</td>
+            <td>{{ device.region }}</td>
+            <td>
+              {% if device.websiteLink %}
+              <a
+                href="{{ device.websiteLink }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View</a
+              >
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %} {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="devices-count">
+      Showing <span id="visibleCount">0</span> of
+      <span id="totalCount">0</span> devices
+    </div>
+  </div>
+</div>
+
+<script src="/js/devices-table.js"></script>
