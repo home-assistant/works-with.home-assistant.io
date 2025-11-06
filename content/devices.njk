@@ -43,15 +43,15 @@ permalink: /devices/
               Model Number <span class="sort-icon"></span>
             </th>
             <th data-sort="protocol" class="sortable">
-              Protocol <span class="sort-icon"></span>
+              Certified Protocol <span class="sort-icon"></span>
             </th>
             <th data-sort="deviceType" class="sortable">
               Device Type <span class="sort-icon"></span>
             </th>
-            <th data-sort="certificationDate" class="sortable">
-              Certification Date <span class="sort-icon"></span>
-            </th>
             <th data-sort="region">Region</th>
+            <th data-sort="functionalityRemark" class="sortable">
+              Functionality Remark <span class="sort-icon"></span>
+            </th>
             <th>Link</th>
           </tr>
         </thead>
@@ -77,8 +77,8 @@ permalink: /devices/
             <td>{{ device.modelNumber }}</td>
             <td>{{ device.protocol }}</td>
             <td>{{ device.deviceType }}</td>
-            <td>{{ device.certificationDate }}</td>
             <td>{{ device.region }}</td>
+            <td>{{ device.functionalityRemark }}</td>
             <td>
               {% if device.websiteLink %}
               <a

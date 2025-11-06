@@ -101,12 +101,6 @@
       let aValue = a.cells[columnIndex].textContent.trim();
       let bValue = b.cells[columnIndex].textContent.trim();
 
-      // Handle dates
-      if (column === 'certificationDate') {
-        aValue = new Date(aValue);
-        bValue = new Date(bValue);
-      }
-
       // Handle empty values
       if (!aValue) return 1;
       if (!bValue) return -1;

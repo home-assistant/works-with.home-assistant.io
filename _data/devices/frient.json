@@ -10,9 +10,9 @@
       "websiteLink": "Motion Sensor Pro",
       "priority": "",
       "deviceType": "Motion Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -23,22 +23,22 @@
       "websiteLink": "IO Module",
       "priority": "",
       "deviceType": "Switch / Relay",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
       "deviceName": "Smart Plug Mini",
       "fullName": "frient Smart Plug Mini",
-      "modelNumber": "",
+      "modelNumber": "SPLZB-131",
       "protocol": "Zigbee",
       "websiteLink": "Smart Plug Mini",
       "priority": "",
       "deviceType": "Plug",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -49,9 +49,9 @@
       "websiteLink": "Entry Sensor 2 Pro",
       "priority": "",
       "deviceType": "Open / Close Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -88,9 +88,9 @@
       "websiteLink": "Intelligent Keypad",
       "priority": "",
       "deviceType": "Keypad",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -101,9 +101,9 @@
       "websiteLink": "Water Leak Detector",
       "priority": "",
       "deviceType": "Water Leak Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -114,9 +114,9 @@
       "websiteLink": "Smart Button",
       "priority": "",
       "deviceType": "Switch",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -127,9 +127,9 @@
       "websiteLink": "Intelligent Smoke Alarm",
       "priority": "",
       "deviceType": "Smoke Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -140,9 +140,9 @@
       "websiteLink": "Air Quality Sensor",
       "priority": "",
       "deviceType": "Air Quality Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -153,9 +153,9 @@
       "websiteLink": "Smart Humidity Sensor",
       "priority": "",
       "deviceType": "Humidity Sensor",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     },
     {
@@ -166,9 +166,9 @@
       "websiteLink": "Electricity Meter Interface 2 LED",
       "priority": "",
       "deviceType": "Power Metering",
-      "certificationDate": "2025-09-02",
       "specialistEquipment": "",
       "region": "",
+      "functionalityRemark": "",
       "comments": ""
     }
   ]

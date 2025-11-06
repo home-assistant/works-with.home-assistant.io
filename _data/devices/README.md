@@ -26,9 +26,9 @@ Each file should follow this structure:
       "websiteLink": "https://example.com/product-page",
       "priority": "",
       "deviceType": "Motion Sensor|Switch|Plug|etc.",
-      "certificationDate": "YYYY-MM-DD",
       "specialistEquipment": "Optional notes",
       "region": "US|EU|UK|etc.",
+      "functionalityRemark": "Optional notes about protocol limitations",
       "comments": "Optional comments"
     }
   ]
@@ -47,9 +47,9 @@ Each file should follow this structure:
   - **websiteLink**: URL to the product page
   - **priority**: Optional priority level
   - **deviceType**: Category of device (Motion Sensor, Switch, Plug, etc.)
-  - **certificationDate**: Date of WWHA certification (YYYY-MM-DD format)
   - **specialistEquipment**: Any special equipment requirements
   - **region**: Geographic region if region-specific
+  - **functionalityRemark**: Notes about protocol limitations or functionality constraints
   - **comments**: Additional notes or comments
 
 ## Adding New Devices
