@@ -84,7 +84,7 @@
         {
             "name": "Konnected",
             "logo": "konnected.png",
-            "link": "https://www.home-assistant.io/integrations/konnected/"
+            "link": "https://www.home-assistant.io/integrations/konnected_esphome/"
         },
         {
             "name": "Eltako",
