@@ -42,14 +42,12 @@ if (logoCarousels) {
 
 let stepsWrapper = document.querySelector('.whats-involved .steps');
 let stepsPagination = document.querySelector('.whats-involved .steps-pagination');
-let steps = stepsWrapper.querySelectorAll('.step');
+let steps = stepsWrapper?.querySelectorAll('.step');
 let currentStep = 1;
 let stepInterval = null;
-if (steps) {
-    stepInterval = setInterval(() => {
-        doStepSlide(currentStep);
-    }, 4000);
 
+if (steps && stepsWrapper) {
+    // Set up click handlers for pagination
     if (stepsPagination) {
         let pageItem = stepsPagination.querySelectorAll('span');
         if (pageItem) {
@@ -64,6 +62,24 @@ if (steps) {
             });
         }
     }
+
+    // Set up Intersection Observer to start slideshow when visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Start the slideshow when element comes into view
+                if (!stepInterval) {
+                    stepInterval = setInterval(() => {
+                        doStepSlide(currentStep);
+                    }, 4000);
+                }
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the element is visible
+    });
+
+    observer.observe(stepsWrapper);
 }
 
 function doStepSlide(index = 0) {
