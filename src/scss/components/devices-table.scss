@@ -192,6 +192,91 @@
   }
 }
 
+// Functionality remark icon and tooltip
+.remark-header {
+  text-align: center;
+}
+
+.remark-cell {
+  text-align: center;
+
+  &:empty::after {
+    content: '' !important;
+  }
+}
+
+.remark-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background: #18bcf2;
+    color: white;
+    outline: none;
+  }
+
+  &:hover .remark-tooltip,
+  &:focus .remark-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.remark-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 0.5rem 0.75rem;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  white-space: nowrap;
+  max-width: 350px;
+  white-space: normal;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  z-index: 100;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 1024px) {
+    width: 350px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #2c3e50;
+  }
+}
+
 // Pagination wrapper
 .pagination-wrapper {
   display: flex;
@@ -359,42 +444,13 @@
     }
   }
 
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .devices-table {
-    display: block;
-
-    thead {
-      display: none;
-    }
-
-    tbody {
-      display: block;
-    }
-
-    tr {
-      display: block;
-      margin-bottom: 1rem;
-      border: 1px solid #e9ecef;
-      border-radius: 8px;
-      padding: 1rem;
-
-      &:hover {
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-    }
-
-    td {
-      display: block;
-      padding: 0.5rem 0;
-      border: none;
-
-      &::before {
-        content: attr(data-label);
-        font-weight: 600;
-        display: inline-block;
-        width: 140px;
-        color: #2c3e50;
-      }
-    }
+    min-width: 900px;
   }
 
   .pagination-wrapper {
