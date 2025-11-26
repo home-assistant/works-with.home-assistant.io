@@ -1,175 +1,202 @@
 {
-  "companyName": "Onics",
+  "companyName": "frient",
   "brand": "frient",
   "devices": [
     {
       "deviceName": "Motion Sensor Pro",
       "fullName": "frient Motion Sensor Pro",
-      "modelNumber": "MOSZB-140",
+      "modelNumber": "MOSZB-141",
       "protocol": "Zigbee",
-      "websiteLink": "Motion Sensor Pro",
-      "priority": "",
-      "deviceType": "Motion Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/motion-sensor-pro",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Motion, light, temperature",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "IO Module",
       "fullName": "frient IO Module",
       "modelNumber": "IOMZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "IO Module",
-      "priority": "",
-      "deviceType": "Switch / Relay",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/io-module",
+      "deviceType": "Switch",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Smart Plug Mini",
       "fullName": "frient Smart Plug Mini",
-      "modelNumber": "SPLZB-131",
+      "modelNumber": "",
       "protocol": "Zigbee",
-      "websiteLink": "Smart Plug Mini",
-      "priority": "",
+      "websiteLink": "https://www.frient.com/products/smart-plug-mini",
       "deviceType": "Plug",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Entry Sensor 2 Pro",
       "fullName": "frient Entry Sensor 2 Pro",
       "modelNumber": "WISZB-131",
       "protocol": "Zigbee",
-      "websiteLink": "Entry Sensor 2 Pro",
-      "priority": "",
-      "deviceType": "Open / Close Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/entry-sensor-2-pro",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Open / close",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Smart Siren UK",
       "fullName": "frient Smart Siren UK",
       "modelNumber": "SIRZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Smart Siren UK",
-      "priority": "",
-      "deviceType": "Siren",
-      "certificationDate": "2025-09-02",
-      "specialistEquipment": "",
-      "region": "UK",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/smart-siren",
+      "deviceType": "Speaker",
+      "secondaryDeviceType": "Siren",
+      "relatedProducts": "",
+      "region": [
+        "UK"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Smart Siren EU",
       "fullName": "frient Smart Siren EU",
       "modelNumber": "SIRZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Smart Siren EU",
-      "priority": "",
-      "deviceType": "Siren",
-      "certificationDate": "2025-09-02",
-      "specialistEquipment": "",
-      "region": "EU",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/smart-siren",
+      "deviceType": "Speaker",
+      "secondaryDeviceType": "Siren",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Intelligent Keypad",
       "fullName": "frient Intelligent Keypad",
       "modelNumber": "KEPZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Intelligent Keypad",
-      "priority": "",
-      "deviceType": "Keypad",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/intelligent-keypad",
+      "deviceType": "Access control",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": "RFID tag reader is not exposed in Home Assistant"
     },
     {
       "deviceName": "Water Leak Detector",
       "fullName": "frient Water Leak Detector",
       "modelNumber": "FLSZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Water Leak Detector",
-      "priority": "",
-      "deviceType": "Water Leak Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/water-leak-detector",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Leak",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Water Leak Detector Probe Version",
+      "fullName": "frient Water Leak Detector Probe Version",
+      "modelNumber": "FLAPR-110",
+      "protocol": "Zigbee",
+      "websiteLink": "https://www.frient.com/products/water-leak-detector",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Leak",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Smart Button",
       "fullName": "frient Smart Button",
       "modelNumber": "SBTZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Smart Button",
-      "priority": "",
+      "websiteLink": "https://www.frient.com/products/smart-button",
       "deviceType": "Switch",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "secondaryDeviceType": "Button",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Intelligent Smoke Alarm",
       "fullName": "frient Intelligent Smoke Alarm",
       "modelNumber": "SMSZB-120",
       "protocol": "Zigbee",
-      "websiteLink": "Intelligent Smoke Alarm",
-      "priority": "",
-      "deviceType": "Smoke Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/intelligent-smoke-alarm",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Air Quality Sensor",
       "fullName": "frient Air Quality Sensor",
       "modelNumber": "AQSZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Air Quality Sensor",
-      "priority": "",
-      "deviceType": "Air Quality Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/air-quality-sensor",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Air quality, temperature, humidity",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Smart Humidity Sensor",
       "fullName": "frient Smart Humidity Sensor",
       "modelNumber": "HMSZB-110",
       "protocol": "Zigbee",
-      "websiteLink": "Smart Humidity Sensor",
-      "priority": "",
-      "deviceType": "Humidity Sensor",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/smart-humidity-sensor",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Humidity",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     },
     {
       "deviceName": "Electricity Meter Interface 2 LED",
       "fullName": "frient Electricity Meter Interface 2 LED",
       "modelNumber": "EMIZB-141",
       "protocol": "Zigbee",
-      "websiteLink": "Electricity Meter Interface 2 LED",
-      "priority": "",
-      "deviceType": "Power Metering",
-      "specialistEquipment": "",
-      "region": "",
-      "functionalityRemark": "",
-      "comments": ""
+      "websiteLink": "https://www.frient.com/products/electricity-meter-interface-2-led",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Energy",
+      "relatedProducts": "",
+      "region": [
+        "Europe (excluding the Nordics)"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }

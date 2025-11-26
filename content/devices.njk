@@ -14,11 +14,17 @@ permalink: /devices/
     </div>
 
     <div class="devices-filters">
-      <input type="text" id="searchInput" placeholder="Search by brand, device name, model number..." />
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by brand, device name, model number..."
+      />
       <select id="brandFilter">
         <option value="">All Brands</option>
         {% for filename, data in collections.all[0].data.devices %}
-        <option value="{{ data.brand }}">{{ data.brand | capitalize }}</option>
+        <option value="{{ data.companyName }}">
+          {{ data.companyName }}
+        </option>
         {% endfor %}
       </select>
       <select id="protocolFilter">
@@ -26,6 +32,9 @@ permalink: /devices/
       </select>
       <select id="deviceTypeFilter">
         <option value="">All Device Types</option>
+      </select>
+      <select id="regionFilter">
+        <option value="">All Regions</option>
       </select>
     </div>
 
@@ -59,11 +68,12 @@ permalink: /devices/
           {% for filename, data in collections.all[0].data.devices %} {% for
           device in data.devices %}
           <tr
-            data-brand="{{ data.brand }}"
+            data-brand="{{ data.companyName }}"
             data-protocol="{{ device.protocol }}"
             data-device-type="{{ device.deviceType }}"
+            data-regions="{{ device.region | join(',') }}"
             data-search="{{
-              (data.brand +
+              (data.companyName +
                 ' ' +
                 device.deviceName +
                 ' ' +
@@ -72,12 +82,16 @@ permalink: /devices/
                 device.deviceType) | lower
             }}"
           >
-            <td>{{ data.brand }}</td>
+            <td>{{ data.companyName }}</td>
             <td>{{ device.deviceName }}</td>
             <td>{{ device.modelNumber }}</td>
             <td>{{ device.protocol }}</td>
             <td>{{ device.deviceType }}</td>
-            <td>{{ device.region }}</td>
+            <td class="region-cell">
+              {% for region in device.region %}
+              <span class="region-badge">{{ region }}</span>
+              {% endfor %}
+            </td>
             <td>{{ device.functionalityRemark }}</td>
             <td>
               {% if device.websiteLink %}
@@ -95,9 +109,59 @@ permalink: /devices/
       </table>
     </div>
 
-    <div class="devices-count">
-      Showing <span id="visibleCount">0</span> of
-      <span id="totalCount">0</span> devices
+    <div class="pagination-wrapper">
+      <div class="devices-count">
+        Showing <span id="visibleCount">0</span> of
+        <span id="filteredCount">0</span> devices (<span id="totalCount"
+          >0</span
+        >
+        total)
+      </div>
+
+      <div class="pagination-controls">
+        <button id="prevPage" class="pagination-btn" disabled>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Previous
+        </button>
+
+        <div id="pageNumbers" class="page-numbers"></div>
+
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+
+        <button id="nextPage" class="pagination-btn">
+          Next
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="items-per-page">
+        <label for="itemsPerPage">Show:</label>
+        <select id="itemsPerPage">
+          <option value="10">10</option>
+          <option value="25" selected>25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <span>per page</span>
+      </div>
     </div>
   </div>
 </div>

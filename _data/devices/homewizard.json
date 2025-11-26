@@ -1,0 +1,76 @@
+{
+  "companyName": "HomeWizard",
+  "brand": "homewizard",
+  "devices": [
+    {
+      "deviceName": "P1 Meter",
+      "fullName": "HomeWizard P1 Meter",
+      "modelNumber": "HWE-P1",
+      "protocol": "WiFi",
+      "websiteLink": "https://www.homewizard.com/p1-meter/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Energy",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Energy Socket",
+      "fullName": "HomeWizard Energy Socket",
+      "modelNumber": "HWE-SKT",
+      "protocol": "WiFi",
+      "websiteLink": "https://www.homewizard.com/energy-socket/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": "Energy Monitoring",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Watermeter",
+      "fullName": "HomeWizard Watermeter",
+      "modelNumber": "HWE-WTR",
+      "protocol": "WiFi",
+      "websiteLink": "https://www.homewizard.com/watermeter/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Water",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "kWh Meter",
+      "fullName": "HomeWizard kWh Meter",
+      "modelNumber": "HWE-KWH1",
+      "protocol": "WiFi",
+      "websiteLink": "https://www.homewizard.com/kwh-meter/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Energy",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Plug-In Battery",
+      "fullName": "HomeWizard Plug-In Battery",
+      "modelNumber": "HWE-BAT",
+      "protocol": "WiFi",
+      "websiteLink": "https://www.homewizard.com/nl/plug-in-battery/",
+      "deviceType": "Battery",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

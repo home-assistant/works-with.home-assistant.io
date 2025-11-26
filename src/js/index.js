@@ -42,26 +42,28 @@ if (logoCarousels) {
 
 let stepsWrapper = document.querySelector('.whats-involved .steps');
 let stepsPagination = document.querySelector('.whats-involved .steps-pagination');
-let steps = stepsWrapper.querySelectorAll('.step');
-let currentStep = 1;
-let stepInterval = null;
-if (steps) {
-    stepInterval = setInterval(() => {
-        doStepSlide(currentStep);
-    }, 4000);
+if (stepsWrapper) {
+    let steps = stepsWrapper.querySelectorAll('.step');
+    let currentStep = 1;
+    let stepInterval = null;
+    if (steps) {
+        stepInterval = setInterval(() => {
+            doStepSlide(currentStep);
+        }, 4000);
 
-    if (stepsPagination) {
-        let pageItem = stepsPagination.querySelectorAll('span');
-        if (pageItem) {
-            pageItem.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    clearInterval(stepInterval);
-                    doStepSlide(index);
-                    stepInterval = setInterval(() => {
-                        doStepSlide(currentStep);
-                    }, 4000);
+        if (stepsPagination) {
+            let pageItem = stepsPagination.querySelectorAll('span');
+            if (pageItem) {
+                pageItem.forEach((item, index) => {
+                    item.addEventListener('click', () => {
+                        clearInterval(stepInterval);
+                        doStepSlide(index);
+                        stepInterval = setInterval(() => {
+                            doStepSlide(currentStep);
+                        }, 4000);
+                    });
                 });
-            });
+            }
         }
     }
 }

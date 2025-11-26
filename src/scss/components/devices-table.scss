@@ -2,6 +2,8 @@
   padding: 4rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 .devices-header {
@@ -157,17 +159,54 @@
           &:hover {
             text-decoration: underline;
           }
+
+          &:after {
+            content: unset;
+          }
         }
       }
     }
   }
 }
 
+// Region badges
+.region-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.region-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #2c3e50;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  white-space: nowrap;
+
+  &:empty {
+    display: none;
+  }
+}
+
+// Pagination wrapper
+.pagination-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
 .devices-count {
   text-align: center;
   color: #666;
   font-size: 0.95rem;
-  padding: 1rem;
 
   span {
     font-weight: 600;
@@ -175,8 +214,123 @@
   }
 }
 
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover:not(:disabled) {
+    background: #18bcf2;
+    border-color: #18bcf2;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.page-number {
+  min-width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover:not(.active) {
+    background: #f0f0f0;
+    border-color: #ccc;
+  }
+
+  &.active {
+    background: #18bcf2;
+    border-color: #18bcf2;
+    color: white;
+  }
+}
+
+.page-ellipsis {
+  padding: 0 0.5rem;
+  color: #666;
+}
+
+.page-info {
+  padding: 0 1rem;
+  color: #666;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+
+  label {
+    font-weight: 500;
+  }
+
+  select {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: #18bcf2;
+      box-shadow: 0 0 0 3px rgba(24, 188, 242, 0.1);
+    }
+  }
+}
+
 // Responsive design
 @media (max-width: 1200px) {
+  .pagination-wrapper {
+    padding: 1rem;
+  }
+
   .devices-table {
     font-size: 0.875rem;
 
@@ -241,5 +395,32 @@
         color: #2c3e50;
       }
     }
+  }
+
+  .pagination-wrapper {
+    gap: 0.75rem;
+  }
+
+  .pagination-controls {
+    gap: 0.25rem;
+  }
+
+  .pagination-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .page-number {
+    min-width: 32px;
+    height: 32px;
+    font-size: 0.8125rem;
+  }
+
+  .page-info {
+    display: none;
+  }
+
+  .items-per-page {
+    font-size: 0.8125rem;
   }
 }

@@ -1,0 +1,188 @@
+{
+  "companyName": "Aqara",
+  "brand": "aqara",
+  "devices": [
+    {
+      "deviceName": "Hub M3",
+      "fullName": "Aqara Hub M3",
+      "modelNumber": "HM-G01E / HM-G01D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/hub-m3/",
+      "deviceType": "Hub",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "New hubs can no longer be certified for the WWHA program. This product was grandfathered in from the previous program."
+    },
+    {
+      "deviceName": "Valve Controller T1",
+      "fullName": "Aqara Valve Controller T1",
+      "modelNumber": "VC-X01E, VC-X01D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/us/product/valve-controller-t1/",
+      "deviceType": "Leak protection",
+      "secondaryDeviceType": "Valve control",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "LED Bulb T2 (E26, CCT)",
+      "fullName": "Aqara LED Bulb T2 (E26, CCT)",
+      "modelNumber": "LB-L01E / LB-L01D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/led-bulb-t2/",
+      "deviceType": "Light",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "LED Bulb T2 (E26, RGB+CT)",
+      "fullName": "Aqara LED Bulb T2 (E26, RGB+CT)",
+      "modelNumber": "LB-L01E / LB-L01D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/led-bulb-t2/",
+      "deviceType": "Light",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Lock U200",
+      "fullName": "Aqara Smart Lock U200",
+      "modelNumber": "EL-D02D / EL-D02E",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/smart-lock-u200/",
+      "deviceType": "Lock",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Fingerprint sensing is not currently available in Home Assistant. Requires vendor app for calibration"
+    },
+    {
+      "deviceName": "Smart Lock U300",
+      "fullName": "Aqara Smart Lock U300",
+      "modelNumber": "DL-D02D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/smart-lock-u300/",
+      "deviceType": "Lock",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Fingerprint sensing is not currently available in Home Assistant. Requires vendor app for calibration"
+    },
+    {
+      "deviceName": "Motion and Light Sensor P2",
+      "fullName": "Aqara Motion and Light Sensor P2",
+      "modelNumber": "ML-S03E/ ML-S03D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/motion-and-light-sensor-p2/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Motion, light",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Door and Window Sensor P2",
+      "fullName": "Aqara Door and Window Sensor P2",
+      "modelNumber": "DW-S02E/DW-S02D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/door-and-window-sensor-p2/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Open / close",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Presence sensor FP1E",
+      "fullName": "Aqara Presence sensor FP1E",
+      "modelNumber": "PS-S03D / PS-S03E",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/presence-sensor-fp1e/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "mmWave",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Climate Sensor",
+      "fullName": "Aqara Climate Sensor",
+      "modelNumber": "TH-S04E / TH-S04D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/climate-sensor-w100/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "Temperature, humidity",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Wireless switches also available in Home Assistant"
+    },
+    {
+      "deviceName": "Light Switch H2 US",
+      "fullName": "Aqara Light Switch H2 US",
+      "modelNumber": "WS-K02E / WS-K03E / WS-K04E",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/us/product/light-switch-h2-us/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": "Light",
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": "Multiple gang / channels available"
+    },
+    {
+      "deviceName": "Light Switch H2 EU",
+      "fullName": "Aqara Light Switch H2 EU",
+      "modelNumber": "WS-K07E/WS-K07D / WS-K08E/ WS-K08D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/light-switch-h2-eu/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": "Light",
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": "Multiple gang / channels available"
+    },
+    {
+      "deviceName": "Presence Sensor FP300",
+      "fullName": "Aqara Presence Sensor FP300",
+      "modelNumber": "PS-S04E/PS-S04D",
+      "protocol": "Matter over Thread",
+      "websiteLink": "https://www.aqara.com/en/product/presence-multi-sensor-fp300/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": "mmWave, PIR, light, temperature, humidity",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

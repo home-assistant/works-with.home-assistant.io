@@ -1,0 +1,20 @@
+{
+  "companyName": "Ultraloq",
+  "brand": "ultraloq",
+  "devices": [
+    {
+      "deviceName": "U Bolt (Z-Wave Version)",
+      "fullName": "Ultraloq U Bolt (Z-Wave Version)",
+      "modelNumber": "",
+      "protocol": "Z-Wave",
+      "websiteLink": "https://u-tec.com/products/ultraloq-u-bolt-series",
+      "deviceType": "Lock",
+      "secondaryDeviceType": "",
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "companyName": "Reolink",
+  "brand": "reolink",
+  "devices": [
+    {
+      "deviceName": "Video Doorbell",
+      "fullName": "Reolink Video Doorbell",
+      "modelNumber": "",
+      "protocol": "WiFi",
+      "websiteLink": "https://reolink.com/product/reolink-video-doorbell-wifi/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "Doorbell",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "Video Doorbell",
+      "fullName": "Reolink Video Doorbell",
+      "modelNumber": "",
+      "protocol": "WiFi",
+      "websiteLink": "https://reolink.com/product/reolink-doorbell-battery/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "Doorbell",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "Argus Track",
+      "fullName": "Reolink Argus Track",
+      "modelNumber": "",
+      "protocol": "WiFi",
+      "websiteLink": "https://reolink.com/product/argus-track/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "Duo 3 PoE",
+      "fullName": "Reolink Duo 3 PoE",
+      "modelNumber": "",
+      "protocol": "PoE",
+      "websiteLink": "https://reolink.com/product/reolink-duo-3-poe/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "TrackMix PoE",
+      "fullName": "Reolink TrackMix PoE",
+      "modelNumber": "",
+      "protocol": "PoE",
+      "websiteLink": "https://reolink.com/product/reolink-trackmix-poe/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "RLC-823S2",
+      "fullName": "Reolink RLC-823S2",
+      "modelNumber": "",
+      "protocol": "PoE",
+      "websiteLink": "https://reolink.com/product/rlc-823s2/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "RLC-1224A",
+      "fullName": "Reolink RLC-1224A",
+      "modelNumber": "",
+      "protocol": "PoE",
+      "websiteLink": "https://reolink.com/gb/product/rlc-1224a/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": "",
+      "relatedProducts": {
+        "text": "https://reolink.com/product/reolink-home-hub/",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+    },
+    {
+      "deviceName": "Home Hub",
+      "fullName": "Reolink Home Hub",
+      "modelNumber": "",
+      "protocol": "WiFi",
+      "websiteLink": "https://reolink.com/product/reolink-home-hub/",
+      "deviceType": "Storage",
+      "secondaryDeviceType": "Camera",
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

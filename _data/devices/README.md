@@ -22,14 +22,13 @@ Each file should follow this structure:
       "deviceName": "Device Short Name",
       "fullName": "Brand Device Full Name",
       "modelNumber": "MODEL-123",
-      "protocol": "Zigbee|Z-Wave|Wi-Fi|Thread|Matter",
+      "protocol": "Zigbee|Z-Wave|WiFi|Thread|Matter over Thread|Matter over WiFi|ESPHome|Bluetooth|PoE",
       "websiteLink": "https://example.com/product-page",
-      "priority": "",
-      "deviceType": "Motion Sensor|Switch|Plug|etc.",
-      "specialistEquipment": "Optional notes",
-      "region": "US|EU|UK|etc.",
-      "functionalityRemark": "Optional notes about protocol limitations",
-      "comments": "Optional comments"
+      "deviceType": "Sensor|Switch|Plug|Light|Cover|Lock|Climate|etc.",
+      "secondaryDeviceType": "Motion|Temperature|Window|etc.",
+      "relatedProducts": {"text": "Required Hub Name", "url": "https://example.com/hub"},
+      "region": ["Worldwide"],
+      "functionalityRemark": "Optional notes about protocol limitations"
     }
   ]
 }
@@ -43,14 +42,13 @@ Each file should follow this structure:
   - **deviceName**: Short device name for display
   - **fullName**: Complete device name including brand
   - **modelNumber**: Manufacturer's model number
-  - **protocol**: Communication protocol (Zigbee, Z-Wave, Wi-Fi, Thread, Matter)
+  - **protocol**: Communication protocol (Zigbee, Z-Wave, WiFi, Thread, Matter over Thread, Matter over WiFi, ESPHome, Bluetooth, PoE)
   - **websiteLink**: URL to the product page
-  - **priority**: Optional priority level
-  - **deviceType**: Category of device (Motion Sensor, Switch, Plug, etc.)
-  - **specialistEquipment**: Any special equipment requirements
-  - **region**: Geographic region if region-specific
+  - **deviceType**: Primary category of device (Sensor, Switch, Plug, Light, Cover, Lock, Climate, Camera, Hub, etc.)
+  - **secondaryDeviceType**: More specific device type or capabilities (Motion, Temperature, Window, Leak, Air quality, etc.)
+  - **relatedProducts**: Required related products (e.g., hubs, bridges). Can be an object with `text` and `url` properties, or an empty string if not applicable
+  - **region**: Array of geographic regions where the device is available (e.g., `["Worldwide"]`, `["USA", "Europe"]`, `["UK"]`)
   - **functionalityRemark**: Notes about protocol limitations or functionality constraints
-  - **comments**: Additional notes or comments
 
 ## Adding New Devices
 
