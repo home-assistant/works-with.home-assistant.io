@@ -1,15 +1,35 @@
 ---
 layout: base.njk
 title: Certified Devices
-permalink: /devices/
+permalink: /certified-products/
 ---
 
 <div class="wrapper wrapper-a">
   <div class="devices-page">
     <div class="devices-header">
-      <h1>Works with Home Assistant Devices</h1>
-      <p>
-        Browse all certified devices that are part of Works with Home Assistant
+      <h1>Certified Works with Home Assistant Products</h1>
+      <p class="contained">
+        Here is a running list of the certified devices in the Works with Home
+        Assistant program. We are missing an up-to-date list from a few of our
+        partners as they expand their product lines and testing takes place, but
+        these will be added over the coming weeks.
+      </p>
+      <p class="contained">
+        As always, this is not a commercial project for us and your privacy is
+        paramount. These links are not affiliate links and we do not earn
+        anything from them. This list simply exists to group all items in a
+        searchable format so you don’t have to look at individual launch blogs
+        or integration pages to see up-to-date devices.
+      </p>
+      <p class="contained">
+        We’ve included relevant information about which functions are available
+        from within Home Assistant, and known limitations: for example, Home
+        Assistant and Matter, don’t currently support smart lock calibration, so
+        there’s information on how this can be done outside of Home Assistant,
+        as it’s generally a function you’d only use once during set-up. This
+        information is included to help you make better informed choices, but as
+        always, make sure whatever you’re purchasing for your smart home works
+        for you.
       </p>
     </div>
 
@@ -73,13 +93,13 @@ permalink: /devices/
             data-device-type="{{ device.deviceType }}"
             data-regions="{{ device.region | join(',') }}"
             data-search="{{
-              (data.companyName +
+              data.companyName +
                 ' ' +
                 device.deviceName +
                 ' ' +
                 device.modelNumber +
                 ' ' +
-                device.deviceType) | lower
+                device.deviceType | lower
             }}"
           >
             <td>{{ data.companyName }}</td>
