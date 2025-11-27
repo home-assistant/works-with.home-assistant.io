@@ -88,15 +88,7 @@ permalink: /certified-products/
             data-protocol="{{ device.protocol }}"
             data-device-type="{{ device.deviceType }}"
             data-regions="{{ device.region | join(',') }}"
-            data-search="{{
-              data.companyName +
-                ' ' +
-                device.deviceName +
-                ' ' +
-                device.modelNumber +
-                ' ' +
-                device.deviceType | lower
-            }}"
+            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType) | lower }}"
           >
             <td>{{ data.companyName }}</td>
             <td>{{ device.deviceName }}</td>
