@@ -97,7 +97,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Motion",
-        "light"
+        "Light"
       ],
       "relatedProducts": "",
       "region": [
@@ -146,7 +146,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [
@@ -196,9 +196,9 @@
       "secondaryDeviceType": [
         "mmWave",
         "PIR",
-        "light",
-        "temperature",
-        "humidity"
+        "Light",
+        "Temperature",
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [

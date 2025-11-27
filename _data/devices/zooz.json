@@ -173,7 +173,7 @@
       "deviceType": "Switch",
       "secondaryDeviceType": [
         "Lighting",
-        "dimmer"
+        "Dimmer"
       ],
       "relatedProducts": "",
       "region": [
@@ -191,7 +191,7 @@
       "deviceType": "Switch",
       "secondaryDeviceType": [
         "Lighting",
-        "dimmer"
+        "Dimmer"
       ],
       "relatedProducts": "",
       "region": [
@@ -226,7 +226,7 @@
       "deviceType": "Switch",
       "secondaryDeviceType": [
         "Lighting",
-        "dimmer"
+        "Dimmer"
       ],
       "relatedProducts": "",
       "region": [
@@ -244,9 +244,9 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Motion",
-        "temperature",
-        "humidity",
-        "light"
+        "Temperature",
+        "Humidity",
+        "Light"
       ],
       "relatedProducts": "",
       "region": [

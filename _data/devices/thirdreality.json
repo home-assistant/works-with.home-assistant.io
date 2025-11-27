@@ -177,8 +177,8 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Soil",
-        "moisture",
-        "temperature"
+        "Moisture",
+        "Temperature"
       ],
       "relatedProducts": "",
       "region": [
@@ -257,7 +257,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [
@@ -274,7 +274,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [

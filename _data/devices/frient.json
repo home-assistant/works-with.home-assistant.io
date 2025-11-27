@@ -11,8 +11,8 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Motion",
-        "light",
-        "temperature"
+        "Light",
+        "Temperature"
       ],
       "relatedProducts": "",
       "region": [
@@ -181,8 +181,8 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Air quality",
-        "temperature",
-        "humidity"
+        "Temperature",
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [

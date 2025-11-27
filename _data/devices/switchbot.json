@@ -69,7 +69,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [
@@ -86,7 +86,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [
@@ -103,7 +103,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity",
+        "Humidity",
         "CO2"
       ],
       "relatedProducts": "",
@@ -121,7 +121,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": "",
       "region": [
@@ -272,7 +272,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": {
         "text": "Hub 2",
@@ -292,7 +292,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": {
         "text": "Hub 2",
@@ -312,7 +312,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity",
+        "Humidity",
         "CO2"
       ],
       "relatedProducts": {
@@ -333,7 +333,7 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "Temperature",
-        "humidity"
+        "Humidity"
       ],
       "relatedProducts": {
         "text": "Hub 2",

@@ -11,11 +11,11 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "mmWave",
-        "temperature",
-        "pressure",
+        "Temperature",
+        "Pressure",
         "CO2",
         "Bluetooth",
-        "light",
+        "Light",
         "UV"
       ],
       "relatedProducts": "",
@@ -33,11 +33,11 @@
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "mmWave",
-        "temperature",
-        "pressure",
+        "Temperature",
+        "Pressure",
         "CO2",
         "Bluetooth",
-        "light",
+        "Light",
         "UV"
       ],
       "relatedProducts": "",
