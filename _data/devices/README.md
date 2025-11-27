@@ -26,7 +26,7 @@ Each file should follow this structure:
       "websiteLink": "https://example.com/product-page",
       "deviceType": "Sensor|Switch|Plug|Light|Cover|Lock|Climate|etc.",
       "secondaryDeviceType": "Motion|Temperature|Window|etc.",
-      "relatedProducts": {"text": "Required Hub Name", "url": "https://example.com/hub"},
+      "relatedProducts": {"text": "Required hub name", "url": "https://example.com/hub"},
       "region": ["Worldwide"],
       "functionalityRemark": "Optional notes about protocol limitations"
     }
