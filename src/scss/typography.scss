@@ -67,7 +67,7 @@ strong {
     font-weight: 800
 }
 
-a:not(.button) {
+a:not(.button):not(.nounderline) {
     align-self: flex-start;
     text-decoration: none;
     position: relative;
