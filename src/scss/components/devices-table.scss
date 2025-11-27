@@ -194,16 +194,17 @@
   }
 }
 
-// Region badges
-.region-cell {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
+// Region and secondary type badges
+.region-cell,
+.secondary-type-cell {
+  white-space: normal;
 }
 
-.region-badge {
+.region-badge,
+.secondary-type-badge {
   display: inline-block;
   padding: 0.25rem 0.5rem;
+  margin: 0.125rem;
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1;

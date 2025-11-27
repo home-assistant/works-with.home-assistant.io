@@ -9,7 +9,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zac36-titan-water-valve-actuator/",
       "deviceType": "Leak protection",
-      "secondaryDeviceType": "Valve control",
+      "secondaryDeviceType": [
+        "Valve control"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -24,7 +26,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen04-smart-plug/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -39,7 +41,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen05-outdoor-smart-plug/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -54,7 +56,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen16-multirelay/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -69,7 +71,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen30-double-switch/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -84,7 +88,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen32-scene-controller/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -99,7 +105,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen34-remote-switch/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -114,7 +120,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen51-dry-contact-relay/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -129,7 +137,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen52-double-relay/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -144,7 +154,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen71-on-off-switch/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -159,7 +171,10 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen72-dimmer/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting, dimmer",
+      "secondaryDeviceType": [
+        "Lighting",
+        "dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -174,7 +189,10 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen74-s2-toggle-dimmer/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting, dimmer",
+      "secondaryDeviceType": [
+        "Lighting",
+        "dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -189,7 +207,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen76-s2-700-series-switch/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -204,7 +224,10 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zen77-s2-dimmer/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Lighting, dimmer",
+      "secondaryDeviceType": [
+        "Lighting",
+        "dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -219,7 +242,12 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zse11-q-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion, temperature, humidity, light",
+      "secondaryDeviceType": [
+        "Motion",
+        "temperature",
+        "humidity",
+        "light"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -234,7 +262,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zse18-s2-motion-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -249,7 +279,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zse42-water-leak-xs-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Leak",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -264,7 +296,9 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zse43-tilt-shock-xs-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Tilt",
+      "secondaryDeviceType": [
+        "Tilt"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -279,7 +313,10 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.getzooz.com/zooz-zse44-temperature-humidity-xs-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Temperature, Humidity",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",

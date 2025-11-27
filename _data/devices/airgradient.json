@@ -9,7 +9,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.airgradient.com/indoor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Air quality",
+      "secondaryDeviceType": [
+        "Air quality"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +25,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.airgradient.com/outdoor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Air quality",
+      "secondaryDeviceType": [
+        "Air quality"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"

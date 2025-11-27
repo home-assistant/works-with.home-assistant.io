@@ -9,7 +9,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/hub-m3/",
       "deviceType": "Hub",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +23,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/us/product/valve-controller-t1/",
       "deviceType": "Leak protection",
-      "secondaryDeviceType": "Valve control",
+      "secondaryDeviceType": [
+        "Valve control"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -37,7 +39,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/led-bulb-t2/",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -51,7 +53,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/led-bulb-t2/",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -65,7 +67,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/smart-lock-u200/",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -79,7 +81,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/smart-lock-u300/",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -93,7 +95,10 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/motion-and-light-sensor-p2/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion, light",
+      "secondaryDeviceType": [
+        "Motion",
+        "light"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -107,7 +112,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/door-and-window-sensor-p2/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Open / close",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -121,7 +128,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/presence-sensor-fp1e/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "mmWave",
+      "secondaryDeviceType": [
+        "mmWave"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -135,7 +144,10 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/climate-sensor-w100/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Temperature, humidity",
+      "secondaryDeviceType": [
+        "Temperature",
+        "humidity"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -149,7 +161,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/us/product/light-switch-h2-us/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Light",
+      "secondaryDeviceType": [
+        "Light"
+      ],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -163,7 +177,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/light-switch-h2-eu/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Light",
+      "secondaryDeviceType": [
+        "Light"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -177,7 +193,13 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.aqara.com/en/product/presence-multi-sensor-fp300/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "mmWave, PIR, light, temperature, humidity",
+      "secondaryDeviceType": [
+        "mmWave",
+        "PIR",
+        "light",
+        "temperature",
+        "humidity"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"

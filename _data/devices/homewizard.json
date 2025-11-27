@@ -9,7 +9,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.homewizard.com/p1-meter/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Energy",
+      "secondaryDeviceType": [
+        "Energy"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -23,7 +25,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.homewizard.com/energy-socket/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "Energy Monitoring",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -37,7 +41,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.homewizard.com/watermeter/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Water",
+      "secondaryDeviceType": [
+        "Water"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -51,7 +57,9 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.homewizard.com/kwh-meter/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Energy",
+      "secondaryDeviceType": [
+        "Energy"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -65,7 +73,7 @@
       "protocol": "WiFi",
       "websiteLink": "https://www.homewizard.com/nl/plug-in-battery/",
       "deviceType": "Battery",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe"

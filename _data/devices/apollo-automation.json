@@ -9,7 +9,15 @@
       "protocol": "ESPHome",
       "websiteLink": "https://apolloautomation.com/products/mtr-1",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "mmWave, temperature, pressure, CO2, Bluetooth, light, UV",
+      "secondaryDeviceType": [
+        "mmWave",
+        "temperature",
+        "pressure",
+        "CO2",
+        "Bluetooth",
+        "light",
+        "UV"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +31,15 @@
       "protocol": "ESPHome",
       "websiteLink": "https://apolloautomation.com/products/msr-2",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "mmWave, temperature, pressure, CO2, Bluetooth, light, UV",
+      "secondaryDeviceType": [
+        "mmWave",
+        "temperature",
+        "pressure",
+        "CO2",
+        "Bluetooth",
+        "light",
+        "UV"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -37,7 +53,9 @@
       "protocol": "ESPHome",
       "websiteLink": "https://apolloautomation.com/products/air-1",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Air quality",
+      "secondaryDeviceType": [
+        "Air quality"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -51,7 +69,7 @@
       "protocol": "ESPHome",
       "websiteLink": "https://apolloautomation.com/products/apollo-h-2-annual-holiday-ornament",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"

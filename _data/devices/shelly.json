@@ -9,7 +9,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-pm-mini",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +23,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-i4",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -37,7 +37,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-1pm-mini",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -51,7 +51,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-2pm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -65,7 +65,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://www.shelly.com/products/shelly-wave-pro-1-pm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"

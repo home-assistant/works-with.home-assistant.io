@@ -9,7 +9,9 @@
       "protocol": "ESPHome",
       "websiteLink": "https://konnected.io/products/smart-garage-door-opener-blaq-myq-alternative",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Garage door",
+      "secondaryDeviceType": [
+        "Garage door"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +25,9 @@
       "protocol": "ESPHome",
       "websiteLink": "https://konnected.io/products/smart-garage-door-opener",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Garage door",
+      "secondaryDeviceType": [
+        "Garage door"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -37,7 +41,9 @@
       "protocol": "ESPHome",
       "websiteLink": "https://konnected.io/collections/smart-alarm-panels",
       "deviceType": "Alarm",
-      "secondaryDeviceType": "Security",
+      "secondaryDeviceType": [
+        "Security"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"

@@ -9,7 +9,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-door-window",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Open / close",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -23,7 +25,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outlet",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Wall",
+      "secondaryDeviceType": [
+        "Wall"
+      ],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -37,7 +41,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Outdoor wall",
+      "secondaryDeviceType": [
+        "Outdoor wall"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -51,7 +57,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -65,7 +71,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -79,7 +85,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Switzerland"
@@ -93,7 +99,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "UK"
@@ -107,7 +113,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Australia",
@@ -122,7 +128,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-light-switch",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Light",
+      "secondaryDeviceType": [
+        "Light"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -136,7 +144,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-dimmer-switch",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Dimmer",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Canada",
@@ -151,7 +161,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-motion",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -165,7 +177,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-blinds-collection",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Germany",
@@ -180,7 +194,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-thermo",
       "deviceType": "Climate",
-      "secondaryDeviceType": "TRV",
+      "secondaryDeviceType": [
+        "TRV"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -194,7 +210,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://www.evehome.com/en/eve-weather",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Weather",
+      "secondaryDeviceType": [
+        "Weather"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"

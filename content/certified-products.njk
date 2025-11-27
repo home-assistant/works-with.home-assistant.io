@@ -40,6 +40,9 @@ permalink: /certified-products/
       <select id="deviceTypeFilter">
         <option value="">All Device Types</option>
       </select>
+      <select id="secondaryDeviceTypeFilter">
+        <option value="">All Secondary Types</option>
+      </select>
       <select id="regionFilter">
         <option value="">All Regions</option>
       </select>
@@ -72,12 +75,14 @@ permalink: /certified-products/
             <th data-sort="deviceType" class="sortable">
               Device Type <span class="sort-icon"></span>
             </th>
+            <th data-sort="secondaryDeviceType" class="sortable">
+              Secondary Type <span class="sort-icon"></span>
+            </th>
             <th data-sort="region">Region</th>
-            <th>Related Products</th>
             <th class="remark-header" title="Functionality Remark">
               Functionality Remark
             </th>
-            <th>Link</th>
+            <th>Related Products</th>
           </tr>
         </thead>
         <tbody id="devicesTableBody">
@@ -87,30 +92,36 @@ permalink: /certified-products/
             data-brand="{{ data.companyName }}"
             data-protocol="{{ device.protocol }}"
             data-device-type="{{ device.deviceType }}"
+            data-secondary-device-types="{{ device.secondaryDeviceType | join(',') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType }}"
             data-regions="{{ device.region | join(',') }}"
-            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType) | lower }}"
+            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType + ' ' + (device.secondaryDeviceType | join(' ') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType)) | lower }}"
           >
             <td>{{ data.companyName }}</td>
-            <td>{{ device.deviceName }}</td>
+            <td>
+              {% if device.websiteLink %}
+              <a href="{{ device.websiteLink }}" target="_blank" rel="noopener noreferrer">{{ device.deviceName }}</a>
+              {% else %}
+              {{ device.deviceName }}
+              {% endif %}
+            </td>
             <td>{{ device.modelNumber }}</td>
             <td>{{ device.protocol }}</td>
             <td>{{ device.deviceType }}</td>
+            <td class="secondary-type-cell">
+              {% if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string %}
+                {% for type in device.secondaryDeviceType %}
+                <span class="secondary-type-badge">{{ type }}</span>
+                {% endfor %}
+              {% else %}
+                {% if device.secondaryDeviceType %}
+                <span class="secondary-type-badge">{{ device.secondaryDeviceType }}</span>
+                {% endif %}
+              {% endif %}
+            </td>
             <td class="region-cell">
               {% for region in device.region %}
               <span class="region-badge">{{ region }}</span>
               {% endfor %}
-            </td>
-            <td>
-              {% if device.relatedProducts.url %}
-              <a
-                href="{{ device.relatedProducts.url }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ device.relatedProducts.text }}</a
-              >
-              {% elif device.relatedProducts.text %}
-              {{ device.relatedProducts.text }}
-              {% endif %}
             </td>
             <td class="remark-cell">
               {% if device.functionalityRemark %}
@@ -137,13 +148,15 @@ permalink: /certified-products/
               {% endif %}
             </td>
             <td>
-              {% if device.websiteLink %}
+              {% if device.relatedProducts.url %}
               <a
-                href="{{ device.websiteLink }}"
+                href="{{ device.relatedProducts.url }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View</a
+                >{{ device.relatedProducts.text }}</a
               >
+              {% elif device.relatedProducts.text %}
+              {{ device.relatedProducts.text }}
               {% endif %}
             </td>
           </tr>

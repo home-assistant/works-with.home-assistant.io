@@ -41,6 +41,12 @@
       filterTable();
     });
 
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
+    if (secondaryDeviceTypeFilter) secondaryDeviceTypeFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+
     const regionFilter = document.getElementById('regionFilter');
     if (regionFilter) regionFilter.addEventListener('change', function () {
       currentPage = 1;
@@ -72,17 +78,27 @@
     const rows = table.querySelectorAll('tbody tr');
     const protocols = new Set();
     const deviceTypes = new Set();
+    const secondaryDeviceTypes = new Set();
     const regions = new Set();
 
     rows.forEach(row => {
       const protocol = row.dataset.protocol;
       const deviceType = row.dataset.deviceType;
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
 
       if (protocol) protocols.add(protocol);
       if (deviceType) deviceTypes.add(deviceType);
 
-      // Parse regions (comma-separated, lowercase)
+      // Parse secondary device types (comma-separated)
+      if (rowSecondaryDeviceTypes) {
+        rowSecondaryDeviceTypes.split(',').forEach(type => {
+          const trimmed = type.trim();
+          if (trimmed) secondaryDeviceTypes.add(trimmed);
+        });
+      }
+
+      // Parse regions (comma-separated)
       if (rowRegions) {
         rowRegions.split(',').forEach(region => {
           const trimmed = region.trim();
@@ -110,6 +126,17 @@
         option.value = type;
         option.textContent = type;
         deviceTypeFilter.appendChild(option);
+      });
+    }
+
+    // Populate secondary device type filter
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
+    if (secondaryDeviceTypeFilter) {
+      Array.from(secondaryDeviceTypes).sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        secondaryDeviceTypeFilter.appendChild(option);
       });
     }
 
@@ -226,6 +253,7 @@
     const brandFilter = document.getElementById('brandFilter')?.value || '';
     const protocolFilter = document.getElementById('protocolFilter')?.value || '';
     const deviceTypeFilter = document.getElementById('deviceTypeFilter')?.value || '';
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter')?.value || '';
     const regionFilter = document.getElementById('regionFilter')?.value || '';
 
     const table = document.getElementById('devicesTable');
@@ -239,30 +267,33 @@
       const brand = row.dataset.brand || '';
       const protocol = row.dataset.protocol || '';
       const deviceType = row.dataset.deviceType || '';
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
 
       const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
       const matchesBrand = brandFilter === '' || brand === brandFilter;
       const matchesProtocol = protocolFilter === '' || protocol === protocolFilter;
       const matchesDeviceType = deviceTypeFilter === '' || deviceType === deviceTypeFilter;
+      // Secondary device type filter: check if any of the row's secondary types match the filter value
+      const matchesSecondaryDeviceType = secondaryDeviceTypeFilter === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === secondaryDeviceTypeFilter);
       // Region filter: check if any of the row's regions contain the filter value
       const matchesRegion = regionFilter === '' || rowRegions.split(',').some(r => r.trim() === regionFilter);
 
-      if (matchesSearch && matchesBrand && matchesProtocol && matchesDeviceType && matchesRegion) {
+      if (matchesSearch && matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion) {
         filteredRows.push(row);
       }
     });
 
     // Update filter option counts
-    updateFilterCounts(rows, searchTerm, brandFilter, protocolFilter, deviceTypeFilter, regionFilter);
+    updateFilterCounts(rows, searchTerm, brandFilter, protocolFilter, deviceTypeFilter, secondaryDeviceTypeFilter, regionFilter);
 
     applyPagination();
   }
 
   // Update filter dropdown option counts
-  function updateFilterCounts(rows, searchTerm, currentBrand, currentProtocol, currentDeviceType, currentRegion) {
+  function updateFilterCounts(rows, searchTerm, currentBrand, currentProtocol, currentDeviceType, currentSecondaryDeviceType, currentRegion) {
     // Check if any filters are active
-    const hasActiveFilters = searchTerm !== '' || currentBrand !== '' || currentProtocol !== '' || currentDeviceType !== '' || currentRegion !== '';
+    const hasActiveFilters = searchTerm !== '' || currentBrand !== '' || currentProtocol !== '' || currentDeviceType !== '' || currentSecondaryDeviceType !== '' || currentRegion !== '';
 
     // Show/hide clear button based on active filters
     const clearBtn = document.getElementById('clearFilters');
@@ -273,6 +304,7 @@
     const brandCounts = {};
     const protocolCounts = {};
     const deviceTypeCounts = {};
+    const secondaryDeviceTypeCounts = {};
     const regionCounts = {};
 
     // Count how many devices would match if each filter option were selected
@@ -281,6 +313,7 @@
       const brand = row.dataset.brand || '';
       const protocol = row.dataset.protocol || '';
       const deviceType = row.dataset.deviceType || '';
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
 
       const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
@@ -289,25 +322,36 @@
       const matchesBrand = currentBrand === '' || brand === currentBrand;
       const matchesProtocol = currentProtocol === '' || protocol === currentProtocol;
       const matchesDeviceType = currentDeviceType === '' || deviceType === currentDeviceType;
+      const matchesSecondaryDeviceType = currentSecondaryDeviceType === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === currentSecondaryDeviceType);
       const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => r.trim() === currentRegion);
 
       // Count for brand filter (if other filters match)
-      if (matchesProtocol && matchesDeviceType && matchesRegion && brand) {
+      if (matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && brand) {
         brandCounts[brand] = (brandCounts[brand] || 0) + 1;
       }
 
       // Count for protocol filter (if other filters match)
-      if (matchesBrand && matchesDeviceType && matchesRegion && protocol) {
+      if (matchesBrand && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && protocol) {
         protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
       }
 
       // Count for device type filter (if other filters match)
-      if (matchesBrand && matchesProtocol && matchesRegion && deviceType) {
+      if (matchesBrand && matchesProtocol && matchesSecondaryDeviceType && matchesRegion && deviceType) {
         deviceTypeCounts[deviceType] = (deviceTypeCounts[deviceType] || 0) + 1;
       }
 
+      // Count for secondary device type filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesDeviceType && matchesRegion && rowSecondaryDeviceTypes) {
+        rowSecondaryDeviceTypes.split(',').forEach(t => {
+          const type = t.trim();
+          if (type) {
+            secondaryDeviceTypeCounts[type] = (secondaryDeviceTypeCounts[type] || 0) + 1;
+          }
+        });
+      }
+
       // Count for region filter (if other filters match)
-      if (matchesBrand && matchesProtocol && matchesDeviceType && rowRegions) {
+      if (matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && rowRegions) {
         rowRegions.split(',').forEach(r => {
           const region = r.trim();
           if (region) {
@@ -321,6 +365,7 @@
     updateSelectOptions('brandFilter', brandCounts, 'All Brands');
     updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
     updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
+    updateSelectOptions('secondaryDeviceTypeFilter', secondaryDeviceTypeCounts, 'All Secondary Types');
     updateSelectOptions('regionFilter', regionCounts, 'All Regions');
   }
 
@@ -348,12 +393,14 @@
     const brandFilter = document.getElementById('brandFilter');
     const protocolFilter = document.getElementById('protocolFilter');
     const deviceTypeFilter = document.getElementById('deviceTypeFilter');
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
     const regionFilter = document.getElementById('regionFilter');
 
     if (searchInput) searchInput.value = '';
     if (brandFilter) brandFilter.value = '';
     if (protocolFilter) protocolFilter.value = '';
     if (deviceTypeFilter) deviceTypeFilter.value = '';
+    if (secondaryDeviceTypeFilter) secondaryDeviceTypeFilter.value = '';
     if (regionFilter) regionFilter.value = '';
 
     currentPage = 1;

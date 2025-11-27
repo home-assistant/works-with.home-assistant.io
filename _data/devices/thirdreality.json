@@ -9,7 +9,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-plug-gen1/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -23,7 +23,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -38,7 +40,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-plug-gen2-with-energy-monitoring/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -52,7 +54,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/vibration-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Vibration",
+      "secondaryDeviceType": [
+        "Vibration"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -66,7 +70,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-button/",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Button",
+      "secondaryDeviceType": [
+        "Button"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -80,7 +86,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-plug-m1/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "USA"
@@ -94,7 +100,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -109,7 +115,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/multi-function-night-light/",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -123,7 +129,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/eu-plug/",
       "deviceType": "Plug",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -137,7 +143,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/door-and-window-monitor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Open / close",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -151,7 +159,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/motion-sensor-r1/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Motion",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -165,7 +175,11 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-soil-moisture-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Soil, moisture, temperature",
+      "secondaryDeviceType": [
+        "Soil",
+        "moisture",
+        "temperature"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -179,7 +193,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-blind/",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -193,7 +209,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-color-bulb-zl1/",
       "deviceType": "Light",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -207,7 +223,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-garage-door-tilt-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Tilt",
+      "secondaryDeviceType": [
+        "Tilt"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -221,7 +239,9 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/water-leak-sensor/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Leak",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -235,7 +255,10 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/temperature-and-humidity-sensor-with-digital-lcd-display/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Temperature, humidity",
+      "secondaryDeviceType": [
+        "Temperature",
+        "humidity"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -249,7 +272,10 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/temperature-and-humidity-sensor-lite/",
       "deviceType": "Sensor",
-      "secondaryDeviceType": "Temperature, humidity",
+      "secondaryDeviceType": [
+        "Temperature",
+        "humidity"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -263,7 +289,7 @@
       "protocol": "Zigbee",
       "websiteLink": "https://3reality.com/product/smart-watering-kit/",
       "deviceType": "Irrigation",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Worldwide"

@@ -9,7 +9,7 @@
       "protocol": "Z-Wave",
       "websiteLink": "https://u-tec.com/products/ultraloq-u-bolt-series",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "USA"

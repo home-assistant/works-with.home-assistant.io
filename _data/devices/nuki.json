@@ -9,7 +9,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://nuki.io/en-de/products/smart-lock-go",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -24,7 +24,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://nuki.io/en-gb/products/smart-lock-pro-5th-gen",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",
@@ -39,7 +39,7 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://nuki.io/en-gb/products/smart-lock-ultra",
       "deviceType": "Lock",
-      "secondaryDeviceType": "",
+      "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
         "Europe",

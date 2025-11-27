@@ -9,7 +9,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://www.eltako.com/en/catalog/products/1238/eud62npn-ipm110-240v",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Dimmer",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -23,7 +25,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://www.eltako.com/en/catalog/products/1761/eud64npn-ipm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Dimmer",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -37,7 +41,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://www.eltako.com/en/catalog/products/1760/esr64pf-ipm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "On / off",
+      "secondaryDeviceType": [
+        "On / off"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -51,7 +57,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://www.eltako.com/en/catalog/products/1759/esr64np-ipm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "On / off",
+      "secondaryDeviceType": [
+        "On / off"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"
@@ -65,7 +73,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://www.eltako.com/en/catalog/products/1792/esb64np-ipm",
       "deviceType": "Switch",
-      "secondaryDeviceType": "Shutter",
+      "secondaryDeviceType": [
+        "Shutter"
+      ],
       "relatedProducts": "",
       "region": [
         "Europe"

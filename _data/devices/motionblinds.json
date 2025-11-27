@@ -9,7 +9,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -26,7 +28,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -43,7 +47,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -60,7 +66,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -77,7 +85,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -94,7 +104,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -111,7 +123,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -128,7 +142,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -145,7 +161,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -162,7 +180,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/honeycomb",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -179,7 +199,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -196,7 +218,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -213,7 +237,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://support.motionblinds.com/motionblinds-smart-switch-cm-34",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -230,7 +256,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -247,7 +275,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -264,7 +294,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/vertical",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -281,7 +313,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -298,7 +332,9 @@
       "protocol": "Matter over WiFi",
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": {
         "text": "Requires Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
@@ -315,7 +351,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -329,7 +367,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -343,7 +383,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -357,7 +399,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -371,7 +415,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -385,7 +431,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -399,7 +447,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/honeycomb",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -413,7 +463,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -427,7 +479,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -441,7 +495,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -455,7 +511,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
@@ -469,7 +527,9 @@
       "protocol": "Matter over Thread",
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
-      "secondaryDeviceType": "Window",
+      "secondaryDeviceType": [
+        "Window"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
