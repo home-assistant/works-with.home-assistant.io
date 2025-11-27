@@ -22,7 +22,7 @@ Each file should follow this structure:
       "deviceName": "Device Short Name",
       "fullName": "Brand Device Full Name",
       "modelNumber": "MODEL-123",
-      "protocol": "Zigbee|Z-Wave|WiFi|Thread|Matter over Thread|Matter over WiFi|ESPHome|Bluetooth|PoE",
+      "protocol": "Zigbee|Z-Wave|WiFi|Thread|Matter-over-Thread|Matter-over-Wi-Fi|ESPHome|Bluetooth|PoE",
       "websiteLink": "https://example.com/product-page",
       "deviceType": "Sensor|Switch|Plug|Light|Cover|Lock|Climate|etc.",
       "secondaryDeviceType": "Motion|Temperature|Window|etc.",
