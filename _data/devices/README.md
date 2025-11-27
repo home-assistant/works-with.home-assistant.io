@@ -34,7 +34,7 @@ Each file should follow this structure:
 }
 ```
 
-## Field Descriptions
+## Field descriptions
 
 - **companyName**: The legal company name (e.g., "Onics")
 - **brand**: The brand name used for filtering (e.g., "frient")
