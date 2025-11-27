@@ -194,12 +194,14 @@
   }
 }
 
-// Region and secondary type badges
+// Device type, secondary type, and region badges
+.device-type-cell,
 .region-cell,
 .secondary-type-cell {
   white-space: normal;
 }
 
+.device-type-badge,
 .region-badge,
 .secondary-type-badge {
   display: inline-block;

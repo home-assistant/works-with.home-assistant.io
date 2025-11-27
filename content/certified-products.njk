@@ -111,7 +111,11 @@ permalink: /certified-products/
             </td>
             <td>{{ device.modelNumber }}</td>
             <td>{{ device.protocol }}</td>
-            <td>{{ device.deviceType }}</td>
+            <td class="device-type-cell">
+              {% if device.deviceType %}
+              <span class="device-type-badge">{{ device.deviceType }}</span>
+              {% endif %}
+            </td>
             <td class="secondary-type-cell">
               {% if device.secondaryDeviceType is iterable and
               device.secondaryDeviceType is not string %} {% for type in
