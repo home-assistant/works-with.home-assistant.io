@@ -15,8 +15,8 @@ permalink: /certified-products/
         by a brand committed to long-term support. All these products put
         privacy and local control first. We want to give you the best
         information possible to make an informed decision, so we’ve listed any
-        known limitations in a note (select the ⓘ icon for details), such as
-        needing another app to get started.
+        known limitations in a functionality remark (select the ⓘ icon for
+        details), such as needing another app to get started.
       </p>
     </div>
 
@@ -99,7 +99,12 @@ permalink: /certified-products/
             <td>{{ data.companyName }}</td>
             <td>
               {% if device.websiteLink %}
-              <a href="{{ device.websiteLink }}" target="_blank" rel="noopener noreferrer">{{ device.deviceName }}</a>
+              <a
+                href="{{ device.websiteLink }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ device.deviceName }}</a
+              >
               {% else %}
               {{ device.deviceName }}
               {% endif %}
@@ -108,15 +113,15 @@ permalink: /certified-products/
             <td>{{ device.protocol }}</td>
             <td>{{ device.deviceType }}</td>
             <td class="secondary-type-cell">
-              {% if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string %}
-                {% for type in device.secondaryDeviceType %}
-                <span class="secondary-type-badge">{{ type }}</span>
-                {% endfor %}
-              {% else %}
-                {% if device.secondaryDeviceType %}
-                <span class="secondary-type-badge">{{ device.secondaryDeviceType }}</span>
-                {% endif %}
-              {% endif %}
+              {% if device.secondaryDeviceType is iterable and
+              device.secondaryDeviceType is not string %} {% for type in
+              device.secondaryDeviceType %}
+              <span class="secondary-type-badge">{{ type }}</span>
+              {% endfor %} {% else %} {% if device.secondaryDeviceType %}
+              <span class="secondary-type-badge">{{
+                device.secondaryDeviceType
+              }}</span>
+              {% endif %} {% endif %}
             </td>
             <td class="region-cell">
               {% for region in device.region %}
@@ -127,7 +132,7 @@ permalink: /certified-products/
               {% if device.functionalityRemark %}
               <button
                 class="remark-icon"
-                aria-label="View note"
+                aria-label="View functionality remark"
                 data-remark="{{ device.functionalityRemark }}"
               >
                 <svg
