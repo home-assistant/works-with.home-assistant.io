@@ -1,32 +1,46 @@
 {
-	"name": "works-with.home-assistant.io",
-	"version": "2.0.0",
-	"description": "The website for the Home Assistant Partner website",
-	"type": "module",
-	"scripts": {
-		"build": "npx @11ty/eleventy && npm run build:scss",
-		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/site/",
-		"start": "npx @11ty/eleventy --serve --quiet && npm run watch",
-		"start-ghpages": "npx @11ty/eleventy --pathprefix=/site/ --serve --quiet && npm run watch:js",
-		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
-		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-		"build:scss": "sass src/scss/_index.scss:_site/css/index.css",
-		"watch": "npm-run-all --parallel watch:*",
-		"watch:eleventy": "npx @11ty/eleventy --watch --serve",
-		"watch:scss": "sass --watch --poll src/scss/_index.scss:_site/css/index.css"
-	},
-	"devDependencies": {
-		"@11ty/eleventy": "3.1.2",
-		"@11ty/eleventy-img": "6.0.4",
-		"@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
-		"cross-env": "10.1.0"
-	},
-	"dependencies": {
-		"npm-run-all": "^4.1.5",
-		"sass": "^1.85.1",
-		"svg-sprite": "^2.0.4",
-		"watch": "^1.0.2"
-	}
+  "name": "works-with.home-assistant.io",
+  "version": "2.0.0",
+  "description": "The website for the Home Assistant Partner website",
+  "type": "module",
+  "scripts": {
+    "build": "npx @11ty/eleventy && npm run build:scss",
+    "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/site/",
+    "start": "npx @11ty/eleventy --serve --quiet && npm run watch",
+    "start-ghpages": "npx @11ty/eleventy --pathprefix=/site/ --serve --quiet && npm run watch:js",
+    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "build:scss": "sass src/scss/_index.scss:_site/css/index.css",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:eleventy": "npx @11ty/eleventy --watch --serve",
+    "watch:scss": "sass --watch --poll src/scss/_index.scss:_site/css/index.css",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui-port=9323 --ui-host=0.0.0.0",
+    "test:headed": "xvfb-run npx playwright test --headed",
+    "test:debug": "xvfb-run npx playwright test --debug --project=chromium",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:mobile": "npx playwright test --project=mobile-chrome --project=mobile-safari",
+    "test:visual": "npx playwright test visual-regression",
+    "test:functional": "npx playwright test certified-products",
+    "test:update-snapshots": "npx playwright test --update-snapshots",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2",
+    "@11ty/eleventy-img": "6.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "cross-env": "10.1.0"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.85.1",
+    "svg-sprite": "^2.0.4",
+    "watch": "^1.0.2"
+  }
 }
