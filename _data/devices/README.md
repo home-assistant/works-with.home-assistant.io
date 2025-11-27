@@ -19,8 +19,8 @@ Each file should follow this structure:
   "brand": "brand-name",
   "devices": [
     {
-      "deviceName": "Device Short Name",
-      "fullName": "Brand Device Full Name",
+      "deviceName": "Device short name",
+      "fullName": "Brand device full name",
       "modelNumber": "MODEL-123",
       "protocol": "Zigbee|Z-Wave|WiFi|Thread|Matter-over-Thread|Matter-over-Wi-Fi|ESPHome|Bluetooth|PoE",
       "websiteLink": "https://example.com/product-page",
