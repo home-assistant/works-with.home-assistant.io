@@ -9,7 +9,7 @@ Each manufacturer should have their own JSON file named after the brand (lowerca
 - `aqara.json`
 - etc.
 
-## JSON Structure
+## JSON structure
 
 Each file should follow this structure:
 
