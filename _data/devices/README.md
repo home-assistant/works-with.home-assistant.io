@@ -2,7 +2,7 @@
 
 This directory contains JSON files for each manufacturer's certified devices.
 
-## File Naming Convention
+## File naming convention
 
 Each manufacturer should have their own JSON file named after the brand (lowercase):
 - `frient.json`
