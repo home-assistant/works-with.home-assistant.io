@@ -6,7 +6,9 @@
       "deviceName": "MTR-1 Multi-Target Radar Multisensor",
       "fullName": "Apollo Automation MTR-1 Multi-Target Radar Multisensor",
       "modelNumber": "MTR-1",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://apolloautomation.com/products/mtr-1",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -28,7 +30,9 @@
       "deviceName": "MSR-2 mmWave Multisensor",
       "fullName": "Apollo Automation MSR-2 mmWave Multisensor",
       "modelNumber": "MSR-2",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://apolloautomation.com/products/msr-2",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -50,7 +54,9 @@
       "deviceName": "AIR-1 Air Quality Sensor",
       "fullName": "Apollo Automation AIR-1 Air Quality Sensor",
       "modelNumber": "AIR-1",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://apolloautomation.com/products/air-1",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -66,7 +72,9 @@
       "deviceName": "H-2 Holiday Ornament",
       "fullName": "Apollo Automation H-2 Holiday Ornament",
       "modelNumber": "H-2",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://apolloautomation.com/products/apollo-h-2-annual-holiday-ornament",
       "deviceType": "Light",
       "secondaryDeviceType": [],

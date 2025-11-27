@@ -6,7 +6,9 @@
       "deviceName": "Motion Sensor Pro",
       "fullName": "frient Motion Sensor Pro",
       "modelNumber": "MOSZB-141",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/motion-sensor-pro",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -24,7 +26,9 @@
       "deviceName": "IO Module",
       "fullName": "frient IO Module",
       "modelNumber": "IOMZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/io-module",
       "deviceType": "Switch",
       "secondaryDeviceType": [],
@@ -38,7 +42,9 @@
       "deviceName": "Smart Plug Mini",
       "fullName": "frient Smart Plug Mini",
       "modelNumber": "",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/smart-plug-mini",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -52,7 +58,9 @@
       "deviceName": "Entry Sensor 2 Pro",
       "fullName": "frient Entry Sensor 2 Pro",
       "modelNumber": "WISZB-131",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/entry-sensor-2-pro",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -68,7 +76,9 @@
       "deviceName": "Smart Siren UK",
       "fullName": "frient Smart Siren UK",
       "modelNumber": "SIRZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/smart-siren",
       "deviceType": "Speaker",
       "secondaryDeviceType": [
@@ -84,7 +94,9 @@
       "deviceName": "Smart Siren EU",
       "fullName": "frient Smart Siren EU",
       "modelNumber": "SIRZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/smart-siren",
       "deviceType": "Speaker",
       "secondaryDeviceType": [
@@ -100,7 +112,9 @@
       "deviceName": "Intelligent Keypad",
       "fullName": "frient Intelligent Keypad",
       "modelNumber": "KEPZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/intelligent-keypad",
       "deviceType": "Access control",
       "secondaryDeviceType": [],
@@ -114,7 +128,9 @@
       "deviceName": "Water Leak Detector",
       "fullName": "frient Water Leak Detector",
       "modelNumber": "FLSZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/water-leak-detector",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -130,7 +146,9 @@
       "deviceName": "Water Leak Detector Probe Version",
       "fullName": "frient Water Leak Detector Probe Version",
       "modelNumber": "FLAPR-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/water-leak-detector",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -146,7 +164,9 @@
       "deviceName": "Smart Button",
       "fullName": "frient Smart Button",
       "modelNumber": "SBTZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/smart-button",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -162,7 +182,9 @@
       "deviceName": "Intelligent Smoke Alarm",
       "fullName": "frient Intelligent Smoke Alarm",
       "modelNumber": "SMSZB-120",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/intelligent-smoke-alarm",
       "deviceType": "Smoke alarm",
       "secondaryDeviceType": [],
@@ -176,7 +198,9 @@
       "deviceName": "Air Quality Sensor",
       "fullName": "frient Air Quality Sensor",
       "modelNumber": "AQSZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/air-quality-sensor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -194,7 +218,9 @@
       "deviceName": "Smart Humidity Sensor",
       "fullName": "frient Smart Humidity Sensor",
       "modelNumber": "HMSZB-110",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/smart-humidity-sensor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -210,7 +236,9 @@
       "deviceName": "Electricity Meter Interface 2 LED",
       "fullName": "frient Electricity Meter Interface 2 LED",
       "modelNumber": "EMIZB-141",
-      "protocol": "Zigbee",
+      "protocol": [
+        "Zigbee"
+      ],
       "websiteLink": "https://www.frient.com/products/electricity-meter-interface-2-led",
       "deviceType": "Sensor",
       "secondaryDeviceType": [

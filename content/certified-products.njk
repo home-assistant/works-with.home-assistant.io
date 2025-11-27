@@ -90,11 +90,11 @@ permalink: /certified-products/
           device in data.devices %}
           <tr
             data-brand="{{ data.companyName }}"
-            data-protocol="{{ device.protocol }}"
+            data-protocols="{{ device.protocol | join(',') }}"
             data-device-type="{{ device.deviceType }}"
             data-secondary-device-types="{{ device.secondaryDeviceType | join(',') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType }}"
             data-regions="{{ device.region | join(',') }}"
-            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType + ' ' + (device.secondaryDeviceType | join(' ') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType)) | lower }}"
+            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType + ' ' + (device.protocol | join(' ')) + ' ' + (device.secondaryDeviceType | join(' ') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType)) | lower }}"
           >
             <td>{{ data.companyName }}</td>
             <td>
@@ -111,9 +111,9 @@ permalink: /certified-products/
             </td>
             <td>{{ device.modelNumber }}</td>
             <td class="protocol-cell">
-              {% if device.protocol %}
-              <span class="protocol-badge">{{ device.protocol }}</span>
-              {% endif %}
+              {% for protocol in device.protocol %}
+              <span class="protocol-badge">{{ protocol }}</span>
+              {% endfor %}
             </td>
             <td class="device-type-cell">
               {% if device.deviceType %}

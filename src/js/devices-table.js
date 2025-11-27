@@ -82,12 +82,19 @@
     const regions = new Set();
 
     rows.forEach(row => {
-      const protocol = row.dataset.protocol;
+      const rowProtocols = row.dataset.protocols || '';
       const deviceType = row.dataset.deviceType;
       const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
 
-      if (protocol) protocols.add(protocol);
+      // Parse protocols (comma-separated)
+      if (rowProtocols) {
+        rowProtocols.split(',').forEach(protocol => {
+          const trimmed = protocol.trim();
+          if (trimmed) protocols.add(trimmed);
+        });
+      }
+
       if (deviceType) deviceTypes.add(deviceType);
 
       // Parse secondary device types (comma-separated)
@@ -265,14 +272,15 @@
     rows.forEach(row => {
       const searchData = row.dataset.search || '';
       const brand = row.dataset.brand || '';
-      const protocol = row.dataset.protocol || '';
+      const rowProtocols = row.dataset.protocols || '';
       const deviceType = row.dataset.deviceType || '';
       const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
 
       const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
       const matchesBrand = brandFilter === '' || brand === brandFilter;
-      const matchesProtocol = protocolFilter === '' || protocol === protocolFilter;
+      // Protocol filter: check if any of the row's protocols match the filter value
+      const matchesProtocol = protocolFilter === '' || rowProtocols.split(',').some(p => p.trim() === protocolFilter);
       const matchesDeviceType = deviceTypeFilter === '' || deviceType === deviceTypeFilter;
       // Secondary device type filter: check if any of the row's secondary types match the filter value
       const matchesSecondaryDeviceType = secondaryDeviceTypeFilter === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === secondaryDeviceTypeFilter);
@@ -311,7 +319,7 @@
     rows.forEach(row => {
       const searchData = row.dataset.search || '';
       const brand = row.dataset.brand || '';
-      const protocol = row.dataset.protocol || '';
+      const rowProtocols = row.dataset.protocols || '';
       const deviceType = row.dataset.deviceType || '';
       const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
       const rowRegions = row.dataset.regions || '';
@@ -320,7 +328,7 @@
       if (!matchesSearch) return;
 
       const matchesBrand = currentBrand === '' || brand === currentBrand;
-      const matchesProtocol = currentProtocol === '' || protocol === currentProtocol;
+      const matchesProtocol = currentProtocol === '' || rowProtocols.split(',').some(p => p.trim() === currentProtocol);
       const matchesDeviceType = currentDeviceType === '' || deviceType === currentDeviceType;
       const matchesSecondaryDeviceType = currentSecondaryDeviceType === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === currentSecondaryDeviceType);
       const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => r.trim() === currentRegion);
@@ -331,8 +339,13 @@
       }
 
       // Count for protocol filter (if other filters match)
-      if (matchesBrand && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && protocol) {
-        protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
+      if (matchesBrand && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && rowProtocols) {
+        rowProtocols.split(',').forEach(p => {
+          const protocol = p.trim();
+          if (protocol) {
+            protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
+          }
+        });
       }
 
       // Count for device type filter (if other filters match)

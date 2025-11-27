@@ -6,7 +6,9 @@
       "deviceName": "Lock Ultra",
       "fullName": "SwitchBot Lock Ultra",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-lock-ultra",
       "deviceType": "Lock",
       "secondaryDeviceType": [],
@@ -20,7 +22,9 @@
       "deviceName": "Air Purifier",
       "fullName": "SwitchBot Air Purifier",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-air-purifier",
       "deviceType": "Air Purifier",
       "secondaryDeviceType": [],
@@ -34,7 +38,9 @@
       "deviceName": "Air Purifier Table",
       "fullName": "SwitchBot Air Purifier Table",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-air-purifier-table",
       "deviceType": "Air Purifier",
       "secondaryDeviceType": [],
@@ -48,7 +54,9 @@
       "deviceName": "Leak Detector",
       "fullName": "SwitchBot Leak Detector",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-water-leak-detector",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -64,7 +72,9 @@
       "deviceName": "Meter",
       "fullName": "SwitchBot Meter",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -81,7 +91,9 @@
       "deviceName": "Meter Pro",
       "fullName": "SwitchBot Meter Pro",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -98,7 +110,9 @@
       "deviceName": "Meter Pro CO2",
       "fullName": "SwitchBot Meter Pro CO2",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro-co2-monitor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -116,7 +130,9 @@
       "deviceName": "Indoor/Outdoor Thermo-Hygrometer",
       "fullName": "SwitchBot Indoor/Outdoor Thermo-Hygrometer",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-indoor-outdoor-thermo-hygrometer",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -133,7 +149,9 @@
       "deviceName": "Curtain 3",
       "fullName": "SwitchBot Curtain 3",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-curtain-3",
       "deviceType": "Cover",
       "secondaryDeviceType": [
@@ -149,7 +167,9 @@
       "deviceName": "Contact Sensor",
       "fullName": "SwitchBot Contact Sensor",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/contact-sensor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -165,7 +185,9 @@
       "deviceName": "Roller Shade",
       "fullName": "SwitchBot Roller Shade",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-roller-shade",
       "deviceType": "Cover",
       "secondaryDeviceType": [
@@ -181,7 +203,9 @@
       "deviceName": "Lock Pro",
       "fullName": "SwitchBot Lock Pro",
       "modelNumber": "",
-      "protocol": "Bluetooth",
+      "protocol": [
+        "Bluetooth"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-lock-pro",
       "deviceType": "Lock",
       "secondaryDeviceType": [],
@@ -195,7 +219,9 @@
       "deviceName": "Air Purifier",
       "fullName": "SwitchBot Air Purifier",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-air-purifier",
       "deviceType": "Air Purifier",
       "secondaryDeviceType": [],
@@ -212,7 +238,9 @@
       "deviceName": "Air Purifier Table",
       "fullName": "SwitchBot Air Purifier Table",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-air-purifier-table",
       "deviceType": "Air Purifier",
       "secondaryDeviceType": [],
@@ -229,7 +257,9 @@
       "deviceName": "Multitasking Robot K20 + Pro",
       "fullName": "SwitchBot Multitasking Robot K20 + Pro",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-multitasking-household-robot-k20-pro",
       "deviceType": "Robot",
       "secondaryDeviceType": [
@@ -248,7 +278,9 @@
       "deviceName": "Leak Detector",
       "fullName": "SwitchBot Leak Detector",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-water-leak-detector",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -267,7 +299,9 @@
       "deviceName": "Meter",
       "fullName": "SwitchBot Meter",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -287,7 +321,9 @@
       "deviceName": "Meter Pro",
       "fullName": "SwitchBot Meter Pro",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -307,7 +343,9 @@
       "deviceName": "Meter Pro CO2",
       "fullName": "SwitchBot Meter Pro CO2",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro-co2-monitor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -328,7 +366,9 @@
       "deviceName": "Indoor/Outdoor Thermo-Hygrometer",
       "fullName": "SwitchBot Indoor/Outdoor Thermo-Hygrometer",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-indoor-outdoor-thermo-hygrometer",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -348,7 +388,9 @@
       "deviceName": "Curtain 3",
       "fullName": "SwitchBot Curtain 3",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-curtain-3",
       "deviceType": "Cover",
       "secondaryDeviceType": [
@@ -367,7 +409,9 @@
       "deviceName": "Contact Sensor",
       "fullName": "SwitchBot Contact Sensor",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/contact-sensor",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -386,7 +430,9 @@
       "deviceName": "Roller Shade",
       "fullName": "SwitchBot Roller Shade",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-roller-shade",
       "deviceType": "Cover",
       "secondaryDeviceType": [
@@ -405,7 +451,9 @@
       "deviceName": "Lock Pro",
       "fullName": "SwitchBot Lock Pro",
       "modelNumber": "",
-      "protocol": "Matter over WiFi",
+      "protocol": [
+        "Matter over WiFi"
+      ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-lock-pro",
       "deviceType": "Lock",
       "secondaryDeviceType": [],

@@ -6,7 +6,9 @@
       "deviceName": "Eve Door & Window",
       "fullName": "Eve Eve Door & Window",
       "modelNumber": "20EBN9901",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-door-window",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -22,7 +24,9 @@
       "deviceName": "Eve Energy Outlet",
       "fullName": "Eve Eve Energy Outlet",
       "modelNumber": "20ECN4101",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outlet",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -38,7 +42,9 @@
       "deviceName": "Eve Energy Outdoor",
       "fullName": "Eve Eve Energy Outdoor",
       "modelNumber": "20ECM8301",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -54,7 +60,9 @@
       "deviceName": "Eve Energy Europe",
       "fullName": "Eve Eve Energy Europe",
       "modelNumber": "20EBO8301",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -68,7 +76,9 @@
       "deviceName": "Eve Energy US",
       "fullName": "Eve Eve Energy US",
       "modelNumber": "20EBU4101",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -82,7 +92,9 @@
       "deviceName": "Eve Energy CH",
       "fullName": "Eve Eve Energy CH",
       "modelNumber": "20ECL1301",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -96,7 +108,9 @@
       "deviceName": "Eve Energy UK",
       "fullName": "Eve Eve Energy UK",
       "modelNumber": "20EBT8601",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -110,7 +124,9 @@
       "deviceName": "Eve Energy AU",
       "fullName": "Eve Eve Energy AU",
       "modelNumber": "20ECF6001",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-energy-outdoor",
       "deviceType": "Plug",
       "secondaryDeviceType": [],
@@ -125,7 +141,9 @@
       "deviceName": "Eve Light Switch",
       "fullName": "Eve Eve Light Switch",
       "modelNumber": "20EBW1701",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-light-switch",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -141,7 +159,9 @@
       "deviceName": "Eve Dimmer Switch",
       "fullName": "Eve Eve Dimmer Switch",
       "modelNumber": "20ECQ4101",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-dimmer-switch",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -158,7 +178,9 @@
       "deviceName": "Eve Motion",
       "fullName": "Eve Eve Motion",
       "modelNumber": "20EBY9901",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-motion",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
@@ -174,7 +196,9 @@
       "deviceName": "Eve MotionBlinds",
       "fullName": "Eve Eve MotionBlinds",
       "modelNumber": "CM-03-E",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-blinds-collection",
       "deviceType": "Cover",
       "secondaryDeviceType": [
@@ -191,7 +215,9 @@
       "deviceName": "Eve Thermo",
       "fullName": "Eve Eve Thermo",
       "modelNumber": "20EBP1701",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-thermo",
       "deviceType": "Climate",
       "secondaryDeviceType": [
@@ -207,7 +233,9 @@
       "deviceName": "Eve Weather",
       "fullName": "Eve Eve Weather",
       "modelNumber": "20EBS9901",
-      "protocol": "Matter over Thread",
+      "protocol": [
+        "Matter over Thread"
+      ],
       "websiteLink": "https://www.evehome.com/en/eve-weather",
       "deviceType": "Sensor",
       "secondaryDeviceType": [

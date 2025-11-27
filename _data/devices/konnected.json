@@ -6,7 +6,9 @@
       "deviceName": "Smart Garage Door Opener blaQ",
       "fullName": "Konnected Smart Garage Door Opener blaQ",
       "modelNumber": "GDOv2-Q",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://konnected.io/products/smart-garage-door-opener-blaq-myq-alternative",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -22,7 +24,9 @@
       "deviceName": "Smart Garage Door Opener White (v2)",
       "fullName": "Konnected Smart Garage Door Opener White (v2)",
       "modelNumber": "GDOv2-S",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://konnected.io/products/smart-garage-door-opener",
       "deviceType": "Switch",
       "secondaryDeviceType": [
@@ -38,7 +42,9 @@
       "deviceName": "Alarm Panel Pro",
       "fullName": "Konnected Alarm Panel Pro",
       "modelNumber": "AP Pro v1.9",
-      "protocol": "ESPHome",
+      "protocol": [
+        "ESPHome"
+      ],
       "websiteLink": "https://konnected.io/collections/smart-alarm-panels",
       "deviceType": "Alarm",
       "secondaryDeviceType": [
