@@ -194,13 +194,15 @@
   }
 }
 
-// Device type, secondary type, and region badges
+// Protocol, device type, secondary type, and region badges
+.protocol-cell,
 .device-type-cell,
 .region-cell,
 .secondary-type-cell {
   white-space: normal;
 }
 
+.protocol-badge,
 .device-type-badge,
 .region-badge,
 .secondary-type-badge {

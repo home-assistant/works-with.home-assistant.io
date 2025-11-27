@@ -110,7 +110,11 @@ permalink: /certified-products/
               {% endif %}
             </td>
             <td>{{ device.modelNumber }}</td>
-            <td>{{ device.protocol }}</td>
+            <td class="protocol-cell">
+              {% if device.protocol %}
+              <span class="protocol-badge">{{ device.protocol }}</span>
+              {% endif %}
+            </td>
             <td class="device-type-cell">
               {% if device.deviceType %}
               <span class="device-type-badge">{{ device.deviceType }}</span>
