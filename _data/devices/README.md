@@ -52,8 +52,8 @@ Each file should follow this structure:
 
 ## Adding New Devices
 
-1. Create a new JSON file named after the brand (lowercase)
-2. Follow the structure above
-3. Ensure all required fields are filled
-4. Use empty strings ("") for optional fields if not applicable
-5. The devices will automatically appear in the devices table at `/devices/`
+1. Create a new JSON file named after the brand (lowercase).
+2. Follow the structure above.
+3. Ensure all required fields are filled.
+4. Use empty strings ("") for optional fields if not applicable.
+5. The devices will automatically appear in the devices table at `/devices/`.
