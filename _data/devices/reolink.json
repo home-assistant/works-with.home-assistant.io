@@ -17,7 +17,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "Video Doorbell",
@@ -34,7 +34,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "Argus Track",
@@ -51,7 +51,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "Duo 3 PoE",
@@ -68,7 +68,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "TrackMix PoE",
@@ -85,7 +85,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "RLC-823S2",
@@ -102,7 +102,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "RLC-1224A",
@@ -119,7 +119,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards"
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
       "deviceName": "Home Hub",

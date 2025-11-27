@@ -14,9 +14,9 @@ permalink: /certified-products/
         by our team to ensure a great experience with Home Assistant, all backed
         by a brand committed to long-term support. All these products put
         privacy and local control first. We want to give you the best
-        information possible to make an informed decision, so we’ve included any
-        known limitations that might be important to you (like if you need
-        another app to get started).
+        information possible to make an informed decision, so we’ve listed any
+        known limitations in a note (select the ⓘ icon for details), such as
+        needing another app to get started.
       </p>
     </div>
 
@@ -74,7 +74,9 @@ permalink: /certified-products/
             </th>
             <th data-sort="region">Region</th>
             <th>Related Products</th>
-            <th class="remark-header" title="Functionality Remark">Note</th>
+            <th class="remark-header" title="Functionality Remark">
+              Functionality Remark
+            </th>
             <th>Link</th>
           </tr>
         </thead>
@@ -86,7 +88,15 @@ permalink: /certified-products/
             data-protocol="{{ device.protocol }}"
             data-device-type="{{ device.deviceType }}"
             data-regions="{{ device.region | join(',') }}"
-            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType) | lower }}"
+            data-search="{{
+              data.companyName +
+                ' ' +
+                device.deviceName +
+                ' ' +
+                device.modelNumber +
+                ' ' +
+                device.deviceType | lower
+            }}"
           >
             <td>{{ data.companyName }}</td>
             <td>{{ device.deviceName }}</td>
@@ -211,15 +221,32 @@ permalink: /certified-products/
       <div class="faq-accordion">
         <details class="faq-item">
           <summary class="faq-question">
-            <span>If my device is not listed under "Works with Home Assistant" does this mean it's not supported?</span>
+            <span
+              >If my device is not listed under "Works with Home Assistant" does
+              this mean it's not supported?</span
+            >
             <span class="faq-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>
           </summary>
           <div class="faq-answer">
-            <p>No! It just means it hasn't gone through a testing schedule with our team, or doesn't fit the program requirements. It might function well, but be added to the testing schedule later down the road, it could be missing a function or firmware, or it might work under a different connectivity type that we don't currently test under the program.</p>
+            <p>
+              No! It just means it hasn't gone through a testing schedule with
+              our team, or doesn't fit the program requirements. It might
+              function well, but be added to the testing schedule later down the
+              road, it could be missing a function or firmware, or it might work
+              under a different connectivity type that we don't currently test
+              under the program.
+            </p>
           </div>
         </details>
 
@@ -227,13 +254,26 @@ permalink: /certified-products/
           <summary class="faq-question">
             <span>OK, so what's the point of the Works with program?</span>
             <span class="faq-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>
           </summary>
           <div class="faq-answer">
-            <p>It highlights the devices we know work well with Home Assistant and the brands that make a long-term commitment to supporting these devices. The certification agreement specifies the devices must have key functionality within Home Assistant and operate locally without the need for cloud – both now and in the future.</p>
+            <p>
+              It highlights the devices we know work well with Home Assistant
+              and the brands that make a long-term commitment to supporting
+              these devices. The certification agreement specifies the devices
+              must have key functionality within Home Assistant and operate
+              locally without the need for cloud – both now and in the future.
+            </p>
           </div>
         </details>
 
@@ -241,13 +281,24 @@ permalink: /certified-products/
           <summary class="faq-question">
             <span>What about this missing product?</span>
             <span class="faq-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>
           </summary>
           <div class="faq-answer">
-            <p>Some partners are missing as they expand their product lines and testing takes place. We will be consistently working to keep this up-to-date.</p>
+            <p>
+              Some partners are missing as they expand their product lines and
+              testing takes place. We will be consistently working to keep this
+              up-to-date.
+            </p>
           </div>
         </details>
 
@@ -255,13 +306,23 @@ permalink: /certified-products/
           <summary class="faq-question">
             <span>How is this work funded?</span>
             <span class="faq-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>
           </summary>
           <div class="faq-answer">
-            <p>This program is non-commercial and made possible thanks to the generous support of our Home Assistant Cloud subscribers.</p>
+            <p>
+              This program is non-commercial and made possible thanks to the
+              generous support of our Home Assistant Cloud subscribers.
+            </p>
           </div>
         </details>
 
@@ -269,13 +330,23 @@ permalink: /certified-products/
           <summary class="faq-question">
             <span>Are these affiliate links?</span>
             <span class="faq-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </span>
           </summary>
           <div class="faq-answer">
-            <p>No, to respect the privacy of our users, this list does not use affiliate links.</p>
+            <p>
+              No, to respect the privacy of our users, this list does not use
+              affiliate links.
+            </p>
           </div>
         </details>
       </div>
