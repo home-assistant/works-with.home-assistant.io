@@ -47,6 +47,12 @@
       filterTable();
     });
 
+    // Set up clear filters button
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    if (clearFiltersBtn) {
+      clearFiltersBtn.addEventListener('click', clearAllFilters);
+    }
+
     // Set up items per page selector
     const itemsPerPageSelect = document.getElementById('itemsPerPage');
     if (itemsPerPageSelect) {
@@ -247,7 +253,134 @@
       }
     });
 
+    // Update filter option counts
+    updateFilterCounts(rows, searchTerm, brandFilter, protocolFilter, deviceTypeFilter, regionFilter);
+
     applyPagination();
+  }
+
+  // Update filter dropdown option counts
+  function updateFilterCounts(rows, searchTerm, currentBrand, currentProtocol, currentDeviceType, currentRegion) {
+    // Check if any filters are active
+    const hasActiveFilters = searchTerm !== '' || currentBrand !== '' || currentProtocol !== '' || currentDeviceType !== '' || currentRegion !== '';
+
+    // Show/hide clear button based on active filters
+    const clearBtn = document.getElementById('clearFilters');
+    if (clearBtn) {
+      clearBtn.style.display = hasActiveFilters ? 'inline-flex' : 'none';
+    }
+
+    // If no filters active, reset labels without counts
+    if (!hasActiveFilters) {
+      resetSelectLabels('brandFilter', 'All Brands');
+      resetSelectLabels('protocolFilter', 'All Protocols');
+      resetSelectLabels('deviceTypeFilter', 'All Device Types');
+      resetSelectLabels('regionFilter', 'All Regions');
+      return;
+    }
+
+    const brandCounts = {};
+    const protocolCounts = {};
+    const deviceTypeCounts = {};
+    const regionCounts = {};
+
+    // Count how many devices would match if each filter option were selected
+    rows.forEach(row => {
+      const searchData = row.dataset.search || '';
+      const brand = row.dataset.brand || '';
+      const protocol = row.dataset.protocol || '';
+      const deviceType = row.dataset.deviceType || '';
+      const rowRegions = row.dataset.regions || '';
+
+      const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
+      if (!matchesSearch) return;
+
+      const matchesBrand = currentBrand === '' || brand === currentBrand;
+      const matchesProtocol = currentProtocol === '' || protocol === currentProtocol;
+      const matchesDeviceType = currentDeviceType === '' || deviceType === currentDeviceType;
+      const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => r.trim() === currentRegion);
+
+      // Count for brand filter (if other filters match)
+      if (matchesProtocol && matchesDeviceType && matchesRegion && brand) {
+        brandCounts[brand] = (brandCounts[brand] || 0) + 1;
+      }
+
+      // Count for protocol filter (if other filters match)
+      if (matchesBrand && matchesDeviceType && matchesRegion && protocol) {
+        protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
+      }
+
+      // Count for device type filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesRegion && deviceType) {
+        deviceTypeCounts[deviceType] = (deviceTypeCounts[deviceType] || 0) + 1;
+      }
+
+      // Count for region filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesDeviceType && rowRegions) {
+        rowRegions.split(',').forEach(r => {
+          const region = r.trim();
+          if (region) {
+            regionCounts[region] = (regionCounts[region] || 0) + 1;
+          }
+        });
+      }
+    });
+
+    // Update dropdown options with counts
+    updateSelectOptions('brandFilter', brandCounts, 'All Brands');
+    updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
+    updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
+    updateSelectOptions('regionFilter', regionCounts, 'All Regions');
+  }
+
+  // Reset select labels without counts
+  function resetSelectLabels(selectId, allLabel) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    Array.from(select.options).forEach(option => {
+      if (option.value === '') {
+        option.textContent = allLabel;
+      } else {
+        option.textContent = option.value;
+      }
+    });
+  }
+
+  // Update select element options with counts
+  function updateSelectOptions(selectId, counts, allLabel) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    Array.from(select.options).forEach(option => {
+      if (option.value === '') {
+        // "All" option - show total count
+        const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
+        option.textContent = `${allLabel} (${total})`;
+      } else {
+        // Get the base value (option.value stores the original value)
+        const count = counts[option.value] || 0;
+        option.textContent = `${option.value} (${count})`;
+      }
+    });
+  }
+
+  // Clear all filters
+  function clearAllFilters() {
+    const searchInput = document.getElementById('searchInput');
+    const brandFilter = document.getElementById('brandFilter');
+    const protocolFilter = document.getElementById('protocolFilter');
+    const deviceTypeFilter = document.getElementById('deviceTypeFilter');
+    const regionFilter = document.getElementById('regionFilter');
+
+    if (searchInput) searchInput.value = '';
+    if (brandFilter) brandFilter.value = '';
+    if (protocolFilter) protocolFilter.value = '';
+    if (deviceTypeFilter) deviceTypeFilter.value = '';
+    if (regionFilter) regionFilter.value = '';
+
+    currentPage = 1;
+    filterTable();
   }
 
   // Apply pagination to filtered rows
