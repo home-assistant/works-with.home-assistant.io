@@ -1,10 +1,10 @@
 {
-  "companyName": "Airgradient",
+  "companyName": "AirGradient",
   "brand": "airgradient",
   "devices": [
     {
       "deviceName": "One: Indoor Air Quality Monitor",
-      "fullName": "Airgradient One: Indoor Air Quality Monitor",
+      "fullName": "AirGradient One: Indoor Air Quality Monitor",
       "modelNumber": "I-9PSL",
       "protocol": [
         "WiFi"
@@ -22,7 +22,7 @@
     },
     {
       "deviceName": "Open Air: Outdoor Air Quality Monitor",
-      "fullName": "Airgradient Open Air: Outdoor Air Quality Monitor",
+      "fullName": "AirGradient Open Air: Outdoor Air Quality Monitor",
       "modelNumber": "O-1PST",
       "protocol": [
         "WiFi"
