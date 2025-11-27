@@ -15,7 +15,7 @@ Each file should follow this structure:
 
 ```json
 {
-  "companyName": "Company Legal Name",
+  "companyName": "Company legal name",
   "brand": "brand-name",
   "devices": [
     {
