@@ -9,27 +9,14 @@ permalink: /certified-products/
     <div class="devices-header">
       <h1>Certified Works with Home Assistant Products</h1>
       <p class="contained">
-        Here is a running list of the certified devices in the Works with Home
-        Assistant program. We are missing an up-to-date list from a few of our
-        partners as they expand their product lines and testing takes place, but
-        these will be added over the coming weeks.
-      </p>
-      <p class="contained">
-        As always, this is not a commercial project for us and your privacy is
-        paramount. These links are not affiliate links and we do not earn
-        anything from them. This list simply exists to group all items in a
-        searchable format so you don’t have to look at individual launch blogs
-        or integration pages to see up-to-date devices.
-      </p>
-      <p class="contained">
-        We’ve included relevant information about which functions are available
-        from within Home Assistant, and known limitations: for example, Home
-        Assistant and Matter, don’t currently support smart lock calibration, so
-        there’s information on how this can be done outside of Home Assistant,
-        as it’s generally a function you’d only use once during set-up. This
-        information is included to help you make better informed choices, but as
-        always, make sure whatever you’re purchasing for your smart home works
-        for you.
+        Welcome to the centralized list of all Works with Home Assistant
+        certified devices! Every product listed here has been rigorously tested
+        by our team to ensure a great experience with Home Assistant, all backed
+        by a brand committed to long-term support. All these products put
+        privacy and local control first. We want to give you the best
+        information possible to make an informed decision, so we’ve included any
+        known limitations that might be important to you (like if you need
+        another app to get started).
       </p>
     </div>
 
@@ -56,7 +43,12 @@ permalink: /certified-products/
       <select id="regionFilter">
         <option value="">All Regions</option>
       </select>
-      <button type="button" id="clearFilters" class="clear-filters-btn" style="display: none;">
+      <button
+        type="button"
+        id="clearFilters"
+        class="clear-filters-btn"
+        style="display: none"
+      >
         Clear Filters
       </button>
     </div>
@@ -94,7 +86,15 @@ permalink: /certified-products/
             data-protocol="{{ device.protocol }}"
             data-device-type="{{ device.deviceType }}"
             data-regions="{{ device.region | join(',') }}"
-            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType) | lower }}"
+            data-search="{{
+              data.companyName +
+                ' ' +
+                device.deviceName +
+                ' ' +
+                device.modelNumber +
+                ' ' +
+                device.deviceType | lower
+            }}"
           >
             <td>{{ data.companyName }}</td>
             <td>{{ device.deviceName }}</td>
@@ -210,6 +210,82 @@ permalink: /certified-products/
           <option value="100">100</option>
         </select>
         <span>per page</span>
+      </div>
+    </div>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>If my device is not listed under "Works with Home Assistant" does this mean it's not supported?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>No! It just means it hasn't gone through a testing schedule with our team, or doesn't fit the program requirements. It might function well, but be added to the testing schedule later down the road, it could be missing a function or firmware, or it might work under a different connectivity type that we don't currently test under the program.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>OK, so what's the point of the Works with program?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>It highlights the devices we know work well with Home Assistant and the brands that make a long-term commitment to supporting these devices. The certification agreement specifies the devices must have key functionality within Home Assistant and operate locally without the need for cloud – both now and in the future.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What about this missing product?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>Some partners are missing as they expand their product lines and testing takes place. We will be consistently working to keep this up-to-date.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How is this work funded?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>This program is non-commercial and made possible thanks to the generous support of our Home Assistant Cloud subscribers.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Are these affiliate links?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>No, to respect the privacy of our users, this list does not use affiliate links.</p>
+          </div>
+        </details>
       </div>
     </div>
   </div>
