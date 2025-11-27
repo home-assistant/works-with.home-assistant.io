@@ -1,0 +1,57 @@
+{
+  "companyName": "Nuki",
+  "brand": "nuki",
+  "devices": [
+    {
+      "deviceName": "Smart Lock Go",
+      "fullName": "Nuki Smart Lock Go",
+      "modelNumber": "",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://nuki.io/en-de/products/smart-lock-go",
+      "deviceType": "Lock",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Requires vendor app for calibration. No account registration needed"
+    },
+    {
+      "deviceName": "Smart Lock Pro",
+      "fullName": "Nuki Smart Lock Pro",
+      "modelNumber": "",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://nuki.io/en-gb/products/smart-lock-pro-5th-gen",
+      "deviceType": "Lock",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Requires vendor app for calibration. No account registration needed"
+    },
+    {
+      "deviceName": "Smart Lock Ultra",
+      "fullName": "Nuki Smart Lock Ultra",
+      "modelNumber": "",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://nuki.io/en-gb/products/smart-lock-ultra",
+      "deviceType": "Lock",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Requires vendor app for calibration. No account registration needed"
+    }
+  ]
+}

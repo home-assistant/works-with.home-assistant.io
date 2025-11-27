@@ -1,0 +1,86 @@
+{
+  "companyName": "Shelly",
+  "brand": "shelly",
+  "devices": [
+    {
+      "deviceName": "Wave PM Mini",
+      "fullName": "Shelly Wave PM Mini",
+      "modelNumber": "QMEM-0A1PC16EU",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-pm-mini",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Wave i4",
+      "fullName": "Shelly Wave i4",
+      "modelNumber": "QNSN-0A24XEU",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-i4",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Wave 1PM Mini",
+      "fullName": "Shelly Wave 1PM Mini",
+      "modelNumber": "QMSW-0A1P8EU",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-1pm-mini",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Wave 2PM",
+      "fullName": "Shelly Wave 2PM",
+      "modelNumber": "QNSW-002P16EU",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.shelly.com/products/shelly-qubino-wave-2pm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Wave Pro 1PM",
+      "fullName": "Shelly Wave Pro 1PM",
+      "modelNumber": "QPSW-0A1P16EU",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.shelly.com/products/shelly-wave-pro-1-pm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "DIN-Rail mountable"
+    }
+  ]
+}

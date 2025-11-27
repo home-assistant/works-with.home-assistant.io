@@ -1,0 +1,42 @@
+{
+  "companyName": "Airgradient",
+  "brand": "airgradient",
+  "devices": [
+    {
+      "deviceName": "One: Indoor Air Quality Monitor",
+      "fullName": "Airgradient One: Indoor Air Quality Monitor",
+      "modelNumber": "I-9PSL",
+      "protocol": [
+        "WiFi"
+      ],
+      "websiteLink": "https://www.airgradient.com/indoor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Air quality"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Open Air: Outdoor Air Quality Monitor",
+      "fullName": "Airgradient Open Air: Outdoor Air Quality Monitor",
+      "modelNumber": "O-1PST",
+      "protocol": [
+        "WiFi"
+      ],
+      "websiteLink": "https://www.airgradient.com/outdoor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Air quality"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

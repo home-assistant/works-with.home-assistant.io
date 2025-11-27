@@ -52,6 +52,11 @@ p {
     font-size: var(--typography-paragraph-font-size);
     font-weight: var(--typography-paragraph-font-weight);
     line-height: var(--typography-paragraph-line-height);
+
+    &.contained {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
 
 p:not(:last-child) {
@@ -62,7 +67,7 @@ strong {
     font-weight: 800
 }
 
-a:not(.button) {
+a:not(.button):not(.nounderline) {
     align-self: flex-start;
     text-decoration: none;
     position: relative;

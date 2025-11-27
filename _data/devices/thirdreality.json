@@ -1,0 +1,338 @@
+{
+  "companyName": "ThirdReality",
+  "brand": "thirdreality",
+  "devices": [
+    {
+      "deviceName": "Smart Plug Gen1",
+      "fullName": "ThirdReality Smart Plug Gen1",
+      "modelNumber": "3RSP019BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-plug-gen1/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Motion Sensor",
+      "fullName": "ThirdReality Motion Sensor",
+      "modelNumber": "3RMS16BZ",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Plug Gen2",
+      "fullName": "ThirdReality Smart Plug Gen2",
+      "modelNumber": "3RSP02028BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-plug-gen2-with-energy-monitoring/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Vibration Sensor",
+      "fullName": "ThirdReality Vibration Sensor",
+      "modelNumber": "3RVS01031Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/vibration-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Vibration"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Button",
+      "fullName": "ThirdReality Button",
+      "modelNumber": "3RSB22BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-button/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Button"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Plug M1",
+      "fullName": "ThirdReality Smart Plug M1",
+      "modelNumber": "3RSP03046W",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-plug-m1/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Color Night Light",
+      "fullName": "ThirdReality Smart Color Night Light",
+      "modelNumber": "3RSNL02041WM",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Zigbee Night Light, Motion",
+      "fullName": "ThirdReality Zigbee Night Light, Motion",
+      "modelNumber": "3RSNL02043Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/multi-function-night-light/",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "16A Smart Plug (EU)",
+      "fullName": "ThirdReality 16A Smart Plug (EU)",
+      "modelNumber": "Smart Plug E2",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/eu-plug/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Door Sensor",
+      "fullName": "ThirdReality Door Sensor",
+      "modelNumber": "3RDS17BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/door-and-window-monitor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Motion Sensor R1",
+      "fullName": "ThirdReality Motion Sensor R1",
+      "modelNumber": "3RSMR01067Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/motion-sensor-r1/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Soil Moisture Sensor",
+      "fullName": "ThirdReality Smart Soil Moisture Sensor",
+      "modelNumber": "3RSM0147Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-soil-moisture-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Soil",
+        "Moisture",
+        "Temperature"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Blind",
+      "fullName": "ThirdReality Smart Blind",
+      "modelNumber": "3RSB015BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-blind/",
+      "deviceType": "Cover",
+      "secondaryDeviceType": [
+        "Window"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Color Bulb ZL1",
+      "fullName": "ThirdReality Smart Color Bulb ZL1",
+      "modelNumber": "3RCB01057Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-color-bulb-zl1/",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Garage Door Tilt Sensor",
+      "fullName": "ThirdReality Smart Garage Door Tilt Sensor",
+      "modelNumber": "3RVS01031Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-garage-door-tilt-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Tilt"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Water Leak Sensor",
+      "fullName": "ThirdReality Water Leak Sensor",
+      "modelNumber": "3RWS18BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/water-leak-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Temperature and Humidity Sensor with LED Screen",
+      "fullName": "ThirdReality Temperature and Humidity Sensor with LED Screen",
+      "modelNumber": "3RTHS24BZ",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/temperature-and-humidity-sensor-with-digital-lcd-display/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Temperature and Humidity Sensor Lite",
+      "fullName": "ThirdReality Temperature and Humidity Sensor Lite",
+      "modelNumber": "3RTHS0224Z",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/temperature-and-humidity-sensor-lite/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Watering Kit",
+      "fullName": "ThirdReality Smart Watering Kit",
+      "modelNumber": "",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://3reality.com/product/smart-watering-kit/",
+      "deviceType": "Irrigation",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

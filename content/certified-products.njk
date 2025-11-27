@@ -1,0 +1,375 @@
+---
+layout: base.njk
+title: Certified Devices
+permalink: /certified-products/
+---
+
+<div class="wrapper wrapper-a">
+  <div class="devices-page">
+    <div class="devices-header">
+      <h1>Certified Works with Home Assistant Products</h1>
+      <p class="contained">
+        Welcome to the centralized list of all Works with Home Assistant
+        certified devices! Every product listed here has been rigorously tested
+        by our team to ensure a great experience with Home Assistant, all backed
+        by a brand committed to long-term support. All these products put
+        privacy and local control first. We want to give you the best
+        information possible to make an informed decision, so we’ve listed any
+        known limitations in a functionality remark (select the ⓘ icon for
+        details), such as needing another app to get started.
+      </p>
+    </div>
+
+    <div class="devices-filters">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by brand, device name, model number..."
+      />
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+        {% for filename, data in collections.all[0].data.devices %}
+        <option value="{{ data.companyName }}">
+          {{ data.companyName }}
+        </option>
+        {% endfor %}
+      </select>
+      <select id="protocolFilter">
+        <option value="">All Protocols</option>
+      </select>
+      <select id="deviceTypeFilter">
+        <option value="">All Device Types</option>
+      </select>
+      <select id="secondaryDeviceTypeFilter">
+        <option value="">All Secondary Types</option>
+      </select>
+      <select id="regionFilter">
+        <option value="">All Regions</option>
+      </select>
+      <button
+        type="button"
+        id="clearFilters"
+        class="clear-filters-btn"
+        style="display: none"
+      >
+        Clear Filters
+      </button>
+    </div>
+
+    <div class="table-container">
+      <table id="devicesTable" class="devices-table">
+        <thead>
+          <tr>
+            <th data-sort="brand" class="sortable">
+              Brand <span class="sort-icon"></span>
+            </th>
+            <th data-sort="deviceName" class="sortable">
+              Device Name <span class="sort-icon"></span>
+            </th>
+            <th data-sort="modelNumber" class="sortable">
+              Model Number <span class="sort-icon"></span>
+            </th>
+            <th data-sort="protocol" class="sortable">
+              Certified Protocol <span class="sort-icon"></span>
+            </th>
+            <th data-sort="deviceType" class="sortable">
+              Device Type <span class="sort-icon"></span>
+            </th>
+            <th data-sort="secondaryDeviceType" class="sortable">
+              Secondary Type <span class="sort-icon"></span>
+            </th>
+            <th data-sort="region">Region</th>
+            <th class="remark-header" title="Functionality Remark">
+              Functionality Remark
+            </th>
+            <th>Related Products</th>
+          </tr>
+        </thead>
+        <tbody id="devicesTableBody">
+          {% for filename, data in collections.all[0].data.devices %} {% for
+          device in data.devices %}
+          <tr
+            data-brand="{{ data.companyName }}"
+            data-protocols="{{ device.protocol | join(',') }}"
+            data-device-type="{{ device.deviceType }}"
+            data-secondary-device-types="{{ device.secondaryDeviceType | join(',') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType }}"
+            data-regions="{{ device.region | join(',') }}"
+            data-search="{{ (data.companyName + ' ' + device.deviceName + ' ' + device.modelNumber + ' ' + device.deviceType + ' ' + (device.protocol | join(' ')) + ' ' + (device.secondaryDeviceType | join(' ') if device.secondaryDeviceType is iterable and device.secondaryDeviceType is not string else device.secondaryDeviceType)) | lower }}"
+          >
+            <td>{{ data.companyName }}</td>
+            <td>
+              {% if device.websiteLink %}
+              <a
+                href="{{ device.websiteLink }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ device.deviceName }}</a
+              >
+              {% else %}
+              {{ device.deviceName }}
+              {% endif %}
+            </td>
+            <td>{{ device.modelNumber }}</td>
+            <td class="protocol-cell">
+              {% for protocol in device.protocol %}
+              <span class="protocol-badge">{{ protocol }}</span>
+              {% endfor %}
+            </td>
+            <td class="device-type-cell">
+              {% if device.deviceType %}
+              <span class="device-type-badge">{{ device.deviceType }}</span>
+              {% endif %}
+            </td>
+            <td class="secondary-type-cell">
+              {% if device.secondaryDeviceType is iterable and
+              device.secondaryDeviceType is not string %} {% for type in
+              device.secondaryDeviceType %}
+              <span class="secondary-type-badge">{{ type }}</span>
+              {% endfor %} {% else %} {% if device.secondaryDeviceType %}
+              <span class="secondary-type-badge">{{
+                device.secondaryDeviceType
+              }}</span>
+              {% endif %} {% endif %}
+            </td>
+            <td class="region-cell">
+              {% for region in device.region %}
+              <span class="region-badge">{{ region }}</span>
+              {% endfor %}
+            </td>
+            <td class="remark-cell">
+              {% if device.functionalityRemark %}
+              <button
+                class="remark-icon"
+                aria-label="View functionality remark"
+                data-remark="{{ device.functionalityRemark }}"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                  />
+                </svg>
+                <span class="remark-tooltip">{{
+                  device.functionalityRemark
+                }}</span>
+              </button>
+              {% endif %}
+            </td>
+            <td>
+              {% if device.relatedProducts.url %}
+              <a
+                href="{{ device.relatedProducts.url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ device.relatedProducts.text }}</a
+              >
+              {% elif device.relatedProducts.text %}
+              {{ device.relatedProducts.text }}
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %} {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination-wrapper">
+      <div class="devices-count">
+        Showing <span id="visibleCount">0</span> of
+        <span id="filteredCount">0</span> devices (<span id="totalCount"
+          >0</span
+        >
+        total)
+      </div>
+
+      <div class="pagination-controls">
+        <button id="prevPage" class="pagination-btn" disabled>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Previous
+        </button>
+
+        <div id="pageNumbers" class="page-numbers"></div>
+
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+
+        <button id="nextPage" class="pagination-btn">
+          Next
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="items-per-page">
+        <label for="itemsPerPage">Show:</label>
+        <select id="itemsPerPage">
+          <option value="10">10</option>
+          <option value="25" selected>25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <span>per page</span>
+      </div>
+    </div>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span
+              >If my device is not listed under "Works with Home Assistant" does
+              this mean it's not supported?</span
+            >
+            <span class="faq-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              No! It just means it hasn't gone through a testing schedule with
+              our team, or doesn't fit the program requirements. It might
+              function well, but be added to the testing schedule later down the
+              road, it could be missing a function or firmware, or it might work
+              under a different connectivity type that we don't currently test
+              under the program.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>OK, so what's the point of the Works with program?</span>
+            <span class="faq-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              It highlights the devices we know work well with Home Assistant
+              and the brands that make a long-term commitment to supporting
+              these devices. The certification agreement specifies the devices
+              must have key functionality within Home Assistant and operate
+              locally without the need for cloud – both now and in the future.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What about this missing product?</span>
+            <span class="faq-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Some partners are missing as they expand their product lines and
+              testing takes place. We will be consistently working to keep this
+              up-to-date.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How is this work funded?</span>
+            <span class="faq-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              This program is non-commercial and made possible thanks to the
+              generous support of our Home Assistant Cloud subscribers.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Are these affiliate links?</span>
+            <span class="faq-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              No, to respect the privacy of our users, this list does not use
+              affiliate links.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/devices-table.js"></script>

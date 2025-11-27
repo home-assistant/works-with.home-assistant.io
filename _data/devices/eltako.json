@@ -1,0 +1,96 @@
+{
+  "companyName": "ELTAKO",
+  "brand": "eltako",
+  "devices": [
+    {
+      "deviceName": "Universal dimming actuator",
+      "fullName": "ELTAKO Universal dimming actuator",
+      "modelNumber": "EUD62NPN-IPM",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://www.eltako.com/en/catalog/products/1238/eud62npn-ipm110-240v",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Universal dimming actuator",
+      "fullName": "ELTAKO Universal dimming actuator",
+      "modelNumber": "EUD64NPN-IPM",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://www.eltako.com/en/catalog/products/1761/eud64npn-ipm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Impulse switch",
+      "fullName": "ELTAKO Impulse switch",
+      "modelNumber": "ESR64PF-IPM",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://www.eltako.com/en/catalog/products/1760/esr64pf-ipm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Impulse switch",
+      "fullName": "ELTAKO Impulse switch",
+      "modelNumber": "ESR64NP-IPM",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://www.eltako.com/en/catalog/products/1759/esr64np-ipm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Shading actuator",
+      "fullName": "ELTAKO Shading actuator",
+      "modelNumber": "ESB64NP-IPM",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://www.eltako.com/en/catalog/products/1792/esb64np-ipm",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Shutter"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

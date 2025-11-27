@@ -1,0 +1,366 @@
+{
+  "companyName": "Zooz",
+  "brand": "zooz",
+  "devices": [
+    {
+      "deviceName": "Titan Water Valve Actuator",
+      "fullName": "Zooz Titan Water Valve Actuator",
+      "modelNumber": "ZAC36",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zac36-titan-water-valve-actuator/",
+      "deviceType": "Leak protection",
+      "secondaryDeviceType": [
+        "Valve control"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Smart Plug",
+      "fullName": "Zooz Smart Plug",
+      "modelNumber": "ZEN04",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen04-smart-plug/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Outdoor Plug",
+      "fullName": "Zooz Outdoor Plug",
+      "modelNumber": "ZEN05",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen05-outdoor-smart-plug/",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "MultiRelay",
+      "fullName": "Zooz MultiRelay",
+      "modelNumber": "ZEN16",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen16-multirelay/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Double Switch",
+      "fullName": "Zooz Double Switch",
+      "modelNumber": "ZEN30",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen30-double-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Scene Controller",
+      "fullName": "Zooz Scene Controller",
+      "modelNumber": "ZEN32",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen32-scene-controller/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Remote Switch",
+      "fullName": "Zooz Remote Switch",
+      "modelNumber": "ZEN34",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen34-remote-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Dry Contact Relay",
+      "fullName": "Zooz Dry Contact Relay",
+      "modelNumber": "ZEN51",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen51-dry-contact-relay/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Double Relay",
+      "fullName": "Zooz Double Relay",
+      "modelNumber": "ZEN52",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen52-double-relay/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "On Off Switch",
+      "fullName": "Zooz On Off Switch",
+      "modelNumber": "ZEN71",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen71-on-off-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Dimmer",
+      "fullName": "Zooz Dimmer",
+      "modelNumber": "ZEN72",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen72-dimmer/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting",
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Toggle Dimmer",
+      "fullName": "Zooz Toggle Dimmer",
+      "modelNumber": "ZEN74",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen74-s2-toggle-dimmer/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting",
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "S2 OnOff Switch",
+      "fullName": "Zooz S2 OnOff Switch",
+      "modelNumber": "ZEN76",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen76-s2-700-series-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "S2 Dimmer",
+      "fullName": "Zooz S2 Dimmer",
+      "modelNumber": "ZEN77",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen77-s2-dimmer/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Lighting",
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Q Sensor",
+      "fullName": "Zooz Q Sensor",
+      "modelNumber": "ZSE11",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zse11-q-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion",
+        "Temperature",
+        "Humidity",
+        "Light"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Motion Sensor",
+      "fullName": "Zooz Motion Sensor",
+      "modelNumber": "ZSE18",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zse18-s2-motion-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Water Leak XS Sensor",
+      "fullName": "Zooz Water Leak XS Sensor",
+      "modelNumber": "ZSE42",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zse42-water-leak-xs-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Tilt Shock XS Sensor",
+      "fullName": "Zooz Tilt Shock XS Sensor",
+      "modelNumber": "ZSE43",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zse43-tilt-shock-xs-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Tilt"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Temp Humidity XS Sensor",
+      "fullName": "Zooz Temp Humidity XS Sensor",
+      "modelNumber": "ZSE44",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zse44-temperature-humidity-xs-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    }
+  ]
+}

@@ -30,7 +30,7 @@
         >.nav {
             display: none;
 
-            @include mixins.bp(desktop) {
+            @include mixins.bp(large-desktop) {
                 display: flex;
             }
         }

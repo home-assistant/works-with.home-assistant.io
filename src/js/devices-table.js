@@ -1,0 +1,566 @@
+// Devices Table Sorting, Filtering and Pagination
+(function () {
+  let currentSort = { column: null, direction: 'asc' };
+  let currentPage = 1;
+  let itemsPerPage = 25;
+  let filteredRows = [];
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    initializeFilters();
+    initializeSorting();
+    initializePagination();
+
+    // Initial filter to set up filteredRows
+    filterTable();
+
+    // Set up search functionality
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        currentPage = 1;
+        filterTable();
+      });
+    }
+
+    // Set up filter dropdowns
+    const brandFilter = document.getElementById('brandFilter');
+    const protocolFilter = document.getElementById('protocolFilter');
+    const deviceTypeFilter = document.getElementById('deviceTypeFilter');
+
+    if (brandFilter) brandFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+    if (protocolFilter) protocolFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+    if (deviceTypeFilter) deviceTypeFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
+    if (secondaryDeviceTypeFilter) secondaryDeviceTypeFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+
+    const regionFilter = document.getElementById('regionFilter');
+    if (regionFilter) regionFilter.addEventListener('change', function () {
+      currentPage = 1;
+      filterTable();
+    });
+
+    // Set up clear filters button
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    if (clearFiltersBtn) {
+      clearFiltersBtn.addEventListener('click', clearAllFilters);
+    }
+
+    // Set up items per page selector
+    const itemsPerPageSelect = document.getElementById('itemsPerPage');
+    if (itemsPerPageSelect) {
+      itemsPerPageSelect.addEventListener('change', function () {
+        itemsPerPage = parseInt(this.value);
+        currentPage = 1;
+        applyPagination();
+      });
+    }
+  });
+
+  // Initialize filter options
+  function initializeFilters() {
+    const table = document.getElementById('devicesTable');
+    if (!table) return;
+
+    const rows = table.querySelectorAll('tbody tr');
+    const protocols = new Set();
+    const deviceTypes = new Set();
+    const secondaryDeviceTypes = new Set();
+    const regions = new Set();
+
+    rows.forEach(row => {
+      const rowProtocols = row.dataset.protocols || '';
+      const deviceType = row.dataset.deviceType;
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
+      const rowRegions = row.dataset.regions || '';
+
+      // Parse protocols (comma-separated)
+      if (rowProtocols) {
+        rowProtocols.split(',').forEach(protocol => {
+          const trimmed = protocol.trim();
+          if (trimmed) protocols.add(trimmed);
+        });
+      }
+
+      if (deviceType) deviceTypes.add(deviceType);
+
+      // Parse secondary device types (comma-separated)
+      if (rowSecondaryDeviceTypes) {
+        rowSecondaryDeviceTypes.split(',').forEach(type => {
+          const trimmed = type.trim();
+          if (trimmed) secondaryDeviceTypes.add(trimmed);
+        });
+      }
+
+      // Parse regions (comma-separated)
+      if (rowRegions) {
+        rowRegions.split(',').forEach(region => {
+          const trimmed = region.trim();
+          if (trimmed) regions.add(trimmed);
+        });
+      }
+    });
+
+    // Populate protocol filter
+    const protocolFilter = document.getElementById('protocolFilter');
+    if (protocolFilter) {
+      Array.from(protocols).sort().forEach(protocol => {
+        const option = document.createElement('option');
+        option.value = protocol;
+        option.textContent = protocol;
+        protocolFilter.appendChild(option);
+      });
+    }
+
+    // Populate device type filter
+    const deviceTypeFilter = document.getElementById('deviceTypeFilter');
+    if (deviceTypeFilter) {
+      Array.from(deviceTypes).sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        deviceTypeFilter.appendChild(option);
+      });
+    }
+
+    // Populate secondary device type filter
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
+    if (secondaryDeviceTypeFilter) {
+      Array.from(secondaryDeviceTypes).sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        secondaryDeviceTypeFilter.appendChild(option);
+      });
+    }
+
+    // Populate region filter
+    const regionFilterEl = document.getElementById('regionFilter');
+    if (regionFilterEl) {
+      Array.from(regions).sort().forEach(region => {
+        const option = document.createElement('option');
+        option.value = region;
+        option.textContent = region;
+        regionFilterEl.appendChild(option);
+      });
+    }
+  }
+
+  // Initialize sorting
+  function initializeSorting() {
+    const sortableHeaders = document.querySelectorAll('.sortable');
+
+    sortableHeaders.forEach(header => {
+      header.addEventListener('click', function () {
+        const column = this.dataset.sort;
+        sortTable(column);
+      });
+    });
+  }
+
+  // Initialize pagination controls
+  function initializePagination() {
+    const prevBtn = document.getElementById('prevPage');
+    const nextBtn = document.getElementById('nextPage');
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        if (currentPage > 1) {
+          currentPage--;
+          applyPagination();
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        const totalPages = Math.ceil(filteredRows.length / itemsPerPage);
+        if (currentPage < totalPages) {
+          currentPage++;
+          applyPagination();
+        }
+      });
+    }
+  }
+
+  // Sort table by column
+  function sortTable(column) {
+    const table = document.getElementById('devicesTable');
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+
+    // Determine sort direction
+    if (currentSort.column === column) {
+      currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+    } else {
+      currentSort.column = column;
+      currentSort.direction = 'asc';
+    }
+
+    // Get column index
+    const headers = Array.from(table.querySelectorAll('th'));
+    const columnIndex = headers.findIndex(h => h.dataset.sort === column);
+
+    if (columnIndex === -1) return;
+
+    // Sort rows
+    rows.sort((a, b) => {
+      let aValue = a.cells[columnIndex].textContent.trim();
+      let bValue = b.cells[columnIndex].textContent.trim();
+
+      // Handle empty values
+      if (!aValue) return 1;
+      if (!bValue) return -1;
+
+      if (aValue < bValue) return currentSort.direction === 'asc' ? -1 : 1;
+      if (aValue > bValue) return currentSort.direction === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    // Re-append sorted rows
+    rows.forEach(row => tbody.appendChild(row));
+
+    // Update sort indicators
+    updateSortIndicators();
+
+    // Re-apply filter and pagination after sort
+    currentPage = 1;
+    filterTable();
+  }
+
+  // Update sort indicator icons
+  function updateSortIndicators() {
+    const sortableHeaders = document.querySelectorAll('.sortable');
+
+    sortableHeaders.forEach(header => {
+      header.classList.remove('sort-asc', 'sort-desc');
+
+      if (header.dataset.sort === currentSort.column) {
+        header.classList.add(`sort-${currentSort.direction}`);
+      }
+    });
+  }
+
+  // Filter table based on search and filters
+  function filterTable() {
+    const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
+    const brandFilter = document.getElementById('brandFilter')?.value || '';
+    const protocolFilter = document.getElementById('protocolFilter')?.value || '';
+    const deviceTypeFilter = document.getElementById('deviceTypeFilter')?.value || '';
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter')?.value || '';
+    const regionFilter = document.getElementById('regionFilter')?.value || '';
+
+    const table = document.getElementById('devicesTable');
+    if (!table) return;
+
+    const rows = table.querySelectorAll('tbody tr');
+    filteredRows = [];
+
+    rows.forEach(row => {
+      const searchData = row.dataset.search || '';
+      const brand = row.dataset.brand || '';
+      const rowProtocols = row.dataset.protocols || '';
+      const deviceType = row.dataset.deviceType || '';
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
+      const rowRegions = row.dataset.regions || '';
+
+      const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
+      const matchesBrand = brandFilter === '' || brand === brandFilter;
+      // Protocol filter: check if any of the row's protocols match the filter value
+      const matchesProtocol = protocolFilter === '' || rowProtocols.split(',').some(p => p.trim() === protocolFilter);
+      const matchesDeviceType = deviceTypeFilter === '' || deviceType === deviceTypeFilter;
+      // Secondary device type filter: check if any of the row's secondary types match the filter value
+      const matchesSecondaryDeviceType = secondaryDeviceTypeFilter === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === secondaryDeviceTypeFilter);
+      // Region filter: check if any of the row's regions contain the filter value
+      const matchesRegion = regionFilter === '' || rowRegions.split(',').some(r => r.trim() === regionFilter);
+
+      if (matchesSearch && matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion) {
+        filteredRows.push(row);
+      }
+    });
+
+    // Update filter option counts
+    updateFilterCounts(rows, searchTerm, brandFilter, protocolFilter, deviceTypeFilter, secondaryDeviceTypeFilter, regionFilter);
+
+    applyPagination();
+  }
+
+  // Update filter dropdown option counts
+  function updateFilterCounts(rows, searchTerm, currentBrand, currentProtocol, currentDeviceType, currentSecondaryDeviceType, currentRegion) {
+    // Check if any filters are active
+    const hasActiveFilters = searchTerm !== '' || currentBrand !== '' || currentProtocol !== '' || currentDeviceType !== '' || currentSecondaryDeviceType !== '' || currentRegion !== '';
+
+    // Show/hide clear button based on active filters
+    const clearBtn = document.getElementById('clearFilters');
+    if (clearBtn) {
+      clearBtn.style.display = hasActiveFilters ? 'inline-flex' : 'none';
+    }
+
+    const brandCounts = {};
+    const protocolCounts = {};
+    const deviceTypeCounts = {};
+    const secondaryDeviceTypeCounts = {};
+    const regionCounts = {};
+
+    // Count how many devices would match if each filter option were selected
+    rows.forEach(row => {
+      const searchData = row.dataset.search || '';
+      const brand = row.dataset.brand || '';
+      const rowProtocols = row.dataset.protocols || '';
+      const deviceType = row.dataset.deviceType || '';
+      const rowSecondaryDeviceTypes = row.dataset.secondaryDeviceTypes || '';
+      const rowRegions = row.dataset.regions || '';
+
+      const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
+      if (!matchesSearch) return;
+
+      const matchesBrand = currentBrand === '' || brand === currentBrand;
+      const matchesProtocol = currentProtocol === '' || rowProtocols.split(',').some(p => p.trim() === currentProtocol);
+      const matchesDeviceType = currentDeviceType === '' || deviceType === currentDeviceType;
+      const matchesSecondaryDeviceType = currentSecondaryDeviceType === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === currentSecondaryDeviceType);
+      const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => r.trim() === currentRegion);
+
+      // Count for brand filter (if other filters match)
+      if (matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && brand) {
+        brandCounts[brand] = (brandCounts[brand] || 0) + 1;
+      }
+
+      // Count for protocol filter (if other filters match)
+      if (matchesBrand && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && rowProtocols) {
+        rowProtocols.split(',').forEach(p => {
+          const protocol = p.trim();
+          if (protocol) {
+            protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
+          }
+        });
+      }
+
+      // Count for device type filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesSecondaryDeviceType && matchesRegion && deviceType) {
+        deviceTypeCounts[deviceType] = (deviceTypeCounts[deviceType] || 0) + 1;
+      }
+
+      // Count for secondary device type filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesDeviceType && matchesRegion && rowSecondaryDeviceTypes) {
+        rowSecondaryDeviceTypes.split(',').forEach(t => {
+          const type = t.trim();
+          if (type) {
+            secondaryDeviceTypeCounts[type] = (secondaryDeviceTypeCounts[type] || 0) + 1;
+          }
+        });
+      }
+
+      // Count for region filter (if other filters match)
+      if (matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && rowRegions) {
+        rowRegions.split(',').forEach(r => {
+          const region = r.trim();
+          if (region) {
+            regionCounts[region] = (regionCounts[region] || 0) + 1;
+          }
+        });
+      }
+    });
+
+    // Update dropdown options with counts
+    updateSelectOptions('brandFilter', brandCounts, 'All Brands');
+    updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
+    updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
+    updateSelectOptions('secondaryDeviceTypeFilter', secondaryDeviceTypeCounts, 'All Secondary Types');
+    updateSelectOptions('regionFilter', regionCounts, 'All Regions');
+  }
+
+  // Update select element options with counts
+  function updateSelectOptions(selectId, counts, allLabel) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    Array.from(select.options).forEach(option => {
+      if (option.value === '') {
+        // "All" option - show total count
+        const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
+        option.textContent = `${allLabel} (${total})`;
+      } else {
+        // Get the base value (option.value stores the original value)
+        const count = counts[option.value] || 0;
+        option.textContent = `${option.value} (${count})`;
+      }
+    });
+  }
+
+  // Clear all filters
+  function clearAllFilters() {
+    const searchInput = document.getElementById('searchInput');
+    const brandFilter = document.getElementById('brandFilter');
+    const protocolFilter = document.getElementById('protocolFilter');
+    const deviceTypeFilter = document.getElementById('deviceTypeFilter');
+    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
+    const regionFilter = document.getElementById('regionFilter');
+
+    if (searchInput) searchInput.value = '';
+    if (brandFilter) brandFilter.value = '';
+    if (protocolFilter) protocolFilter.value = '';
+    if (deviceTypeFilter) deviceTypeFilter.value = '';
+    if (secondaryDeviceTypeFilter) secondaryDeviceTypeFilter.value = '';
+    if (regionFilter) regionFilter.value = '';
+
+    currentPage = 1;
+    filterTable();
+  }
+
+  // Apply pagination to filtered rows
+  function applyPagination() {
+    const table = document.getElementById('devicesTable');
+    if (!table) return;
+
+    const allRows = table.querySelectorAll('tbody tr');
+    const totalPages = Math.ceil(filteredRows.length / itemsPerPage);
+
+    // Ensure current page is valid
+    if (currentPage > totalPages && totalPages > 0) {
+      currentPage = totalPages;
+    }
+    if (currentPage < 1) {
+      currentPage = 1;
+    }
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    // Hide all rows first
+    allRows.forEach(row => {
+      row.style.display = 'none';
+    });
+
+    // Show only the rows for the current page
+    filteredRows.forEach((row, index) => {
+      if (index >= startIndex && index < endIndex) {
+        row.style.display = '';
+      }
+    });
+
+    updatePaginationControls(totalPages);
+    updateDeviceCount();
+  }
+
+  // Update pagination controls
+  function updatePaginationControls(totalPages) {
+    const prevBtn = document.getElementById('prevPage');
+    const nextBtn = document.getElementById('nextPage');
+    const pageInfo = document.getElementById('pageInfo');
+    const paginationContainer = document.querySelector('.pagination-controls');
+
+    if (prevBtn) {
+      prevBtn.disabled = currentPage <= 1;
+    }
+
+    if (nextBtn) {
+      nextBtn.disabled = currentPage >= totalPages;
+    }
+
+    if (pageInfo) {
+      if (totalPages === 0) {
+        pageInfo.textContent = 'Page 0 of 0';
+      } else {
+        pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+      }
+    }
+
+    // Hide pagination if only one page
+    if (paginationContainer) {
+      paginationContainer.style.display = totalPages <= 1 ? 'none' : 'flex';
+    }
+
+    // Update page numbers
+    updatePageNumbers(totalPages);
+  }
+
+  // Update page number buttons
+  function updatePageNumbers(totalPages) {
+    const pageNumbersContainer = document.getElementById('pageNumbers');
+    if (!pageNumbersContainer) return;
+
+    pageNumbersContainer.innerHTML = '';
+
+    // Calculate which page numbers to show
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
+
+    // Adjust to always show 5 pages if possible
+    if (endPage - startPage < 4) {
+      if (startPage === 1) {
+        endPage = Math.min(totalPages, startPage + 4);
+      } else if (endPage === totalPages) {
+        startPage = Math.max(1, endPage - 4);
+      }
+    }
+
+    // First page and ellipsis
+    if (startPage > 1) {
+      pageNumbersContainer.appendChild(createPageButton(1));
+      if (startPage > 2) {
+        const ellipsis = document.createElement('span');
+        ellipsis.className = 'page-ellipsis';
+        ellipsis.textContent = '...';
+        pageNumbersContainer.appendChild(ellipsis);
+      }
+    }
+
+    // Page numbers
+    for (let i = startPage; i <= endPage; i++) {
+      pageNumbersContainer.appendChild(createPageButton(i));
+    }
+
+    // Last page and ellipsis
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        const ellipsis = document.createElement('span');
+        ellipsis.className = 'page-ellipsis';
+        ellipsis.textContent = '...';
+        pageNumbersContainer.appendChild(ellipsis);
+      }
+      pageNumbersContainer.appendChild(createPageButton(totalPages));
+    }
+  }
+
+  // Create a page number button
+  function createPageButton(pageNum) {
+    const button = document.createElement('button');
+    button.className = 'page-number' + (pageNum === currentPage ? ' active' : '');
+    button.textContent = pageNum;
+    button.addEventListener('click', function () {
+      currentPage = pageNum;
+      applyPagination();
+    });
+    return button;
+  }
+
+  // Update device count display
+  function updateDeviceCount() {
+    const table = document.getElementById('devicesTable');
+    if (!table) return;
+
+    const totalRows = table.querySelectorAll('tbody tr').length;
+    const visibleOnPage = document.querySelectorAll('#devicesTable tbody tr:not([style*="display: none"])').length;
+
+    const visibleCountEl = document.getElementById('visibleCount');
+    const totalCountEl = document.getElementById('totalCount');
+    const filteredCountEl = document.getElementById('filteredCount');
+
+    if (visibleCountEl) visibleCountEl.textContent = visibleOnPage;
+    if (totalCountEl) totalCountEl.textContent = totalRows;
+    if (filteredCountEl) filteredCountEl.textContent = filteredRows.length;
+  }
+})();
