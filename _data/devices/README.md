@@ -50,7 +50,7 @@ Each file should follow this structure:
   - **region**: Array of geographic regions where the device is available (e.g., `["Worldwide"]`, `["USA", "Europe"]`, `["UK"]`)
   - **functionalityRemark**: Notes about protocol limitations or functionality constraints
 
-## Adding New Devices
+## Adding new devices
 
 1. Create a new JSON file named after the brand (lowercase).
 2. Follow the structure above.
