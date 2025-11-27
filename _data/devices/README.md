@@ -1,4 +1,4 @@
-# Devices Data Structure
+# Devices data structure
 
 This directory contains JSON files for each manufacturer's certified devices.
 
