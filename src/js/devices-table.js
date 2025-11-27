@@ -270,15 +270,6 @@
       clearBtn.style.display = hasActiveFilters ? 'inline-flex' : 'none';
     }
 
-    // If no filters active, reset labels without counts
-    if (!hasActiveFilters) {
-      resetSelectLabels('brandFilter', 'All Brands');
-      resetSelectLabels('protocolFilter', 'All Protocols');
-      resetSelectLabels('deviceTypeFilter', 'All Device Types');
-      resetSelectLabels('regionFilter', 'All Regions');
-      return;
-    }
-
     const brandCounts = {};
     const protocolCounts = {};
     const deviceTypeCounts = {};
@@ -331,20 +322,6 @@
     updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
     updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
     updateSelectOptions('regionFilter', regionCounts, 'All Regions');
-  }
-
-  // Reset select labels without counts
-  function resetSelectLabels(selectId, allLabel) {
-    const select = document.getElementById(selectId);
-    if (!select) return;
-
-    Array.from(select.options).forEach(option => {
-      if (option.value === '') {
-        option.textContent = allLabel;
-      } else {
-        option.textContent = option.value;
-      }
-    });
   }
 
   // Update select element options with counts
