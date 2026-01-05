@@ -42,9 +42,10 @@ if (logoCarousels) {
 
 let stepsWrapper = document.querySelector('.whats-involved .steps');
 let stepsPagination = document.querySelector('.whats-involved .steps-pagination');
+let steps;
+let currentStep = 1;
 if (stepsWrapper) {
-    let steps = stepsWrapper.querySelectorAll('.step');
-    let currentStep = 1;
+    steps = stepsWrapper.querySelectorAll('.step');
     let stepInterval = null;
     if (steps) {
         stepInterval = setInterval(() => {
