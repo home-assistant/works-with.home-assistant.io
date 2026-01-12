@@ -17,11 +17,6 @@
             "link": "https://www.home-assistant.io/integrations/eve/"
         },
         {
-            "name": "Heltun",
-            "logo": "heltun.png",
-            "link": "https://www.home-assistant.io/integrations/heltun/"
-        },
-        {
             "name": "HomeSeer",
             "logo": "homeseer.png",
             "link": "https://www.home-assistant.io/integrations/homeseer/"
