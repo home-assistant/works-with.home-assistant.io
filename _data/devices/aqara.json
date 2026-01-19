@@ -138,24 +138,6 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Presence sensor FP1E",
-      "fullName": "Aqara Presence sensor FP1E",
-      "modelNumber": "PS-S03D / PS-S03E",
-      "protocol": [
-        "Matter over Thread"
-      ],
-      "websiteLink": "https://www.aqara.com/en/product/presence-sensor-fp1e/",
-      "deviceType": "Sensor",
-      "secondaryDeviceType": [
-        "mmWave"
-      ],
-      "relatedProducts": "",
-      "region": [
-        "Worldwide"
-      ],
-      "functionalityRemark": ""
-    },
-    {
       "deviceName": "Climate Sensor",
       "fullName": "Aqara Climate Sensor",
       "modelNumber": "TH-S04E / TH-S04D",

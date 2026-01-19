@@ -138,24 +138,6 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Light Switch",
-      "fullName": "Eve Eve Light Switch",
-      "modelNumber": "20EBW1701",
-      "protocol": [
-        "Matter over Thread"
-      ],
-      "websiteLink": "https://www.evehome.com/en/eve-light-switch",
-      "deviceType": "Switch",
-      "secondaryDeviceType": [
-        "Light"
-      ],
-      "relatedProducts": "",
-      "region": [
-        "Europe"
-      ],
-      "functionalityRemark": ""
-    },
-    {
       "deviceName": "Eve Dimmer Switch",
       "fullName": "Eve Eve Dimmer Switch",
       "modelNumber": "20ECQ4101",
