@@ -92,7 +92,7 @@
         "ESPHome"
       ],
       "websiteLink": "https://apolloautomation.com/products/led-1-led-controller",
-      "deviceType": "Light",
+      "deviceType": "Switch",
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
@@ -108,7 +108,7 @@
         "ESPHome"
       ],
       "websiteLink": "https://apolloautomation.com/products/btn-1-macro-deck",
-      "deviceType": "Remote",
+      "deviceType": "Switch",
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
@@ -144,7 +144,7 @@
       "websiteLink": "https://apolloautomation.com/products/plt-1",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
-        "Plant"
+        "Soil"
       ],
       "relatedProducts": "",
       "region": [
