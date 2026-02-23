@@ -19,8 +19,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Smart Smoke Alarm (EU)",
-      "fullName": "Heiman Smart Smoke Alarm (EU)",
+      "deviceName": "Smart Smoke Alarm (EU and China)",
+      "fullName": "Heiman Smart Smoke Alarm (EU and China)",
       "modelNumber": "HS1SA-M",
       "protocol": [
         "Matter over Thread"
@@ -30,7 +30,8 @@
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "China"
       ],
       "functionalityRemark": ""
     },
@@ -107,8 +108,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Heat and Temperature Sensor",
-      "fullName": "Heiman Heat and Temperature Sensor",
+      "deviceName": "Humidity and Temperature Sensor",
+      "fullName": "Heiman Humidity and Temperature Sensor",
       "modelNumber": "H1-M",
       "protocol": [
         "Matter over Thread"
