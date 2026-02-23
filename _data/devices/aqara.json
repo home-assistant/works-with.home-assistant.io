@@ -142,14 +142,17 @@
       "fullName": "Aqara Presence sensor FP1E",
       "modelNumber": "PS-S03D / PS-S03E",
       "protocol": [
-        "Matter over Thread"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.aqara.com/en/product/presence-sensor-fp1e/",
       "deviceType": "Sensor",
       "secondaryDeviceType": [
         "mmWave"
       ],
-      "relatedProducts": "",
+      "relatedProducts": {
+        "text": "Aqara Hub M3",
+        "url": "https://www.aqara.com/en/product/hub-m3/"
+      },
       "region": [
         "Worldwide"
       ],
