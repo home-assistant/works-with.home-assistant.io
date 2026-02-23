@@ -1,0 +1,128 @@
+{
+  "companyName": "Heiman",
+  "brand": "heiman",
+  "devices": [
+    {
+      "deviceName": "Smart Smoke Alarm (US)",
+      "fullName": "Heiman Smart Smoke Alarm (US)",
+      "modelNumber": "S1-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/?type=detail&id=127",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Smoke Alarm (EU)",
+      "fullName": "Heiman Smart Smoke Alarm (EU)",
+      "modelNumber": "HS1SA-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/?type=detail&id=3",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Carbon Monoxide Alarm (US)",
+      "fullName": "Heiman Smart Carbon Monoxide Alarm",
+      "modelNumber": "C1-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/?type=detail&id=122",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "CO"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Carbon Monoxide Alarm (EU)",
+      "fullName": "Heiman Smart Carbon Monoxide Alarm",
+      "modelNumber": "HS-720ES-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/?type=detail&id=137",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "CO"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Motion Sensor",
+      "fullName": "Heiman Motion Sensor",
+      "modelNumber": "M1-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/smart-human-infrared-detector-m1-series",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Water Leak Sensor",
+      "fullName": "Heiman Water Leak Sensor",
+      "modelNumber": "L1-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/smart-water-leakage-detector-l1-series",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Heat and Temperature Sensor",
+      "fullName": "Heiman Heat and Temperature Sensor",
+      "modelNumber": "H1-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/smart-temperature-and-humidity-detector-h1-series",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
