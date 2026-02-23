@@ -83,6 +83,74 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "LED-1 Controller",
+      "fullName": "Apollo Automation LED-1 Controller",
+      "modelNumber": "LED-1",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/led-1-led-controller",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "BTN-1 Macro Deck",
+      "fullName": "Apollo Automation BTN-1 Macro Deck",
+      "modelNumber": "BTN-1",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/btn-1-macro-deck",
+      "deviceType": "Remote",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "R PRO-1 PoE dual mmWave Multisensor",
+      "fullName": "Apollo Automation R PRO-1 PoE dual mmWave Multisensor",
+      "modelNumber": "R PRO-1",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/r-pro-1",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "mmWave"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "PLT-1 / PLT1B Plant Sensor",
+      "fullName": "Apollo Automation PLT-1 / PLT1B Plant Sensor",
+      "modelNumber": "PLT-1 / PLT-1B",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/plt-1",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Plant"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
