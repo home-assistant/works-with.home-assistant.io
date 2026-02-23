@@ -54,7 +54,7 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Smart Carbon Monoxide Alarm (EU)",
+      "deviceName": "Smart Carbon Monoxide Alarm (EU and China)",
       "fullName": "Heiman Smart Carbon Monoxide Alarm",
       "modelNumber": "HS-720ES-M",
       "protocol": [
@@ -67,7 +67,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "China"
       ],
       "functionalityRemark": ""
     },
