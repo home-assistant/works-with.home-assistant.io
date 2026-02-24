@@ -85,6 +85,11 @@
             "name": "Eltako",
             "logo": "eltako.png",
             "link": "https://www.home-assistant.io/integrations/eltako/"
+        },
+        {
+            "name": "Heiman",
+            "logo": "heiman.png",
+            "link": "https://www.home-assistant.io/integrations/heiman/"
         }
     ]
 }
