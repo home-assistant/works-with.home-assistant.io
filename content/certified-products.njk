@@ -28,9 +28,13 @@ permalink: /certified-products/
       />
       <select id="brandFilter">
         <option value="">All Brands</option>
+        {% set brands = [] %}
         {% for filename, data in collections.all[0].data.devices %}
-        <option value="{{ data.companyName }}">
-          {{ data.companyName }}
+          {% set brands = (brands.push(data.companyName), brands) %}
+        {% endfor %}
+        {% for brand in brands | sort %}
+        <option value="{{ brand }}">
+          {{ brand }}
         </option>
         {% endfor %}
       </select>

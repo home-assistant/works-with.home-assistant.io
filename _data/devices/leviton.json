@@ -1,0 +1,114 @@
+{
+  "companyName": "Leviton",
+  "brand": "leviton",
+  "devices": [
+    {
+      "deviceName": "Decora Smart Z-Wave Dimmer",
+      "fullName": "Leviton Decora Smart Z-Wave Dimmer",
+      "modelNumber": "ZW6HD",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/zw6hd-1rw",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Decora Smart Z-Wave Switch",
+      "fullName": "Leviton Decora Smart Z-Wave Switch",
+      "modelNumber": "ZW15S",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/zw15s-1rw",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Decora Smart Z-Wave Fan Speed Controller",
+      "fullName": "Leviton Decora Smart Z-Wave Fan Speed Controller",
+      "modelNumber": "ZW4SF",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/zw4sf-1bw",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Fan"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Decora Smart Z-Wave Plug-in Dimmer",
+      "fullName": "Leviton Decora Smart Z-Wave Plug-in Dimmer",
+      "modelNumber": "DZPD3",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/dzpd3-2bw",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Decora Smart Z-Wave Plug-In Outlet",
+      "fullName": "Leviton Decora Smart Z-Wave Plug-In Outlet",
+      "modelNumber": "DZPA1",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/dzpa1-2bw",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Decora Smart Z-Wave Outlet",
+      "fullName": "Leviton Decora Smart Z-Wave Outlet",
+      "modelNumber": "ZW15R",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://leviton.com/products/zw15r-1bw",
+      "deviceType": "Outlet",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
