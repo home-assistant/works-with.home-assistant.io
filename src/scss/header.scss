@@ -132,7 +132,7 @@
         justify-self: flex-end;
     }
 
-    @include mixins.bp(desktop) {
+    @include mixins.bp(large-desktop) {
         .burger {
             display: none;
         }
