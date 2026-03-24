@@ -1,0 +1,106 @@
+{
+  "companyName": "Heatit",
+  "brand": "heatit",
+  "devices": [
+    {
+      "deviceName": "Z-Push Wall Controller",
+      "fullName": "Heatit Z-Push Wall Controller",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://heatit.com/product/10221/products/controllers/heatit-z-push-wall-controller-white-ral-9010-glossy/1107",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-Temp3",
+      "fullName": "Heatit Z-Temp3",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://heatit.com/produkt/10289/heatit-z-temp3-white-ral-9003",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-TRM6 DC",
+      "fullName": "Heatit Z-TRM6 DC",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://heatit.com/produkt/10413/heatit-z-trm6-dc-white-ral-9003",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-Smoke 2",
+      "fullName": "Heatit Z-Smoke 2",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://documents.heatit.com/4512397/heatit-z-smoke2-detector-230vac",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-HAN2",
+      "fullName": "Heatit Z-HAN2",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://heatit.com/produkt/10343/heatit-z-han2",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Power"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Norway"
+      ],
+      "functionalityRemark": "Requires Norwegian HAN port"
+    },
+    {
+      "deviceName": "ZM Thermostat 16A",
+      "fullName": "Heatit ZM Thermostat 16A",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://heatit.com/product/10194/products/controllers/heatit-zm-thermostat-16a/1107",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
