@@ -90,6 +90,11 @@
             "name": "Heiman",
             "logo": "heiman.png",
             "link": "https://www.home-assistant.io/integrations/heiman/"
+        },
+        {
+            "name": "Heatit",
+            "logo": "heatit.png",
+            "link": "https://www.home-assistant.io/integrations/heatit/"
         }
     ]
 }
