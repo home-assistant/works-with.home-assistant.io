@@ -2,6 +2,8 @@ import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginFilters from "./_config/filters.js";
+import fs from "node:fs";
+import path from "node:path";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -43,6 +45,23 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addFilter("stringify", function (value) {
 		return JSON.stringify(value);
+	});
+
+	// Combine all device JSON files into a single devices.json
+	eleventyConfig.on("eleventy.after", () => {
+		const devicesDir = path.resolve("_data/devices");
+		const allDevices = [];
+
+		for (const file of fs.readdirSync(devicesDir)) {
+			if (!file.endsWith(".json")) continue;
+			const data = JSON.parse(fs.readFileSync(path.join(devicesDir, file), "utf-8"));
+			allDevices.push(data);
+		}
+
+		fs.writeFileSync(
+			path.resolve("_site/devices.json"),
+			JSON.stringify(allDevices),
+		);
 	});
 
 	eleventyConfig.setChokidarConfig({
