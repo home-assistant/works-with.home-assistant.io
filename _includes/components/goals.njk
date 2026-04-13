@@ -1,0 +1,35 @@
+<section class="goals" id="goals">
+  <div class="container">
+    <div class="inner">
+      <h2>Program goals for 2026</h2>
+
+      <div class="embed-container embed-facade">
+        <iframe width="560" height="315" data-src="https://www.youtube.com/embed/RCJJaP4xY_A?playsline=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let loaded = false;
+    const lazyLoadYouTube = () => {
+      if (loaded) return; // Prevent multiple loads
+      loaded = true;
+      const iframes = document.querySelectorAll('.embed-facade iframe[data-src]');
+      iframes.forEach(iframe => {
+        iframe.src = iframe.getAttribute('data-src');
+        iframe.removeAttribute('data-src');
+        setTimeout(() => {
+          iframe.parentElement.style.opacity = 1;
+        }, 500);
+      });
+    };
+
+    document.addEventListener('scroll', lazyLoadYouTube, { once: true });
+    document.addEventListener('click', lazyLoadYouTube, { once: true });
+    document.addEventListener('mousemove', lazyLoadYouTube, { once: true });
+    document.addEventListener('touchstart', lazyLoadYouTube, { once: true });
+    document.addEventListener('touchmove', lazyLoadYouTube, { once: true });
+  });
+</script>
