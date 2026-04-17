@@ -322,7 +322,7 @@
       "fullName": "SwitchBot Meter Pro",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro",
       "deviceType": "Sensor",
