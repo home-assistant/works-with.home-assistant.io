@@ -279,7 +279,7 @@
       "fullName": "SwitchBot Leak Detector",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-water-leak-detector",
       "deviceType": "Sensor",
@@ -300,7 +300,7 @@
       "fullName": "SwitchBot Meter",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter",
       "deviceType": "Sensor",
@@ -344,7 +344,7 @@
       "fullName": "SwitchBot Meter Pro CO2",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-meter-pro-co2-monitor",
       "deviceType": "Sensor",
@@ -367,7 +367,7 @@
       "fullName": "SwitchBot Indoor/Outdoor Thermo-Hygrometer",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-indoor-outdoor-thermo-hygrometer",
       "deviceType": "Sensor",
@@ -389,7 +389,7 @@
       "fullName": "SwitchBot Curtain 3",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-curtain-3",
       "deviceType": "Cover",
@@ -410,7 +410,7 @@
       "fullName": "SwitchBot Contact Sensor",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/contact-sensor",
       "deviceType": "Sensor",
@@ -431,7 +431,7 @@
       "fullName": "SwitchBot Roller Shade",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-roller-shade",
       "deviceType": "Cover",
@@ -452,7 +452,7 @@
       "fullName": "SwitchBot Lock Pro",
       "modelNumber": "",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://www.switch-bot.com/products/switchbot-lock-pro",
       "deviceType": "Lock",
