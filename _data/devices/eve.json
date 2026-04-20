@@ -3,8 +3,8 @@
   "brand": "eve",
   "devices": [
     {
-      "deviceName": "Eve Door & Window",
-      "fullName": "Eve Eve Door & Window",
+      "deviceName": "Door & Window",
+      "fullName": "Eve Door & Window",
       "modelNumber": "20EBN9901",
       "protocol": [
         "Matter over Thread"
@@ -21,8 +21,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy Outlet",
-      "fullName": "Eve Eve Energy Outlet",
+      "deviceName": "Energy Outlet",
+      "fullName": "Eve Energy Outlet",
       "modelNumber": "20ECN4101",
       "protocol": [
         "Matter over Thread"
@@ -39,8 +39,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy Outdoor",
-      "fullName": "Eve Eve Energy Outdoor",
+      "deviceName": "Energy Outdoor",
+      "fullName": "Eve Energy Outdoor",
       "modelNumber": "20ECM8301",
       "protocol": [
         "Matter over Thread"
@@ -57,8 +57,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy Europe",
-      "fullName": "Eve Eve Energy Europe",
+      "deviceName": "Energy Europe",
+      "fullName": "Eve Energy Europe",
       "modelNumber": "20EBO8301",
       "protocol": [
         "Matter over Thread"
@@ -73,8 +73,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy US",
-      "fullName": "Eve Eve Energy US",
+      "deviceName": "Energy US",
+      "fullName": "Eve Energy US",
       "modelNumber": "20EBU4101",
       "protocol": [
         "Matter over Thread"
@@ -89,8 +89,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy CH",
-      "fullName": "Eve Eve Energy CH",
+      "deviceName": "Energy CH",
+      "fullName": "Eve Energy CH",
       "modelNumber": "20ECL1301",
       "protocol": [
         "Matter over Thread"
@@ -105,8 +105,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy UK",
-      "fullName": "Eve Eve Energy UK",
+      "deviceName": "Energy UK",
+      "fullName": "Eve Energy UK",
       "modelNumber": "20EBT8601",
       "protocol": [
         "Matter over Thread"
@@ -121,8 +121,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Energy AU",
-      "fullName": "Eve Eve Energy AU",
+      "deviceName": "Energy AU",
+      "fullName": "Eve Energy AU",
       "modelNumber": "20ECF6001",
       "protocol": [
         "Matter over Thread"
@@ -138,8 +138,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Light Switch",
-      "fullName": "Eve Eve Light Switch",
+      "deviceName": "Light Switch",
+      "fullName": "Eve Light Switch",
       "modelNumber": "20EBW1701",
       "protocol": [
         "Matter over Thread"
@@ -157,8 +157,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Dimmer Switch",
-      "fullName": "Eve Eve Dimmer Switch",
+      "deviceName": "Dimmer Switch",
+      "fullName": "Eve Dimmer Switch",
       "modelNumber": "20ECQ4101",
       "protocol": [
         "Matter over Thread"
@@ -176,8 +176,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Motion",
-      "fullName": "Eve Eve Motion",
+      "deviceName": "Motion",
+      "fullName": "Eve Motion",
       "modelNumber": "20EBY9901",
       "protocol": [
         "Matter over Thread"
@@ -194,8 +194,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve MotionBlinds",
-      "fullName": "Eve Eve MotionBlinds",
+      "deviceName": "MotionBlinds",
+      "fullName": "Eve MotionBlinds",
       "modelNumber": "CM-03-E",
       "protocol": [
         "Matter over Thread"
@@ -213,8 +213,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Thermo",
-      "fullName": "Eve Eve Thermo",
+      "deviceName": "Thermo",
+      "fullName": "Eve Thermo",
       "modelNumber": "20EBP1701",
       "protocol": [
         "Matter over Thread"
@@ -231,8 +231,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Eve Weather",
-      "fullName": "Eve Eve Weather",
+      "deviceName": "Weather",
+      "fullName": "Eve Weather",
       "modelNumber": "20EBS9901",
       "protocol": [
         "Matter over Thread"
