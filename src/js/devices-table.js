@@ -376,7 +376,7 @@
 
     // Update dropdown options with counts
     updateSelectOptions('brandFilter', brandCounts, 'All Brands');
-    updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
+    updateSelectOptions('protocolFilter', protocolCounts, 'All Connectivity Types');
     updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
     updateSelectOptions('secondaryDeviceTypeFilter', secondaryDeviceTypeCounts, 'All Secondary Types');
     updateSelectOptions('regionFilter', regionCounts, 'All Regions');

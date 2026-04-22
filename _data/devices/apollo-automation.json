@@ -151,6 +151,41 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "PUMP-1 Fluid Pump",
+      "fullName": "Apollo Automation PUMP-1 Fluid Pump",
+      "modelNumber": "PUMP-1",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/pump-1-fluid-pump",
+      "deviceType": "Irrigation",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "TEMP-1 Temperature Sensor",
+      "fullName": "Apollo Automation TEMP-1 Temperature Sensor",
+      "modelNumber": "TEMP-1",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com/products/temp-1",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
