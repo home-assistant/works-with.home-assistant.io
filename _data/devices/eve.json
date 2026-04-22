@@ -57,8 +57,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Energy Europe",
-      "fullName": "Eve Energy Europe",
+      "deviceName": "Energy (Europe)",
+      "fullName": "Eve Energy (Europe)",
       "modelNumber": "20EBO8301",
       "protocol": [
         "Matter over Thread"
@@ -73,8 +73,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Energy US",
-      "fullName": "Eve Energy US",
+      "deviceName": "Energy (US & Canada)",
+      "fullName": "Eve Energy (US & Canada)",
       "modelNumber": "20EBU4101",
       "protocol": [
         "Matter over Thread"
@@ -84,13 +84,14 @@
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
-        "USA"
+        "USA",
+        "Canada"
       ],
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Energy CH",
-      "fullName": "Eve Energy CH",
+      "deviceName": "Energy (Switzerland)",
+      "fullName": "Eve Energy (Switzerland)",
       "modelNumber": "20ECL1301",
       "protocol": [
         "Matter over Thread"
@@ -105,8 +106,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Energy UK",
-      "fullName": "Eve Energy UK",
+      "deviceName": "Energy (UK)",
+      "fullName": "Eve Energy (UK)",
       "modelNumber": "20EBT8601",
       "protocol": [
         "Matter over Thread"
@@ -121,8 +122,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Energy AU",
-      "fullName": "Eve Energy AU",
+      "deviceName": "Energy (Australia)",
+      "fullName": "Eve Energy (Australia)",
       "modelNumber": "20ECF6001",
       "protocol": [
         "Matter over Thread"
@@ -151,8 +152,7 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Canada",
-        "USA"
+        "Europe"
       ],
       "functionalityRemark": ""
     },
