@@ -95,6 +95,11 @@
             "name": "Heatit",
             "logo": "heatit.png",
             "link": "https://www.home-assistant.io/integrations/heatit/"
+        },
+        {
+            "name": "Ubisys",
+            "logo": "ubisys.png",
+            "link": "https://www.home-assistant.io/integrations/ubisys/"
         }
     ]
 }
