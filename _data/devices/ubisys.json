@@ -3,8 +3,8 @@
   "brand": "ubisys",
   "devices": [
     {
-      "deviceName": "Control Unit C4 (Series2)",
-      "fullName": "Ubisys Control Unit C4 (Series2)",
+      "deviceName": "Control Unit C4 (Series 2)",
+      "fullName": "Ubisys Control Unit C4 (Series 2)",
       "modelNumber": "5504",
       "protocol": [
         "Zigbee"
@@ -60,8 +60,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Switching Actuator S1-R (Series2)",
-      "fullName": "Ubisys Switching Actuator S1-R (Series2)",
+      "deviceName": "Switching Actuator S1-R (Series 2)",
+      "fullName": "Ubisys Switching Actuator S1-R (Series 2)",
       "modelNumber": "5601",
       "protocol": [
         "Zigbee"
