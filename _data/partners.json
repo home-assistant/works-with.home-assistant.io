@@ -97,7 +97,7 @@
             "link": "https://www.home-assistant.io/integrations/heatit/"
         },
         {
-            "name": "Ubisys",
+            "name": "ubisys",
             "logo": "ubisys.png",
             "link": "https://www.home-assistant.io/integrations/ubisys/"
         }

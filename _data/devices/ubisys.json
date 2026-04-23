@@ -1,10 +1,10 @@
 {
-  "companyName": "Ubisys",
+  "companyName": "ubisys",
   "brand": "ubisys",
   "devices": [
     {
       "deviceName": "Control Unit C4 (Series 2)",
-      "fullName": "Ubisys Control Unit C4 (Series 2)",
+      "fullName": "ubisys Control Unit C4 (Series 2)",
       "modelNumber": "5504",
       "protocol": [
         "Zigbee"
@@ -25,7 +25,7 @@
     },
     {
       "deviceName": "Heating Regulator H1",
-      "fullName": "Ubisys Heating Regulator H1",
+      "fullName": "ubisys Heating Regulator H1",
       "modelNumber": "H1",
       "protocol": [
         "Zigbee"
@@ -43,7 +43,7 @@
     },
     {
       "deviceName": "Switching Actuator S1",
-      "fullName": "Ubisys Switching Actuator S1",
+      "fullName": "ubisys Switching Actuator S1",
       "modelNumber": "S1",
       "protocol": [
         "Zigbee"
@@ -61,7 +61,7 @@
     },
     {
       "deviceName": "Switching Actuator S1-R (Series 2)",
-      "fullName": "Ubisys Switching Actuator S1-R (Series 2)",
+      "fullName": "ubisys Switching Actuator S1-R (Series 2)",
       "modelNumber": "5601",
       "protocol": [
         "Zigbee"
@@ -79,7 +79,7 @@
     },
     {
       "deviceName": "Switching Actuator S2",
-      "fullName": "Ubisys Switching Actuator S2",
+      "fullName": "ubisys Switching Actuator S2",
       "modelNumber": "5502",
       "protocol": [
         "Zigbee"
