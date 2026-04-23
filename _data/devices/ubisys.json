@@ -1,0 +1,99 @@
+{
+  "companyName": "Ubisys",
+  "brand": "ubisys",
+  "devices": [
+    {
+      "deviceName": "Control Unit C4 (Series 2)",
+      "fullName": "Ubisys Control Unit C4 (Series 2)",
+      "modelNumber": "5504",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.ubisys.de/en/products/additional-options/control-unit-c4/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off",
+        "Lighting",
+        "Shutter",
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Heating Regulator H1",
+      "fullName": "Ubisys Heating Regulator H1",
+      "modelNumber": "H1",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.ubisys.de/en/products/climate/heating-regulator-h1/",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [
+        "TRV"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Switching Actuator S1",
+      "fullName": "Ubisys Switching Actuator S1",
+      "modelNumber": "S1",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.ubisys.de/en/products/light-and-comsumers/switching-actuator-s1/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Switching Actuator S1-R (Series 2)",
+      "fullName": "Ubisys Switching Actuator S1-R (Series 2)",
+      "modelNumber": "5601",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.ubisys.de/en/products/light-and-comsumers/switching-actuator-s1-r/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Switching Actuator S2",
+      "fullName": "Ubisys Switching Actuator S2",
+      "modelNumber": "5502",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.ubisys.de/en/products/light-and-comsumers/switching-actuator-s2/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
