@@ -249,6 +249,24 @@
         "Europe"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Motion Sensor 2 Pet",
+      "fullName": "frient Motion Sensor 2 Pet",
+      "modelNumber": "MOSZB-156",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.frient.com/products/motion-sensor-2-pet",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
