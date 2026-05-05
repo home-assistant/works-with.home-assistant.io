@@ -1,0 +1,3165 @@
+{
+  "companyName": "BEGA",
+  "brand": "bega",
+  "devices": [
+    {
+      "deviceName": "Ceiling luminaire 24 919",
+      "fullName": "BEGA Ceiling luminaire 24 919",
+      "modelNumber": "24 919",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24919&product=24919&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 24 919 W",
+      "fullName": "BEGA Ceiling luminaire 24 919 W",
+      "modelNumber": "24 919 W",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24919W&product=24919W&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 910",
+      "fullName": "BEGA Wall luminaire 24 910",
+      "modelNumber": "24 910",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24910&product=24910&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 910 A",
+      "fullName": "BEGA Wall luminaire 24 910 A",
+      "modelNumber": "24 910 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24910A&product=24910A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 920",
+      "fullName": "BEGA Wall luminaire 24 920",
+      "modelNumber": "24 920",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24920&product=24920&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 920 A",
+      "fullName": "BEGA Wall luminaire 24 920 A",
+      "modelNumber": "24 920 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24920A&product=24920A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 249",
+      "fullName": "BEGA Garden and pathway luminaire 85 249",
+      "modelNumber": "85 249",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85249&product=85249&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 249 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 249 A",
+      "modelNumber": "85 249 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85249A&product=85249A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 250",
+      "fullName": "BEGA Garden and pathway luminaire 85 250",
+      "modelNumber": "85 250",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85250&product=85250&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 250 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 250 A",
+      "modelNumber": "85 250 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85250A&product=85250A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 343",
+      "fullName": "BEGA Garden and pathway luminaire 85 343",
+      "modelNumber": "85 343",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85343&product=85343&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 343 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 343 A",
+      "modelNumber": "85 343 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85343A&product=85343A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 344",
+      "fullName": "BEGA Garden and pathway luminaire 85 344",
+      "modelNumber": "85 344",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85344&product=85344&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 344 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 344 A",
+      "modelNumber": "85 344 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85344A&product=85344A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 253",
+      "fullName": "BEGA Garden and pathway luminaire 85 253",
+      "modelNumber": "85 253",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85253&product=85253&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 253 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 253 A",
+      "modelNumber": "85 253 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85253A&product=85253A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 254",
+      "fullName": "BEGA Garden and pathway luminaire 85 254",
+      "modelNumber": "85 254",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85254&product=85254&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 254 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 254 A",
+      "modelNumber": "85 254 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85254A&product=85254A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 345",
+      "fullName": "BEGA Garden and pathway luminaire 85 345",
+      "modelNumber": "85 345",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85345&product=85345&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 345 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 345 A",
+      "modelNumber": "85 345 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85345A&product=85345A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 346",
+      "fullName": "BEGA Garden and pathway luminaire 85 346",
+      "modelNumber": "85 346",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85346&product=85346&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 346 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 346 A",
+      "modelNumber": "85 346 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85346A&product=85346A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 257",
+      "fullName": "BEGA Garden and pathway luminaire 85 257",
+      "modelNumber": "85 257",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85257&product=85257&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 257 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 257 A",
+      "modelNumber": "85 257 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85257A&product=85257A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 258",
+      "fullName": "BEGA Garden and pathway luminaire 85 258",
+      "modelNumber": "85 258",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85258&product=85258&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 258 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 258 A",
+      "modelNumber": "85 258 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85258A&product=85258A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 347",
+      "fullName": "BEGA Garden and pathway luminaire 85 347",
+      "modelNumber": "85 347",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85347&product=85347&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 347 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 347 A",
+      "modelNumber": "85 347 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85347A&product=85347A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 348",
+      "fullName": "BEGA Garden and pathway luminaire 85 348",
+      "modelNumber": "85 348",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85348&product=85348&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 348 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 348 A",
+      "modelNumber": "85 348 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85348A&product=85348A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51410.2K3",
+      "fullName": "BEGA Ceiling luminaire 51410.2K3",
+      "modelNumber": "51410.2K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51410.2K3&product=51410.2K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51410.4K3",
+      "fullName": "BEGA Ceiling luminaire 51410.4K3",
+      "modelNumber": "51410.4K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51410.4K3&product=51410.4K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51410.6K3",
+      "fullName": "BEGA Ceiling luminaire 51410.6K3",
+      "modelNumber": "51410.6K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51410.6K3&product=51410.6K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51411.2K3",
+      "fullName": "BEGA Ceiling luminaire 51411.2K3",
+      "modelNumber": "51411.2K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51411.2K3&product=51411.2K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51411.4K3",
+      "fullName": "BEGA Ceiling luminaire 51411.4K3",
+      "modelNumber": "51411.4K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51411.4K3&product=51411.4K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51411.6K3",
+      "fullName": "BEGA Ceiling luminaire 51411.6K3",
+      "modelNumber": "51411.6K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51411.6K3&product=51411.6K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51407.1K3",
+      "fullName": "BEGA Ceiling luminaire 51407.1K3",
+      "modelNumber": "51407.1K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51407.1K3&product=51407.1K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51407.4K3",
+      "fullName": "BEGA Ceiling luminaire 51407.4K3",
+      "modelNumber": "51407.4K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51407.4K3&product=51407.4K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling luminaire 51407.5K3",
+      "fullName": "BEGA Ceiling luminaire 51407.5K3",
+      "modelNumber": "51407.5K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51407.5K3&product=51407.5K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 51 374",
+      "fullName": "BEGA Ceiling and wall luminaire 51 374",
+      "modelNumber": "51 374",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51374&product=51374&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling",
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Table lamp 51436.5K3",
+      "fullName": "BEGA Table lamp 51436.5K3",
+      "modelNumber": "51436.5K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51436.5K3&product=51436.5K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Table"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Table lamp 51436.7K3",
+      "fullName": "BEGA Table lamp 51436.7K3",
+      "modelNumber": "51436.7K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51436.7K3&product=51436.7K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Table"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Table lamp 51436.8K3",
+      "fullName": "BEGA Table lamp 51436.8K3",
+      "modelNumber": "51436.8K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51436.8K3&product=51436.8K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Table"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 213",
+      "fullName": "BEGA Garden and pathway luminaire 85 213",
+      "modelNumber": "85 213",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85213&product=85213&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 214",
+      "fullName": "BEGA Garden and pathway luminaire 85 214",
+      "modelNumber": "85 214",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85214&product=85214&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 213 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 213 A",
+      "modelNumber": "85 213 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85213A&product=85213A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 214 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 214 A",
+      "modelNumber": "85 214 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85214A&product=85214A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 215",
+      "fullName": "BEGA Garden and pathway luminaire 85 215",
+      "modelNumber": "85 215",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85215&product=85215&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 216",
+      "fullName": "BEGA Garden and pathway luminaire 85 216",
+      "modelNumber": "85 216",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85216&product=85216&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 215 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 215 A",
+      "modelNumber": "85 215 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85215A&product=85215A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 216 A",
+      "fullName": "BEGA Garden and pathway luminaire 85 216 A",
+      "modelNumber": "85 216 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85216A&product=85216A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 323 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 323 K3",
+      "modelNumber": "85 323 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85323K3&product=85323K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 323 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 323 K4",
+      "modelNumber": "85 323 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85323K4&product=85323K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 324 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 324 K3",
+      "modelNumber": "85 324 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85324K3&product=85324K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 324 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 324 K4",
+      "modelNumber": "85 324 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85324K4&product=85324K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 323 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 323 AK3",
+      "modelNumber": "85 323 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85323AK3&product=85323AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 323 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 323 AK4",
+      "modelNumber": "85 323 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85323AK4&product=85323AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 324 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 324 AK3",
+      "modelNumber": "85 324 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85324AK3&product=85324AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 324 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 324 AK4",
+      "modelNumber": "85 324 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85324AK4&product=85324AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 325 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 325 K3",
+      "modelNumber": "85 325 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85325K3&product=85325K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 325 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 325 K4",
+      "modelNumber": "85 325 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85325K4&product=85325K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 326 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 326 K3",
+      "modelNumber": "85 326 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85326K3&product=85326K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 326 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 326 K4",
+      "modelNumber": "85 326 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85326K4&product=85326K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 325 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 325 AK3",
+      "modelNumber": "85 325 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85325AK3&product=85325AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 325 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 325 AK4",
+      "modelNumber": "85 325 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85325AK4&product=85325AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 326 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 326 AK3",
+      "modelNumber": "85 326 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85326AK3&product=85326AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 326 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 326 AK4",
+      "modelNumber": "85 326 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85326AK4&product=85326AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 319 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 319 K3",
+      "modelNumber": "85 319 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85319K3&product=85319K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 319 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 319 K4",
+      "modelNumber": "85 319 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85319K4&product=85319K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 320 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 320 K3",
+      "modelNumber": "85 320 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85320K3&product=85320K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 320 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 320 K4",
+      "modelNumber": "85 320 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85320K4&product=85320K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 319 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 319 AK3",
+      "modelNumber": "85 319 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85319AK3&product=85319AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 319 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 319 AK4",
+      "modelNumber": "85 319 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85319AK4&product=85319AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 320 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 320 AK3",
+      "modelNumber": "85 320 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85320AK3&product=85320AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 320 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 320 AK4",
+      "modelNumber": "85 320 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85320AK4&product=85320AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 321 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 321 K3",
+      "modelNumber": "85 321 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85321K3&product=85321K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 321 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 321 K4",
+      "modelNumber": "85 321 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85321K4&product=85321K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 322 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 322 K3",
+      "modelNumber": "85 322 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85322K3&product=85322K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 322 K4",
+      "fullName": "BEGA Garden and pathway luminaire 85 322 K4",
+      "modelNumber": "85 322 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85322K4&product=85322K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 321 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 321 AK3",
+      "modelNumber": "85 321 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85321AK3&product=85321AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 321 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 321 AK4",
+      "modelNumber": "85 321 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85321AK4&product=85321AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 322 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 322 AK3",
+      "modelNumber": "85 322 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85322AK3&product=85322AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 322 AK4",
+      "fullName": "BEGA Garden and pathway luminaire 85 322 AK4",
+      "modelNumber": "85 322 AK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85322AK4&product=85322AK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 958",
+      "fullName": "BEGA Wall luminaire 24 958",
+      "modelNumber": "24 958",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24958&product=24958&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 958 A",
+      "fullName": "BEGA Wall luminaire 24 958 A",
+      "modelNumber": "24 958 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24958A&product=24958A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 958 W",
+      "fullName": "BEGA Wall luminaire 24 958 W",
+      "modelNumber": "24 958 W",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24958W&product=24958W&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 959",
+      "fullName": "BEGA Wall luminaire 24 959",
+      "modelNumber": "24 959",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24959&product=24959&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 959 A",
+      "fullName": "BEGA Wall luminaire 24 959 A",
+      "modelNumber": "24 959 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24959A&product=24959A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Wall luminaire 24 959 W",
+      "fullName": "BEGA Wall luminaire 24 959 W",
+      "modelNumber": "24 959 W",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24959W&product=24959W&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 941",
+      "fullName": "BEGA Ceiling and wall luminaire 24 941",
+      "modelNumber": "24 941",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24941&product=24941&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 941 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 941 A",
+      "modelNumber": "24 941 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24941A&product=24941A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 942",
+      "fullName": "BEGA Ceiling and wall luminaire 24 942",
+      "modelNumber": "24 942",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24942&product=24942&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 942 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 942 A",
+      "modelNumber": "24 942 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24942A&product=24942A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 943",
+      "fullName": "BEGA Ceiling and wall luminaire 24 943",
+      "modelNumber": "24 943",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24943&product=24943&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 943 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 943 A",
+      "modelNumber": "24 943 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24943A&product=24943A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 944",
+      "fullName": "BEGA Ceiling and wall luminaire 24 944",
+      "modelNumber": "24 944",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24944&product=24944&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 944 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 944 A",
+      "modelNumber": "24 944 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24944A&product=24944A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 945",
+      "fullName": "BEGA Ceiling and wall luminaire 24 945",
+      "modelNumber": "24 945",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24945&product=24945&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 945 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 945 A",
+      "modelNumber": "24 945 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24945A&product=24945A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 946",
+      "fullName": "BEGA Ceiling and wall luminaire 24 946",
+      "modelNumber": "24 946",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24946&product=24946&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 946 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 946 A",
+      "modelNumber": "24 946 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24946A&product=24946A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 947",
+      "fullName": "BEGA Ceiling and wall luminaire 24 947",
+      "modelNumber": "24 947",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24947&product=24947&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 947 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 947 A",
+      "modelNumber": "24 947 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24947A&product=24947A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 948",
+      "fullName": "BEGA Ceiling and wall luminaire 24 948",
+      "modelNumber": "24 948",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24948&product=24948&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 948 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 948 A",
+      "modelNumber": "24 948 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24948A&product=24948A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 949",
+      "fullName": "BEGA Ceiling and wall luminaire 24 949",
+      "modelNumber": "24 949",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24949&product=24949&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 949 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 949 A",
+      "modelNumber": "24 949 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24949A&product=24949A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 950",
+      "fullName": "BEGA Ceiling and wall luminaire 24 950",
+      "modelNumber": "24 950",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24950&product=24950&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 950 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 950 A",
+      "modelNumber": "24 950 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24950A&product=24950A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 951",
+      "fullName": "BEGA Ceiling and wall luminaire 24 951",
+      "modelNumber": "24 951",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24951&product=24951&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 951 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 951 A",
+      "modelNumber": "24 951 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24951A&product=24951A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 952",
+      "fullName": "BEGA Ceiling and wall luminaire 24 952",
+      "modelNumber": "24 952",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24952&product=24952&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 952 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 952 A",
+      "modelNumber": "24 952 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24952A&product=24952A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 953",
+      "fullName": "BEGA Ceiling and wall luminaire 24 953",
+      "modelNumber": "24 953",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24953&product=24953&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 953 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 953 A",
+      "modelNumber": "24 953 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24953A&product=24953A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 954",
+      "fullName": "BEGA Ceiling and wall luminaire 24 954",
+      "modelNumber": "24 954",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24954&product=24954&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 954 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 954 A",
+      "modelNumber": "24 954 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24954A&product=24954A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 955",
+      "fullName": "BEGA Ceiling and wall luminaire 24 955",
+      "modelNumber": "24 955",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24955&product=24955&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 956",
+      "fullName": "BEGA Ceiling and wall luminaire 24 956",
+      "modelNumber": "24 956",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24956&product=24956&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 957",
+      "fullName": "BEGA Ceiling and wall luminaire 24 957",
+      "modelNumber": "24 957",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24957&product=24957&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 983",
+      "fullName": "BEGA Ceiling and wall luminaire 24 983",
+      "modelNumber": "24 983",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24983&product=24983&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 983 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 983 A",
+      "modelNumber": "24 983 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24983A&product=24983A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 984",
+      "fullName": "BEGA Ceiling and wall luminaire 24 984",
+      "modelNumber": "24 984",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24984&product=24984&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 24 984 A",
+      "fullName": "BEGA Ceiling and wall luminaire 24 984 A",
+      "modelNumber": "24 984 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=24984A&product=24984A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 054",
+      "fullName": "BEGA PRIMA Wall luminaire 25 054",
+      "modelNumber": "25 054",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25054&product=25054&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 054 A",
+      "fullName": "BEGA PRIMA Wall luminaire 25 054 A",
+      "modelNumber": "25 054 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25054A&product=25054A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 056",
+      "fullName": "BEGA PRIMA Wall luminaire 25 056",
+      "modelNumber": "25 056",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25056&product=25056&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 056 A",
+      "fullName": "BEGA PRIMA Wall luminaire 25 056 A",
+      "modelNumber": "25 056 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25056A&product=25056A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 042",
+      "fullName": "BEGA PRIMA Wall luminaire 25 042",
+      "modelNumber": "25 042",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25042&product=25042&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 042 A",
+      "fullName": "BEGA PRIMA Wall luminaire 25 042 A",
+      "modelNumber": "25 042 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25042A&product=25042A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 044",
+      "fullName": "BEGA PRIMA Wall luminaire 25 044",
+      "modelNumber": "25 044",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25044&product=25044&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Wall luminaire 25 044 A",
+      "fullName": "BEGA PRIMA Wall luminaire 25 044 A",
+      "modelNumber": "25 044 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25044A&product=25044A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 046",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 046",
+      "modelNumber": "25 046",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25046&product=25046&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 046 A",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 046 A",
+      "modelNumber": "25 046 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25046A&product=25046A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 048",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 048",
+      "modelNumber": "25 048",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25048&product=25048&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 048 A",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 048 A",
+      "modelNumber": "25 048 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25048A&product=25048A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 038",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 038",
+      "modelNumber": "25 038",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25038&product=25038&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 038 A",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 038 A",
+      "modelNumber": "25 038 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25038A&product=25038A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 040",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 040",
+      "modelNumber": "25 040",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25040&product=25040&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "PRIMA Ceiling and wall luminaire 25 040 A",
+      "fullName": "BEGA PRIMA Ceiling and wall luminaire 25 040 A",
+      "modelNumber": "25 040 A",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25040A&product=25040A&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 411 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 411 K3",
+      "modelNumber": "85 411 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85411K3&product=85411K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 411 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 411 AK3",
+      "modelNumber": "85 411 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85411AK3&product=85411AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 413 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 413 K3",
+      "modelNumber": "85 413 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85413K3&product=85413K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 413 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 413 AK3",
+      "modelNumber": "85 413 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85413AK3&product=85413AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 415 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 415 K3",
+      "modelNumber": "85 415 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85415K3&product=85415K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 415 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 415 AK3",
+      "modelNumber": "85 415 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85415AK3&product=85415AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 417 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 417 K3",
+      "modelNumber": "85 417 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85417K3&product=85417K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 417 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 417 AK3",
+      "modelNumber": "85 417 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85417AK3&product=85417AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 419 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 419 K3",
+      "modelNumber": "85 419 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85419K3&product=85419K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 419 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 419 AK3",
+      "modelNumber": "85 419 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85419AK3&product=85419AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 421 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 421 K3",
+      "modelNumber": "85 421 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85421K3&product=85421K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 421 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 421 AK3",
+      "modelNumber": "85 421 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85421AK3&product=85421AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 423 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 423 K3",
+      "modelNumber": "85 423 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85423K3&product=85423K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 423 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 423 AK3",
+      "modelNumber": "85 423 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85423AK3&product=85423AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 425 K3",
+      "fullName": "BEGA Garden and pathway luminaire 85 425 K3",
+      "modelNumber": "85 425 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85425K3&product=85425K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Garden and pathway luminaire 85 425 AK3",
+      "fullName": "BEGA Garden and pathway luminaire 85 425 AK3",
+      "modelNumber": "85 425 AK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=85425AK3&product=85425AK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 034 K3",
+      "fullName": "BEGA Ceiling mounted downlight 25 034 K3",
+      "modelNumber": "25 034 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25034K3&product=25034K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 034 K4",
+      "fullName": "BEGA Ceiling mounted downlight 25 034 K4",
+      "modelNumber": "25 034 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25034K4&product=25034K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 034 WK3",
+      "fullName": "BEGA Ceiling mounted downlight 25 034 WK3",
+      "modelNumber": "25 034 WK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25034WK3&product=25034WK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 034 WK4",
+      "fullName": "BEGA Ceiling mounted downlight 25 034 WK4",
+      "modelNumber": "25 034 WK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25034WK4&product=25034WK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 035 K3",
+      "fullName": "BEGA Ceiling mounted downlight 25 035 K3",
+      "modelNumber": "25 035 K3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25035K3&product=25035K3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 035 K4",
+      "fullName": "BEGA Ceiling mounted downlight 25 035 K4",
+      "modelNumber": "25 035 K4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25035K4&product=25035K4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 035 WK3",
+      "fullName": "BEGA Ceiling mounted downlight 25 035 WK3",
+      "modelNumber": "25 035 WK3",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25035WK3&product=25035WK3&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling mounted downlight 25 035 WK4",
+      "fullName": "BEGA Ceiling mounted downlight 25 035 WK4",
+      "modelNumber": "25 035 WK4",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=25035WK4&product=25035WK4&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Outdoor",
+        "Downlight"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Outdoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    },
+    {
+      "deviceName": "Ceiling and wall luminaire 51 521",
+      "fullName": "BEGA Ceiling and wall luminaire 51 521",
+      "modelNumber": "51 521",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://www.bega.com/en/search/?query=51521&product=51521&tab=info",
+      "deviceType": "Light",
+      "secondaryDeviceType": [
+        "Indoor",
+        "Ceiling",
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "UK"
+      ],
+      "functionalityRemark": "Indoor. Products marked as ‘BEGA Smart’ are equipped with Zigbee and are certified under Works with Home Assistant. Other variants (e.g. DALI or on/off) are not certified."
+    }
+  ]
+}
