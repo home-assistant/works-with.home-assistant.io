@@ -361,6 +361,57 @@
         "USA"
       ],
       "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Power Switch",
+      "fullName": "Zooz Power Switch",
+      "modelNumber": "ZEN15",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen15-power-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "S2 Toggle Switch",
+      "fullName": "Zooz S2 Toggle Switch",
+      "modelNumber": "ZEN73",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zooz-zen73-s2-toggle-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Heavy Duty Wall Switch",
+      "fullName": "Zooz Heavy Duty Wall Switch",
+      "modelNumber": "ZEN75",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zen75-heavy-duty-wall-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
     }
   ]
 }

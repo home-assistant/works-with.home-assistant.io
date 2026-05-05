@@ -5,11 +5,24 @@
   let itemsPerPage = 25;
   let filteredRows = [];
 
+  // Mapping between URL query parameter names and filter element IDs
+  const URL_PARAMS = {
+    brand: 'brandFilter',
+    protocol: 'protocolFilter',
+    deviceType: 'deviceTypeFilter',
+    secondaryDeviceType: 'secondaryDeviceTypeFilter',
+    region: 'regionFilter',
+    search: 'searchInput',
+  };
+
   // Initialize on page load
   document.addEventListener('DOMContentLoaded', function () {
     initializeFilters();
     initializeSorting();
     initializePagination();
+
+    // Apply URL query params before the first filter pass
+    applyUrlParams();
 
     // Initial filter to set up filteredRows
     filterTable();
@@ -20,6 +33,7 @@
       searchInput.addEventListener('input', function () {
         currentPage = 1;
         filterTable();
+        updateUrlParams();
       });
     }
 
@@ -31,26 +45,31 @@
     if (brandFilter) brandFilter.addEventListener('change', function () {
       currentPage = 1;
       filterTable();
+      updateUrlParams();
     });
     if (protocolFilter) protocolFilter.addEventListener('change', function () {
       currentPage = 1;
       filterTable();
+      updateUrlParams();
     });
     if (deviceTypeFilter) deviceTypeFilter.addEventListener('change', function () {
       currentPage = 1;
       filterTable();
+      updateUrlParams();
     });
 
     const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
     if (secondaryDeviceTypeFilter) secondaryDeviceTypeFilter.addEventListener('change', function () {
       currentPage = 1;
       filterTable();
+      updateUrlParams();
     });
 
     const regionFilter = document.getElementById('regionFilter');
     if (regionFilter) regionFilter.addEventListener('change', function () {
       currentPage = 1;
       filterTable();
+      updateUrlParams();
     });
 
     // Set up clear filters button
@@ -376,7 +395,7 @@
 
     // Update dropdown options with counts
     updateSelectOptions('brandFilter', brandCounts, 'All Brands');
-    updateSelectOptions('protocolFilter', protocolCounts, 'All Protocols');
+    updateSelectOptions('protocolFilter', protocolCounts, 'All Connectivity Types');
     updateSelectOptions('deviceTypeFilter', deviceTypeCounts, 'All Device Types');
     updateSelectOptions('secondaryDeviceTypeFilter', secondaryDeviceTypeCounts, 'All Secondary Types');
     updateSelectOptions('regionFilter', regionCounts, 'All Regions');
@@ -418,6 +437,48 @@
 
     currentPage = 1;
     filterTable();
+    updateUrlParams();
+  }
+
+  // Apply filter values from the URL query string. Called once after the
+  // dropdown options have been populated. Matches case-insensitively so links
+  // shared with different casing still resolve to the right option.
+  function applyUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    Object.entries(URL_PARAMS).forEach(([param, elementId]) => {
+      const value = params.get(param);
+      if (!value) return;
+      const el = document.getElementById(elementId);
+      if (!el) return;
+
+      if (el.tagName === 'SELECT') {
+        const match = Array.from(el.options).find(
+          opt => opt.value && opt.value.toLowerCase() === value.toLowerCase()
+        );
+        if (match) el.value = match.value;
+      } else {
+        el.value = value;
+      }
+    });
+  }
+
+  // Sync the URL query string with the current filter values. Uses
+  // history.replaceState so changing filters doesn't add browser history
+  // entries.
+  function updateUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    Object.entries(URL_PARAMS).forEach(([param, elementId]) => {
+      const el = document.getElementById(elementId);
+      const value = el ? el.value : '';
+      if (value) {
+        params.set(param, value);
+      } else {
+        params.delete(param);
+      }
+    });
+    const query = params.toString();
+    const newUrl = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+    window.history.replaceState(null, '', newUrl);
   }
 
   // Apply pagination to filtered rows

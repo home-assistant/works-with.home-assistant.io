@@ -3,8 +3,8 @@
   "brand": "heatit",
   "devices": [
     {
-      "deviceName": "Z-Push Wall Controller",
-      "fullName": "Heatit Z-Push Wall Controller",
+      "deviceName": "Z-Push Wall Controller White RAL 9010 Glossy",
+      "fullName": "Heatit Z-Push Wall Controller White RAL 9010 Glossy",
       "modelNumber": "",
       "protocol": [
         "Z-Wave"
@@ -21,8 +21,44 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Z-Temp3",
-      "fullName": "Heatit Z-Temp3",
+      "deviceName": "Z-Push Wall Controller White RAL 9003 Glossy",
+      "fullName": "Heatit Z-Push Wall Controller White RAL 9003 Glossy",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10222/products/controllers/heatit-z-push-wall-controller-white-ral-9003-glossy/1107",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-Push Wall Controller Black Matt",
+      "fullName": "Heatit Z-Push Wall Controller Black Matt",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10190/products/controllers/heatit-z-push-wall-controller-black-matt/1107",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-Temp3 White RAL 9003",
+      "fullName": "Heatit Z-Temp3 White RAL 9003",
       "modelNumber": "",
       "protocol": [
         "Z-Wave"
@@ -37,13 +73,45 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Z-TRM6 DC",
-      "fullName": "Heatit Z-TRM6 DC",
+      "deviceName": "Z-Temp3 Black Matt",
+      "fullName": "Heatit Z-Temp3 Black Matt",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10290/heatit-z-temp3-black-matt",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-TRM6 DC White",
+      "fullName": "Heatit Z-TRM6 DC White",
       "modelNumber": "",
       "protocol": [
         "Z-Wave"
       ],
       "websiteLink": "https://heatit.com/produkt/10413/heatit-z-trm6-dc-white-ral-9003",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-TRM6 DC Black Matt",
+      "fullName": "Heatit Z-TRM6 DC Black Matt",
+      "modelNumber": "",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10316/products/thermostats/heatit-z-trm6-black-matt/1109",
       "deviceType": "Climate",
       "secondaryDeviceType": [],
       "relatedProducts": "",
