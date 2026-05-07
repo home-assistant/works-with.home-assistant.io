@@ -3,26 +3,6 @@
   "brand": "frient",
   "devices": [
     {
-      "deviceName": "Motion Sensor Pro",
-      "fullName": "frient Motion Sensor Pro",
-      "modelNumber": "MOSZB-141",
-      "protocol": [
-        "Zigbee"
-      ],
-      "websiteLink": "https://www.frient.com/products/motion-sensor-pro",
-      "deviceType": "Sensor",
-      "secondaryDeviceType": [
-        "Motion",
-        "Light",
-        "Temperature"
-      ],
-      "relatedProducts": "",
-      "region": [
-        "Europe"
-      ],
-      "functionalityRemark": ""
-    },
-    {
       "deviceName": "IO Module",
       "fullName": "frient IO Module",
       "modelNumber": "IOMZB-110",
