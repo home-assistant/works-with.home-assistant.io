@@ -156,6 +156,46 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Elite Floodlight WiFi",
+      "fullName": "Reolink Elite Floodlight WiFi",
+      "modelNumber": "",
+      "protocol": [
+        "WiFi"
+      ],
+      "websiteLink": "https://reolink.com/product/elite-floodlight-wifi/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": [
+        "Floodlight"
+      ],
+      "relatedProducts": {
+        "text": "Reolink Home Hub",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+    },
+    {
+      "deviceName": "TrackMix WiFi",
+      "fullName": "Reolink TrackMix WiFi",
+      "modelNumber": "",
+      "protocol": [
+        "WiFi"
+      ],
+      "websiteLink": "https://reolink.com/product/reolink-trackmix-wifi/",
+      "deviceType": "Camera",
+      "secondaryDeviceType": [],
+      "relatedProducts": {
+        "text": "Reolink Home Hub",
+        "url": "https://reolink.com/product/reolink-home-hub/"
+      },
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     }
   ]
 }
