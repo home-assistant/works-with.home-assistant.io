@@ -7,7 +7,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.2Nm",
       "modelNumber": "CMD-02",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -28,7 +28,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.2Nm",
       "modelNumber": "CMD-02-P",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -49,7 +49,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.5Nm",
       "modelNumber": "CMD-03",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -70,7 +70,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 1.1Nm",
       "modelNumber": "CM-03",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -91,7 +91,7 @@
       "fullName": "MotionBlinds Tubular Battery/Wired Motor 1.1Nm",
       "modelNumber": "CM-04",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -112,7 +112,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 2.0Nm",
       "modelNumber": "CM-05",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -133,7 +133,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 6.0Nm",
       "modelNumber": "CM-06",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
@@ -154,7 +154,7 @@
       "fullName": "MotionBlinds Mid Motor Battery/Wired 0.8Nm",
       "modelNumber": "CM-07",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
@@ -175,7 +175,7 @@
       "fullName": "MotionBlinds Mid Motor Battery/Wired 0.8Nm",
       "modelNumber": "CM-07V2",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
@@ -196,7 +196,7 @@
       "fullName": "MotionBlinds Honeycomb Battery Motor 0.6Nm",
       "modelNumber": "CM-08",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/honeycomb",
       "deviceType": "Cover",
@@ -217,7 +217,7 @@
       "fullName": "MotionBlinds Tubular Wired Motor 6.0Nm",
       "modelNumber": "CM-09",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -238,7 +238,7 @@
       "fullName": "MotionBlinds Tubular Wired Motor 8.0Nm",
       "modelNumber": "CM-10",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
@@ -259,7 +259,7 @@
       "fullName": "MotionBlinds Smart Switch",
       "modelNumber": "CM-34",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://support.motionblinds.com/motionblinds-smart-switch-cm-34",
       "deviceType": "Cover",
@@ -280,7 +280,7 @@
       "fullName": "MotionBlinds Curtain Wired Motor 1.2Nm",
       "modelNumber": "CM-35",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
@@ -301,7 +301,7 @@
       "fullName": "MotionBlinds Curtain Battery Motor 0.8Nm",
       "modelNumber": "CM-36",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
@@ -322,7 +322,7 @@
       "fullName": "MotionBlinds Vertical Battery/Wired Motor 0.35Nm",
       "modelNumber": "CM-40",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/vertical",
       "deviceType": "Cover",
@@ -343,7 +343,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.5Nm",
       "modelNumber": "CM-45",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -364,7 +364,7 @@
       "fullName": "MotionBlinds Curtain Wired Motor 1.1Nm",
       "modelNumber": "CM-57",
       "protocol": [
-        "Matter over WiFi"
+        "Matter via Hub"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
