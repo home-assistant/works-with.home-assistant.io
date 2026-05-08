@@ -335,8 +335,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Water Leak Sensor KM1",
-      "fullName": "ThirdReality Water Leak Sensor KM1",
+      "deviceName": "Water Leak Sensor Kit KM1",
+      "fullName": "ThirdReality Water Leak Sensor Kit KM1",
       "modelNumber": "3RWLK01068M / 3RWLK01068S",
       "protocol": [
         "Matter over WiFi"
@@ -348,8 +348,7 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe",
-        "USA"
+        "Worldwide"
       ],
       "functionalityRemark": ""
     },
@@ -365,7 +364,8 @@
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
-        "Worldwide"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     }
