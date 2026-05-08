@@ -333,6 +333,41 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Water Leak Sensor Kit KM1",
+      "fullName": "ThirdReality Water Leak Sensor Kit KM1",
+      "modelNumber": "3RWLK01068M / 3RWLK01068S",
+      "protocol": [
+        "Matter over WiFi"
+      ],
+      "websiteLink": "https://thirdreality.com/product/smart-water-leak-km1/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Night Light-T",
+      "fullName": "ThirdReality Smart Night Light-T",
+      "modelNumber": "3RSNL02042TM",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://thirdreality.com/product/smart-night-light-t/",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
