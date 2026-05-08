@@ -33,7 +33,7 @@ permalink: /certified-products/
           {% set brands = (brands.push(data.companyName), brands) %}
         {% endfor %}
         {% for brand in brands | sort %}
-        <option value="{{ brand }}">
+        <option value="{{ brand | slugify }}" data-label="{{ brand }}">
           {{ brand }}
         </option>
         {% endfor %}

@@ -15,6 +15,16 @@
     search: 'searchInput',
   };
 
+  // Filter option values are stored in slug form (lowercase, non-alphanumeric
+  // runs collapsed to a hyphen) so URLs and option values stay clean. Display
+  // text keeps the original casing via option.dataset.label.
+  const slugify = (value) =>
+    (value || '')
+      .toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+
   // Initialize on page load
   document.addEventListener('DOMContentLoaded', function () {
     initializeFilters();
@@ -133,49 +143,25 @@
       }
     });
 
-    // Populate protocol filter
-    const protocolFilter = document.getElementById('protocolFilter');
-    if (protocolFilter) {
-      Array.from(protocols).sort().forEach(protocol => {
-        const option = document.createElement('option');
-        option.value = protocol;
-        option.textContent = protocol;
-        protocolFilter.appendChild(option);
-      });
-    }
+    populateFilter('protocolFilter', protocols);
+    populateFilter('deviceTypeFilter', deviceTypes);
+    populateFilter('secondaryDeviceTypeFilter', secondaryDeviceTypes);
+    populateFilter('regionFilter', regions);
+  }
 
-    // Populate device type filter
-    const deviceTypeFilter = document.getElementById('deviceTypeFilter');
-    if (deviceTypeFilter) {
-      Array.from(deviceTypes).sort().forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.textContent = type;
-        deviceTypeFilter.appendChild(option);
-      });
-    }
-
-    // Populate secondary device type filter
-    const secondaryDeviceTypeFilter = document.getElementById('secondaryDeviceTypeFilter');
-    if (secondaryDeviceTypeFilter) {
-      Array.from(secondaryDeviceTypes).sort().forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.textContent = type;
-        secondaryDeviceTypeFilter.appendChild(option);
-      });
-    }
-
-    // Populate region filter
-    const regionFilterEl = document.getElementById('regionFilter');
-    if (regionFilterEl) {
-      Array.from(regions).sort().forEach(region => {
-        const option = document.createElement('option');
-        option.value = region;
-        option.textContent = region;
-        regionFilterEl.appendChild(option);
-      });
-    }
+  // Add <option> elements to a select, using slugified values and the original
+  // text as the visible label (also stashed on dataset.label for later count
+  // updates).
+  function populateFilter(selectId, values) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+    Array.from(values).sort().forEach(value => {
+      const option = document.createElement('option');
+      option.value = slugify(value);
+      option.dataset.label = value;
+      option.textContent = value;
+      select.appendChild(option);
+    });
   }
 
   // Initialize sorting
@@ -297,14 +283,14 @@
       const rowRegions = row.dataset.regions || '';
 
       const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
-      const matchesBrand = brandFilter === '' || brand === brandFilter;
+      const matchesBrand = brandFilter === '' || slugify(brand) === brandFilter;
       // Protocol filter: check if any of the row's protocols match the filter value
-      const matchesProtocol = protocolFilter === '' || rowProtocols.split(',').some(p => p.trim() === protocolFilter);
-      const matchesDeviceType = deviceTypeFilter === '' || deviceType === deviceTypeFilter;
+      const matchesProtocol = protocolFilter === '' || rowProtocols.split(',').some(p => slugify(p) === protocolFilter);
+      const matchesDeviceType = deviceTypeFilter === '' || slugify(deviceType) === deviceTypeFilter;
       // Secondary device type filter: check if any of the row's secondary types match the filter value
-      const matchesSecondaryDeviceType = secondaryDeviceTypeFilter === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === secondaryDeviceTypeFilter);
+      const matchesSecondaryDeviceType = secondaryDeviceTypeFilter === '' || rowSecondaryDeviceTypes.split(',').some(t => slugify(t) === secondaryDeviceTypeFilter);
       // Region filter: check if any of the row's regions contain the filter value
-      const matchesRegion = regionFilter === '' || rowRegions.split(',').some(r => r.trim() === regionFilter);
+      const matchesRegion = regionFilter === '' || rowRegions.split(',').some(r => slugify(r) === regionFilter);
 
       if (matchesSearch && matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion) {
         filteredRows.push(row);
@@ -346,38 +332,40 @@
       const matchesSearch = searchTerm === '' || searchData.includes(searchTerm);
       if (!matchesSearch) return;
 
-      const matchesBrand = currentBrand === '' || brand === currentBrand;
-      const matchesProtocol = currentProtocol === '' || rowProtocols.split(',').some(p => p.trim() === currentProtocol);
-      const matchesDeviceType = currentDeviceType === '' || deviceType === currentDeviceType;
-      const matchesSecondaryDeviceType = currentSecondaryDeviceType === '' || rowSecondaryDeviceTypes.split(',').some(t => t.trim() === currentSecondaryDeviceType);
-      const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => r.trim() === currentRegion);
+      const matchesBrand = currentBrand === '' || slugify(brand) === currentBrand;
+      const matchesProtocol = currentProtocol === '' || rowProtocols.split(',').some(p => slugify(p) === currentProtocol);
+      const matchesDeviceType = currentDeviceType === '' || slugify(deviceType) === currentDeviceType;
+      const matchesSecondaryDeviceType = currentSecondaryDeviceType === '' || rowSecondaryDeviceTypes.split(',').some(t => slugify(t) === currentSecondaryDeviceType);
+      const matchesRegion = currentRegion === '' || rowRegions.split(',').some(r => slugify(r) === currentRegion);
 
       // Count for brand filter (if other filters match)
       if (matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && brand) {
-        brandCounts[brand] = (brandCounts[brand] || 0) + 1;
+        const slug = slugify(brand);
+        brandCounts[slug] = (brandCounts[slug] || 0) + 1;
       }
 
       // Count for protocol filter (if other filters match)
       if (matchesBrand && matchesDeviceType && matchesSecondaryDeviceType && matchesRegion && rowProtocols) {
         rowProtocols.split(',').forEach(p => {
-          const protocol = p.trim();
-          if (protocol) {
-            protocolCounts[protocol] = (protocolCounts[protocol] || 0) + 1;
+          const slug = slugify(p);
+          if (slug) {
+            protocolCounts[slug] = (protocolCounts[slug] || 0) + 1;
           }
         });
       }
 
       // Count for device type filter (if other filters match)
       if (matchesBrand && matchesProtocol && matchesSecondaryDeviceType && matchesRegion && deviceType) {
-        deviceTypeCounts[deviceType] = (deviceTypeCounts[deviceType] || 0) + 1;
+        const slug = slugify(deviceType);
+        deviceTypeCounts[slug] = (deviceTypeCounts[slug] || 0) + 1;
       }
 
       // Count for secondary device type filter (if other filters match)
       if (matchesBrand && matchesProtocol && matchesDeviceType && matchesRegion && rowSecondaryDeviceTypes) {
         rowSecondaryDeviceTypes.split(',').forEach(t => {
-          const type = t.trim();
-          if (type) {
-            secondaryDeviceTypeCounts[type] = (secondaryDeviceTypeCounts[type] || 0) + 1;
+          const slug = slugify(t);
+          if (slug) {
+            secondaryDeviceTypeCounts[slug] = (secondaryDeviceTypeCounts[slug] || 0) + 1;
           }
         });
       }
@@ -385,9 +373,9 @@
       // Count for region filter (if other filters match)
       if (matchesBrand && matchesProtocol && matchesDeviceType && matchesSecondaryDeviceType && rowRegions) {
         rowRegions.split(',').forEach(r => {
-          const region = r.trim();
-          if (region) {
-            regionCounts[region] = (regionCounts[region] || 0) + 1;
+          const slug = slugify(r);
+          if (slug) {
+            regionCounts[slug] = (regionCounts[slug] || 0) + 1;
           }
         });
       }
@@ -412,9 +400,9 @@
         const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
         option.textContent = `${allLabel} (${total})`;
       } else {
-        // Get the base value (option.value stores the original value)
+        const label = option.dataset.label || option.value;
         const count = counts[option.value] || 0;
-        option.textContent = `${option.value} (${count})`;
+        option.textContent = `${label} (${count})`;
       }
     });
   }
@@ -441,8 +429,9 @@
   }
 
   // Apply filter values from the URL query string. Called once after the
-  // dropdown options have been populated. Matches case-insensitively so links
-  // shared with different casing still resolve to the right option.
+  // dropdown options have been populated. The incoming value is slugified
+  // before matching so legacy links using the original casing/spaces still
+  // resolve to the right option.
   function applyUrlParams() {
     const params = new URLSearchParams(window.location.search);
     Object.entries(URL_PARAMS).forEach(([param, elementId]) => {
@@ -452,8 +441,9 @@
       if (!el) return;
 
       if (el.tagName === 'SELECT') {
+        const target = slugify(value);
         const match = Array.from(el.options).find(
-          opt => opt.value && opt.value.toLowerCase() === value.toLowerCase()
+          opt => opt.value && opt.value === target
         );
         if (match) el.value = match.value;
       } else {
