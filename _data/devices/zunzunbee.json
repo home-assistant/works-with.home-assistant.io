@@ -1,0 +1,23 @@
+{
+  "companyName": "zunzunbee",
+  "brand": "zunzunbee",
+  "devices": [
+    {
+      "deviceName": "Slate Switch",
+      "fullName": "zunzunbee Slate Switch",
+      "modelNumber": "SSWZBT",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://zunzunbee.com/product/slate-switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
