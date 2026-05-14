@@ -110,7 +110,7 @@
       "fullName": "ThirdReality Smart Color Night Light",
       "modelNumber": "3RSNL02041WM",
       "protocol": [
-        "Zigbee"
+        "Matter over WiFi"
       ],
       "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
       "deviceType": "Light",
@@ -123,8 +123,8 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Zigbee Night Light, Motion",
-      "fullName": "ThirdReality Zigbee Night Light, Motion",
+      "deviceName": "Multi-Function Night Light",
+      "fullName": "ThirdReality Multi-Function Night Light",
       "modelNumber": "3RSNL02043Z",
       "protocol": [
         "Zigbee"
