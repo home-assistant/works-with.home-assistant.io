@@ -110,7 +110,7 @@
       "fullName": "ThirdReality Smart Color Night Light",
       "modelNumber": "3RSNL02041WM",
       "protocol": [
-        "Matter"
+        "Matter over WiFi"
       ],
       "websiteLink": "https://3reality.com/product/matter-smart-color-night-light/",
       "deviceType": "Light",
