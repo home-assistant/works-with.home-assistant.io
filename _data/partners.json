@@ -105,6 +105,11 @@
             "name": "BEGA",
             "logo": "bega.png",
             "link": "https://www.bega.com/"
+        },
+        {
+            "name": "zunzunbee",
+            "logo": "zunzunbee.png",
+            "link": "https://www.home-assistant.io/integrations/zunzunbee/"
         }
     ]
 }
