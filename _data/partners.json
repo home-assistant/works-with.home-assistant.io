@@ -110,6 +110,11 @@
             "name": "zunzunbee",
             "logo": "zunzunbee.png",
             "link": "https://www.home-assistant.io/integrations/zunzunbee/"
+        },
+        {
+            "name": "Sensereo",
+            "logo": "sensereo.png",
+            "link": "https://www.home-assistant.io/integrations/sensereo/"
         }
     ]
 }
