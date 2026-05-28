@@ -1,0 +1,38 @@
+{
+  "companyName": "Sensereo",
+  "brand": "sensereo",
+  "devices": [
+    {
+      "deviceName": "MS-1 Smoke Alarm",
+      "fullName": "Sensereo MS-1 Smoke Alarm",
+      "modelNumber": "LZ-1956Z",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://shop.sensereo.com/products/smoke-alarm-ms-1",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "MSC-1 Carbon Monoxide Alarm",
+      "fullName": "Sensereo MSC-1 Carbon Monoxide Alarm",
+      "modelNumber": "AK-960SCM",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://sensereo.com/msc-1/",
+      "deviceType": "Carbon monoxide alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}
