@@ -5,8 +5,8 @@ This directory contains JSON files for each manufacturer's certified devices.
 ## File naming convention
 
 Each manufacturer should have their own JSON file named after the brand (lowercase):
-- `frient.json`
 - `aqara.json`
+- `eve.json`
 - etc.
 
 ## JSON structure
@@ -37,7 +37,7 @@ Each file should follow this structure:
 ## Field descriptions
 
 - **companyName**: The legal company name (e.g., "Onics")
-- **brand**: The brand name used for filtering (e.g., "frient")
+- **brand**: The brand name used for filtering (e.g., "aqara")
 - **devices**: Array of device objects
   - **deviceName**: Short device name for display
   - **fullName**: Complete device name including brand
