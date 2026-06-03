@@ -142,7 +142,7 @@
       "fullName": "Aqara Presence sensor FP1E",
       "modelNumber": "PS-S03D / PS-S03E",
       "protocol": [
-        "Matter via Hub"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://www.aqara.com/en/product/presence-sensor-fp1e/",
       "deviceType": "Sensor",
