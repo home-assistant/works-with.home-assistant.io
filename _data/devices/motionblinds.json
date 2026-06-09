@@ -7,7 +7,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.2Nm",
       "modelNumber": "CMD-02",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -15,7 +15,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -28,7 +28,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.2Nm",
       "modelNumber": "CMD-02-P",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -36,7 +36,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -49,7 +49,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.5Nm",
       "modelNumber": "CMD-03",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -57,7 +57,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -70,7 +70,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 1.1Nm",
       "modelNumber": "CM-03",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -78,7 +78,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -91,7 +91,7 @@
       "fullName": "MotionBlinds Tubular Battery/Wired Motor 1.1Nm",
       "modelNumber": "CM-04",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -99,7 +99,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -112,7 +112,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 2.0Nm",
       "modelNumber": "CM-05",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -120,7 +120,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -133,7 +133,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 6.0Nm",
       "modelNumber": "CM-06",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
@@ -141,7 +141,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -154,7 +154,7 @@
       "fullName": "MotionBlinds Mid Motor Battery/Wired 0.8Nm",
       "modelNumber": "CM-07",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
@@ -162,7 +162,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -175,7 +175,7 @@
       "fullName": "MotionBlinds Mid Motor Battery/Wired 0.8Nm",
       "modelNumber": "CM-07V2",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roman",
       "deviceType": "Cover",
@@ -183,7 +183,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -196,7 +196,7 @@
       "fullName": "MotionBlinds Honeycomb Battery Motor 0.6Nm",
       "modelNumber": "CM-08",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/honeycomb",
       "deviceType": "Cover",
@@ -204,7 +204,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -217,7 +217,7 @@
       "fullName": "MotionBlinds Tubular Wired Motor 6.0Nm",
       "modelNumber": "CM-09",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -225,7 +225,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -238,7 +238,7 @@
       "fullName": "MotionBlinds Tubular Wired Motor 8.0Nm",
       "modelNumber": "CM-10",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/venetian",
       "deviceType": "Cover",
@@ -246,7 +246,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -259,7 +259,7 @@
       "fullName": "MotionBlinds Smart Switch",
       "modelNumber": "CM-34",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://support.motionblinds.com/motionblinds-smart-switch-cm-34",
       "deviceType": "Cover",
@@ -267,7 +267,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -280,7 +280,7 @@
       "fullName": "MotionBlinds Curtain Wired Motor 1.2Nm",
       "modelNumber": "CM-35",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
@@ -288,7 +288,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -301,7 +301,7 @@
       "fullName": "MotionBlinds Curtain Battery Motor 0.8Nm",
       "modelNumber": "CM-36",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
@@ -309,7 +309,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -322,7 +322,7 @@
       "fullName": "MotionBlinds Vertical Battery/Wired Motor 0.35Nm",
       "modelNumber": "CM-40",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/vertical",
       "deviceType": "Cover",
@@ -330,7 +330,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -343,7 +343,7 @@
       "fullName": "MotionBlinds Tubular Battery Motor 0.5Nm",
       "modelNumber": "CM-45",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/roller",
       "deviceType": "Cover",
@@ -351,7 +351,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
@@ -364,7 +364,7 @@
       "fullName": "MotionBlinds Curtain Wired Motor 1.1Nm",
       "modelNumber": "CM-57",
       "protocol": [
-        "Matter over WiFi"
+        "Vendor Hub / Bridge"
       ],
       "websiteLink": "https://motionblinds.com/products/curtains",
       "deviceType": "Cover",
@@ -372,7 +372,7 @@
         "Window"
       ],
       "relatedProducts": {
-        "text": "Requires Motionblinds Matter bridge (CM-55)",
+        "text": "Motionblinds Matter bridge (CM-55)",
         "url": "https://support.motionblinds.com/motionblinds-matter-bridge-cm-55"
       },
       "region": [
