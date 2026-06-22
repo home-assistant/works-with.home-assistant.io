@@ -412,6 +412,27 @@
         "USA"
       ],
       "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Outdoor Motion Sensor",
+      "fullName": "Zooz Outdoor Motion Sensor",
+      "modelNumber": "ZSE70",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.getzooz.com/zse70-outdoor-motion-sensor/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion",
+        "Temperature",
+        "Light"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
     }
   ]
 }

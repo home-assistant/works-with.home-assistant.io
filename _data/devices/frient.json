@@ -14,7 +14,8 @@
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -48,7 +49,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -100,7 +102,8 @@
       "secondaryDeviceType": [],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": "RFID tag reader is not exposed in Home Assistant"
     },
@@ -118,7 +121,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -136,7 +140,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -154,7 +159,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -208,7 +214,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -226,7 +233,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     },
@@ -244,7 +252,8 @@
       ],
       "relatedProducts": "",
       "region": [
-        "Europe"
+        "Europe",
+        "USA"
       ],
       "functionalityRemark": ""
     }
