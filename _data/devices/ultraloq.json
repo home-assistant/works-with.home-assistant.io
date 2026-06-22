@@ -3,8 +3,8 @@
   "brand": "ultraloq",
   "devices": [
     {
-      "deviceName": "U Bolt (Z-Wave Version)",
-      "fullName": "Ultraloq U Bolt (Z-Wave Version)",
+      "deviceName": "Bolt Z-Wave",
+      "fullName": "Ultraloq Bolt Z-Wave",
       "modelNumber": "",
       "protocol": [
         "Z-Wave"
