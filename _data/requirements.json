@@ -1,7 +1,7 @@
 [
     {
-        "title": "End-devices or hubs",
-        "content": "We don’t currently certify items such as Zigbee sticks, Z-Wave sticks, or connecting bridges without matching end devices."
+        "title": "End Devices",
+        "content": "We do not currently certify connecting devices such as hubs, bridges, repeaters or Zigbee / Z-Wave adapters."
     },
     {
         "title": "Available to the general public",
