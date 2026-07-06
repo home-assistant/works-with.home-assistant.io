@@ -93,6 +93,14 @@ section.requirements {
         }
     }
 
+    .requirements-note {
+        margin-top: 24px;
+
+        @include mixins.bp(desktop) {
+            margin-top: 40px;
+        }
+    }
+
     .requirements-row {
         display: flex;
 
