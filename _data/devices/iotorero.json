@@ -1,0 +1,135 @@
+{
+  "companyName": "IoTorero",
+  "brand": "iotorero",
+  "devices": [
+    {
+      "deviceName": "ESP32-C3 EU Plug",
+      "fullName": "IoTorero ESP32-C3 EU Plug",
+      "modelNumber": "PG01V3-EU16A",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/esp32-c3-eu-plug-for-esphome",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "ESP32-C3 US Plug",
+      "fullName": "IoTorero ESP32-C3 US Plug",
+      "modelNumber": "PG03V3US16A",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/esp32-c3-us-plug-for-esphome",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "ESP32-C3 UK Plug",
+      "fullName": "IoTorero ESP32-C3 UK Plug",
+      "modelNumber": "PG04V3UK16A",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/esp32-c3-uk-plug-for-esphome",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "UK"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "ESP32-C3 AU Plug",
+      "fullName": "IoTorero ESP32-C3 AU Plug",
+      "modelNumber": "PG05V3AU10A",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/esp32-c3-au-plug-for-esphome",
+      "deviceType": "Plug",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Australia",
+        "New Zealand"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Power Monitoring Mini Relay",
+      "fullName": "IoTorero Power Monitoring Mini Relay",
+      "modelNumber": "RS01",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/esp32c3-3-way-relay-for-esphome",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off",
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Garage Door Opener",
+      "fullName": "IoTorero Garage Door Opener",
+      "modelNumber": "SG01",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/garage-door-opener-for-esphome",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Garage door"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "EU Wall Socket",
+      "fullName": "IoTorero EU Wall Socket",
+      "modelNumber": "SK01C3",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://www.athom.tech/blank-1/eu-wall-socket-for-esphome",
+      "deviceType": "Outlet",
+      "secondaryDeviceType": [
+        "Energy Monitoring"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

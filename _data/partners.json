@@ -115,6 +115,11 @@
             "name": "Sensereo",
             "logo": "sensereo.png",
             "link": "https://www.home-assistant.io/integrations/sensereo/"
+        },
+        {
+            "name": "IoTorero",
+            "logo": "iotorero.png",
+            "link": "https://www.home-assistant.io/integrations/iotorero/"
         }
     ]
 }
