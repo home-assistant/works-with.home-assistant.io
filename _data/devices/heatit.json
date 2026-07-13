@@ -169,6 +169,54 @@
         "Europe"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-TRM7 White RAL 9003",
+      "fullName": "Heatit Z-TRM7 White RAL 9003",
+      "modelNumber": "5430571",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10584/heatit-z-trm7-white-ral-9003/0",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Z-TRM7 Black",
+      "fullName": "Heatit Z-TRM7 Black",
+      "modelNumber": "5430572",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10585/heatit-z-trm7-black-matt/0",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Din Smart Thermostat",
+      "fullName": "Heatit Din Smart Thermostat",
+      "modelNumber": "5430459",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://shop.heatit.com/product/10475/heatit-din-smart-thermostat",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
