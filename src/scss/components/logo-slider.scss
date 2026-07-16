@@ -55,6 +55,7 @@ section.logo-slider {
 
         a {
             align-self: unset;
+            text-align: center;
 
             &:after {
                 content: unset;
@@ -62,7 +63,30 @@ section.logo-slider {
         }
 
         img {
+            width: 90%;
             max-width: 120px;
+        }
+    }
+
+    .logo-slider-cta {
+        margin: 0;
+        padding: 32px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        color: #6E7B91;
+
+        @include mixins.bp(desktop) {
+            font-size: 24px;
+        }
+
+        a {
+            color: inherit;
+
+            &:after {
+                width: 100%;
+                background-color: currentColor;
+            }
         }
     }
 }
