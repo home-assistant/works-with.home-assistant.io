@@ -1,0 +1,82 @@
+{
+    "companyName": "FireAvert",
+    "brand": "fireavert",
+    "devices": [
+        {
+            "deviceName": "Electric 240V 3 Prong Auto Stove Shutoff",
+            "fullName": "FireAvert Electric 240V 3 Prong Auto Stove Shutoff",
+            "modelNumber": "FA-EZ-10-50",
+            "protocol": [
+                "Z-Wave"
+            ],
+            "websiteLink": "https://fireavert.com/products/z-wave-auto-stove-shutoff?variant=48680090468603",
+            "deviceType": "Fire safety",
+            "secondaryDeviceType": [
+                "Stove shutoff"
+            ],
+            "relatedProducts": "",
+            "region": [
+                "USA",
+                "Canada"
+            ],
+            "functionalityRemark": ""
+        },
+        {
+            "deviceName": "Electric 240V 4 Prong Auto Stove Shutoff",
+            "fullName": "FireAvert Electric 240V 4 Prong Auto Stove Shutoff",
+            "modelNumber": "FA-EZ-14-50",
+            "protocol": [
+                "Z-Wave"
+            ],
+            "websiteLink": "https://fireavert.com/products/z-wave-auto-stove-shutoff?variant=48680090435835",
+            "deviceType": "Fire safety",
+            "secondaryDeviceType": [
+                "Stove shutoff"
+            ],
+            "relatedProducts": "",
+            "region": [
+                "USA",
+                "Canada"
+            ],
+            "functionalityRemark": ""
+        },
+        {
+            "deviceName": "120V Auto Appliance Shutoff",
+            "fullName": "FireAvert 120V Auto Appliance Shutoff",
+            "modelNumber": "FA-EZ-5-15",
+            "protocol": [
+                "Z-Wave"
+            ],
+            "websiteLink": "https://fireavert.com/products/z-wave-auto-stove-shutoff?variant=48680330756347",
+            "deviceType": "Fire safety",
+            "secondaryDeviceType": [
+                "Appliance shutoff"
+            ],
+            "relatedProducts": "",
+            "region": [
+                "USA",
+                "Canada"
+            ],
+            "functionalityRemark": ""
+        },
+        {
+            "deviceName": "Gas Shutoff",
+            "fullName": "FireAvert Gas Shutoff",
+            "modelNumber": "FA-GZ-5-15",
+            "protocol": [
+                "Z-Wave"
+            ],
+            "websiteLink": "https://fireavert.com/products/z-wave-auto-stove-shutoff?variant=48680090403067",
+            "deviceType": "Fire safety",
+            "secondaryDeviceType": [
+                "Gas shutoff"
+            ],
+            "relatedProducts": "",
+            "region": [
+                "USA",
+                "Canada"
+            ],
+            "functionalityRemark": ""
+        }
+    ]
+}
