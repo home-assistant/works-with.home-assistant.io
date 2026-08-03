@@ -247,6 +247,24 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Thermostat",
+      "fullName": "Eve Thermostat",
+      "modelNumber": "20ECT1701",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.evehome.com/en/eve-thermostat",
+      "deviceType": "Climate",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Germany",
+        "Austria",
+        "Switzerland"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }

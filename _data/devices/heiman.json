@@ -125,6 +125,41 @@
         "Europe"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Photoelectric Smoke Alarm",
+      "fullName": "Heiman Photoelectric Smoke Alarm",
+      "modelNumber": "HS2SA-5M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Water Leakage Sensor",
+      "fullName": "Heiman Smart Water Leakage Sensor",
+      "modelNumber": "HS2WL-M",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.heimantech.com/product/smart-water-leakage-sensor-heiman-hs2wl-series",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
     }
   ]
 }
