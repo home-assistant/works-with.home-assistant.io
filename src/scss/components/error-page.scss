@@ -1,0 +1,72 @@
+@use "../mixins";
+
+section.error-page {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    margin: 60px 0;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .error-code {
+        background: linear-gradient(259deg, #0C88C8 -14.63%, #57FFC1 104.2%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 96px;
+        font-weight: 800;
+        line-height: 1;
+        margin: 0;
+
+        @include mixins.bp(desktop) {
+            font-size: 160px;
+        }
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .error-message {
+        color: var(--body-color);
+        max-width: 32rem;
+        margin: 0 auto;
+        opacity: 0.8;
+    }
+
+    .error-actions {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .button,
+        .button-secondary {
+            align-self: center;
+        }
+    }
+
+    .button-secondary {
+        align-items: center;
+        border-radius: 40px;
+        color: var(--brand-color-home-assistant-blue);
+        display: inline-flex;
+        font-weight: 500;
+        padding: 12px 30px;
+        text-decoration: none;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

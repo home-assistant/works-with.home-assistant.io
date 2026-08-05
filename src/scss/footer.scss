@@ -30,6 +30,16 @@
         }
     }
 
+    .footer-plausible {
+        max-width: 50rem;
+        text-wrap: balance;
+        margin-top: 1.5rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
     .col img {
         max-height: 48px;
     }
