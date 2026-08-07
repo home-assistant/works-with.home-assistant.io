@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "3.1.6",
-		"@11ty/eleventy-img": "6.0.4",
+		"@11ty/eleventy-img": "7.0.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
 		"cross-env": "10.1.0"
 	},
