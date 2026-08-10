@@ -93,7 +93,9 @@
       ],
       "websiteLink": "https://apolloautomation.com",
       "deviceType": "Light",
-      "secondaryDeviceType": [],
+      "secondaryDeviceType": [
+        "Christmas"
+      ],
       "relatedProducts": "",
       "region": [
         "Worldwide"
