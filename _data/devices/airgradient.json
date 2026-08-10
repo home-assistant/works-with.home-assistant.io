@@ -10,7 +10,7 @@
         "WiFi"
       ],
       "websiteLink": "https://www.airgradient.com/indoor/",
-      "deviceType": "Sensor",
+      "deviceType": "Light",
       "secondaryDeviceType": [
         "Air quality"
       ],
