@@ -85,6 +85,22 @@
       "functionalityRemark": ""
     },
     {
+      "deviceName": "H-3 Christmas Ornament",
+      "fullName": "Apollo Automation H-3 Christmas Ornament",
+      "modelNumber": "H-3",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://apolloautomation.com",
+      "deviceType": "Light",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Worldwide"
+      ],
+      "functionalityRemark": ""
+    },
+    {
       "deviceName": "LED-1 Controller",
       "fullName": "Apollo Automation LED-1 Controller",
       "modelNumber": "LED-1",
