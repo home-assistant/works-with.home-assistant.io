@@ -1,0 +1,26 @@
+---
+// Privacy-first, self-hosted analytics. The collected data is public:
+// https://plausible.openhomefoundation.org/works-with.home-assistant.io
+//
+// Both tags are `is:inline` so the snippet reaches the browser exactly as
+// Plausible ships it, and so `window.plausible` is defined as a global that
+// page-level tracking calls (e.g. the 404 page) can reach.
+---
+
+<script
+	is:inline
+	async
+	src="https://plausible.openhomefoundation.org/js/pa-bQMIqw0FpKyRzV3yVHa29.js"></script>
+<script is:inline>
+	window.plausible =
+		window.plausible ||
+		function () {
+			(plausible.q = plausible.q || []).push(arguments);
+		};
+	plausible.init =
+		plausible.init ||
+		function (i) {
+			plausible.o = i || {};
+		};
+	plausible.init();
+</script>

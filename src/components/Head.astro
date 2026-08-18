@@ -1,5 +1,6 @@
 ---
 import metadata from "../data/metadata.js";
+import Plausible from "./Plausible.astro";
 
 interface Props {
 	title?: string;
@@ -34,20 +35,4 @@ const { title, description } = Astro.props;
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<script
-	is:inline
-	async
-	src="https://plausible.openhomefoundation.org/js/pa-bQMIqw0FpKyRzV3yVHa29.js"></script>
-<script is:inline>
-	window.plausible =
-		window.plausible ||
-		function () {
-			(plausible.q = plausible.q || []).push(arguments);
-		};
-	plausible.init =
-		plausible.init ||
-		function (i) {
-			plausible.o = i || {};
-		};
-	plausible.init();
-</script>
+<Plausible />
