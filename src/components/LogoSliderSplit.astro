@@ -1,0 +1,32 @@
+---
+import partners from "../data/partners.json";
+
+// Split the logos across two rows that scroll in opposite directions.
+const half = Math.round(partners.partners.length / 2);
+const rows = [partners.partners.slice(0, half), partners.partners.slice(half)];
+---
+
+<section class="logo-slider">
+	<div class="container">
+		{
+			rows.map((row, index) => (
+				<div class={index === 0 ? "logo-slider-top" : "logo-slider-bottom"}>
+					<div class="swiper">
+						{/* Additional required wrapper */}
+						<div class="swiper-wrapper">
+							{/* Slides */}
+							{row.map((partner) => (
+								<div class="swiper-slide">
+									<img
+										src={`${partners.logo_path}${partner.logo}`}
+										alt={partner.name}
+									/>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			))
+		}
+	</div>
+</section>

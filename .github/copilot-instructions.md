@@ -1,1 +1,1 @@
-When modifying data in the .json files within the \_data/devices/ directory, refer to the README.md file in the same directory for the required structure and field descriptions. This ensures that the data is consistent and can be properly displayed on the devices page.
+When modifying data in the .json files within the src/data/devices/ directory, refer to the README.md file in the same directory for the required structure and field descriptions. This ensures that the data is consistent and can be properly displayed on the devices page.

@@ -1,0 +1,43 @@
+---
+import partners from "../data/partners.json";
+---
+
+<section class="logo-slider" id="logo-slider">
+	<div class="container">
+		<div class="logo-slider-top">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					{
+						partners.partners.map((partner) => (
+							<div class="swiper-slide">
+								{partner.link ? (
+									<a href={partner.link} target="_blank" rel="noopener">
+										<img
+											src={`${partners.logo_path}${partner.logo}`}
+											alt={partner.name}
+										/>
+									</a>
+								) : (
+									<img
+										src={`${partners.logo_path}${partner.logo}`}
+										alt={partner.name}
+									/>
+								)}
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</div>
+		<p class="logo-slider-cta">
+			Discover more partners in the
+			<a
+				href="https://www.home-assistant.io/blog/categories/works-with-home-assistant/"
+				target="_blank"
+				rel="noopener">blog</a
+			>
+		</p>
+	</div>
+</section>

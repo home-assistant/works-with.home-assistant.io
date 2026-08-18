@@ -1,0 +1,34 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import Purpose from "../components/Purpose.astro";
+import LogoSlider from "../components/LogoSlider.astro";
+import Benefits from "../components/Benefits.astro";
+import WhatsInvolved from "../components/WhatsInvolved.astro";
+import Goals from "../components/Goals.astro";
+import Requirements from "../components/Requirements.astro";
+import CtaText from "../components/CtaText.astro";
+import ContactUs from "../components/ContactUs.astro";
+---
+
+<Base>
+	<div class="wrapper wrapper-b">
+		<div class="bg-lines"></div>
+		<Hero />
+		<Purpose />
+		<LogoSlider />
+	</div>
+	<Benefits />
+	<WhatsInvolved />
+
+	<div class="wrapper">
+		<Goals />
+	</div>
+
+	<div class="wrapper wrapper-a">
+		<Requirements />
+		<CtaText />
+	</div>
+
+	<ContactUs />
+</Base>

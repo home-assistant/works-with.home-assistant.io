@@ -1,0 +1,295 @@
+---
+import Base from "../layouts/Base.astro";
+import Faq from "../components/Faq.astro";
+import { deviceFiles, toList } from "../lib/devices.js";
+import { slugify } from "../lib/slugify.js";
+
+// One row per device, carrying the manufacturer it came from.
+const rows = deviceFiles.flatMap((file) =>
+	file.devices.map((device) => {
+		const protocols = toList(device.protocol);
+		const secondaryDeviceTypes = toList(device.secondaryDeviceType);
+		const regions = toList(device.region);
+
+		return {
+			companyName: file.companyName,
+			device,
+			protocols,
+			secondaryDeviceTypes,
+			regions,
+			// Pre-computed haystack for the client-side search box.
+			search: [
+				file.companyName,
+				device.deviceName,
+				device.modelNumber,
+				device.deviceType,
+				protocols.join(" "),
+				secondaryDeviceTypes.join(" "),
+			]
+				.join(" ")
+				.toLowerCase(),
+		};
+	}),
+);
+
+// Sorted case-insensitively so lowercase brand names (frient, ubisys,
+// zunzunbee) sit alongside their capitalized neighbours.
+const brands = [...new Set(deviceFiles.map((file) => file.companyName))].sort(
+	(a, b) => a.toLowerCase().localeCompare(b.toLowerCase()),
+);
+---
+
+<Base title="Certified Devices">
+	<div class="wrapper wrapper-a">
+		<div class="devices-page">
+			<div class="devices-header">
+				<h1>Certified Works with Home Assistant Products</h1>
+				<p class="contained">
+					Welcome to the centralized list of all Works with Home Assistant
+					certified devices! Every product listed here has been rigorously tested
+					by our team to ensure a great experience with Home Assistant, all backed
+					by a brand committed to long-term support. All these products put
+					privacy and local control first. We want to give you the best
+					information possible to make an informed decision, so we’ve listed any
+					known limitations in a functionality remark (select the ⓘ icon for
+					details), such as needing another app to get started.
+				</p>
+				<p class="contained">
+					The list below is non-exhaustive. As we're a small team we have to
+					prioritize certification of devices strategically. Our strategic
+					objectives with this program are currently to prioritize device variety,
+					easy DIY installation, regional availability and partners who are a
+					positive force for good, both inside and outside of our community. We
+					cannot always certify manufacturers who apply to join the program, but
+					we will continue to work to increase our capacity over the coming
+					months.
+				</p>
+			</div>
+
+			<div class="devices-filters">
+				<input
+					type="text"
+					id="searchInput"
+					placeholder="Search by brand, device name, model number..."
+				/>
+				<select id="brandFilter">
+					<option value="">All Brands</option>
+					{
+						brands.map((brand) => (
+							<option value={slugify(brand)} data-label={brand}>
+								{brand}
+							</option>
+						))
+					}
+				</select>
+				<select id="protocolFilter">
+					<option value="">All Connectivity Types</option>
+				</select>
+				<select id="deviceTypeFilter">
+					<option value="">All Device Types</option>
+				</select>
+				<select id="secondaryDeviceTypeFilter">
+					<option value="">All Secondary Types</option>
+				</select>
+				<select id="regionFilter">
+					<option value="">All Regions</option>
+				</select>
+				<button
+					type="button"
+					id="clearFilters"
+					class="clear-filters-btn"
+					style="display: none"
+				>
+					Clear Filters
+				</button>
+			</div>
+
+			<div class="table-container">
+				<table id="devicesTable" class="devices-table">
+					<thead>
+						<tr>
+							<th data-sort="brand" class="sortable">
+								Brand <span class="sort-icon"></span>
+							</th>
+							<th data-sort="deviceName" class="sortable">
+								Device Name <span class="sort-icon"></span>
+							</th>
+							<th data-sort="modelNumber" class="sortable">
+								Model Number <span class="sort-icon"></span>
+							</th>
+							<th data-sort="protocol" class="sortable">
+								Certified Connectivity <span class="sort-icon"></span>
+							</th>
+							<th data-sort="deviceType" class="sortable">
+								Device Type <span class="sort-icon"></span>
+							</th>
+							<th data-sort="secondaryDeviceType" class="sortable">
+								Secondary Type <span class="sort-icon"></span>
+							</th>
+							<th data-sort="region">Region</th>
+							<th class="remark-header" title="Functionality Remark">
+								Functionality Remark
+							</th>
+							<th>Required Vendor Hub / Bridge</th>
+						</tr>
+					</thead>
+					<tbody id="devicesTableBody">
+						{
+							rows.map((row) => (
+								<tr
+									data-brand={row.companyName}
+									data-protocols={row.protocols.join(",")}
+									data-device-type={row.device.deviceType}
+									data-secondary-device-types={row.secondaryDeviceTypes.join(",")}
+									data-regions={row.regions.join(",")}
+									data-search={row.search}
+								>
+									<td>{row.companyName}</td>
+									<td>
+										{row.device.websiteLink ? (
+											<a
+												href={row.device.websiteLink}
+												target="_blank"
+												class="nounderline"
+												rel="noopener noreferrer"
+											>
+												{row.device.deviceName}
+											</a>
+										) : (
+											row.device.deviceName
+										)}
+									</td>
+									<td>{row.device.modelNumber}</td>
+									<td class="protocol-cell">
+										{row.protocols.map((protocol) => (
+											<Fragment>
+												<span class="protocol-badge">{protocol}</span>{" "}
+											</Fragment>
+										))}
+									</td>
+									<td class="device-type-cell">
+										{row.device.deviceType && (
+											<span class="device-type-badge">
+												{row.device.deviceType}
+											</span>
+										)}
+									</td>
+									<td class="secondary-type-cell">
+										{row.secondaryDeviceTypes.map((type) => (
+											<Fragment>
+												<span class="secondary-type-badge">{type}</span>{" "}
+											</Fragment>
+										))}
+									</td>
+									<td class="region-cell">
+										{row.regions.map((region) => (
+											<Fragment>
+												<span class="region-badge">{region}</span>{" "}
+											</Fragment>
+										))}
+									</td>
+									<td class="remark-cell">
+										{row.device.functionalityRemark && (
+											<button
+												class="remark-icon"
+												aria-label="View functionality remark"
+												data-remark={row.device.functionalityRemark}
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													height="24px"
+													viewBox="0 -960 960 960"
+													width="24px"
+													fill="currentColor"
+												>
+													<path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+												</svg>
+												<span class="remark-tooltip">
+													{row.device.functionalityRemark}
+												</span>
+											</button>
+										)}
+									</td>
+									<td>
+										{row.device.relatedProducts?.url ? (
+											<a
+												href={row.device.relatedProducts.url}
+												target="_blank"
+												class="nounderline"
+												rel="noopener noreferrer"
+											>
+												{row.device.relatedProducts.text}
+											</a>
+										) : (
+											row.device.relatedProducts?.text
+										)}
+									</td>
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="pagination-wrapper">
+				<div class="devices-count">
+					Showing <span id="visibleCount">0</span> of
+					<span id="filteredCount">0</span> devices (<span id="totalCount">0</span
+					>
+					total)
+				</div>
+
+				<div class="pagination-controls">
+					<button id="prevPage" class="pagination-btn" disabled>
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<polyline points="15 18 9 12 15 6"></polyline>
+						</svg>
+						Previous
+					</button>
+
+					<div id="pageNumbers" class="page-numbers"></div>
+
+					<span id="pageInfo" class="page-info">Page 1 of 1</span>
+
+					<button id="nextPage" class="pagination-btn">
+						Next
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<polyline points="9 18 15 12 9 6"></polyline>
+						</svg>
+					</button>
+				</div>
+
+				<div class="items-per-page">
+					<label for="itemsPerPage">Show:</label>
+					<select id="itemsPerPage">
+						<option value="10">10</option>
+						<option value="25" selected>25</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+					<span>per page</span>
+				</div>
+			</div>
+
+			<Faq />
+		</div>
+	</div>
+
+	<script>
+		import "../scripts/devices-table.js";
+	</script>
+</Base>

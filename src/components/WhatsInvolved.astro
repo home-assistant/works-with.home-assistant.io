@@ -1,0 +1,42 @@
+---
+import involvedSteps from "../data/involved_steps.json";
+---
+
+<section class="whats-involved" id="whats-involved">
+	<div class="container">
+		<h2>What's involved?</h2>
+		<div class="steps" data-step="0">
+			{
+				involvedSteps.map((step, index) => (
+					<div class:list={["step", { active: index === 0 }]}>
+						<div class="indicator">
+							<div />
+							<span />
+						</div>
+						<div class="step-card">
+							<div class="step-card-inner">
+								<div class="icon">
+									<svg>
+										<use xlink:href={`#${step.icon}-upcoming`} class="upcoming" />
+										<use xlink:href={`#${step.icon}-done`} class="done" />
+										<use xlink:href={`#${step.icon}-current`} class="current" />
+									</svg>
+								</div>
+								<div class="step-text">
+									Step {index + 1} <span> of {involvedSteps.length}</span>
+								</div>
+								<div class="title">
+									{step.title}
+								</div>
+								<div class="description">{step.description}</div>
+							</div>
+						</div>
+					</div>
+				))
+			}
+		</div>
+		<div class="steps-pagination">
+			{involvedSteps.map(() => <span role="button" />)}
+		</div>
+	</div>
+</section>

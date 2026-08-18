@@ -1,5 +1,9 @@
-_site/
+dist/
 node_modules/
 package-lock.json
+.astro/
 .cache
 .vscode/settings.json
+
+# Downloaded at build time by script/fetch-allowed-referrers.mjs
+/src/data/allowed-referrers.json
