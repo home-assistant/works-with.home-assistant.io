@@ -2,10 +2,10 @@
 	"name": "home-assistant/works-with.home-assistant.io",
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"forwardPorts": [
-		8080
+		4321
 	],
 	"portsAttributes": {
-		"8080": {
+		"4321": {
 			"label": "Preview"
 		}
 	},
