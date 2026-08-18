@@ -20,8 +20,11 @@ export default defineConfig({
 	// whitespace rules, so keep collapsing rather than stripping.
 	compressHTML: true,
 
-	// Matches the port forwarded by .devcontainer.json.
+	// `host: true` binds 0.0.0.0 instead of Astro's default localhost-only,
+	// which is required for the devcontainer's port forwarding to reach the
+	// server. Port stays at Astro's default (4321), matched in
+	// .devcontainer.json.
 	server: {
-		port: 8080,
+		host: true,
 	},
 });
