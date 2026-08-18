@@ -4,8 +4,12 @@
 	"description": "The website for the Home Assistant Partner website",
 	"type": "module",
 	"scripts": {
+		"fetch-referrers": "node script/fetch-allowed-referrers.mjs",
+		"prestart": "npm run fetch-referrers",
 		"start": "astro dev",
+		"predev": "npm run fetch-referrers",
 		"dev": "astro dev",
+		"prebuild": "npm run fetch-referrers",
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro"

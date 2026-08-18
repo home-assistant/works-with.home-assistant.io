@@ -6,8 +6,9 @@ export default defineConfig({
 	site: "https://works-with.home-assistant.io/",
 
 	// Netlify is configured (in its UI, not in-repo) to run `npm run build` and
-	// publish `_site`, so the build has to keep landing there.
-	outDir: "./_site",
+	// publish `dist`. Stated explicitly because it is deploy-critical, even
+	// though it matches Astro's default.
+	outDir: "./dist",
 
 	// `/certified-products/` and friends keep their trailing slash.
 	build: {

@@ -1,6 +1,6 @@
 ---
 import metadata from "../data/metadata.js";
-import Plausible from "./Plausible.astro";
+import PlausibleAnalytics from "./PlausibleAnalytics.astro";
 
 interface Props {
 	title?: string;
@@ -35,4 +35,4 @@ const { title, description } = Astro.props;
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<Plausible />
+<PlausibleAnalytics />
