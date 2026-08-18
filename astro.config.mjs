@@ -5,8 +5,9 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
 	site: "https://works-with.home-assistant.io/",
 
-	// Cloudflare Pages publishes this directory (see `script/build`).
-	outDir: "./dist",
+	// Netlify is configured (in its UI, not in-repo) to run `npm run build` and
+	// publish `_site`, so the build has to keep landing there.
+	outDir: "./_site",
 
 	// `/certified-products/` and friends keep their trailing slash.
 	build: {
