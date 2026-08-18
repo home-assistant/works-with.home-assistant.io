@@ -1,0 +1,36 @@
+---
+const navItems = [
+	{ href: "/", label: "Home" },
+	{ href: "/certified-products/", label: "Certified products" },
+	{ href: "/#benefits", label: "Benefits" },
+	{ href: "/#whats-involved", label: "What's involved?" },
+	{ href: "/#whats-required", label: "What's required?" },
+];
+---
+
+<div class="header">
+	<div class="container">
+		<a href="/" class="nounderline" aria-label="Works with Home Assistant homepage">
+			<img
+				src="/img/home-assistant-logo.svg"
+				class="logo"
+				alt="Home Assistant logo"
+			/>
+		</a>
+		<div class="nav">
+			{navItems.map((item) => <a href={item.href} class="nav-item">{item.label}</a>)}
+		</div>
+		<div class="cta">
+			<a href="/#contact-us" class="button animated">Get in touch</a>
+		</div>
+		<div class="burger"><span></span></div>
+	</div>
+	<div class="mobile-menu">
+		<div class="nav">
+			{navItems.map((item) => <a href={item.href} class="nav-item">{item.label}</a>)}
+		</div>
+		<div class="cta">
+			<a href="/#contact-us" class="button animated">Get in touch</a>
+		</div>
+	</div>
+</div>

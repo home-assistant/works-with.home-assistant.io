@@ -1,4 +1,8 @@
 // Devices Table Sorting, Filtering and Pagination
+// `slugify` is shared with the pre-rendered filter options so both sides
+// agree on option values (see src/lib/slugify.js).
+import { slugify } from '../lib/slugify.js';
+
 (function () {
   let currentSort = { column: null, direction: 'asc' };
   let currentPage = 1;
@@ -14,16 +18,6 @@
     region: 'regionFilter',
     search: 'searchInput',
   };
-
-  // Filter option values are stored in slug form (lowercase, non-alphanumeric
-  // runs collapsed to a hyphen) so URLs and option values stay clean. Display
-  // text keeps the original casing via option.dataset.label.
-  const slugify = (value) =>
-    (value || '')
-      .toString()
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '');
 
   // Initialize on page load
   document.addEventListener('DOMContentLoaded', function () {

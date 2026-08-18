@@ -1,5 +1,6 @@
-_site/
+dist/
 node_modules/
 package-lock.json
+.astro/
 .cache
 .vscode/settings.json

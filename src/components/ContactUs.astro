@@ -1,0 +1,25 @@
+---
+import talkToUs from "../svg/talk-to-us.svg?raw";
+---
+
+<section class="contact-us" id="contact-us">
+	<div class="container">
+		<div class="inner">
+			<h2>Interested in working with us?</h2>
+			<p>
+				We’re always open to speaking about integrations or other collaborative
+				relationships as well as the Works with program. Email us and we can
+				tell you more about the Home Assistant universe and how you might get
+				involved.
+			</p>
+			<a
+				href="mailto:partner@openhomefoundation.org"
+				class="button animated large">Email partner@openhomefoundation.org</a
+			><br />
+			<small data-copy="partner@openhomefoundation.org"
+				>or <u>copy email address</u></small
+			>
+		</div>
+		<div class="talk" set:html={talkToUs} />
+	</div>
+</section>

@@ -1,0 +1,61 @@
+---
+const faqs = [
+	{
+		question:
+			'If my device is not listed under "Works with Home Assistant" does this mean it\'s not supported?',
+		answer:
+			"No! It just means it hasn't gone through a testing schedule with our team, or doesn't fit the program requirements. It might function well, but be added to the testing schedule later down the road, it could be missing a function or firmware, or it might work under a different connectivity type that we don't currently test under the program.",
+	},
+	{
+		question: "OK, so what's the point of the Works with program?",
+		answer:
+			"It highlights the devices we know work well with Home Assistant and the brands that make a long-term commitment to supporting these devices. The certification agreement specifies the devices must have key functionality within Home Assistant and operate locally without the need for cloud – both now and in the future.",
+	},
+	{
+		question: "What about this missing product?",
+		answer:
+			"Some partners are missing as they expand their product lines and testing takes place. We will be consistently working to keep this up-to-date.",
+	},
+	{
+		question: "How is this work funded?",
+		answer:
+			"This program is non-commercial and made possible thanks to the generous support of our Home Assistant Cloud subscribers.",
+	},
+	{
+		question: "Are these affiliate links?",
+		answer:
+			"No, to respect the privacy of our users, this list does not use affiliate links.",
+	},
+];
+---
+
+<div class="faq-section">
+	<h2>Frequently Asked Questions</h2>
+
+	<div class="faq-accordion">
+		{
+			faqs.map((faq) => (
+				<details class="faq-item">
+					<summary class="faq-question">
+						<span>{faq.question}</span>
+						<span class="faq-icon">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<polyline points="6 9 12 15 18 9" />
+							</svg>
+						</span>
+					</summary>
+					<div class="faq-answer">
+						<p>{faq.answer}</p>
+					</div>
+				</details>
+			))
+		}
+	</div>
+</div>
