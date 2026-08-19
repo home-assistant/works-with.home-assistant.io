@@ -1,5 +1,36 @@
 @use "../mixins";
 
+section.guide-hero {
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    background: url('/img/mesh.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mixins.bp(desktop) {
+        padding: 100px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: var(--typography-heading-line-height);
+        margin: 0 0 8px;
+
+        @include mixins.bp(tablet) {
+            font-size: 4rem;
+        }
+    }
+
+    .meta {
+        color: var(--color-secondary);
+        font-size: 1.2rem;
+    }
+}
+
 article.guide {
     margin: 40px 0 80px;
     position: relative;
@@ -11,26 +42,6 @@ article.guide {
 
     .container {
         max-width: 880px;
-    }
-
-    .guide-header {
-        margin-bottom: 40px;
-
-        h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            line-height: var(--typography-heading-line-height);
-            margin: 0 0 8px;
-
-            @include mixins.bp(tablet) {
-                font-size: 2.875rem;
-            }
-        }
-
-        .meta {
-            color: var(--color-secondary);
-            font-size: 14px;
-        }
     }
 
     section {
