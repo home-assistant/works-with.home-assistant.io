@@ -1,5 +1,9 @@
 @use 'mixins';
 
+.wrapper-a+.footer {
+    border-top: 1px solid rgba(0, 35, 50, 0.1);
+}
+
 .footer {
     padding: 50px 0;
 

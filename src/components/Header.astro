@@ -1,11 +1,18 @@
 ---
 const navItems = [
-	{ href: "/", label: "Home" },
 	{ href: "/certified-products/", label: "Certified products" },
+	{ href: "/resources/", label: "Resources" },
 	{ href: "/#benefits", label: "Benefits" },
 	{ href: "/#whats-involved", label: "What's involved?" },
 	{ href: "/#whats-required", label: "What's required?" },
 ];
+
+// Anchor links (`/#section`) point at the homepage, not a distinct route, so
+// they're excluded — only real pages (and their child pages) get marked active.
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+	!href.includes("#") &&
+	(href === currentPath || (href !== "/" && currentPath.startsWith(href)));
 ---
 
 <div class="header">
@@ -18,7 +25,11 @@ const navItems = [
 			/>
 		</a>
 		<div class="nav">
-			{navItems.map((item) => <a href={item.href} class="nav-item">{item.label}</a>)}
+			{navItems.map((item) => (
+				<a href={item.href} class:list={["nav-item", { active: isActive(item.href) }]}>
+					{item.label}
+				</a>
+			))}
 		</div>
 		<div class="cta">
 			<a href="/#contact-us" class="button animated">Get in touch</a>
@@ -27,7 +38,11 @@ const navItems = [
 	</div>
 	<div class="mobile-menu">
 		<div class="nav">
-			{navItems.map((item) => <a href={item.href} class="nav-item">{item.label}</a>)}
+			{navItems.map((item) => (
+				<a href={item.href} class:list={["nav-item", { active: isActive(item.href) }]}>
+					{item.label}
+				</a>
+			))}
 		</div>
 		<div class="cta">
 			<a href="/#contact-us" class="button animated">Get in touch</a>

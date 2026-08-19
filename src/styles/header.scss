@@ -88,7 +88,7 @@
     .nav {
         align-items: center;
         display: flex;
-        gap: 40px;
+        gap: 28px;
 
         &-item {
             text-decoration: none;
@@ -110,6 +110,15 @@
             &:hover {
                 &:after {
                     width: calc(100% - 20px);
+                }
+            }
+
+            &.active {
+                font-weight: 600;
+
+                &:after {
+                    left: 0;
+                    width: 100%;
                 }
             }
         }

@@ -26,6 +26,18 @@
     --typography-h3-font-weight: 500;
     --typography-h3-line-height: var(--typography-heading-line-height);
 
+    --typography-h4-font-size: 20px;
+    --typography-h4-font-weight: 600;
+    --typography-h4-line-height: var(--typography-heading-line-height);
+
+    --typography-h5-font-size: 18px;
+    --typography-h5-font-weight: 600;
+    --typography-h5-line-height: var(--typography-heading-line-height);
+
+    --typography-h6-font-size: 16px;
+    --typography-h6-font-weight: 600;
+    --typography-h6-line-height: var(--typography-heading-line-height);
+
     --typography-paragraph-font-size: 16px;
     --typography-paragraph-font-weight: 300;
     --typography-paragraph-line-height: 1.25;
@@ -55,6 +67,9 @@
         --typography-h1-font-size: 60px;
         --typography-h2-font-size: 40px;
         --typography-h3-font-size: 30px;
+        --typography-h4-font-size: 24px;
+        --typography-h5-font-size: 20px;
+        --typography-h6-font-size: 18px;
         --typography-paragraph-font-size: 18px;
 
         --layout-container-padding: 24px;
@@ -67,6 +82,9 @@
         --typography-h1-font-size: 100px;
         --typography-h2-font-size: 70px;
         --typography-h3-font-size: 48px;
+        --typography-h4-font-size: 32px;
+        --typography-h5-font-size: 24px;
+        --typography-h6-font-size: 20px;
         --typography-paragraph-font-size: 20px;
 
         --layout-container-padding: 40px;
