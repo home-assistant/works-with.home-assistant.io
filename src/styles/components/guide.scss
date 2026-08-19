@@ -112,12 +112,10 @@ article.guide {
     }
 
     a:not(.button):not(.nounderline) {
-        &:after {
-            width: 100%;
-        }
+        background-size: 100% 1px;
 
-        &:hover:after {
-            width: 0;
+        &:hover {
+            background-size: 0% 1px;
         }
     }
 
