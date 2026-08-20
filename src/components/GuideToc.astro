@@ -17,88 +17,88 @@ interface Props {
 const { toc } = Astro.props;
 ---
 
-<fieldset class="guide-toc">
-  <p class="guide-toc-heading">Contents</p>
+{
+  toc.length > 0 && (
+    <fieldset class="guide-toc">
+      <p class="guide-toc-heading">Contents</p>
 
-  <ul class="guide-tablist">
-    {
-      toc.map((entry) =>
-        entry.children?.length ? (
-          <li class="guide-tablist-item">
-            <input
-              type="checkbox"
-              id={`subnav-${entry.id}`}
-              class="guide-subnav-toggle-input"
-              checked
-            />
-            <div class="guide-tablist-row">
-              <a class="guide-pill nounderline" href={`#${entry.id}`}>
-                {entry.label}
-              </a>
-              <label for={`subnav-${entry.id}`} class="guide-subnav-toggle">
-                <span class="guide-toc-arrow" aria-hidden="true" />
-                <span class="visually-hidden">
-                  Toggle {entry.label} sections
-                </span>
-              </label>
-            </div>
-            <ul class="guide-sublist">
-              {entry.children.map((child) => (
-                <li>
-                  <a
-                    class="guide-pill guide-pill--sub nounderline"
-                    href={`#${child.id}`}
-                  >
-                    {child.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ) : (
-          <li>
-            <a class="guide-pill nounderline" href={`#${entry.id}`}>
-              {entry.label}
-            </a>
-          </li>
-        ),
-      )
-    }
-  </ul>
-
-  <div class="guide-toc-mobile">
-    <input type="checkbox" id="toc-toggle" class="guide-toc-toggle-input" />
-    <label for="toc-toggle" class="guide-toc-toggle">
-      <span class="guide-toc-toggle-pill">
-        On this page
-        <span class="guide-toc-arrow" aria-hidden="true"></span>
-      </span>
-      <span class="guide-toc-current">{toc[0]?.label}</span>
-    </label>
-    <ul class="guide-jumplist">
-      {
-        toc.map((entry) => (
-          <li>
-            <a class="nounderline" href={`#${entry.id}`}>
-              {entry.label}
-            </a>
-            {entry.children?.length ? (
+      <ul class="guide-tablist">
+        {toc.map((entry) =>
+          entry.children?.length ? (
+            <li class="guide-tablist-item">
+              <input
+                type="checkbox"
+                id={`subnav-${entry.id}`}
+                class="guide-subnav-toggle-input"
+                checked
+              />
+              <div class="guide-tablist-row">
+                <a class="guide-pill nounderline" href={`#${entry.id}`}>
+                  {entry.label}
+                </a>
+                <label for={`subnav-${entry.id}`} class="guide-subnav-toggle">
+                  <span class="guide-toc-arrow" aria-hidden="true" />
+                  <span class="visually-hidden">
+                    Toggle {entry.label} sections
+                  </span>
+                </label>
+              </div>
               <ul class="guide-sublist">
                 {entry.children.map((child) => (
                   <li>
-                    <a class="nounderline" href={`#${child.id}`}>
+                    <a
+                      class="guide-pill guide-pill--sub nounderline"
+                      href={`#${child.id}`}
+                    >
                       {child.label}
                     </a>
                   </li>
                 ))}
               </ul>
-            ) : null}
-          </li>
-        ))
-      }
-    </ul>
-  </div>
-</fieldset>
+            </li>
+          ) : (
+            <li>
+              <a class="guide-pill nounderline" href={`#${entry.id}`}>
+                {entry.label}
+              </a>
+            </li>
+          ),
+        )}
+      </ul>
+
+      <div class="guide-toc-mobile">
+        <input type="checkbox" id="toc-toggle" class="guide-toc-toggle-input" />
+        <label for="toc-toggle" class="guide-toc-toggle">
+          <span class="guide-toc-toggle-pill">
+            On this page
+            <span class="guide-toc-arrow" aria-hidden="true"></span>
+          </span>
+          <span class="guide-toc-current">{toc[0]?.label}</span>
+        </label>
+        <ul class="guide-jumplist">
+          {toc.map((entry) => (
+            <li>
+              <a class="nounderline" href={`#${entry.id}`}>
+                {entry.label}
+              </a>
+              {entry.children?.length ? (
+                <ul class="guide-sublist">
+                  {entry.children.map((child) => (
+                    <li>
+                      <a class="nounderline" href={`#${child.id}`}>
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </fieldset>
+  )
+}
 
 <script>
   const tocLinks = Array.from(

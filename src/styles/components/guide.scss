@@ -216,13 +216,21 @@ article.guide {
 // Reusable two-column ToC layout — the container/sidebar/content chrome is
 // generic (used by any guide article); GuideToc.astro owns the sidebar's own
 // contents, and per-page/brand styling (e.g. cards) stays scoped below.
+//
+// Fallback: pages that don't render a <GuideToc> (no ToC needed) automatically
+// get a single, centered reading column instead of a two-column grid with an
+// empty sidebar track — nothing to opt into per-page beyond omitting <GuideToc>.
 .guide-layout.container {
     width: 100%;
     max-width: 1280px;
+
+    &:not(:has(.guide-toc)) {
+        max-width: 880px;
+    }
 }
 
 @include mixins.bp(desktop) {
-    .guide-layout {
+    .guide-layout:has(.guide-toc) {
         align-items: start;
         display: grid;
         gap: 2.5rem;
