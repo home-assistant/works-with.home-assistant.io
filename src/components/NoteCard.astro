@@ -1,9 +1,13 @@
 ---
+interface Props {
+  noIcon?: boolean;
+}
 
+const { noIcon = false } = Astro.props;
 ---
 
 <div class="note-card">
-  <span class="icon" aria-hidden="true"></span>
+  {!noIcon && <span class="icon" aria-hidden="true" />}
 
   <div class="content">
     <slot />

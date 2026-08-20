@@ -35,24 +35,10 @@ article.guide {
     margin: 40px 0 80px;
     position: relative;
     z-index: 2;
+    background-color: #F5F6FA;
 
     @include mixins.bp(desktop) {
         margin: 60px 0 120px;
-    }
-
-    &.brand {
-        --body-background-color: #F5F6FA;
-
-        background-color: #F5F6FA;
-        margin-top: 0;
-
-        @include mixins.bp(desktop) {
-            margin-top: 60px;
-        }
-    }
-
-    .container {
-        max-width: 880px;
     }
 
     section {
@@ -60,6 +46,23 @@ article.guide {
 
         &:last-of-type {
             margin-bottom: 0;
+        }
+    }
+
+    .guide-panels {
+        min-width: 0;
+    }
+
+    .guide-panel {
+        scroll-margin-top: 100px;
+        margin-bottom: 60px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include mixins.bp(desktop) {
+            margin-bottom: 100px;
         }
     }
 
@@ -78,6 +81,7 @@ article.guide {
         font-weight: 700;
         line-height: var(--typography-heading-line-height);
         margin: 0 0 20px;
+        scroll-margin-top: 100px;
 
         @include mixins.bp(tablet) {
             font-size: 2.125rem;
@@ -93,6 +97,7 @@ article.guide {
         font-weight: 600;
         line-height: var(--typography-heading-line-height);
         margin: 40px 0 16px;
+        scroll-margin-top: 100px;
 
         @include mixins.bp(tablet) {
             font-size: 1.625rem;
@@ -208,252 +213,24 @@ article.guide {
     }
 }
 
+// Reusable two-column ToC layout — the container/sidebar/content chrome is
+// generic (used by any guide article); GuideToc.astro owns the sidebar's own
+// contents, and per-page/brand styling (e.g. cards) stays scoped below.
+.guide-layout.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+@include mixins.bp(desktop) {
+    .guide-layout {
+        align-items: start;
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: minmax(200px, 240px) 1fr;
+    }
+}
+
 article.guide.brand {
-    .guide-layout.container {
-        max-width: 1200px;
-
-        &.brand-layout {
-            max-width: 1280px;
-        }
-    }
-
-    @include mixins.bp(desktop) {
-        .guide-layout {
-            align-items: start;
-            display: grid;
-            gap: 2.5rem;
-            grid-template-columns: minmax(200px, 240px) 1fr;
-        }
-    }
-
-    .guide-toc {
-        background: var(--body-background-color);
-        border: 0;
-        margin: 0 0 24px;
-        min-width: 0;
-        padding: 8px 0;
-        position: sticky;
-        z-index: 3;
-        top: 73px;
-
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        box-sizing: border-box;
-        width: 100vw;
-        margin-left: calc(var(--layout-container-padding) * -1);
-        padding-left: var(--layout-container-padding);
-        padding-right: var(--layout-container-padding);
-        box-shadow: 0px 8px 4px rgba(0, 0, 0, .03), 0px 5px 2px rgba(0, 0, 0, .03), 0px 3px 2px rgba(0, 0, 0, .06), 0px 1px 1px rgba(0, 0, 0, .06);
-
-        @include mixins.bp(tablet) {
-            top: 91px;
-        }
-
-        @include mixins.bp(desktop) {
-            align-items: stretch;
-            background: none;
-            box-shadow: none;
-            flex-direction: column;
-            margin: 0;
-            padding: 0;
-            top: 125px;
-            width: auto;
-        }
-    }
-
-    .guide-toc-heading {
-        color: var(--color-primary);
-        display: none;
-        font-weight: 400;
-        margin: 0;
-        padding: 0;
-
-        @include mixins.bp(desktop) {
-            display: block;
-            font-size: 1.25rem;
-            margin: 0 0 0.625rem;
-        }
-    }
-
-    .guide-tablist {
-        display: none;
-        flex-direction: column;
-        gap: 0.625rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        @include mixins.bp(desktop) {
-            display: flex;
-        }
-
-        li {
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-    .guide-pill {
-        border-radius: 0.5rem;
-        color: var(--color-secondary);
-        cursor: pointer;
-        display: block;
-        font-size: 0.875rem;
-        font-weight: 300;
-        padding: 0.625rem 1rem;
-        text-decoration: none;
-        background-image: none;
-        transition: background-color .2s ease-out, color .2s ease-out;
-        border: 1px solid var(--color-tertiary);
-
-        &:hover {
-            background-color: var(--color-tertiary);
-        }
-
-        &[aria-current="true"] {
-            background: var(--color-tertiary);
-        }
-
-        &:focus-visible {
-            outline: 2px solid var(--brand-color-home-assistant-blue);
-            outline-offset: 2px;
-        }
-    }
-
-    .guide-toc-mobile {
-        position: relative;
-        width: 100%;
-
-        @include mixins.bp(desktop) {
-            display: none;
-        }
-    }
-
-    .guide-toc-toggle-input {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-
-        &:checked~.guide-jumplist {
-            display: block;
-        }
-
-        &:checked~.guide-toc-toggle .guide-toc-arrow {
-            transform: rotate(45deg);
-        }
-
-        &:focus-visible~.guide-toc-toggle .guide-toc-toggle-pill {
-            outline: 2px solid var(--brand-color-home-assistant-blue);
-            outline-offset: 2px;
-        }
-    }
-
-    .guide-toc-toggle {
-        align-items: center;
-        cursor: pointer;
-        display: flex;
-        gap: 0.75rem;
-        min-width: 0;
-        width: 100%;
-    }
-
-    .guide-toc-toggle-pill {
-        align-items: center;
-        background: var(--color-tertiary);
-        border-radius: 999px;
-        display: flex;
-        flex-shrink: 0;
-        font-size: 0.8125rem;
-        font-weight: 600;
-        gap: 0.375rem;
-        padding: 0.5rem 0.875rem;
-    }
-
-    .guide-toc-arrow {
-        border-bottom: 2px solid currentColor;
-        border-right: 2px solid currentColor;
-        flex-shrink: 0;
-        height: 6px;
-        transform: rotate(-45deg);
-        transition: transform .2s ease-out;
-        width: 6px;
-    }
-
-    .guide-toc-current {
-        color: var(--color-primary);
-        font-size: 0.9375rem;
-        font-weight: 600;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .guide-jumplist {
-        background: var(--body-background-color);
-        border: 1px solid rgba(0, 35, 50, 0.12);
-        border-top: none;
-        border-radius: 0 0 12px 12px;
-        box-shadow: 0 1rem 24px rgba(0, 35, 50, 0.12);
-        display: none;
-        left: 0;
-        list-style: none;
-        margin: 0.5rem 0 0;
-        padding: 0 1rem;
-        position: absolute;
-        right: 0;
-        top: 100%;
-        z-index: 4;
-
-        li {
-            border-top: 1px solid rgba(0, 35, 50, 0.08);
-            margin: 0;
-            padding: 0;
-
-            &:first-child {
-                border-top: none;
-            }
-        }
-
-        a {
-            display: block;
-            font-size: 15px;
-            font-weight: 500;
-            padding: 12px 0;
-            text-decoration: none;
-            background-image: none;
-
-            &[aria-current="true"] {
-                color: var(--color-primary);
-                font-weight: 700;
-            }
-        }
-    }
-
-    .guide-panels {
-        min-width: 0;
-    }
-
-    .guide-panel {
-        scroll-margin-top: 100px;
-        margin-bottom: 60px;
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-
-        @include mixins.bp(desktop) {
-            margin-bottom: 100px;
-        }
-    }
-
     .card-content-row {
         display: flex;
         flex-direction: column;

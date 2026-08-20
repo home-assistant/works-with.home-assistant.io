@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import GuideToc from "../../components/GuideToc.astro";
 import GuidelineCard from "../../components/GuidelineCard.astro";
 import InfoCard from "../../components/InfoCard.astro";
 import NoteCard from "../../components/NoteCard.astro";
@@ -33,46 +34,8 @@ const sections = [
     </section>
 
     <article class="guide brand">
-      <div class="guide-layout brand-layout container">
-        <fieldset class="guide-toc">
-          <p class="guide-toc-heading">Contents</p>
-
-          <ul class="guide-tablist">
-            {
-              sections.map((section) => (
-                <li>
-                  <a class="guide-pill" href={`#${section.id}`}>
-                    {section.label}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
-
-          <div class="guide-toc-mobile">
-            <input
-              type="checkbox"
-              id="toc-toggle"
-              class="guide-toc-toggle-input"
-            />
-            <label for="toc-toggle" class="guide-toc-toggle">
-              <span class="guide-toc-toggle-pill">
-                On this page
-                <span class="guide-toc-arrow" aria-hidden="true"></span>
-              </span>
-              <span class="guide-toc-current">{sections[0].label}</span>
-            </label>
-            <ul class="guide-jumplist">
-              {
-                sections.map((section) => (
-                  <li>
-                    <a href={`#${section.id}`}>{section.label}</a>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-        </fieldset>
+      <div class="guide-layout container">
+        <GuideToc toc={sections} />
 
         <div class="guide-panels">
           <section id="introduction" class="guide-panel">
@@ -134,6 +97,8 @@ const sections = [
             </GuidelineCard>
           </section>
 
+          <hr class="part-divider" />
+
           <section id="download-centre" class="guide-panel">
             <h2>Download Centre</h2>
             <p>Need files? All badges logos are available for download.</p>
@@ -162,6 +127,8 @@ const sections = [
               </GuidelineCard>
             </div>
           </section>
+
+          <hr class="part-divider" />
 
           <section id="wwha-badge" class="guide-panel">
             <h2>The WWHA Badge</h2>
@@ -271,6 +238,8 @@ const sections = [
               </p>
             </NoteCard>
           </section>
+
+          <hr class="part-divider" />
 
           <section id="using-the-brand" class="guide-panel">
             <h2>How to Use the Home Assistant Brand</h2>
@@ -411,6 +380,8 @@ const sections = [
             </div>
           </section>
 
+          <hr class="part-divider" />
+
           <section id="co-branding-packaging" class="guide-panel">
             <h2>Co-Branding & Packaging</h2>
             <p>
@@ -458,6 +429,8 @@ const sections = [
               />
             </div>
           </section>
+
+          <hr class="part-divider" />
 
           <section id="communicating-functionality" class="guide-panel">
             <h2>Communicating Device Functionality & Limitations</h2>
@@ -517,6 +490,8 @@ const sections = [
             </NoteCard>
           </section>
 
+          <hr class="part-divider" />
+
           <section id="need-help" class="guide-panel">
             <h2>Need Help?</h2>
             <p>
@@ -538,59 +513,4 @@ const sections = [
       </div>
     </article>
   </div>
-
-  <script>
-    const panels = Array.from(
-      document.querySelectorAll<HTMLElement>(".guide-panel"),
-    );
-    const current = document.querySelector<HTMLElement>(".guide-toc-current");
-    const jumplistLinks =
-      document.querySelectorAll<HTMLAnchorElement>(".guide-jumplist a");
-    const tocLinks = document.querySelectorAll<HTMLAnchorElement>(
-      ".guide-jumplist a, .guide-tablist .guide-pill",
-    );
-    const tocToggleInput = document.getElementById(
-      "toc-toggle",
-    ) as HTMLInputElement | null;
-
-    const setCurrent = (id: string) => {
-      const panel = panels.find((panel) => panel.id === id);
-      const heading = panel?.querySelector("h2");
-      if (current && heading?.textContent)
-        current.textContent = heading.textContent;
-
-      tocLinks.forEach((link) => {
-        if (link.getAttribute("href") === `#${id}`) {
-          link.setAttribute("aria-current", "true");
-        } else {
-          link.removeAttribute("aria-current");
-        }
-      });
-    };
-
-    if (panels.length && current) {
-      setCurrent(panels[0].id);
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const visible = entries
-            .filter((entry) => entry.isIntersecting)
-            .sort(
-              (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
-            );
-
-          if (visible.length) setCurrent(visible[0].target.id);
-        },
-        { rootMargin: "-120px 0px -70% 0px" },
-      );
-
-      panels.forEach((panel) => observer.observe(panel));
-    }
-
-    jumplistLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        if (tocToggleInput) tocToggleInput.checked = false;
-      });
-    });
-  </script>
 </Base>
