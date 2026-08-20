@@ -13,15 +13,16 @@ import slideSprites from "../svg/slide-sprites.svg?raw";
 interface Props {
 	title?: string;
 	description?: string;
+	noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, noindex } = Astro.props;
 ---
 
 <!doctype html>
 <html lang={metadata.language}>
 	<head>
-		<Head title={title} description={description} />
+		<Head title={title} description={description} noindex={noindex} />
 	</head>
 	<body>
 		<Fragment set:html={slideSprites} />

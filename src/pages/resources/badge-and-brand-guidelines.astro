@@ -1,0 +1,596 @@
+---
+import Base from "../../layouts/Base.astro";
+import GuidelineCard from "../../components/GuidelineCard.astro";
+import InfoCard from "../../components/InfoCard.astro";
+import NoteCard from "../../components/NoteCard.astro";
+import AssetCard from "../../components/AssetCard.astro";
+
+const sections = [
+  { id: "introduction", label: "Introduction" },
+  { id: "download-centre", label: "Download Centre" },
+  { id: "wwha-badge", label: "The WWHA Badge" },
+  { id: "using-the-brand", label: "How to Use the Home Assistant Brand" },
+  { id: "co-branding-packaging", label: "Co-Branding & Packaging" },
+  {
+    id: "communicating-functionality",
+    label: "Communicating Device Functionality & Limitations",
+  },
+  { id: "need-help", label: "Need Help?" },
+];
+---
+
+<Base
+  title="Badge and Brand Guidelines"
+  description="Guidelines for using the Works with Home Assistant badge and brand assets."
+  noindex
+>
+  <div class="wrapper wrapper-overflow-visible">
+    <section class="guide-hero brand-hero">
+      <div class="container">
+        <h1 id="badge-and-brand-guidelines">Badge and Brand Guidelines</h1>
+        <p class="subtitle">For Works With Home Assistant Certified Partners</p>
+      </div>
+    </section>
+
+    <article class="guide brand">
+      <div class="guide-layout brand-layout container">
+        <fieldset class="guide-toc">
+          <p class="guide-toc-heading">Contents</p>
+
+          <ul class="guide-tablist">
+            {
+              sections.map((section) => (
+                <li>
+                  <a class="guide-pill" href={`#${section.id}`}>
+                    {section.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+
+          <div class="guide-toc-mobile">
+            <input
+              type="checkbox"
+              id="toc-toggle"
+              class="guide-toc-toggle-input"
+            />
+            <label for="toc-toggle" class="guide-toc-toggle">
+              <span class="guide-toc-toggle-pill">
+                On this page
+                <span class="guide-toc-arrow" aria-hidden="true"></span>
+              </span>
+              <span class="guide-toc-current">{sections[0].label}</span>
+            </label>
+            <ul class="guide-jumplist">
+              {
+                sections.map((section) => (
+                  <li>
+                    <a href={`#${section.id}`}>{section.label}</a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </fieldset>
+
+        <div class="guide-panels">
+          <section id="introduction" class="guide-panel">
+            <h2>Introduction</h2>
+            <p>
+              Welcome! This toolkit is exclusively for certified partners who
+              hold a valid contract with the Open Home Foundation and have
+              completed the WWHA program. If you have not completed the WWHA
+              program and are not in receipt of a certificate, you are not
+              eligible to use the logos and badges provided on this page. Using
+              them without certification is a trademark infringement.
+            </p>
+            <p>
+              To learn more about becoming a certified partner, please contact <a
+                class="copy-email"
+                href="mailto:partner@openhomefoundation.org"
+                >partner@openhomefoundation.org</a
+              >.
+            </p>
+
+            <GuidelineCard
+              logoSrc="https://brands.openhomefoundation.org/api/home-assistant/logo/screen/lockup/main/color/light/svg"
+              logoAlt="Home Assistant Logo"
+            >
+              <p>
+                Home Assistant - a project by the Open Home Foundation - is an
+                open source platform built to give you choice and control over
+                your smart home and data. It's powered by a welcoming global
+                community of users and developers, ensuring the platform is
+                constantly evolving and improving.
+              </p>
+              <p>
+                By keeping everything local and prioritizing privacy, Home
+                Assistant offers a simple, powerful, and sustainable way to
+                automate your home.
+              </p>
+            </GuidelineCard>
+
+            <GuidelineCard
+              title="Your WWHA Certification"
+              logoSrc="/img/logos/wwha-colored-light-grey-background.png"
+              logoAlt="Works With Home Assistant Badge"
+            >
+              <p>
+                Works With Home Assistant helps clearly indicate to the large
+                Home Assistant community which devices provide the best smart
+                home experience, both now and in the future. It highlights
+                devices that prioritize local, private, and secure operation
+                while advancing sustainability within the smart home.
+              </p>
+              <p>
+                If your device or product has an active, formal certificate for
+                the Works with Home Assistant program, you can access the “Works
+                with” badge via the <a href="#download-centre"
+                  >Download Centre</a
+                >, to use for that device’s product packaging or website
+                listing.
+              </p>
+            </GuidelineCard>
+          </section>
+
+          <section id="download-centre" class="guide-panel">
+            <h2>Download Centre</h2>
+            <p>Need files? All badges logos are available for download.</p>
+
+            <div class="card-row card-row--2">
+              <GuidelineCard title="WWHA Badge">
+                <p class="title title--download">Digital</p>
+                <a href="" class="button--download nounderline" download
+                  >Download</a
+                >
+                <p class="title title--download">Print</p>
+                <a href="" class="button--download nounderline" download
+                  >Download</a
+                >
+              </GuidelineCard>
+
+              <GuidelineCard title="Home Assistant Logo">
+                <p class="title title--download">Digital</p>
+                <a href="" class="button--download nounderline" download
+                  >Download</a
+                >
+                <p class="title title--download">Print</p>
+                <a href="" class="button--download nounderline" download
+                  >Download</a
+                >
+              </GuidelineCard>
+            </div>
+          </section>
+
+          <section id="wwha-badge" class="guide-panel">
+            <h2>The WWHA Badge</h2>
+            <h3 class="title">Color Variations</h3>
+
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Colored version on light grey background</p>
+                  <p>
+                    When in doubt, use this, as it is the default and official
+                    version. Prioritize this version in all brand collateral.
+                  </p>
+                </div>
+                <div class="card-media">
+                  <img
+                    src="/img/logos/wwha-colored-light-grey-background.png"
+                    alt="Works With Home Assistant Badge"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Colored version on white background</p>
+                  <p>
+                    Colored version on white background – only to be used on
+                    dark backgrounds, for example on a page with a light theme.
+                  </p>
+                </div>
+                <div class="card-media">
+                  <img
+                    src="/img/logos/wwha-colored-white-background.png"
+                    alt="Works With Home Assistant Badge - Colored version on white background"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Monochrome on light and dark background</p>
+                  <p>
+                    Use the fully black or fully white version on photographic
+                    backgrounds to ensure good readability, or in printed
+                    materials where colour is unavailable.
+                  </p>
+                </div>
+                <div class="card-media">
+                  <img
+                    src="/img/logos/wwha-monochrome.png"
+                    alt="Works With Home Assistant Badge - Monochrome on light and dark background"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+
+            <div class="card-row card-row--2">
+              <InfoCard variant="error" title="Incorrect use">
+                <ul>
+                  <li>
+                    Don't use the logo in the place of the Works with badge. The
+                    badge should always be the default way to show compatibility
+                    unless the format is completely incompatible.
+                  </li>
+                  <li>Do not use the logo on device packaging.</li>
+                  <li>
+                    Do not use the logo if your device no longer has an active,
+                    formal certificate for the Works with Home Assistant
+                    program.
+                  </li>
+                </ul>
+              </InfoCard>
+
+              <InfoCard variant="error" title="What to avoid">
+                <ul>
+                  <li>Don't add drop shadow.</li>
+                  <li>
+                    Don't distort or rotate the logo in any way. Don't change
+                    the dimensions or move any logo element.
+                  </li>
+                  <li>Don't change letter spacing.</li>
+                  <li>
+                    Don't place the logo against any background that doesn't
+                    create contrast.
+                  </li>
+                  <li>
+                    Don't change the original solid colour with an outline, or
+                    add any kind of gradient. Use only the selected colour
+                    palette.
+                  </li>
+                </ul>
+              </InfoCard>
+            </div>
+
+            <NoteCard>
+              <p>
+                Some older versions of the Home Assistant logo are now
+                deprecated and should not be used. <strong
+                  >Please only use the current, approved files in the <a
+                    href="#download-centre">Download Centre</a
+                  >.</strong
+                >
+              </p>
+            </NoteCard>
+          </section>
+
+          <section id="using-the-brand" class="guide-panel">
+            <h2>How to Use the Home Assistant Brand</h2>
+
+            <h3 class="title">Color Variations</h3>
+
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Colored version on light background</p>
+                  <p>
+                    When in doubt, use this, as it is the default and official
+                    version, certified and with the trademark registration.
+                    Prioritize this version in all brand collateral.
+                  </p>
+                </div>
+                <div class="card-media">
+                  <img
+                    src="https://brands.openhomefoundation.org/api/home-assistant/logo/screen/lockup/main/color/light/svg"
+                    alt="Home Assistant colored version on light background logo"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Colored version on dark background</p>
+                  <p>
+                    Only to be used on dark backgrounds: e.g. on a page with a
+                    dark theme so that the lighter text can be read.
+                  </p>
+                </div>
+                <div class="card-media card-media--dark">
+                  <img
+                    src="https://brands.openhomefoundation.org/api/home-assistant/logo/screen/lockup/main/monochrome/dark/svg"
+                    alt="Home Assistant colored version on dark background logo"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+            <GuidelineCard>
+              <div class="card-content-row">
+                <div class="card-content">
+                  <p class="title">Monochrome on light and dark background</p>
+                  <p>
+                    Use the fully black or fully white version on photographic
+                    backgrounds to ensure good readability, or in printed
+                    materials where color is unavailable.
+                  </p>
+                </div>
+                <div class="card-media">
+                  <img
+                    src="https://brands.openhomefoundation.org/api/home-assistant/logo/screen/lockup/main/monochrome/light/svg"
+                    alt="Home Assistant monochrome on light and dark background logo"
+                  />
+                </div>
+              </div>
+            </GuidelineCard>
+
+            <div class="card-row card-row--2">
+              <InfoCard variant="error" title="Incorrect use">
+                <ul>
+                  <li>
+                    Don't use the logo in the place of the Works with badge. The
+                    badge should always be the default way to show compatibility
+                    unless the format is completely incompatible.
+                  </li>
+                  <li>Do not use the logo on device packaging.</li>
+                  <li>
+                    Do not use the logo if your device no longer has an active,
+                    formal certificate for the Works with Home Assistant
+                    program.
+                  </li>
+                </ul>
+              </InfoCard>
+
+              <InfoCard variant="error" title="What to avoid">
+                <ul>
+                  <li>Don't add drop shadow.</li>
+                  <li>
+                    Don't distort or rotate the logo in any way. Don't change
+                    the dimensions or move any logo element.
+                  </li>
+                  <li>Don't change letter spacing.</li>
+                  <li>
+                    Don't place the logo against any background that doesn't
+                    create contrast.
+                  </li>
+                  <li>
+                    Don't change the original solid colour with an outline, or
+                    add any kind of gradient. Use only the selected colour
+                    palette.
+                  </li>
+                </ul>
+              </InfoCard>
+            </div>
+
+            <NoteCard>
+              <p>
+                Some older versions of the Home Assistant logo are now
+                deprecated and should not be used. <strong
+                  >Please only use the current, approved files in the <a
+                    href="#download-centre">Download Centre</a
+                  >.</strong
+                >
+              </p>
+            </NoteCard>
+
+            <h3>Using the Home Assistant Name</h3>
+            <p>
+              If devices have been formally certified, you are welcome to
+              reference this in written copy on marketing materials. Please
+              ensure the wording states that the device is “certified” under the
+              Works with Home Assistant program, or simply “Works with”.
+            </p>
+            <p>
+              Always include information on how the device connects, i.e. works
+              locally via Matter, Zigbee, Z-Wave, Bluetooth, WiFi, or via
+              ESPHome, so users understand if they need additional hardware.
+            </p>
+
+            <div class="card-row">
+              <InfoCard title="Approved examples:">
+                <ul>
+                  <li>“Certified by the Works with Home Assistant program”</li>
+                  <li>“Works with Home Assistant (via Matter etc.)”</li>
+                </ul>
+              </InfoCard>
+
+              <InfoCard variant="error" title="Prohibited phrasing:">
+                <ul>
+                  <li>“This product is approved by Home Assistant”</li>
+                  <li>“Recommended by Home Assistant”</li>
+                  <li>“Home Assistant product”</li>
+                </ul>
+              </InfoCard>
+            </div>
+          </section>
+
+          <section id="co-branding-packaging" class="guide-panel">
+            <h2>Co-Branding & Packaging</h2>
+            <p>
+              pFor certified products only, you're welcome to use the WWHA badge
+              on your product packaging, exhibition marketing, brochures,
+              website listings and Amazon pages. You are also welcome to provide
+              it to distributors of your certified product.
+            </p>
+            <p>
+              It is common for the WWHA badge to be used alongside the badges of
+              other smart home “works with” programs. When pairing the WWHA
+              badge with other badges and logos, the badge should be
+              proportionally sized, balanced in both width and height, and
+              centered optically.
+            </p>
+            <p>
+              Ensure the badge has ample clearspace around it — at least equal
+              to the height of the logotype or logomark — to give it room to
+              breathe.
+            </p>
+            <p>
+              Do not change the WWHA colour palette to match other smart home
+              “works with” badges or logos. Only use the <strong
+                >colour variations</strong
+              > provided in these guidelines.
+            </p>
+
+            <h3>Examples</h3>
+
+            <p>
+              These images show what co-branding should look like in real
+              contexts, such as on marketing assets or packaging.
+            </p>
+
+            <div class="card-row card-row--2">
+              <AssetCard
+                src="/img/guidelines/wwha-example-online-digital-use.webp"
+                alt="Example online/digital use"
+                caption="Online/digital use"
+              />
+              <AssetCard
+                src="/img/guidelines/wwha-example-use-on-packaging.webp"
+                alt="Example use on packaging"
+                caption="Use on packaging"
+              />
+            </div>
+          </section>
+
+          <section id="communicating-functionality" class="guide-panel">
+            <h2>Communicating Device Functionality & Limitations</h2>
+            <p>
+              In line with one of our core values of providing users with
+              ‘choice’, being transparent with Home Assistant customers and
+              users regarding device limitations is a priority.
+            </p>
+
+            <GuidelineCard title="Planning your WWHA Launch">
+              <p>
+                <strong
+                  >All copy announcing to your device(s) WWHA certification must
+                  be reviewed by the WWHA team before it can be shared publicly.</strong
+                > This includes copy intended for websites, social media, newsletters,
+                blogs or packaging.
+              </p>
+              <p>
+                The WWHA team will also share copy relating to your device(s)
+                with you during launch planning to ensure consistency.
+              </p>
+            </GuidelineCard>
+
+            <GuidelineCard title="Informing Customers Before Purchase">
+              <p>
+                Partners are expected to clearly <strong
+                  >communicate functionality limitations to potential buyers</strong
+                > - anywhere the device is listed along with the WWHA badge or Home
+                Assistant logo - <strong>before purchase is made</strong>.
+              </p>
+              <p>
+                Wording about the limitation must be specific, and clearly
+                explain what it means for the customer.
+              </p>
+
+              <p>Here are two approved examples:</p>
+              <ul>
+                <li>
+                  “This device requires a Home Assistant-compatible Zigbee
+                  coordinator to connect (sold separately).”
+                </li>
+                <li>
+                  “This device supports on/off control via Home Assistant, but
+                  dimming is not currently supported.”
+                </li>
+              </ul>
+            </GuidelineCard>
+
+            <NoteCard>
+              <p>
+                Should your device no longer be certified by the Works with Home
+                Assistant program, <strong
+                  >please remove all badges, logos and references to the program
+                  immediately.</strong
+                >
+              </p>
+            </NoteCard>
+          </section>
+
+          <section id="need-help" class="guide-panel">
+            <h2>Need Help?</h2>
+            <p>
+              Thank you for your commitment to our mission. By using these
+              guidelines you’re helping build trusted, consistent, and
+              recognizable brands for our entire community, as well as people
+              who are new to open smart homes.
+            </p>
+            <p>
+              <strong
+                >Have questions? Please contact us directly: <a
+                  href="mailto:partner@openhomefoundation.org"
+                  >partner@openhomefoundation.org</a
+                ></strong
+              >
+            </p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script>
+    const panels = Array.from(
+      document.querySelectorAll<HTMLElement>(".guide-panel"),
+    );
+    const current = document.querySelector<HTMLElement>(".guide-toc-current");
+    const jumplistLinks =
+      document.querySelectorAll<HTMLAnchorElement>(".guide-jumplist a");
+    const tocLinks = document.querySelectorAll<HTMLAnchorElement>(
+      ".guide-jumplist a, .guide-tablist .guide-pill",
+    );
+    const tocToggleInput = document.getElementById(
+      "toc-toggle",
+    ) as HTMLInputElement | null;
+
+    const setCurrent = (id: string) => {
+      const panel = panels.find((panel) => panel.id === id);
+      const heading = panel?.querySelector("h2");
+      if (current && heading?.textContent)
+        current.textContent = heading.textContent;
+
+      tocLinks.forEach((link) => {
+        if (link.getAttribute("href") === `#${id}`) {
+          link.setAttribute("aria-current", "true");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    };
+
+    if (panels.length && current) {
+      setCurrent(panels[0].id);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort(
+              (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
+            );
+
+          if (visible.length) setCurrent(visible[0].target.id);
+        },
+        { rootMargin: "-120px 0px -70% 0px" },
+      );
+
+      panels.forEach((panel) => observer.observe(panel));
+    }
+
+    jumplistLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (tocToggleInput) tocToggleInput.checked = false;
+      });
+    });
+  </script>
+</Base>

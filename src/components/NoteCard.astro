@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="note-card">
+  <span class="icon" aria-hidden="true"></span>
+
+  <div class="content">
+    <slot />
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../styles/mixins";
+
+  .note-card {
+    align-items: flex-start;
+    background-color: rgba(24, 188, 242, 0.05);
+    border-left: 2px solid var(--brand-color-home-assistant-blue);
+    border-radius: 0 1.25rem 1.25rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin: 2.75rem 0 20px;
+    padding: 1.25rem 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      width: 2rem;
+      height: 2rem;
+      background-color: #ffa600;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='18' viewBox='0 0 4 18' fill='none'%3E%3Cpath d='M0.48 11.688L0.0479999 0H3.384L2.928 11.688H0.48ZM0 17.76V14.304H3.456V17.76H0Z' fill='%23F7F6F2'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 0.25rem;
+      border-radius: 50%;
+    }
+
+    .content {
+      :global(p) {
+        font-size: 1rem;
+        text-wrap: balance;
+      }
+
+      :global(p:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+</style>
