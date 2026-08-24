@@ -1,13 +1,14 @@
 ---
 interface Props {
+  id?: string;
   title: string;
   variant?: "ok" | "error";
 }
 
-const { title, variant = "ok" } = Astro.props;
+const { id, title, variant = "ok" } = Astro.props;
 ---
 
-<div class:list={["info-card", `info-card--${variant}`]}>
+<div id={id} class:list={["info-card", `info-card--${variant}`]}>
   <p class="title">
     <span class="icon" aria-hidden="true"></span>
     {title}

@@ -201,6 +201,38 @@ article.guide {
             margin: 0;
         }
     }
+
+    .card-row,
+    .card-col {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        &--2 {
+            @include mixins.bp(tablet) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .guidelines-card + .guidelines-card {
+            margin-top: 0;
+        }
+    }
+
+    .card-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-row {
+        @include mixins.bp(tablet) {
+            flex-direction: row;
+
+            >* {
+                flex: 1 1 0%;
+            }
+        }
+    }
 }
 
 // brand template overrides
@@ -289,30 +321,4 @@ article.guide.brand {
             margin-top: 2.75rem;
         }
     }
-
-    .card-row {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-
-        @include mixins.bp(tablet) {
-            flex-direction: row;
-
-            >* {
-                flex: 1 1 0%;
-            }
-        }
-
-        &--2 {
-            @include mixins.bp(tablet) {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .guidelines-card + .guidelines-card {
-            margin-top: 0;
-        }
-    }
-
 }

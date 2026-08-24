@@ -1,0 +1,327 @@
+---
+import Base from "../../layouts/Base.astro";
+import GuideToc from "../../components/GuideToc.astro";
+import InfoCard from "../../components/InfoCard.astro";
+
+// The single, manual place to define what shows up in the sidebar/mobile ToC
+// for this guide. Top-level entries map to a section's own heading; nested
+// `children` map to `<h3>` headings within that section — add/reorder entries
+// here to control the ToC without touching the content markup below.
+const toc = [
+  { id: "about-home-assistant", label: "About Home Assistant" },
+  { id: "what-are-core-integrations", label: "What Are Core Integrations?" },
+  {
+    id: "building-and-maintaining-an-integration",
+    label: "Building and Maintaining an Integration",
+    children: [
+      { id: "required-skills", label: "01. Required Skills" },
+      {
+        id: "creating-an-integration",
+        label: "02. Creating a Core Integration",
+      },
+      { id: "maintenance", label: "03. Maintenance" },
+      { id: "licensing", label: "04. Licensing" },
+      {
+        id: "taking-ownership",
+        label: "05. Taking Ownership of an Existing Integration",
+      },
+    ],
+  },
+  {
+    id: "top-tips",
+    label: "06. Top Tips",
+    children: [
+      {
+        id: "volunteer-contributors",
+        label: "Our Contributors Are Volunteers",
+      },
+      { id: "our-workload", label: "Be Understanding of Our Workload" },
+    ],
+  },
+];
+---
+
+<Base
+  title="Core Integration Summary"
+  description="A summary for manufacturers on building and maintaining a Home Assistant core integration."
+>
+  <div class="wrapper wrapper-overflow-visible">
+    <section class="guide-hero">
+      <div class="container">
+        <h1 id="core-integration-summary">Core Integration Summary</h1>
+        <p class="meta">
+          For manufacturers building or maintaining a Home Assistant integration
+        </p>
+      </div>
+    </section>
+
+    <article class="guide">
+      <div class="guide-layout container">
+        <GuideToc toc={toc} />
+
+        <div class="guide-panels">
+          <section class="guide-panel">
+            <h2 id="about-home-assistant">About Home Assistant</h2>
+            <hr />
+            <p>
+              Home Assistant is a <strong
+                >community-led, free and open source smart home automation
+                platform</strong
+              > that prioritizes local control and privacy. It empowers over two million
+              homes to connect a wide range of devices, allowing them to keep their
+              data in their homes without being beholden to a single device manufacturer.
+              It breathes new life into smart home devices, allowing households to
+              use them longer, boosting sustainability in the smart home.
+            </p>
+            <p>
+              The community works together to build Home Assistant using GitHub
+              to add features, report issues, fix bugs, add translations, and
+              more. In fact, it was the top open source project on GitHub in
+              2024, with <strong>the most active community worldwide</strong> with
+              over 21,000 contributors in that year alone. The community also organizes
+              its development via other communication channels, specifically Discord
+              and the Home Assistant Community Forum.
+            </p>
+          </section>
+
+          <hr class="part-divider" />
+
+          <section class="guide-panel">
+            <h2 id="what-are-core-integrations">What Are Core Integrations?</h2>
+            <p>
+              Linking up manufacturer devices with Home Assistant requires an
+              integration. Anyone can create an integration and distribute it
+              themselves, often called custom integrations or hosted separately,
+              but when a number of requirements are met an integration can be
+              built into Home Assistant, these are called <a
+                href="https://www.home-assistant.io/integrations/#all"
+                target="_blank"
+                rel="noopener noreferrer">&lsquo;core integrations&rsquo;</a
+              >. Used by the majority of our community, core integrations are
+              built to provide an easy out-of-the-box experience for users, with
+              no added installation or extra downloads.
+            </p>
+            <p>
+              Core integrations are built and maintained by community members,
+              our core team, and device manufacturers who understand the power
+              of working with our open source community.
+            </p>
+            <p>
+              Core code quality is reviewed by the internal core team of our
+              employees as well as some of our dedicated core reviewer
+              volunteers. The core integrations are central to user experience
+              and so its code needs to follow best practice and standards.
+            </p>
+          </section>
+
+          <hr class="part-divider" />
+
+          <section class="guide-panel">
+            <h2 class="part-title" id="building-and-maintaining-an-integration">
+              Building and Maintaining an Integration
+            </h2>
+
+            <h3 id="required-skills">
+              01. What Skills Do Our Team Need to Build / Maintain an
+              Integration?
+            </h3>
+            <p>
+              The project is built on <strong>Python</strong>, and to build an
+              integration you will require a Python engineer who is familiar
+              with async programming.
+            </p>
+            <p>
+              We would also recommend your engineers familiarize themselves with
+              git and <strong>GitHub</strong>, in particular the requirements of
+              submitting code to Home Assistant.
+            </p>
+            <p>
+              If you do not have these skills in-house, speak to us about
+              mobilizing our community to help you build and maintain an
+              integration. If you come to an agreement with a member of our
+              community, we would expect them to be compensated fairly for their
+              time and expertise, in whatever form that may take.
+            </p>
+            <p>
+              Some companies have also used agencies for these types of
+              integrations. If so, we would recommend that they are familiar
+              with the open source community and its values. You could ask to
+              see other integrations they have written for Home Assistant and
+              check them against the code quality scale.
+            </p>
+
+            <h3 id="creating-an-integration">
+              02. Creating a Home Assistant Core Integration?
+            </h3>
+            <p>
+              Every integration is different, but the scope largely depends on
+              the number of device types, the functions each device supports,
+              and the types of control included.
+            </p>
+            <p>
+              We recommend you build iteratively, starting with one device type
+              or function, submitting code to us for feedback, and adding more
+              over time.
+            </p>
+            <p>
+              On average, a standard integration in Home Assistant from someone
+              with mid-level experience will take about a month.
+            </p>
+            <p>
+              We would generally recommend 1-3 full-time Python engineers to
+              work on an integration in Core depending on its complexity.
+            </p>
+            <p>
+              A company should have its own Github organization structure, which
+              engineers should join with their personal accounts.
+            </p>
+
+            <h3 id="maintenance">03. Maintenance</h3>
+            <p>
+              Committing to a company-maintained integration also means ongoing
+              maintenance. This is a much lower time-commitment than the build,
+              but is important to keep on top of community feedback,
+              suggestions, and pull requests.
+            </p>
+            <p>
+              Our core team also helps ensure that PRs are reviewed regularly
+              and that each integration is maintained with each of our regular
+              releases to keep it working into the future.
+            </p>
+
+            <h3 id="licensing">04. Licensing</h3>
+            <p>
+              Bearing in mind that we&rsquo;re an open source project, your code
+              must be published under an OSI-approved license. Because we are
+              redistributing under an open source project, we need to be able to
+              distribute without limitations.
+            </p>
+
+            <h3 id="taking-ownership">
+              05. Taking Ownership of an Existing Community-Built Core
+              Integration
+            </h3>
+            <ul>
+              <li>
+                Take a look at who maintains the integration currently and
+                contact us about getting in touch with them. Most contributors
+                would be thrilled to work alongside a manufacturer but we
+                request that you don&rsquo;t reach out to them cold, our team
+                are happy to arrange an introduction.
+              </li>
+              <li>
+                Use this contact and the existing open-sourced code to
+                understand how the current integration is built and whether
+                it&rsquo;s realistic to expand on or improve it. Speak to our
+                team if this is the case and we can help you find the best
+                approach.
+              </li>
+              <li>
+                Familiarize yourself with our <a
+                  href="https://developers.home-assistant.io/"
+                  target="_blank"
+                  rel="noopener noreferrer">documentation area</a
+                >.
+              </li>
+              <li>
+                Assess the current integration against the <a
+                  href="https://developers.home-assistant.io/docs/core/integration-quality-scale/"
+                  target="_blank"
+                  rel="noopener noreferrer">integration quality scale</a
+                > to help set your improvement priorities.
+              </li>
+            </ul>
+          </section>
+
+          <hr class="part-divider" />
+
+          <section class="guide-panel">
+            <h2 class="part-title" id="top-tips">06. Top Tips</h2>
+
+            <div class="card-col">
+              <InfoCard
+                id="volunteer-contributors"
+                variant="ok"
+                title="Remember the majority of our contributors are volunteers"
+              >
+                <p>
+                  Our community volunteers are the lifeblood of the project.
+                  Remember that they give their time for free to the project
+                  purely for their passion, curiosity, or improvement of their
+                  own smart home. Whilst we do have a core team of engineers,
+                  they are not your employees and are responsible for improving
+                  Home Assistant Core as a whole, not just for your integration.
+                </p>
+              </InfoCard>
+
+              <InfoCard
+                id="our-workload"
+                variant="ok"
+                title="Be understanding of our workload"
+              >
+                <p>
+                  At any given time our team and our volunteers have a list of
+                  several hundred &lsquo;Pull Requests&rsquo; to review. Because
+                  of this, we cannot promise that an integration will be
+                  reviewed by a specific date.
+                </p>
+                <p>
+                  Each month we have a Core Beta Release with a Core Release a
+                  week later. These release dates are on Wednesdays aside from
+                  widespread public holidays and you can see the calendar on our <a
+                    href="https://developers.home-assistant.io/"
+                    target="_blank"
+                    rel="noopener noreferrer">developer docs</a
+                  >. It is highly unlikely that if you contact us on those days
+                  we&rsquo;ll be able to take action quickly. Please be aware
+                  that our workload during the beta sprint is very high.
+                </p>
+                <p>
+                  Here are some tips to help us implement your changes more
+                  quickly:
+                </p>
+                <ul>
+                  <li>
+                    Familiarize yourself with the <a
+                      href="https://developers.home-assistant.io/docs/review-process/"
+                      target="_blank"
+                      rel="noopener noreferrer">pull request review process</a
+                    >.
+                  </li>
+                  <li>
+                    Make small, iterative changes. Volunteers are more likely to
+                    be able to review your code in small bite-sized pieces
+                    rather than several thousand lines of code in one go. This
+                    will also help you stay on the right development track,
+                    rather than writing a full integration and realising the
+                    basics are incorrect and having to start again from scratch.
+                  </li>
+                  <li>
+                    If you would prefer not to publicly release in small chunks
+                    it is possible for us to use intermediate branches to store
+                    all the small iterations before full release.
+                  </li>
+                  <li>
+                    Be open to feedback - if you need to, ask for clarification,
+                    and don&rsquo;t take changes or comments personally.
+                    Remember we have contributions from all over the world too
+                    so English may not be the reviewer&rsquo;s or our
+                    engineer&rsquo;s first language.
+                  </li>
+                  <li>
+                    Take advantage of our <a
+                      href="https://www.home-assistant.io/join-chat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >#devs category in our Discord chat</a
+                    >.
+                  </li>
+                </ul>
+              </InfoCard>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+  </div>
+</Base>
