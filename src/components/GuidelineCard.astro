@@ -15,7 +15,9 @@ const { title, logoSrc = "", logoAlt = "Logo", variant } = Astro.props;
       <slot name="title-row">
         <div class="title-row">
           {title && <p>{title}</p>}
-          {logoSrc && <img src={logoSrc} class="logo" alt={logoAlt} />}
+          {logoSrc && (
+            <img loading="lazy" src={logoSrc} class="logo" alt={logoAlt} />
+          )}
         </div>
       </slot>
     )
