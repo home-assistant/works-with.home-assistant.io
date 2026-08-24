@@ -139,7 +139,8 @@ article.guide {
         }
     }
 
-    ul {
+    ul,
+    ol {
         color: var(--color-secondary);
         font-size: var(--typography-paragraph-font-size);
         font-weight: var(--typography-paragraph-font-weight);
@@ -165,6 +166,10 @@ article.guide {
             list-style-type: circle;
             margin: 10px 0 0;
         }
+    }
+
+    ol {
+        list-style-type: decimal;
     }
 
     dl {
