@@ -110,6 +110,21 @@ const { toc } = Astro.props;
   const tocToggleInput = document.getElementById(
     "toc-toggle",
   ) as HTMLInputElement | null;
+  const tocToggleLabel = document.querySelector<HTMLLabelElement>(
+    ".guide-toc-toggle",
+  );
+
+  // `.guide-toc` is `position: sticky`. Clicking the label natively focuses
+  // its associated checkbox, and mobile Safari/Chrome respond to a newly
+  // focused control inside a sticky ancestor by scrolling it fully into
+  // view — which jumps the page when scrolled down. Handle the toggle
+  // ourselves and focus with `preventScroll` to stop that jump.
+  tocToggleLabel?.addEventListener("click", (event) => {
+    if (!tocToggleInput) return;
+    event.preventDefault();
+    tocToggleInput.checked = !tocToggleInput.checked;
+    tocToggleInput.focus({ preventScroll: true });
+  });
 
   const linksByHref = new Map<string, HTMLAnchorElement[]>();
   tocLinks.forEach((link) => {
@@ -185,7 +200,13 @@ const { toc } = Astro.props;
     flex-direction: row;
     gap: 0.5rem;
     box-sizing: border-box;
-    width: 100vw;
+    // Full-bleed to the viewport edges without `100vw`, which includes the
+    // scrollbar gutter on desktop browsers with non-overlay scrollbars and
+    // causes horizontal page overflow. `.guide-toc`'s parent (`.container`)
+    // always spans the full viewport width at this breakpoint (it only hits
+    // its max-width cap at the desktop breakpoint, where this rule is
+    // overridden below), so sizing off its own `100%` is scrollbar-safe.
+    width: calc(100% + (var(--layout-container-padding) * 2));
     margin-left: calc(var(--layout-container-padding) * -1);
     padding-left: var(--layout-container-padding);
     padding-right: var(--layout-container-padding);
