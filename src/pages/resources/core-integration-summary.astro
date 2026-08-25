@@ -9,46 +9,46 @@ import InfoCard from "../../components/InfoCard.astro";
 // here to control the ToC without touching the content markup below.
 const toc = [
   { id: "about-home-assistant", label: "About Home Assistant" },
-  { id: "what-are-core-integrations", label: "What Are Core Integrations?" },
+  { id: "what-are-core-integrations", label: "What are core integrations?" },
   {
     id: "building-and-maintaining-an-integration",
-    label: "Building and Maintaining an Integration",
+    label: "Building and maintaining an integration",
     children: [
-      { id: "required-skills", label: "01. Required Skills" },
+      { id: "required-skills", label: "01. Required skills" },
       {
         id: "creating-an-integration",
-        label: "02. Creating a Core Integration",
+        label: "02. Creating a core integration",
       },
       { id: "maintenance", label: "03. Maintenance" },
       { id: "licensing", label: "04. Licensing" },
       {
         id: "taking-ownership",
-        label: "05. Taking Ownership of an Existing Integration",
+        label: "05. Taking ownership of an existing integration",
       },
     ],
   },
   {
     id: "top-tips",
-    label: "06. Top Tips",
+    label: "06. Top tips",
     children: [
       {
         id: "volunteer-contributors",
-        label: "Our Contributors Are Volunteers",
+        label: "Our contributors are volunteers",
       },
-      { id: "our-workload", label: "Be Understanding of Our Workload" },
+      { id: "our-workload", label: "Be understanding of our workload" },
     ],
   },
 ];
 ---
 
 <Base
-  title="Core Integration Summary"
+  title="Core integration summary"
   description="A summary for manufacturers on building and maintaining a Home Assistant core integration."
 >
   <div class="wrapper wrapper-overflow-visible">
     <section class="guide-hero">
       <div class="container">
-        <h1 id="core-integration-summary">Core Integration Summary</h1>
+        <h1 id="core-integration-summary">Core integration summary</h1>
         <p class="meta">
           For manufacturers building or maintaining a Home Assistant integration
         </p>
@@ -87,7 +87,7 @@ const toc = [
           <hr class="part-divider" />
 
           <section class="guide-panel">
-            <h2 id="what-are-core-integrations">What Are Core Integrations?</h2>
+            <h2 id="what-are-core-integrations">What are core integrations?</h2>
             <p>
               Linking up manufacturer devices with Home Assistant requires an
               integration. Anyone can create an integration and distribute it
@@ -118,12 +118,12 @@ const toc = [
 
           <section class="guide-panel">
             <h2 class="part-title" id="building-and-maintaining-an-integration">
-              Building and Maintaining an Integration
+              Building and maintaining an integration
             </h2>
 
             <h3 id="required-skills">
-              01. What Skills Do Our Team Need to Build / Maintain an
-              Integration?
+              01. What skills do our team need to build / maintain an
+              integration?
             </h3>
             <p>
               The project is built on <strong>Python</strong>, and to build an
@@ -151,7 +151,7 @@ const toc = [
             </p>
 
             <h3 id="creating-an-integration">
-              02. Creating a Home Assistant Core Integration?
+              02. Creating a Home Assistant core integration?
             </h3>
             <p>
               Every integration is different, but the scope largely depends on
@@ -198,8 +198,8 @@ const toc = [
             </p>
 
             <h3 id="taking-ownership">
-              05. Taking Ownership of an Existing Community-Built Core
-              Integration
+              05. Taking ownership of an existing community-built core
+              integration
             </h3>
             <ul>
               <li>
@@ -236,7 +236,7 @@ const toc = [
           <hr class="part-divider" />
 
           <section class="guide-panel">
-            <h2 class="part-title" id="top-tips">06. Top Tips</h2>
+            <h2 class="part-title" id="top-tips">06. Top tips</h2>
 
             <div class="card-col">
               <InfoCard
