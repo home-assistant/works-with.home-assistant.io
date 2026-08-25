@@ -88,29 +88,27 @@
     .nav {
         align-items: center;
         display: flex;
-        gap: 40px;
+        gap: 28px;
 
         &-item {
             text-decoration: none;
             color: inherit;
             padding: 10px 10px;
-            position: relative;
 
-            &:after {
-                content: '';
-                left: 10px;
-                width: 0%;
-                height: 1px;
-                background-color: var(--body-color);
-                position: absolute;
-                top: calc(100% - 8px);
-                transition: width 0.25s;
-            }
+            background-image: linear-gradient(var(--body-color), var(--body-color));
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-position: 0 100%;
+            background-size: 0% 1px;
+            transition: background-size 0.25s;
 
             &:hover {
-                &:after {
-                    width: calc(100% - 20px);
-                }
+                background-size: 100% 1px;
+            }
+
+            &.active {
+                font-weight: 600;
+                background-size: 100% 1px;
             }
         }
     }

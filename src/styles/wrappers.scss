@@ -68,6 +68,10 @@
         position: relative;
         z-index: 1;
     }
+
+    &-overflow-visible {
+        overflow: visible;
+    }
 }
 
 section+.wrapper {

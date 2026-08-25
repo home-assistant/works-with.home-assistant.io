@@ -64,30 +64,22 @@ p:not(:last-child) {
 }
 
 strong {
-    font-weight: 800
+    font-weight: 600;
 }
 
 a:not(.button):not(.nounderline) {
     align-self: flex-start;
     text-decoration: none;
-    position: relative;
     color: initial;
-
-    &:after {
-        content: '';
-        left: 0;
-        width: 0%;
-        height: 1px;
-        position: absolute;
-        top: calc(100% + 2px);
-        background-color: var(--color-primary);
-        transition: width .3s ease-out
-    }
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 1px;
+    padding-bottom: 2px;
+    transition: background-size .3s ease-out;
 
     &:hover {
-        &:after {
-            width: 100%;
-        }
+        background-size: 100% 1px;
     }
 }
 

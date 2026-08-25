@@ -1,0 +1,1029 @@
+---
+import Base from "../../layouts/Base.astro";
+import GuideToc from "../../components/GuideToc.astro";
+import NoteCard from "../../components/NoteCard.astro";
+
+// The single, manual place to define what shows up in the sidebar/mobile ToC
+// for this guide. Top-level entries map to a section's own heading; nested
+// `children` map to `<h3>` headings within that section — add/reorder entries
+// here to control the ToC without touching the content markup below.
+const toc = [
+  { id: "about-this-document", label: "About this document" },
+  {
+    id: "part-one-general",
+    label: "Part One: General",
+    children: [
+      {
+        id: "what-is-the-works-with-home-assistant-program",
+        label: "What is the Works with Home Assistant Program?",
+      },
+      { id: "program-requirements", label: "Program Requirements" },
+      {
+        id: "correct-use-of-home-assistant-and-wwha-badge",
+        label:
+          "Correct Use of Home Assistant and Works with Home Assistant Badges",
+      },
+      { id: "core-integrations", label: "Core Integrations" },
+      { id: "partnership-promise", label: "Partnership Promise" },
+    ],
+  },
+  {
+    id: "part-two-technical-requirements",
+    label: "Part Two: Technical Requirements",
+    children: [
+      { id: "matter", label: "Matter" },
+      { id: "zigbee", label: "Zigbee" },
+      { id: "z-wave", label: "Z-Wave" },
+      { id: "esphome", label: "ESPHome" },
+      { id: "bluetooth", label: "Bluetooth" },
+      { id: "wi-fi", label: "Wi-Fi" },
+      { id: "prohibited-devices", label: "Prohibited Devices" },
+    ],
+  },
+];
+---
+
+<Base
+  title="Works with Home Assistant Compliance Guide"
+  description="Compliance and certification requirements for the Works with Home Assistant program."
+>
+  <div class="wrapper wrapper-overflow-visible">
+    <section class="guide-hero">
+      <div class="container">
+        <h1 id="compliance-guide">Compliance Guide</h1>
+        <p class="meta">Updated July 2026</p>
+      </div>
+    </section>
+
+    <article class="guide">
+      <div class="guide-layout container">
+        <GuideToc toc={toc} />
+
+        <div class="guide-panels">
+          <section class="guide-panel">
+            <h2 id="about-this-document">About this document</h2>
+            <hr />
+            <p>
+              This guide outlines the compliance and certification requirements
+              for the Works with Home Assistant program. It is intended for
+              manufacturers that wish to integrate with Home Assistant and
+              certify their devices accordingly.
+            </p>
+            <p>The document is split into two parts:</p>
+            <ul>
+              <li>
+                <a href="#part-one-general"
+                  ><strong>Part One: General</strong></a
+                > &mdash; an overview of the program, its purpose, and the requirements
+                that apply to all partners.
+              </li>
+              <li>
+                <a href="#part-two-technical-requirements"
+                  ><strong>Part Two: Technical</strong></a
+                > &mdash; protocol-specific requirements for each certification pathway
+                (Matter, Zigbee, Z-Wave, ESPHome, Bluetooth, and Wi-Fi), and information
+                on prohibited devices.
+              </li>
+            </ul>
+            <p>
+              Further testing specifics are also available in our <a
+                href="https://www.openhomefoundation.org/assets/documents/works-with-home-assistant-device-test-report-10-dec-2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer">sample testing document</a
+              >, but please note this is not exhaustive, as testing parameters
+              have to be flexible based on device type and behavior.
+            </p>
+          </section>
+
+          <hr class="part-divider" />
+
+          <section class="guide-panel">
+            <h2 class="part-title" id="part-one-general">Part One: General</h2>
+
+            <h3 id="what-is-the-works-with-home-assistant-program">
+              What is the Works with Home Assistant Program?
+            </h3>
+            <p>
+              Home Assistant is an open source home automation platform that
+              puts local control and privacy first, giving users full control
+              over their data with no cloud required. As one of the Open Home
+              Foundation's core projects, Home Assistant is powered by a global
+              community of users and developers, all working together to ensure
+              the platform is constantly evolving and improving. Home Assistant
+              offers a simple, powerful, and sustainable way to automate the
+              home.
+            </p>
+            <p>
+              The Works with Home Assistant program certifies that a device
+              integrates seamlessly and reliably with Home Assistant. When users
+              see the Works with Home Assistant badge on a product, they can
+              trust that it will work as expected &mdash; immediately upon
+              installation, locally, and without the need for specialist
+              technical knowledge.
+            </p>
+            <p>
+              The program is run by the Open Home Foundation. The foundation
+              champions the fundamental principles of privacy, choice, and
+              sustainability for smart homes, and for every person who lives in
+              one. The foundation achieves this by supporting the development of
+              open source projects and open connectivity standards.
+            </p>
+
+            <h3 id="program-requirements">Program Requirements</h3>
+            <p>
+              All devices entering the Works with Home Assistant program must
+              meet the following general requirements, in addition to any
+              protocol-specific requirements outlined in Part Two.
+            </p>
+            <dl>
+              <div>
+                <dt>Safety Certification</dt>
+                <dd>
+                  Devices must have the relevant safety certifications for the
+                  regions they are sold in and the type of device, for example,
+                  the Federal Communication Commission (FCC) or Conformité
+                  Européen (CE) marking.
+                </dd>
+              </div>
+              <div>
+                <dt>Firmware Updates</dt>
+                <dd>
+                  Firmware updates should ideally be available from within Home
+                  Assistant.
+                </dd>
+              </div>
+              <div>
+                <dt>Support and Maintenance</dt>
+                <dd>
+                  Support contact and integration maintainer &mdash; if the
+                  integration does not use an open standard such as Matter,
+                  Zigbee, or Z-Wave, the partner must be the maintainer of their
+                  integration and provide the Open Home Foundation with the
+                  contact details of the developers in charge. If the
+                  integration runs via an open standard, we require a technical
+                  contact from your team who is responsible for this.
+                </dd>
+              </div>
+              <div>
+                <dt>Certification Agreement</dt>
+                <dd>
+                  All Works with Home Assistant partners will need to agree to
+                  the terms of <a
+                    href="https://www.openhomefoundation.org/assets/documents/works-with-home-assistant-certification-agreement-13-aug-2026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">the certification agreement</a
+                  >.
+                </dd>
+              </div>
+              <div>
+                <dt>Testing</dt>
+                <dd>
+                  Two devices per product need to be sent to us for technical
+                  and support testing.
+                </dd>
+              </div>
+              <div>
+                <dt>Community Standards</dt>
+                <dd>Be a positive brand in the Home Assistant community.</dd>
+              </div>
+              <div>
+                <dt>Commercial Fee</dt>
+                <dd>
+                  500 Swiss francs (CHF) annually (per partner, not per device).
+                </dd>
+              </div>
+            </dl>
+
+            <h3 id="correct-use-of-home-assistant-and-wwha-badge">
+              Correct Use of Home Assistant and Works with Home Assistant Badges
+            </h3>
+            <p>
+              The Home Assistant logo and Works with Home Assistant badge are
+              trademarked symbols of our mission and commitment to privacy,
+              choice, and sustainability. As a certified partner, you will be
+              granted access to the Works with Home Assistant badge for use on
+              your products and documentation. This signals that your product
+              aligns with our core values and has passed certification. Correct
+              use of the Home Assistant brand and Works with Home Assistant
+              badge is essential to maintaining trust with our shared community.
+            </p>
+            <p>
+              Certified partners who intend to use the Home Assistant logo and
+              Works with Home Assistant badge must adhere to the Open Home
+              Foundation&rsquo;s trademarks and guidelines, including the Works
+              with Home Assistant Badge and Brand Guidelines.
+            </p>
+            <p>
+              If you are misusing any trademarks of the Open Home Foundation,
+              such as the Works with Home Assistant badge, and are not adhering
+              to our brand guidelines, we will not consider your application
+              until the use is rectified.
+            </p>
+
+            <h3 id="core-integrations">Core Integrations</h3>
+            <p>
+              Connecting a manufacturer&rsquo;s device to Home Assistant via
+              WiFi or Bluetooth requires an integration. While anyone can create
+              and distribute a custom integration independently, integrations
+              that meet a defined set of quality requirements can be built
+              directly into Home Assistant. These are called core integrations.
+            </p>
+            <p>
+              Core integrations are used by the majority of the Home Assistant
+              community. They are designed to provide a simple, reliable
+              experience for users immediately upon installation, with no
+              additional downloads or manual configuration required. Core
+              integrations are built and maintained by community members, the
+              core team, and device manufacturers who wish to support their
+              devices within the platform.
+            </p>
+            <p>
+              For partners who wish to build or take ownership of a core
+              integration, please see our <a
+                href="/resources/core-integration-summary/"
+                >Core Integration Summary</a
+              >. Refer to Part Two for technical requirements.
+            </p>
+
+            <h3 id="partnership-promise">Partnership Promise</h3>
+            <p>
+              If the devices meet all the program requirements the manufacturer
+              becomes a certified partner, they will receive the following from
+              the Open Home Foundation:
+            </p>
+            <ul>
+              <li>
+                Works with Home Assistant badge &mdash; access to the applicable
+                trademarked Works with Home Assistant badges for use on product
+                packaging and documentation pages.
+              </li>
+              <li>
+                Dedicated integration page &mdash; an integration page noting
+                the partnership and displaying the Works with Home Assistant
+                logo, visible to the two million users who search these pages to
+                find compatible devices.
+              </li>
+              <li>
+                Co-marketing &mdash; we will use Home Assistant&rsquo;s blog and
+                social media accounts to announce and promote the partnership to
+                our users.
+              </li>
+              <li>
+                Quarterly updates &mdash; Open Home Foundation will discuss
+                upcoming changes and features to the platform, the program, and
+                more.
+              </li>
+              <li>
+                Certified devices will appear on the <a
+                  href="/certified-products/"
+                  >Works with Home Assistant certified device list</a
+                > &mdash; a public, searchable list.
+              </li>
+            </ul>
+          </section>
+
+          <hr class="part-divider" />
+
+          <section class="guide-panel">
+            <h2 class="part-title" id="part-two-technical-requirements">
+              Part Two: Technical Requirements
+            </h2>
+            <p>
+              This section details the technical requirements for each
+              certification pathway. Identify which protocol your devices use
+              and ensure you meet the relevant requirements.
+            </p>
+
+            <h3 id="matter">Matter</h3>
+            <p>
+              The Matter integration is available in Home Assistant and
+              maintained by the Open Home Foundation. For the purposes of the
+              Works with program, devices are tested against this integration.
+            </p>
+            <NoteCard noIcon>
+              <p>
+                Integration link: <a
+                  href="https://www.home-assistant.io/integrations/matter/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >home-assistant.io/integrations/matter</a
+                >
+              </p>
+            </NoteCard>
+
+            <h4 id="matter-csa-certification">
+              01. Connectivity Standards Alliance Certification
+            </h4>
+            <ul>
+              <li>
+                Matter items must be certified by the Connectivity Standards
+                Alliance.
+              </li>
+              <li>
+                Unreleased devices will not be certified by the Works with
+                program until the Alliance completes certification. However, if
+                Alliance testing has already begun for a device, the Works with
+                team can accept it for concurrent testing.
+              </li>
+            </ul>
+
+            <h4 id="matter-vendor-specific-clusters">
+              02. Vendor-Specific (Custom) Clusters
+            </h4>
+            <ul>
+              <li>
+                We only accept custom clusters/attributes for functionality that
+                is not available in the official Matter specification, and will
+                not be in the foreseeable future.
+              </li>
+              <li>
+                If a device contains vendor-specific clusters with relevant
+                additional configuration that can be beneficial for users (for
+                example, only controllable by a vendor-specific app), vendors
+                may provide the information to us so we can add parsing of these
+                details.
+              </li>
+              <li>
+                We require written documentation including the following
+                information:
+                <ul>
+                  <li>Cluster ID of the custom cluster</li>
+                  <li>
+                    Attribute-IDs and their details (datatype, read/write flags,
+                    meaning, unit)
+                  </li>
+                  <li>
+                    Command-IDs and their details (request and response data,
+                    functionality)
+                  </li>
+                  <li>Event-IDs and their details</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h4 id="matter-firmware-updates">03. Firmware Updates</h4>
+            <ul>
+              <li>
+                Over-the-air (OTA) firmware updates should be available to Home
+                Assistant users from within the Home Assistant ecosystem.
+              </li>
+              <li>
+                We use the Matter distributed compliance ledger (DCL), which our
+                server pulls from daily. Use this to provide us with firmware
+                updates.
+              </li>
+            </ul>
+
+            <h4 id="matter-general-testing">04. General Testing</h4>
+            <ul>
+              <li>
+                A device must be able to handle up to five concurrent
+                controllers (multi-admin) at the same time. While assessing this
+                capability is part of Matter certification, devices must also be
+                checked in-house specifically with Home Assistant.
+              </li>
+            </ul>
+
+            <h3 id="zigbee">Zigbee</h3>
+            <p>
+              The Zigbee Home Automation (ZHA) integration is available in Home
+              Assistant. There is also a popular community alternative called
+              Zigbee2MQTT. For the purposes of the Works with program, devices
+              are tested against ZHA. We encourage all manufacturers to ensure
+              their devices also work well with Zigbee2MQTT, as some of our more
+              technical users may prefer this option. ZHA uses the Zigpy
+              Library.
+            </p>
+            <NoteCard noIcon>
+              <p>
+                Integration link: <a
+                  href="https://www.home-assistant.io/integrations/zha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >home-assistant.io/integrations/zha</a
+                >
+              </p>
+            </NoteCard>
+
+            <h4 id="zigbee-csa-certification">
+              01. Connectivity Standards Alliance (CSA) Certification
+            </h4>
+            <ul>
+              <li>
+                Zigbee devices must be certified by the Connectivity Standards
+                Alliance.
+              </li>
+              <li>
+                Unreleased devices will not be certified by the Works with
+                program until the Alliance completes certification. However, if
+                Alliance testing has already begun for a device, the Works with
+                team can accept it for concurrent testing.
+              </li>
+            </ul>
+
+            <h4 id="zigbee-quirks">02. Quirks</h4>
+            <ul>
+              <li>
+                Most Zigbee devices have functions that work outside of the
+                specification. The ZHA integration adheres very closely to the
+                Zigbee specification, and therefore if a device has functions
+                outside of this, they will need extra code to be added to our
+                libraries. We refer to these Python scripts as
+                &lsquo;quirks&rsquo;.
+              </li>
+              <li>
+                If you do not have resources in-house to contribute to these
+                scripts, we recommend contacting the Works with team. We can
+                introduce you to community members, so you can engage formally
+                with someone relevant to complete the task.
+              </li>
+              <li>
+                Alternatively, manufacturers must provide written documentation
+                detailing what each quirk should do, and any relevant values, so
+                our team can assess if we are best placed to document these
+                quirks in the Zigpy library.
+              </li>
+              <li>
+                Writing quirks in the ZHA libraries for devices is ultimately
+                the manufacturer&rsquo;s responsibility. You will need the
+                internal resources to submit quirks to GitHub.
+              </li>
+            </ul>
+
+            <h4 id="zigbee-firmware-updates">03. Firmware Updates</h4>
+            <ul>
+              <li>
+                OTA firmware updates must be available to Home Assistant users
+                from within the Home Assistant ecosystem.
+              </li>
+              <li>
+                Please refer to <a
+                  href="https://github.com/zigpy/zigpy/wiki/OTA-Information-for-Manufacturers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >guidance on how to submit firmware updates via Zigpy</a
+                > for further information.
+              </li>
+            </ul>
+
+            <h3 id="z-wave">Z-Wave</h3>
+            <p>
+              The Z-Wave integration is available within Home Assistant and
+              maintained by the Open Home Foundation. For the purposes of the
+              Works with program, devices are tested against this integration.
+              It uses the Z-Wave JS driver (<a
+                href="https://zwave-js.github.io/zwave-js/"
+                target="_blank"
+                rel="noopener noreferrer">zwave-js.github.io/zwave-js</a
+              >).
+            </p>
+            <NoteCard noIcon>
+              <p>
+                Integration link: <a
+                  href="https://www.home-assistant.io/integrations/zwave_js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >home-assistant.io/integrations/zwave_js</a
+                >
+              </p>
+            </NoteCard>
+
+            <h4 id="z-wave-alliance-certification">
+              01. Z-Wave Alliance Certification
+            </h4>
+            <ul>
+              <li>Z-Wave items must be Z-Wave Alliance certified.</li>
+              <li>
+                Unreleased devices will not be certified by the Works with
+                program until the Z-Wave Alliance completes certification.
+                However, if Z-Wave Alliance testing has already begun for a
+                device, the Works with team can accept it for concurrent
+                testing.
+              </li>
+            </ul>
+
+            <h4 id="z-wave-device-configuration-files">
+              02. Device Configuration Files
+            </h4>
+            <ul>
+              <li>
+                Configuration files improve the user experience in Home
+                Assistant and any other projects using Z-Wave JS. They commonly
+                include:
+                <ul>
+                  <li>
+                    Device identification: manufacturer, label, firmware
+                    versions.
+                  </li>
+                  <li>
+                    Associations: to improve what the device reports or to
+                    provide information the device does not report.
+                  </li>
+                  <li>Configuration parameters.</li>
+                  <li>
+                    Toggling device-specific workarounds for firmware bugs.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Please refer to the <a
+                  href="https://zwave-js.github.io/zwave-js/#/config-files/contributing-files"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >guide for contributing configuration files</a
+                > for further information.
+              </li>
+              <li>
+                Please follow the <a
+                  href="https://zwave-js.github.io/zwave-js/#/config-files/style-guide"
+                  target="_blank"
+                  rel="noopener noreferrer">Z-Wave JS style guide</a
+                > when labelling UI elements.
+              </li>
+              <li>
+                If you do not have resources in-house to contribute
+                configuration files, we recommend contacting the Works with
+                team. We can introduce you to community members, so you can
+                engage formally with someone relevant to complete the task.
+              </li>
+              <li>
+                Submitting device configuration files is ultimately the
+                manufacturer&rsquo;s responsibility and a requirement of the
+                Works with Home Assistant program.
+              </li>
+            </ul>
+
+            <h4 id="z-wave-firmware-updates">03. Firmware Updates</h4>
+            <ul>
+              <li>
+                OTA firmware updates should be available to Home Assistant users
+                from within the Home Assistant ecosystem.
+              </li>
+              <li>
+                Please refer to <a
+                  href="https://github.com/zwave-js/firmware-updates/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >guidance on how to submit firmware updates via Z-Wave JS</a
+                > for further information.
+              </li>
+            </ul>
+
+            <h3 id="esphome">ESPHome</h3>
+            <p>
+              The ESPHome integration allows ESPHome devices to connect directly
+              to Home Assistant with the native ESPHome API. For the purposes of
+              the Works with program, devices are tested against this
+              integration.
+            </p>
+            <NoteCard noIcon>
+              <p>
+                Integration link: <a
+                  href="https://www.home-assistant.io/integrations/esphome/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >home-assistant.io/integrations/esphome</a
+                >
+              </p>
+            </NoteCard>
+
+            <h4 id="esphome-fcc-ce-certification">
+              01. Federal Communications Commission (FCC) and Conformité
+              Européenne (CE) Certifications
+            </h4>
+            <ul>
+              <li>
+                As is standard, all devices received for testing must have the
+                relevant safety certification for the region in which they are
+                being sold.
+              </li>
+              <li>
+                ESPHome devices are popular with start-up companies that might
+                not have experience with safety certifications yet. Please
+                confirm you have the relevant certification.
+              </li>
+              <li>Devices must be CE certified, FCC certified, or both.</li>
+            </ul>
+
+            <h4 id="esphome-made-for-esphome">02. Made for ESPHome</h4>
+            <ul>
+              <li>
+                Before entering the Works with program, devices must first be
+                accepted into the <a
+                  href="https://devices.esphome.io/made-for-esphome"
+                  target="_blank"
+                  rel="noopener noreferrer">Made for ESPHome program</a
+                >.
+              </li>
+              <li>
+                Current Made for ESPHome requirements include:
+                <ul>
+                  <li>Devices use an ESP32 chip.</li>
+                  <li>
+                    Manufacturers must be proactive in keeping their published
+                    configuration up to date with the latest ESPHome changes.
+                  </li>
+                  <li>
+                    (Optional but recommended) Ideally devices have a USB port
+                    that allows users to install firmware and retrieve logs.
+                  </li>
+                  <li>
+                    OTA requirements:
+                    <ul>
+                      <li>
+                        Must provide pre-built firmware using the update/OTA
+                        components in ESPHome.
+                      </li>
+                      <li>
+                        Must provide the configuration source so users can take
+                        control, update locally, and make modifications
+                        themselves.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Improv requirements:
+                    <ul>
+                      <li>
+                        Improv Serial is configured (if USB port accessible).
+                      </li>
+                      <li>
+                        Improv via BLE (Bluetooth Low Energy) is configured. It
+                        is recommended that Improv via BLE uses user presence
+                        via the authorizer configuration.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <h4 id="esphome-web-flashers">03. Web Flashers</h4>
+            <ul>
+              <li>
+                Web flashing using <a
+                  href="https://esphome.github.io/esp-web-tools/"
+                  target="_blank"
+                  rel="noopener noreferrer">ESP Web Tools</a
+                > deployed to a public website (for example, GitHub) allows users
+                to install firmware to a device when it is not updating via OTA, or
+                when the user has previously flashed their own custom firmware, and
+                wants to revert back to the manufacturer&rsquo;s standard firmware.
+              </li>
+            </ul>
+
+            <h4 id="esphome-filtering-sensors">04. Filtering Sensors</h4>
+            <ul>
+              <li>
+                An ESPHome device&rsquo;s configuration can technically support
+                many sensors, but only a small subset of this data is typically
+                relevant to most users.
+              </li>
+              <li>
+                Sensors/entities should use relevant filters to limit the
+                frequency of data being transferred into Home Assistant to
+                what&rsquo;s necessary.
+              </li>
+              <li>
+                Any sensors that do not provide primary information most users
+                would want on their dashboard should be marked with the entity
+                category &lsquo;diagnostic&rsquo;.
+              </li>
+            </ul>
+
+            <h3 id="bluetooth">Bluetooth</h3>
+            <p>
+              A Bluetooth certificate is issued when the certified partner
+              proves that:
+            </p>
+            <ul>
+              <li>
+                The device is certified by the Bluetooth Special Interest Group
+                (Bluetooth SIG); and
+              </li>
+              <li>
+                It meets the requirements for the issuance of a local
+                certificate:
+                <ul>
+                  <li>
+                    The Home Assistant integration reaches Gold tier or above on
+                    the integration quality scale (see below)
+                  </li>
+                  <li>
+                    The partner actively maintains the core integration
+                    (themselves or via a third party), with named developer
+                    contacts provided
+                  </li>
+                  <li>
+                    Any libraries used in the integration are published under an
+                    OSI-approved open source license
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              A Bluetooth device must meet the following integration quality
+              requirements:
+            </p>
+
+            <h4 id="bluetooth-integration-quality">Integration Quality</h4>
+            <ul>
+              <li>
+                Integration must be set up via the user interface &mdash; users
+                do not enter manual YAML code.
+              </li>
+              <li>
+                Integration uses account linking for OAuth &mdash; users do not
+                enter passwords or keys directly.
+              </li>
+              <li>
+                Integration has auto-discovery, if possible &mdash; users will
+                see their devices automatically and can initiate setup
+                immediately.
+              </li>
+              <li>
+                An <a
+                  href="https://developers.home-assistant.io/docs/core/integration-quality-scale/"
+                  target="_blank"
+                  rel="noopener noreferrer">integration quality scale</a
+                > level of Gold or above is required.
+              </li>
+            </ul>
+
+            <h3 id="wi-fi">Wi-Fi</h3>
+
+            <h4 id="wifi-integration-quality">Integration Quality</h4>
+            <ul>
+              <li>Wi-Fi device supports 2.4 GHz as standard.</li>
+              <li>
+                Integration must be set up via the user interface &mdash; users
+                do not enter manual YAML code.
+              </li>
+              <li>
+                Integration uses account linking for OAuth &mdash; users do not
+                enter passwords or keys directly.
+              </li>
+              <li>
+                Integration has auto-discovery, if possible &mdash; users will
+                see their devices automatically and can initiate setup
+                immediately.
+              </li>
+              <li>
+                An <a
+                  href="https://developers.home-assistant.io/docs/core/integration-quality-scale/"
+                  target="_blank"
+                  rel="noopener noreferrer">integration quality scale</a
+                > level of Gold or above is required.
+              </li>
+            </ul>
+
+            <h3 id="prohibited-devices">Prohibited Devices</h3>
+            <p>
+              The following categories of devices are not eligible for Works
+              with Home Assistant certification. If you are unsure whether a
+              product falls into one of these categories, please contact us
+              before submitting.
+            </p>
+
+            <h4 id="cloud-dependent-devices">Cloud-Dependent Devices</h4>
+            <ul>
+              <li>Devices that do not work locally.</li>
+              <li>
+                Devices that have a cloud dependency &mdash; i.e. the device
+                operates locally but only after Matter or another protocol is
+                enabled through a cloud app or similar service.
+              </li>
+            </ul>
+
+            <h4 id="connecting-devices">Connecting Devices</h4>
+            <h5 id="connecting-devices-definition">Definition</h5>
+            <p>
+              A connecting device &mdash; such as a bridge, hub, stick,
+              repeater, antenna, coordinator, or proxy &mdash; is a product
+              whose primary function is to connect other devices to a network or
+              protocol, rather than perform a discrete function of its own for
+              the end user. Examples include:
+            </p>
+            <ul>
+              <li>
+                Devices that join Zigbee, Z-Wave, or Bluetooth, DALI or KNX
+                devices to Wi-Fi, Ethernet, Matter, or Home Assistant in another
+                way
+              </li>
+              <li>Devices that act as a Thread border router</li>
+              <li>
+                Multi-protocol coordinators that also run local automation,
+                since bridging is still their primary function
+              </li>
+            </ul>
+            <h5 id="connecting-devices-eligibility">Eligibility</h5>
+            <p>
+              A standalone consumer device (for example a speaker, sensor, or
+              lock) doesn&rsquo;t lose eligibility just for having a secondary
+              connecting capability &mdash; eligibility follows the primary
+              advertised functions.
+            </p>
+
+            <h4 id="products-not-available-to-the-general-public">
+              Devices Not Available to the General Public
+            </h4>
+            <ul>
+              <li>
+                Devices that are not available to purchase by the general public
+                &mdash; i.e. only available via an installer.
+              </li>
+              <li>
+                Devices that are not intended for the general homeowner &mdash;
+                i.e. products that are too installer-focused or complex for a
+                regular user.
+              </li>
+            </ul>
+
+            <h4 id="remote-controls">Remote Controls</h4>
+            <ul>
+              <li>Remote controls are not eligible for certification.</li>
+              <li>
+                Note: The distinction between a remote control and a collection
+                of switches (such as a wall panel) is an area of ongoing
+                discussion.
+              </li>
+              <li>
+                Wall panels running Android or similar operating systems:
+                eligibility will be assessed on a case-by-case basis depending
+                on whether they meet Works with Home Assistant program
+                requirements.
+              </li>
+            </ul>
+
+            <h4 id="screens-displays">Screens and Displays</h4>
+            <ul>
+              <li>
+                Screens, tablets, e-ink devices and displays for use as a Home
+                Assistant dashboard are not eligible for certification.
+              </li>
+              <li>
+                Exceptions include very small screens that are not intended for
+                use as a dashboard, for example a small temperature sensor or
+                air quality monitor that has a screen to show the temperature.
+              </li>
+            </ul>
+
+            <h4 id="community-built-integrations">
+              Community-Built Integrations
+            </h4>
+            <ul>
+              <li>
+                Devices that use a community-built integration that the
+                manufacturer is not responsible for are not eligible for
+                certification. This does not apply to integrations for open
+                protocols, such as Zigbee, Z-Wave, or Matter, which are managed
+                by the Open Home Foundation. Examples of ineligible integrations
+                include WLED, Modbus, and MQTT (see MQTT section below).
+              </li>
+            </ul>
+
+            <h4 id="mqtt">MQTT</h4>
+            <ul>
+              <li>
+                If a device relies on Home Assistant&rsquo;s <a
+                  href="https://www.home-assistant.io/integrations/mqtt/"
+                  target="_blank"
+                  rel="noopener noreferrer">MQTT integration</a
+                >, it generally does not qualify as &ldquo;working immediately
+                upon installation,&rdquo; since the user must first set up and
+                configure a broker &mdash; separate software that routes
+                messages between devices and Home Assistant &mdash; before the
+                device can connect.
+              </li>
+              <li>
+                Because the MQTT integration is community-contributed, we do not
+                promote or certify individual manufacturer implementations that
+                depend on it, as they do not fulfill the contractual obligation
+                of maintaining your own integration. We cannot guarantee that
+                the community-contributed integrations will always function as
+                expected or stay maintained.
+              </li>
+            </ul>
+
+            <h5 id="mqtt-alternative-paths-to-certification">
+              Alternative Paths to Certification
+            </h5>
+
+            <h6 id="mqtt-esphome">ESPHome</h6>
+            <p>
+              If your device is built on a supported microcontroller chip,
+              ESPHome may offer a simpler path to certification. Rather than
+              relying on MQTT, ESPHome uses its native API to communicate
+              directly with Home Assistant. This provides a more powerful and
+              seamless connection that does not require a broker or complex
+              setup.
+            </p>
+            <NoteCard noIcon>
+              <p>
+                For more information, see the ESPHome section in Part Two above,
+                or visit <a
+                  href="https://esphome.io/components/api/"
+                  target="_blank"
+                  rel="noopener noreferrer">esphome.io/components/api</a
+                >.
+              </p>
+            </NoteCard>
+
+            <h6 id="mqtt-core-integration">Core Integration</h6>
+            <p>
+              Alternatively, manufacturers who wish to apply to the Works with
+              Home Assistant program will need to build a dedicated core
+              integration with an embedded broker functionality. This will allow
+              the integration to connect to the broker automatically, for a
+              smoother experience for the end user. See the Core Integrations
+              section in Part One for further guidance.
+            </p>
+
+            <h4 id="credential-required-set-up">Credential-Required Setup</h4>
+            <ul>
+              <li>
+                Any device that requires a user credential on a vendor&rsquo;s
+                external app, for example to enable a key feature or complete
+                setup, is not eligible for certification.
+              </li>
+              <li>
+                Examples include: Matter commissioning via a cloud app, lock
+                calibration via a vendor app, etc.
+              </li>
+            </ul>
+
+            <h4 id="items-that-have-missing-features-in-home-assistant">
+              Items That Have Missing Features in Home Assistant
+            </h4>
+            <p>
+              Works with Home Assistant certification requires that a
+              device&rsquo;s <strong>primary functions</strong> work reliably and
+              locally in Home Assistant. Certification will not be granted if the
+              primary functions do not work, regardless of how well secondary features
+              perform. It will also not be granted if our team has no capability to
+              test these functions, or if the function is one of a bridge/hub.
+            </p>
+            <p>Differentiating primary functions from secondary functions</p>
+            <p>
+              <strong>Primary functions:</strong> the core purpose of the device &mdash;
+              the reason a user buys it. This includes any capability prominently
+              advertised, named in the product title, shown on primary packaging/imagery,
+              or reasonably expected based on the product category (for example, a
+              lock must lock; a power plug must support on/off control <em
+                >and</em
+              > any advertised energy monitoring).
+            </p>
+            <p>
+              <strong>Secondary functions:</strong> additional features that support
+              but aren&rsquo;t essential to the device&rsquo;s core purpose (for example,
+              a night light on a sensor, signal repeating, a physical button that
+              isn&rsquo;t necessary for core operation).
+            </p>
+            <p>
+              To determine whether a feature represents a primary or secondary
+              function, ask:
+            </p>
+            <ul>
+              <li>Is it one of the main marketed features?</li>
+              <li>
+                Is it in the device name or shown prominently on the
+                device/packaging?
+              </li>
+              <li>Is it a reason people specifically buy this product?</li>
+              <li>
+                Would a reasonable user feel misled if it didn&rsquo;t work?
+              </li>
+            </ul>
+            <p>
+              If the answer to any of these is yes, treat the feature as a <strong
+                >primary function</strong
+              >. That means certification will not proceed if the feature is
+              missing or not testable from Home Assistant, even if it is
+              functional elsewhere.
+            </p>
+            <p>
+              If a device&rsquo;s secondary features do not work with Home
+              Assistant, the device may still qualify for certification
+              provided:
+            </p>
+            <ol>
+              <li>
+                The secondary feature that does not work with Home Assistant is
+                disclosed on the device&rsquo;s Home Assistant integration page,
+                and, where relevant, the badge/certified device page.
+              </li>
+              <li>
+                The tester confirms whether the lack of functionality with Home
+                Assistant is due to a <strong
+                  >connectivity/protocol limitation</strong
+                > (for example, a feature not yet supported by Matter), or a lack
+                of vendor integration effort. This affects both the disclosure wording
+                and improvement roadmap.
+              </li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </article>
+  </div>
+</Base>

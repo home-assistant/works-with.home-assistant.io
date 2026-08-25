@@ -1,5 +1,8 @@
 // Pages that should not show up in the sitemap.
-const EXCLUDED = new Set(["./404.astro"]);
+const EXCLUDED = new Set([
+	"./404.astro",
+	"./resources/badge-and-brand-guidelines.astro",
+]);
 
 const pageToRoute = (path) => {
 	const route = path.replace(/^\.\//, "").replace(/\.astro$/, "");
