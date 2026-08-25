@@ -113,6 +113,24 @@ const { toc } = Astro.props;
   const tocToggleLabel = document.querySelector<HTMLLabelElement>(
     ".guide-toc-toggle",
   );
+  const jumplist = document.querySelector<HTMLElement>(".guide-jumplist");
+
+  // `.guide-toc` only "sticks" to `top` once the page has scrolled past its
+  // natural position — before that (e.g. still at the top of the page,
+  // below a tall hero) the toggle can sit anywhere down the viewport, so a
+  // fixed CSS max-height either clips the dropdown short or lets it run off
+  // the bottom of the screen with no way to reach the rest. Measure the
+  // actual space below the toggle each time it opens instead.
+  const updateJumplistMaxHeight = () => {
+    if (!jumplist || !tocToggleInput?.checked) return;
+    const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+    const available = viewportHeight - jumplist.getBoundingClientRect().top - 16;
+    jumplist.style.maxHeight = `${Math.max(available, 160)}px`;
+  };
+
+  tocToggleInput?.addEventListener("change", updateJumplistMaxHeight);
+  window.addEventListener("resize", updateJumplistMaxHeight);
+  window.visualViewport?.addEventListener("resize", updateJumplistMaxHeight);
 
   // `.guide-toc` is `position: sticky`. Clicking the label natively focuses
   // its associated checkbox, and mobile Safari/Chrome respond to a newly
@@ -124,6 +142,7 @@ const { toc } = Astro.props;
     event.preventDefault();
     tocToggleInput.checked = !tocToggleInput.checked;
     tocToggleInput.focus({ preventScroll: true });
+    updateJumplistMaxHeight();
   });
 
   const linksByHref = new Map<string, HTMLAnchorElement[]>();
@@ -456,11 +475,24 @@ const { toc } = Astro.props;
     left: 0;
     list-style: none;
     margin: 0.5rem 0 0;
+    // Cap it to the remaining viewport height below the toggle and make it
+    // scroll internally — otherwise a long ToC on a short viewport (e.g.
+    // mobile landscape) overflows off-screen with no way to reach the rest.
+    max-height: calc(100vh - 140px);
+    max-height: calc(100dvh - 140px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     padding: 0 1rem;
     position: absolute;
     right: 0;
     top: 100%;
     z-index: 4;
+
+    @include mixins.bp(tablet) {
+      max-height: calc(100vh - 158px);
+      max-height: calc(100dvh - 158px);
+    }
 
     li {
       border-top: 1px solid rgba(0, 35, 50, 0.08);
