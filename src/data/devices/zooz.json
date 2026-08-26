@@ -441,7 +441,7 @@
       "protocol": [
         "Z-Wave"
       ],
-      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-long-range-rgbw-dimmer-zen56-800lr-for-led-strips",
+      "websiteLink": "https://www.getzooz.com/zen56-rgbw-dimmer/",
       "deviceType": "Switch",
       "secondaryDeviceType": [
         "Lighting",
@@ -462,7 +462,7 @@
       "protocol": [
         "Z-Wave"
       ],
-      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-long-range-high-power-relay-zen78-800lr",
+      "websiteLink": "https://www.getzooz.com/zen78-high-power-relay/",
       "deviceType": "Switch",
       "secondaryDeviceType": [],
       "relatedProducts": "",
@@ -480,7 +480,7 @@
       "protocol": [
         "Z-Wave"
       ],
-      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-plus-power-strip-zen20",
+      "websiteLink": "https://www.getzooz.com/zooz-zen20-power-strip/",
       "deviceType": "Power Strip",
       "secondaryDeviceType": [],
       "relatedProducts": "",
