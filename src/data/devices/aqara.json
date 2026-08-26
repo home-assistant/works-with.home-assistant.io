@@ -234,6 +234,23 @@
         "Worldwide"
       ],
       "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Smart Lock U400",
+      "fullName": "Aqara Smart Lock U400",
+      "modelNumber": "DL-D06E",
+      "protocol": [
+        "Matter over Thread"
+      ],
+      "websiteLink": "https://www.aqara.com/en/product/smart-lock-u400/",
+      "deviceType": "Smart lock",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada"
+      ],
+      "functionalityRemark": "Fingerprint sensing is not currently available in Home Assistant. Requires vendor app for calibration"
     }
   ]
 }
