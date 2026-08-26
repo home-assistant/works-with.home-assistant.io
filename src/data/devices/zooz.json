@@ -433,6 +433,62 @@
         "USA"
       ],
       "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "RGBW Dimmer",
+      "fullName": "Zooz RGBW Dimmer",
+      "modelNumber": "ZEN56",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-long-range-rgbw-dimmer-zen56-800lr-for-led-strips",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Dimmer"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada",
+        "Mexico"
+      ],
+      "functionalityRemark": "Requires RGBW strip lights and a 12-24V DC power supply. Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Long Range High Power Relay",
+      "fullName": "Zooz Long Range High Power Relay",
+      "modelNumber": "ZEN78",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-long-range-high-power-relay-zen78-800lr",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada",
+        "Mexico"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
+    },
+    {
+      "deviceName": "Power Strip",
+      "fullName": "Zooz Power Strip",
+      "modelNumber": "ZEN20",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-plus-power-strip-zen20",
+      "deviceType": "Power Strip",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "USA",
+        "Canada",
+        "Mexico"
+      ],
+      "functionalityRemark": "Most Zooz products are now available with Z-Wave Long Range, depending on your region."
     }
   ]
 }
