@@ -444,6 +444,7 @@
       "websiteLink": "https://www.thesmartesthouse.com/products/zooz-z-wave-long-range-rgbw-dimmer-zen56-800lr-for-led-strips",
       "deviceType": "Switch",
       "secondaryDeviceType": [
+        "Lighting",
         "Dimmer"
       ],
       "relatedProducts": "",
