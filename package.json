@@ -15,7 +15,7 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"astro": "7.3.1",
+		"astro": "7.3.2",
 		"sass": "1.104.1"
 	}
 }
