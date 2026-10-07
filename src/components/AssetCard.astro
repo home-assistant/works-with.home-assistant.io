@@ -1,0 +1,39 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+const { src, alt, caption } = Astro.props;
+---
+
+<div class="asset-card">
+  <img src={src} alt={alt} />
+  <p class="caption">{caption}</p>
+</div>
+
+<style lang="scss">
+  .asset-card {
+    border-radius: 1.25rem;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .caption {
+      color: var(--color-secondary);
+      font-size: 0.875rem;
+      font-style: italic;
+      margin: 0.5rem 0 0;
+      text-align: center;
+      padding: 0.875rem;
+      margin: 0;
+    }
+  }
+</style>

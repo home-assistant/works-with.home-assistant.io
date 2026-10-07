@@ -1,0 +1,536 @@
+---
+interface TocChild {
+  id: string;
+  label: string;
+}
+
+interface TocEntry {
+  id: string;
+  label: string;
+  children?: TocChild[];
+}
+
+interface Props {
+  toc: TocEntry[];
+}
+
+const { toc } = Astro.props;
+---
+
+{
+  toc.length > 0 && (
+    <fieldset class="guide-toc">
+      <p class="guide-toc-heading">Contents</p>
+
+      <ul class="guide-tablist">
+        {toc.map((entry) =>
+          entry.children?.length ? (
+            <li class="guide-tablist-item">
+              <input
+                type="checkbox"
+                id={`subnav-${entry.id}`}
+                class="guide-subnav-toggle-input"
+                checked
+              />
+              <div class="guide-tablist-row">
+                <a class="guide-pill nounderline" href={`#${entry.id}`}>
+                  {entry.label}
+                </a>
+                <label for={`subnav-${entry.id}`} class="guide-subnav-toggle">
+                  <span class="guide-toc-arrow" aria-hidden="true" />
+                  <span class="visually-hidden">
+                    Toggle {entry.label} sections
+                  </span>
+                </label>
+              </div>
+              <ul class="guide-sublist">
+                {entry.children.map((child) => (
+                  <li>
+                    <a
+                      class="guide-pill guide-pill--sub nounderline"
+                      href={`#${child.id}`}
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ) : (
+            <li>
+              <a class="guide-pill nounderline" href={`#${entry.id}`}>
+                {entry.label}
+              </a>
+            </li>
+          ),
+        )}
+      </ul>
+
+      <div class="guide-toc-mobile">
+        <input type="checkbox" id="toc-toggle" class="guide-toc-toggle-input" />
+        <label for="toc-toggle" class="guide-toc-toggle">
+          <span class="guide-toc-toggle-pill">
+            On this page
+            <span class="guide-toc-arrow" aria-hidden="true"></span>
+          </span>
+          <span class="guide-toc-current">{toc[0]?.label}</span>
+        </label>
+        <ul class="guide-jumplist">
+          {toc.map((entry) => (
+            <li>
+              <a class="nounderline" href={`#${entry.id}`}>
+                {entry.label}
+              </a>
+              {entry.children?.length ? (
+                <ul class="guide-sublist">
+                  {entry.children.map((child) => (
+                    <li>
+                      <a class="nounderline" href={`#${child.id}`}>
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </fieldset>
+  )
+}
+
+<script>
+  const tocLinks = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>(
+      ".guide-pill, .guide-jumplist a",
+    ),
+  );
+  const current = document.querySelector<HTMLElement>(".guide-toc-current");
+  const tocToggleInput = document.getElementById(
+    "toc-toggle",
+  ) as HTMLInputElement | null;
+  const tocToggleLabel = document.querySelector<HTMLLabelElement>(
+    ".guide-toc-toggle",
+  );
+  const jumplist = document.querySelector<HTMLElement>(".guide-jumplist");
+
+  // `.guide-toc` only "sticks" to `top` once the page has scrolled past its
+  // natural position — before that (e.g. still at the top of the page,
+  // below a tall hero) the toggle can sit anywhere down the viewport, so a
+  // fixed CSS max-height either clips the dropdown short or lets it run off
+  // the bottom of the screen with no way to reach the rest. Measure the
+  // actual space below the toggle each time it opens instead.
+  const updateJumplistMaxHeight = () => {
+    if (!jumplist || !tocToggleInput?.checked) return;
+    const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+    const available = viewportHeight - jumplist.getBoundingClientRect().top - 16;
+    jumplist.style.maxHeight = `${Math.max(available, 160)}px`;
+  };
+
+  tocToggleInput?.addEventListener("change", updateJumplistMaxHeight);
+  window.addEventListener("resize", updateJumplistMaxHeight);
+  window.visualViewport?.addEventListener("resize", updateJumplistMaxHeight);
+
+  // `.guide-toc` is `position: sticky`. Clicking the label natively focuses
+  // its associated checkbox, and mobile Safari/Chrome respond to a newly
+  // focused control inside a sticky ancestor by scrolling it fully into
+  // view — which jumps the page when scrolled down. Handle the toggle
+  // ourselves and focus with `preventScroll` to stop that jump.
+  tocToggleLabel?.addEventListener("click", (event) => {
+    if (!tocToggleInput) return;
+    event.preventDefault();
+    tocToggleInput.checked = !tocToggleInput.checked;
+    tocToggleInput.focus({ preventScroll: true });
+    updateJumplistMaxHeight();
+  });
+
+  const linksByHref = new Map<string, HTMLAnchorElement[]>();
+  tocLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const group = linksByHref.get(href) ?? [];
+    group.push(link);
+    linksByHref.set(href, group);
+  });
+
+  const setCurrent = (id: string) => {
+    const href = `#${id}`;
+    const heading = document.getElementById(id);
+    if (current && heading?.textContent)
+      current.textContent = heading.textContent;
+
+    linksByHref.forEach((links, href2) => {
+      links.forEach((link) => {
+        if (href2 === href) {
+          link.setAttribute("aria-current", "true");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    });
+  };
+
+  const targets = Array.from(linksByHref.keys())
+    .map((href) => document.getElementById(href.slice(1)))
+    .filter((el): el is HTMLElement => el !== null);
+
+  if (targets.length && current) {
+    setCurrent(targets[0].id);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length) setCurrent(visible[0].target.id);
+      },
+      { rootMargin: "-120px 0px -70% 0px" },
+    );
+
+    targets.forEach((target) => observer.observe(target));
+  }
+
+  document
+    .querySelectorAll<HTMLAnchorElement>(".guide-jumplist a")
+    .forEach((link) => {
+      link.addEventListener("click", () => {
+        if (tocToggleInput) tocToggleInput.checked = false;
+      });
+    });
+</script>
+
+<style lang="scss">
+  @use "../styles/mixins";
+
+  .guide-toc {
+    background: var(--body-background-color);
+    border: 0;
+    margin: 0 0 24px;
+    min-width: 0;
+    padding: 8px 0;
+    position: sticky;
+    z-index: 3;
+    top: 73px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    // Full-bleed to the viewport edges without `100vw`, which includes the
+    // scrollbar gutter on desktop browsers with non-overlay scrollbars and
+    // causes horizontal page overflow. `.guide-toc`'s parent (`.container`)
+    // always spans the full viewport width at this breakpoint (it only hits
+    // its max-width cap at the desktop breakpoint, where this rule is
+    // overridden below), so sizing off its own `100%` is scrollbar-safe.
+    width: calc(100% + (var(--layout-container-padding) * 2));
+    margin-left: calc(var(--layout-container-padding) * -1);
+    padding-left: var(--layout-container-padding);
+    padding-right: var(--layout-container-padding);
+    box-shadow:
+      0px 8px 4px rgba(0, 0, 0, 0.03),
+      0px 5px 2px rgba(0, 0, 0, 0.03),
+      0px 3px 2px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.06);
+
+    @include mixins.bp(tablet) {
+      top: 91px;
+    }
+
+    @include mixins.bp(desktop) {
+      align-items: stretch;
+      background: none;
+      box-shadow: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      top: 125px;
+      width: auto;
+    }
+  }
+
+  .guide-toc-heading {
+    color: var(--color-primary);
+    display: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    @include mixins.bp(desktop) {
+      display: block;
+      font-size: 1.25rem;
+      margin: 0 0 0.625rem;
+    }
+  }
+
+  .guide-tablist {
+    display: none;
+    flex-direction: column;
+    gap: 0.625rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include mixins.bp(desktop) {
+      display: flex;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .guide-tablist-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guide-tablist-row {
+    align-items: center;
+    display: flex;
+    gap: 0.375rem;
+
+    .guide-pill {
+      flex: 1 1 auto;
+    }
+  }
+
+  .guide-pill {
+    border-radius: 0.5rem;
+    color: var(--color-secondary);
+    cursor: pointer;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 0.625rem 1rem;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease-out,
+      color 0.2s ease-out;
+    border: 1px solid var(--color-tertiary);
+
+    &:hover {
+      background-color: var(--color-tertiary);
+    }
+
+    &[aria-current="true"] {
+      background: var(--color-tertiary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--brand-color-home-assistant-blue);
+      outline-offset: 2px;
+    }
+
+    &--sub {
+      font-size: 0.8125rem;
+    }
+  }
+
+  .guide-subnav-toggle-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
+    &:checked ~ .guide-sublist {
+      display: flex;
+    }
+
+    &:checked ~ .guide-tablist-row .guide-toc-arrow {
+      transform: rotate(45deg);
+    }
+
+    &:focus-visible ~ .guide-tablist-row .guide-subnav-toggle {
+      outline: 2px solid var(--brand-color-home-assistant-blue);
+      outline-offset: 2px;
+    }
+  }
+
+  .guide-subnav-toggle {
+    align-items: center;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    height: 2rem;
+    justify-content: center;
+    width: 2rem;
+
+    &:hover {
+      background-color: var(--color-tertiary);
+    }
+  }
+
+  .guide-sublist {
+    display: none;
+    flex-direction: column;
+    gap: 0.375rem;
+    list-style: none;
+    margin: 0.375rem 0 0;
+    padding: 0 0 0 1rem;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .guide-toc-mobile {
+    position: relative;
+    width: 100%;
+
+    @include mixins.bp(desktop) {
+      display: none;
+    }
+  }
+
+  .guide-toc-toggle-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
+    &:checked ~ .guide-jumplist {
+      display: block;
+    }
+
+    &:checked ~ .guide-toc-toggle .guide-toc-arrow {
+      transform: rotate(45deg);
+    }
+
+    &:focus-visible ~ .guide-toc-toggle .guide-toc-toggle-pill {
+      outline: 2px solid var(--brand-color-home-assistant-blue);
+      outline-offset: 2px;
+    }
+  }
+
+  .guide-toc-toggle {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 0.75rem;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .guide-toc-toggle-pill {
+    align-items: center;
+    background: var(--color-tertiary);
+    border-radius: 999px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    gap: 0.375rem;
+    padding: 0.5rem 0.875rem;
+  }
+
+  .guide-toc-arrow {
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    flex-shrink: 0;
+    height: 6px;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-out;
+    width: 6px;
+  }
+
+  .guide-toc-current {
+    color: var(--color-primary);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .guide-jumplist {
+    background: var(--body-background-color);
+    border: 1px solid rgba(0, 35, 50, 0.12);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 1rem 24px rgba(0, 35, 50, 0.12);
+    display: none;
+    left: 0;
+    list-style: none;
+    margin: 0.5rem 0 0;
+    // Cap it to the remaining viewport height below the toggle and make it
+    // scroll internally — otherwise a long ToC on a short viewport (e.g.
+    // mobile landscape) overflows off-screen with no way to reach the rest.
+    max-height: calc(100vh - 140px);
+    max-height: calc(100dvh - 140px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding: 0 1rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 4;
+
+    @include mixins.bp(tablet) {
+      max-height: calc(100vh - 158px);
+      max-height: calc(100dvh - 158px);
+    }
+
+    li {
+      border-top: 1px solid rgba(0, 35, 50, 0.08);
+      margin: 0;
+      padding: 0;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 12px 0;
+      text-decoration: none;
+      color: var(--color-secondary);
+
+      &[aria-current="true"] {
+        color: var(--color-primary);
+        font-weight: 700;
+      }
+    }
+
+    .guide-sublist {
+      display: flex;
+      margin: 0;
+      padding: 0 0 12px 1rem;
+
+      li {
+        border-top: none;
+      }
+
+      a {
+        font-size: 14px;
+        padding: 8px 0;
+      }
+    }
+  }
+</style>

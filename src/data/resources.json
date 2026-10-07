@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Guides",
+		"description": "Guidance for manufacturers on certifying products through the Works with Home Assistant program.",
+		"cards": [
+			{
+				"title": "Works with Home Assistant Compliance Guide",
+				"description": "The compliance and certification requirements for the Works with Home Assistant program, covering general program requirements as well as protocol-specific technical requirements.",
+				"link": "/resources/wwha-compliance-guide/"
+			},
+			{
+				"title": "Core Integration Summary",
+				"description": "A summary for manufacturers on the skills, process, and expectations involved in building or maintaining a Home Assistant core integration.",
+				"link": "/resources/core-integration-summary/"
+			}
+		]
+	}
+]

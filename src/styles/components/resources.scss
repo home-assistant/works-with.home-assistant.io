@@ -1,0 +1,130 @@
+@use "../mixins";
+
+section.resources-hero {
+    margin: 60px 0 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    @include mixins.bp(desktop) {
+        margin-top: 100px;
+    }
+
+    p {
+        margin: 20px auto 0;
+    }
+}
+
+section.resources {
+    margin: 60px 0;
+    position: relative;
+    z-index: 2;
+
+    @include mixins.bp(desktop) {
+        margin: 100px 0;
+    }
+
+    .resources-section {
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            color: var(--color-secondary);
+            margin: 0 0 30px;
+            max-width: 700px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include mixins.bp(tablet) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mixins.bp(desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .card {
+        background: #ffffff;
+        border: 1px solid rgba(0, 35, 50, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 35, 50, 0.06);
+        color: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px;
+        text-decoration: none;
+        transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+
+        &:hover {
+            border-color: rgba(24, 188, 242, 0.3);
+            box-shadow: 0 12px 32px rgba(0, 35, 50, 0.1);
+            transform: translateY(-4px);
+
+            .cta .arrow {
+                transform: translateX(4px);
+            }
+        }
+
+        .icon {
+            align-items: center;
+            background: rgba(24, 188, 242, 0.12);
+            border-radius: 50%;
+            color: var(--brand-color-home-assistant-blue);
+            display: flex;
+            height: 44px;
+            justify-content: center;
+            width: 44px;
+
+            svg {
+                height: 22px;
+                width: 22px;
+            }
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.25;
+
+            @include mixins.bp(desktop) {
+                font-size: 20px;
+            }
+        }
+
+        .description {
+            color: var(--color-secondary);
+            flex-grow: 1;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .cta {
+            align-items: center;
+            color: var(--brand-color-home-assistant-blue);
+            display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            gap: 6px;
+            margin-top: 4px;
+
+            .arrow {
+                transition: transform 0.2s ease-out;
+            }
+        }
+    }
+}

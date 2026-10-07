@@ -1,0 +1,140 @@
+---
+interface Props {
+  title?: string;
+  logoSrc?: string;
+  logoAlt?: string;
+  variant?: string;
+}
+
+const { title, logoSrc = "", logoAlt = "Logo", variant } = Astro.props;
+---
+
+<div class:list={["guidelines-card", variant && `guidelines-card--${variant}`]}>
+  {
+    (title || logoSrc) && (
+      <slot name="title-row">
+        <div class="title-row">
+          {title && <p>{title}</p>}
+          {logoSrc && (
+            <img loading="lazy" src={logoSrc} class="logo" alt={logoAlt} />
+          )}
+        </div>
+      </slot>
+    )
+  }
+
+  <slot />
+</div>
+
+<style lang="scss">
+  @use "../styles/mixins";
+
+  .guidelines-card {
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 0;
+    padding: 1.25rem;
+
+    @include mixins.bp(tablet) {
+      padding: 2.5rem;
+    }
+
+    + .guidelines-card {
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    :global(p:last-child) {
+      margin-bottom: 0;
+    }
+
+    .title-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+
+      @include mixins.bp(tablet) {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.25rem;
+      }
+
+      p {
+        color: var(--color-primary);
+        font-weight: 600;
+        margin: 0;
+        font-size: 1.25rem;
+      }
+
+      .logo {
+        width: auto;
+        max-width: 200px;
+        height: 50px;
+      }
+    }
+
+    :global(p),
+    :global(li) {
+      font-size: 1rem;
+    }
+
+    :global(p.title) {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    :global(p.title.title--download) {
+      margin-bottom: 0.5rem;
+    }
+
+    :global(.button--download) {
+      padding: 0;
+      border-radius: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--color-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: transparent;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--brand-color-home-assistant-blue);
+
+        &:before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cmask id='mask0_1394_1280' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1394_1280)'%3E%3Cpath d='M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z' fill='%234F606E'/%3E%3C/g%3E%3C/svg%3E");
+        }
+      }
+
+      &:before {
+        width: 1.5rem;
+        height: 1.5rem;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cmask id='mask0_1394_1280' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1394_1280)'%3E%3Cpath d='M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z' fill='%234F606E'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        backjground-position: center;
+      }
+
+      :global(+ p.title.title--download) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  :global(p) + .guidelines-card,
+  :global(.title) + .guidelines-card {
+    margin-top: 1.5rem;
+
+    @include mixins.bp(tablet) {
+      margin-top: 2.75rem;
+    }
+  }
+</style>

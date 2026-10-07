@@ -1,0 +1,324 @@
+@use "../mixins";
+
+section.guide-hero {
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    background: url('/img/mesh.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mixins.bp(desktop) {
+        padding: 100px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: var(--typography-heading-line-height);
+        margin: 0 0 8px;
+
+        @include mixins.bp(tablet) {
+            font-size: 4rem;
+        }
+    }
+
+    .meta {
+        color: var(--color-secondary);
+        font-size: 1.2rem;
+    }
+}
+
+article.guide {
+    margin: 0 0 80px;
+    position: relative;
+    z-index: 2;
+    background-color: #F5F6FA;
+
+    @include mixins.bp(desktop) {
+        margin: 60px 0 120px;
+    }
+
+    section {
+        margin-bottom: 40px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .guide-panels {
+        min-width: 0;
+    }
+
+    .guide-panel {
+        scroll-margin-top: 100px;
+        margin-bottom: 60px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include mixins.bp(desktop) {
+            margin-bottom: 100px;
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid rgba(0, 35, 50, 0.15);
+        margin: 20px 0;
+    }
+
+    .part-divider {
+        margin: 60px 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: var(--typography-heading-line-height);
+        margin: 0 0 20px;
+        scroll-margin-top: 100px;
+
+        @include mixins.bp(tablet) {
+            font-size: 2.125rem;
+        }
+    }
+
+    .part-title {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 1.4375rem;
+        font-weight: 600;
+        line-height: var(--typography-heading-line-height);
+        margin: 40px 0 16px;
+        scroll-margin-top: 100px;
+
+        @include mixins.bp(tablet) {
+            font-size: 1.625rem;
+        }
+    }
+
+    h4 {
+        font-size: 1.1875rem;
+        font-weight: 600;
+        line-height: var(--typography-heading-line-height);
+        margin: 30px 0 12px;
+
+        @include mixins.bp(tablet) {
+            font-size: 1.3125rem;
+        }
+    }
+
+    h5,
+    h6 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: var(--typography-heading-line-height);
+        margin: 20px 0 8px;
+    }
+
+    p {
+        color: var(--color-secondary);
+
+        &.title {
+            color: var(--color-primary);
+        }
+    }
+
+    a:not(.button):not(.nounderline) {
+        background-size: 100% 1px;
+
+        &:hover {
+            background-size: 0% 1px;
+        }
+    }
+
+    ul,
+    ol {
+        color: var(--color-secondary);
+        font-size: var(--typography-paragraph-font-size);
+        font-weight: var(--typography-paragraph-font-weight);
+        line-height: var(--typography-paragraph-line-height);
+        list-style-type: disc;
+        margin: 0 0 20px;
+        padding-left: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 0.25rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        ul {
+            list-style-type: circle;
+            margin: 10px 0 0;
+        }
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    dl {
+        margin: 0 0 20px;
+
+        >div {
+            border-top: 1px solid rgba(0, 35, 50, 0.1);
+            padding: 16px 0;
+
+            &:first-child {
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+
+        dt {
+            color: var(--color-primary);
+            font-size: var(--typography-paragraph-font-size);
+            font-weight: 600;
+            line-height: var(--typography-paragraph-line-height);
+            margin-bottom: 4px;
+        }
+
+        dd {
+            color: var(--color-secondary);
+            font-size: var(--typography-paragraph-font-size);
+            font-weight: var(--typography-paragraph-font-weight);
+            line-height: var(--typography-paragraph-line-height);
+            margin: 0;
+        }
+    }
+
+    .card-row,
+    .card-col {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        &--2 {
+            @include mixins.bp(tablet) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .guidelines-card + .guidelines-card {
+            margin-top: 0;
+        }
+    }
+
+    .card-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-row {
+        @include mixins.bp(tablet) {
+            flex-direction: row;
+
+            >* {
+                flex: 1 1 0%;
+            }
+        }
+    }
+}
+
+// brand template overrides
+.brand-hero {
+    h1 {
+        font-size: 2.5rem;
+
+        @include mixins.bp(tablet) {
+            font-size: 4.375rem;
+        }
+    }
+
+    .subtitle {
+        font-size: 1.875rem;
+    }
+}
+
+// Reusable two-column ToC layout — the container/sidebar/content chrome is
+// generic (used by any guide article); GuideToc.astro owns the sidebar's own
+// contents, and per-page/brand styling (e.g. cards) stays scoped below.
+//
+// Fallback: pages that don't render a <GuideToc> (no ToC needed) automatically
+// get a single, centered reading column instead of a two-column grid with an
+// empty sidebar track — nothing to opt into per-page beyond omitting <GuideToc>.
+.guide-layout.container {
+    width: 100%;
+    max-width: 1280px;
+
+    &:not(:has(.guide-toc)) {
+        max-width: 880px;
+    }
+}
+
+@include mixins.bp(desktop) {
+    .guide-layout:has(.guide-toc) {
+        align-items: start;
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: minmax(200px, 240px) 1fr;
+    }
+}
+
+article.guide.brand {
+    .card-content-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        @include mixins.bp(tablet) {
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+
+    .card-content {
+        @include mixins.bp(tablet) {
+            flex: 7 1 0%;
+        }
+    }
+
+    .card-media {
+        border-radius: 0.5rem;
+        padding: 0.875rem 1rem;
+
+        @include mixins.bp(tablet) {
+            flex: 3 1 0%;
+        }
+
+        &--dark {
+            background-color: #1D2126;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 240px;
+            margin: 0 auto;
+        }
+    }
+
+    p + .card-row,
+    .guidelines-card + .card-row {
+        margin-top: 1.5rem;
+
+        @include mixins.bp(tablet) {
+            margin-top: 2.75rem;
+        }
+    }
+}

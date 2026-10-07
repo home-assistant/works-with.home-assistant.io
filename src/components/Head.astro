@@ -5,15 +5,17 @@ import PlausibleAnalytics from "./PlausibleAnalytics.astro";
 interface Props {
 	title?: string;
 	description?: string;
+	noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, noindex } = Astro.props;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{title || metadata.title}</title>
 <meta name="description" content={description || metadata.description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
 <meta property="og:image" content="/og-default.png" />
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
