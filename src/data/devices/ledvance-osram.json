@@ -1,10 +1,10 @@
 {
-  "companyName": "Ledvance Osram",
+  "companyName": "Ledvance/Osram",
   "brand": "ledvance-osram",
   "devices": [
     {
       "deviceName": "SMART+ MATTER Wall Twist Black 230x127mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Twist Black 230x127mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Twist Black 230x127mm Tunable White",
       "modelNumber": "4099854475054",
       "protocol": [
         "Matter over WiFi"
@@ -20,7 +20,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Twist White 230x127mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Twist White 230x127mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Twist White 230x127mm Tunable White",
       "modelNumber": "4099854475078",
       "protocol": [
         "Matter over WiFi"
@@ -36,7 +36,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Swan 300x150mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Swan 300x150mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Swan 300x150mm Tunable White",
       "modelNumber": "4099854475030",
       "protocol": [
         "Matter over WiFi"
@@ -52,7 +52,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Swan 200x200mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Swan 200x200mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Swan 200x200mm Tunable White",
       "modelNumber": "4099854475016",
       "protocol": [
         "Matter over WiFi"
@@ -68,7 +68,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Wood 210X110mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Wood 210X110mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Wood 210X110mm Tunable White",
       "modelNumber": "4099854475115",
       "protocol": [
         "Matter over WiFi"
@@ -84,7 +84,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Magnet White 600x300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Magnet White 600x300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Magnet White 600x300mm Tunable White",
       "modelNumber": "4099854473463",
       "protocol": [
         "Matter over WiFi"
@@ -100,7 +100,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Magnet Black 300x300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Magnet Black 300x300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Magnet Black 300x300mm Tunable White",
       "modelNumber": "4099854473388",
       "protocol": [
         "Matter over WiFi"
@@ -116,7 +116,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Magnet Black 450x450mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Magnet Black 450x450mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Magnet Black 450x450mm Tunable White",
       "modelNumber": "4099854473425",
       "protocol": [
         "Matter over WiFi"
@@ -132,7 +132,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Magnet Black 600x300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Magnet Black 600x300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Magnet Black 600x300mm Tunable White",
       "modelNumber": "4099854473449",
       "protocol": [
         "Matter over WiFi"
@@ -148,7 +148,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Stea 485mm Multicolor",
-      "fullName": "Ledvance Osram SMART+ MATTER Stea 485mm Multicolor",
+      "fullName": "Ledvance/Osram SMART+ MATTER Stea 485mm Multicolor",
       "modelNumber": "4099854473623",
       "protocol": [
         "Matter over WiFi"
@@ -164,7 +164,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Cylinder 450mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Cylinder 450mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Cylinder 450mm Tunable White",
       "modelNumber": "4099854473005",
       "protocol": [
         "Matter over WiFi"
@@ -180,7 +180,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Spiral White 500mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Spiral White 500mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Spiral White 500mm Tunable White",
       "modelNumber": "4099854473166",
       "protocol": [
         "Matter over WiFi"
@@ -196,7 +196,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Claria 490mm Multicolor",
-      "fullName": "Ledvance Osram SMART+ MATTER Claria 490mm Multicolor",
+      "fullName": "Ledvance/Osram SMART+ MATTER Claria 490mm Multicolor",
       "modelNumber": "4099854473609",
       "protocol": [
         "Matter over WiFi"
@@ -212,7 +212,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Disc IP44 300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Disc IP44 300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Disc IP44 300mm Tunable White",
       "modelNumber": "4099854473241",
       "protocol": [
         "Matter over WiFi"
@@ -228,7 +228,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Disc IP44 400mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Disc IP44 400mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Disc IP44 400mm Tunable White",
       "modelNumber": "4099854473265",
       "protocol": [
         "Matter over WiFi"
@@ -244,7 +244,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Duplo IP44 300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Duplo IP44 300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Duplo IP44 300mm Tunable White",
       "modelNumber": "4099854473043",
       "protocol": [
         "Matter over WiFi"
@@ -260,7 +260,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Duplo IP44 450mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Duplo IP44 450mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Duplo IP44 450mm Tunable White",
       "modelNumber": "4099854473067",
       "protocol": [
         "Matter over WiFi"
@@ -276,7 +276,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Duplo IP44 580mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Duplo IP44 580mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Duplo IP44 580mm Tunable White",
       "modelNumber": "4099854473081",
       "protocol": [
         "Matter over WiFi"
@@ -292,7 +292,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Wave IP44 300x300mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Wave IP44 300x300mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Wave IP44 300x300mm Tunable White",
       "modelNumber": "4099854473227",
       "protocol": [
         "Matter over WiFi"
@@ -308,7 +308,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Bath IP44 400mm White Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Bath IP44 400mm White Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Bath IP44 400mm White Tunable White",
       "modelNumber": "4099854472909",
       "protocol": [
         "Matter over WiFi"
@@ -324,7 +324,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Bath IP44 300mm White Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Bath IP44 300mm White Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Bath IP44 300mm White Tunable White",
       "modelNumber": "4099854472862",
       "protocol": [
         "Matter over WiFi"
@@ -340,7 +340,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Aqua IP44 280x160mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Aqua IP44 280x160mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Aqua IP44 280x160mm Tunable White",
       "modelNumber": "4099854473524",
       "protocol": [
         "Matter over WiFi"
@@ -356,7 +356,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Wall Aqua IP44 200x200mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Wall Aqua IP44 200x200mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Wall Aqua IP44 200x200mm Tunable White",
       "modelNumber": "4099854473500",
       "protocol": [
         "Matter over WiFi"
@@ -372,7 +372,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Tunable White 300x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Tunable White 300x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Tunable White 300x300mm",
       "modelNumber": "4099854470837",
       "protocol": [
         "Matter over WiFi"
@@ -388,7 +388,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Multicolor 600x600mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Multicolor 600x600mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Multicolor 600x600mm",
       "modelNumber": "4099854471896",
       "protocol": [
         "Matter over WiFi"
@@ -404,7 +404,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Tunable White 800x100mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Tunable White 800x100mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Tunable White 800x100mm",
       "modelNumber": "4099854471032",
       "protocol": [
         "Matter over WiFi"
@@ -420,7 +420,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Tunable White 1200x100mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Tunable White 1200x100mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Tunable White 1200x100mm",
       "modelNumber": "4099854471117",
       "protocol": [
         "Matter over WiFi"
@@ -436,7 +436,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Tunable White 1200x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Tunable White 1200x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Tunable White 1200x300mm",
       "modelNumber": "4099854471179",
       "protocol": [
         "Matter over WiFi"
@@ -452,7 +452,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Frameless Sparkle Tunable White 450x450mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Frameless Sparkle Tunable White 450x450mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Frameless Sparkle Tunable White 450x450mm",
       "modelNumber": "4099854473487",
       "protocol": [
         "Matter over WiFi"
@@ -468,7 +468,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Tunable White 300x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Tunable White 300x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Tunable White 300x300mm",
       "modelNumber": "4099854471391",
       "protocol": [
         "Matter over WiFi"
@@ -484,7 +484,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Tunable White 450x450mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Tunable White 450x450mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Tunable White 450x450mm",
       "modelNumber": "4099854471575",
       "protocol": [
         "Matter over WiFi"
@@ -500,7 +500,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Tunable White 600x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Tunable White 600x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Tunable White 600x300mm",
       "modelNumber": "4099854471650",
       "protocol": [
         "Matter over WiFi"
@@ -516,7 +516,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Tunable White 600x600mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Tunable White 600x600mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Tunable White 600x600mm",
       "modelNumber": "4099854471834",
       "protocol": [
         "Matter over WiFi"
@@ -532,7 +532,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Tunable White 1200x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Tunable White 1200x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Tunable White 1200x300mm",
       "modelNumber": "4099854471254",
       "protocol": [
         "Matter over WiFi"
@@ -548,7 +548,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Multicolor 300x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Multicolor 300x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Multicolor 300x300mm",
       "modelNumber": "4099854471339",
       "protocol": [
         "Matter over WiFi"
@@ -564,7 +564,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Multicolor 450x450mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Multicolor 450x450mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Multicolor 450x450mm",
       "modelNumber": "4099854471537",
       "protocol": [
         "Matter over WiFi"
@@ -580,7 +580,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Multicolor 600x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Multicolor 600x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Multicolor 600x300mm",
       "modelNumber": "4099854471599",
       "protocol": [
         "Matter over WiFi"
@@ -596,7 +596,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Multicolor 600x600mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Multicolor 600x600mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Multicolor 600x600mm",
       "modelNumber": "4099854471797",
       "protocol": [
         "Matter over WiFi"
@@ -612,7 +612,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Plus Multicolor 1200x300mm",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Plus Multicolor 1200x300mm",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Plus Multicolor 1200x300mm",
       "modelNumber": "4099854471216",
       "protocol": [
         "Matter over WiFi"
@@ -628,7 +628,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Recess Slim Downlight 85mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Recess Slim Downlight 85mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Recess Slim Downlight 85mm Tunable White",
       "modelNumber": "4099854475436",
       "protocol": [
         "Matter over WiFi"
@@ -644,7 +644,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Recess Slim Downlight 120mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Recess Slim Downlight 120mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Recess Slim Downlight 120mm Tunable White",
       "modelNumber": "4099854475276",
       "protocol": [
         "Matter over WiFi"
@@ -660,7 +660,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Recess Slim Downlight 225mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Recess Slim Downlight 225mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Recess Slim Downlight 225mm Tunable White",
       "modelNumber": "4099854475351",
       "protocol": [
         "Matter over WiFi"
@@ -676,7 +676,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Recess Downlight 86mm 100° Multicolor",
-      "fullName": "Ledvance Osram SMART+ MATTER Recess Downlight 86mm 100° Multicolor",
+      "fullName": "Ledvance/Osram SMART+ MATTER Recess Downlight 86mm 100° Multicolor",
       "modelNumber": "4099854475719",
       "protocol": [
         "Matter over WiFi"
@@ -692,7 +692,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Recess Downlight 170mm 110 ° Multicolor",
-      "fullName": "Ledvance Osram SMART+ MATTER Recess Downlight 170mm 110 ° Multicolor",
+      "fullName": "Ledvance/Osram SMART+ MATTER Recess Downlight 170mm 110 ° Multicolor",
       "modelNumber": "4099854475696",
       "protocol": [
         "Matter over WiFi"
@@ -708,7 +708,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Downlight Round 200mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Downlight Round 200mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Downlight Round 200mm Tunable White",
       "modelNumber": "4099854475597",
       "protocol": [
         "Matter over WiFi"
@@ -724,7 +724,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Downlight Round 400mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Downlight Round 400mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Downlight Round 400mm Tunable White",
       "modelNumber": "4099854475634",
       "protocol": [
         "Matter over WiFi"
@@ -740,7 +740,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Orbis Downlight Square 400mm Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Orbis Downlight Square 400mm Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Orbis Downlight Square 400mm Tunable White",
       "modelNumber": "4099854475511",
       "protocol": [
         "Matter over WiFi"
@@ -756,7 +756,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW White",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW White",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW White",
       "modelNumber": "4058075853737",
       "protocol": [
         "Matter over WiFi"
@@ -772,7 +772,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Black",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Black",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Black",
       "modelNumber": "4058075853751",
       "protocol": [
         "Matter over WiFi"
@@ -788,7 +788,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Satin Nickel",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Satin Nickel",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 Adjustable 4.7W RGBW Satin Nickel",
       "modelNumber": "4058075853775",
       "protocol": [
         "Matter over WiFi"
@@ -804,7 +804,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW White",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW White",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW White",
       "modelNumber": "4058075854413",
       "protocol": [
         "Matter over WiFi"
@@ -820,7 +820,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Satin Nickel",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Satin Nickel",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Satin Nickel",
       "modelNumber": "4058075854437",
       "protocol": [
         "Matter over WiFi"
@@ -836,7 +836,7 @@
     },
     {
       "deviceName": "SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Chrome",
-      "fullName": "Ledvance Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Chrome",
+      "fullName": "Ledvance/Osram SMART+ MATTER LED Spot Recess GU10 IP65 Adjustable 4.7W RGBW Chrome",
       "modelNumber": "4058075854451",
       "protocol": [
         "Matter over WiFi"
@@ -852,7 +852,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tracklight Circle White Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Tracklight Circle White Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tracklight Circle White Tunable White",
       "modelNumber": "4099854474705",
       "protocol": [
         "Matter over WiFi"
@@ -868,7 +868,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tracklight Circle Black Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Tracklight Circle Black Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tracklight Circle Black Tunable White",
       "modelNumber": "4099854474682",
       "protocol": [
         "Matter over WiFi"
@@ -884,7 +884,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tracklight Osaka White Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Tracklight Osaka White Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tracklight Osaka White Tunable White",
       "modelNumber": "4099854474767",
       "protocol": [
         "Matter over WiFi"
@@ -900,7 +900,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tracklight Osaka Black Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Tracklight Osaka Black Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tracklight Osaka Black Tunable White",
       "modelNumber": "4099854474743",
       "protocol": [
         "Matter over WiFi"
@@ -916,7 +916,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flood Multicolor 10W",
-      "fullName": "Ledvance Osram SMART+ MATTER Flood Multicolor 10W",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flood Multicolor 10W",
       "modelNumber": "4099854739903",
       "protocol": [
         "Matter over WiFi"
@@ -932,7 +932,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flood Multicolor 20W",
-      "fullName": "Ledvance Osram SMART+ MATTER Flood Multicolor 20W",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flood Multicolor 20W",
       "modelNumber": "4099854739880",
       "protocol": [
         "Matter over WiFi"
@@ -948,7 +948,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flood Multicolor 30W",
-      "fullName": "Ledvance Osram SMART+ MATTER Flood Multicolor 30W",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flood Multicolor 30W",
       "modelNumber": "4099854739842",
       "protocol": [
         "Matter over WiFi"
@@ -964,7 +964,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flood Multicolor 50W",
-      "fullName": "Ledvance Osram SMART+ MATTER Flood Multicolor 50W",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flood Multicolor 50W",
       "modelNumber": "4099854739828",
       "protocol": [
         "Matter over WiFi"
@@ -980,7 +980,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flood Multicolor 100W",
-      "fullName": "Ledvance Osram SMART+ MATTER Flood Multicolor 100W",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flood Multicolor 100W",
       "modelNumber": "4099854739866",
       "protocol": [
         "Matter over WiFi"
@@ -996,7 +996,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Adjustable Beam Wall Multicolor",
-      "fullName": "Ledvance Osram SMART+ MATTER Adjustable Beam Wall Multicolor",
+      "fullName": "Ledvance/Osram SMART+ MATTER Adjustable Beam Wall Multicolor",
       "modelNumber": "4099854474668",
       "protocol": [
         "Matter over WiFi"
@@ -1012,7 +1012,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Floor Corner Slim with Remote Control Black 1400mm RGB + TW",
-      "fullName": "Ledvance Osram SMART+ MATTER Floor Corner Slim with Remote Control Black 1400mm RGB + TW",
+      "fullName": "Ledvance/Osram SMART+ MATTER Floor Corner Slim with Remote Control Black 1400mm RGB + TW",
       "modelNumber": "4099854511486",
       "protocol": [
         "Matter over WiFi"
@@ -1028,7 +1028,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Floor Corner Slim with Remote Control White 1400mm RGB + TW",
-      "fullName": "Ledvance Osram SMART+ MATTER Floor Corner Slim with Remote Control White 1400mm RGB + TW",
+      "fullName": "Ledvance/Osram SMART+ MATTER Floor Corner Slim with Remote Control White 1400mm RGB + TW",
       "modelNumber": "4099854511646",
       "protocol": [
         "Matter over WiFi"
@@ -1044,7 +1044,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Floor Corner Slim with Remote Control Black 2000mm RGB + TW",
-      "fullName": "Ledvance Osram SMART+ MATTER Floor Corner Slim with Remote Control Black 2000mm RGB + TW",
+      "fullName": "Ledvance/Osram SMART+ MATTER Floor Corner Slim with Remote Control Black 2000mm RGB + TW",
       "modelNumber": "4099854511707",
       "protocol": [
         "Matter over WiFi"
@@ -1060,7 +1060,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Floor Corner Slim with Remote Control White 2000mm RGB + TW",
-      "fullName": "Ledvance Osram SMART+ MATTER Floor Corner Slim with Remote Control White 2000mm RGB + TW",
+      "fullName": "Ledvance/Osram SMART+ MATTER Floor Corner Slim with Remote Control White 2000mm RGB + TW",
       "modelNumber": "4099854511769",
       "protocol": [
         "Matter over WiFi"
@@ -1076,7 +1076,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flex 2M RGB Tunable White",
-      "fullName": "Ledvance Osram SMART+ MATTER Flex 2M RGB Tunable White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flex 2M RGB Tunable White",
       "modelNumber": "4099854475214",
       "protocol": [
         "Matter over WiFi"
@@ -1092,7 +1092,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Flex 1M RGB Tunable White Extension",
-      "fullName": "Ledvance Osram SMART+ MATTER Flex 1M RGB Tunable White Extension",
+      "fullName": "Ledvance/Osram SMART+ MATTER Flex 1M RGB Tunable White Extension",
       "modelNumber": "4099854475191",
       "protocol": [
         "Matter over WiFi"
@@ -1108,7 +1108,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Dimmable Classic Edison 60 6W 827 E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Dimmable Classic Edison 60 6W 827 E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Dimmable Classic Edison 60 6W 827 E27",
       "modelNumber": "4099854530043",
       "protocol": [
         "Matter over WiFi"
@@ -1124,7 +1124,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic Globe 6W 827 E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic Globe 6W 827 E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic Globe 6W 827 E27",
       "modelNumber": "4099854529900",
       "protocol": [
         "Matter over WiFi"
@@ -1140,7 +1140,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic B40 4W 827 E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic B40 4W 827 E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic B40 4W 827 E14",
       "modelNumber": "4099854530067",
       "protocol": [
         "Matter over WiFi"
@@ -1156,7 +1156,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic A53 6W 824 Gold E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic A53 6W 824 Gold E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic A53 6W 824 Gold E27",
       "modelNumber": "4099854529948",
       "protocol": [
         "Matter over WiFi"
@@ -1172,7 +1172,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic Edison 53 6W 824 Gold E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic Edison 53 6W 824 Gold E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic Edison 53 6W 824 Gold E27",
       "modelNumber": "4099854530104",
       "protocol": [
         "Matter over WiFi"
@@ -1188,7 +1188,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic Globe 53 6W 824 Gold E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic Globe 53 6W 824 Gold E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic Globe 53 6W 824 Gold E27",
       "modelNumber": "4099854529986",
       "protocol": [
         "Matter over WiFi"
@@ -1204,7 +1204,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic A60 6W 827 E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic A60 6W 827 E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic A60 6W 827 E27",
       "modelNumber": "4099854530005",
       "protocol": [
         "Matter over WiFi"
@@ -1220,7 +1220,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Dimmable Classic P40 4W 827 E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Dimmable Classic P40 4W 827 E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Dimmable Classic P40 4W 827 E14",
       "modelNumber": "4099854530029",
       "protocol": [
         "Matter over WiFi"
@@ -1236,7 +1236,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Multicolor Classic A40 4.8W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Multicolor Classic A40 4.8W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Multicolor Classic A40 4.8W E27",
       "modelNumber": "4058075850767",
       "protocol": [
         "Matter over WiFi"
@@ -1252,7 +1252,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Multicolor Classic Edison 40 4.8W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Multicolor Classic Edison 40 4.8W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Multicolor Classic Edison 40 4.8W E27",
       "modelNumber": "4058075850781",
       "protocol": [
         "Matter over WiFi"
@@ -1268,7 +1268,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Filament Multicolor Classic Globe 125 40 4.8W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Filament Multicolor Classic Globe 125 40 4.8W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Filament Multicolor Classic Globe 125 40 4.8W E27",
       "modelNumber": "4058075850804",
       "protocol": [
         "Matter over WiFi"
@@ -1284,7 +1284,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Classic A60 9W 827...865 TW E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Classic A60 9W 827...865 TW E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Classic A60 9W 827...865 TW E27",
       "modelNumber": "4099854528798",
       "protocol": [
         "Matter over WiFi"
@@ -1300,7 +1300,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tunable White Classic A75 9.5W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Tunable White Classic A75 9.5W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tunable White Classic A75 9.5W E27",
       "modelNumber": "4058075851160",
       "protocol": [
         "Matter over WiFi"
@@ -1316,7 +1316,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Classic A100 14W 827...865 TW E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Classic A100 14W 827...865 TW E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Classic A100 14W 827...865 TW E27",
       "modelNumber": "4099854528835",
       "protocol": [
         "Matter over WiFi"
@@ -1332,7 +1332,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tunable White Classic B40 4.9W E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Tunable White Classic B40 4.9W E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tunable White Classic B40 4.9W E14",
       "modelNumber": "4099854529924",
       "protocol": [
         "Matter over WiFi"
@@ -1348,7 +1348,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tunable White Classic P40 4.9W E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Tunable White Classic P40 4.9W E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tunable White Classic P40 4.9W E14",
       "modelNumber": "4099854530081",
       "protocol": [
         "Matter over WiFi"
@@ -1364,7 +1364,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Globe 95 100 14W 827...865 TW E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Globe 95 100 14W 827...865 TW E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Globe 95 100 14W 827...865 TW E27",
       "modelNumber": "4058075851184",
       "protocol": [
         "Matter over WiFi"
@@ -1380,7 +1380,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic A60 9W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic A60 9W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic A60 9W E27",
       "modelNumber": "4099854461286",
       "protocol": [
         "Matter over WiFi"
@@ -1396,7 +1396,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic A60 9W B22D Single Pack",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic A60 9W B22D Single Pack",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic A60 9W B22D Single Pack",
       "modelNumber": "4099854528859",
       "protocol": [
         "Matter over WiFi"
@@ -1412,7 +1412,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic A75 9.5W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic A75 9.5W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic A75 9.5W E27",
       "modelNumber": "4058075851207",
       "protocol": [
         "Matter over WiFi"
@@ -1428,7 +1428,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic A100 14W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic A100 14W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic A100 14W E27",
       "modelNumber": "4099854461255",
       "protocol": [
         "Matter over WiFi"
@@ -1444,7 +1444,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic B40 4.9W E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic B40 4.9W E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic B40 4.9W E14",
       "modelNumber": "4099854461330",
       "protocol": [
         "Matter over WiFi"
@@ -1460,7 +1460,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic P40 4.9W E14",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic P40 4.9W E14",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic P40 4.9W E14",
       "modelNumber": "4099854461385",
       "protocol": [
         "Matter over WiFi"
@@ -1476,7 +1476,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic P40 4.9W E27 Single Pack",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic P40 4.9W E27 Single Pack",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic P40 4.9W E27 Single Pack",
       "modelNumber": "4099854530128",
       "protocol": [
         "Matter over WiFi"
@@ -1492,7 +1492,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Classic Globe 95 100 14W E27",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Classic Globe 95 100 14W E27",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Classic Globe 95 100 14W E27",
       "modelNumber": "4099854462177",
       "protocol": [
         "Matter over WiFi"
@@ -1508,7 +1508,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Dimmable Spot PAR16 50 45° 4.7W GU10 Single Pack",
-      "fullName": "Ledvance Osram SMART+ MATTER Dimmable Spot PAR16 50 45° 4.7W GU10 Single Pack",
+      "fullName": "Ledvance/Osram SMART+ MATTER Dimmable Spot PAR16 50 45° 4.7W GU10 Single Pack",
       "modelNumber": "4058075851122",
       "protocol": [
         "Matter over WiFi"
@@ -1524,7 +1524,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Tunable White Spot PAR16 50 45° 4.7W GU10 Single Pack",
-      "fullName": "Ledvance Osram SMART+ MATTER Tunable White Spot PAR16 50 45° 4.7W GU10 Single Pack",
+      "fullName": "Ledvance/Osram SMART+ MATTER Tunable White Spot PAR16 50 45° 4.7W GU10 Single Pack",
       "modelNumber": "4099854529054",
       "protocol": [
         "Matter over WiFi"
@@ -1540,7 +1540,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Multicolor Spot PAR16 50 45° 4.7W GU10",
-      "fullName": "Ledvance Osram SMART+ MATTER Multicolor Spot PAR16 50 45° 4.7W GU10",
+      "fullName": "Ledvance/Osram SMART+ MATTER Multicolor Spot PAR16 50 45° 4.7W GU10",
       "modelNumber": "4099854462191",
       "protocol": [
         "Matter over WiFi"
@@ -1556,7 +1556,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug EU White",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug EU White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug EU White",
       "modelNumber": "4099854419201",
       "protocol": [
         "Matter over WiFi"
@@ -1572,7 +1572,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug ACK EU White",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug ACK EU White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug ACK EU White",
       "modelNumber": "4058075849525",
       "protocol": [
         "Matter over WiFi"
@@ -1588,7 +1588,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug EU Black",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug EU Black",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug EU Black",
       "modelNumber": "4099854419225",
       "protocol": [
         "Matter over WiFi"
@@ -1604,7 +1604,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug CH White",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug CH White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug CH White",
       "modelNumber": "4099854419041",
       "protocol": [
         "Matter over WiFi"
@@ -1620,7 +1620,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug UK White",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug UK White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug UK White",
       "modelNumber": "4058075849501",
       "protocol": [
         "Matter over WiFi"
@@ -1636,7 +1636,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Plug ACK UK White",
-      "fullName": "Ledvance Osram SMART+ MATTER Plug ACK UK White",
+      "fullName": "Ledvance/Osram SMART+ MATTER Plug ACK UK White",
       "modelNumber": "4058075850828",
       "protocol": [
         "Matter over WiFi"
@@ -1652,7 +1652,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Compact Outdoor Plug EU",
-      "fullName": "Ledvance Osram SMART+ MATTER Compact Outdoor Plug EU",
+      "fullName": "Ledvance/Osram SMART+ MATTER Compact Outdoor Plug EU",
       "modelNumber": "4099854419249",
       "protocol": [
         "Matter over WiFi"
@@ -1668,7 +1668,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Switch 1 Channel",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Switch 1 Channel",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Switch 1 Channel",
       "modelNumber": "4058075849907",
       "protocol": [
         "Matter over WiFi"
@@ -1684,7 +1684,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Wall Switch 2 Channel",
-      "fullName": "Ledvance Osram SMART+ MATTER Wall Switch 2 Channel",
+      "fullName": "Ledvance/Osram SMART+ MATTER Wall Switch 2 Channel",
       "modelNumber": "4058075849921",
       "protocol": [
         "Matter over WiFi"
@@ -1700,7 +1700,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Gisela 300 mm 16W Black Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Gisela 300 mm 16W Black Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Gisela 300 mm 16W Black Multicolour",
       "modelNumber": "4058075863101",
       "protocol": [
         "Matter over WiFi"
@@ -1716,7 +1716,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Gisela 300 mm 16W Silver Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Gisela 300 mm 16W Silver Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Gisela 300 mm 16W Silver Multicolour",
       "modelNumber": "4058075863088",
       "protocol": [
         "Matter over WiFi"
@@ -1732,7 +1732,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Gisela 385 mm 24W Black Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Gisela 385 mm 24W Black Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Gisela 385 mm 24W Black Multicolour",
       "modelNumber": "4058075863149",
       "protocol": [
         "Matter over WiFi"
@@ -1748,7 +1748,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Gisela 385 mm 24W Silver Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Gisela 385 mm 24W Silver Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Gisela 385 mm 24W Silver Multicolour",
       "modelNumber": "4058075863125",
       "protocol": [
         "Matter over WiFi"
@@ -1764,7 +1764,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Iris 2 layers 290 mm 24W White Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Iris 2 layers 290 mm 24W White Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Iris 2 layers 290 mm 24W White Multicolour",
       "modelNumber": "4058075863163",
       "protocol": [
         "Matter over WiFi"
@@ -1780,7 +1780,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Ceiling Iris 3 layers 290 mm 24W White Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Ceiling Iris 3 layers 290 mm 24W White Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Ceiling Iris 3 layers 290 mm 24W White Multicolour",
       "modelNumber": "4058075863187",
       "protocol": [
         "Matter over WiFi"
@@ -1796,7 +1796,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Slim 58x20cm IP54 White Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Slim 58x20cm IP54 White Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Slim 58x20cm IP54 White Multicolour",
       "modelNumber": "4058075862906",
       "protocol": [
         "Matter over WiFi"
@@ -1812,7 +1812,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Slim 58x20cm IP54 Black Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Slim 58x20cm IP54 Black Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Slim 58x20cm IP54 Black Multicolour",
       "modelNumber": "4058075862920",
       "protocol": [
         "Matter over WiFi"
@@ -1828,7 +1828,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Slim 98x20cm IP54 White Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Slim 98x20cm IP54 White Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Slim 98x20cm IP54 White Multicolour",
       "modelNumber": "4058075862944",
       "protocol": [
         "Matter over WiFi"
@@ -1844,7 +1844,7 @@
     },
     {
       "deviceName": "SMART+ MATTER Planon Slim 98x20cm IP54 Black Multicolour",
-      "fullName": "Ledvance Osram SMART+ MATTER Planon Slim 98x20cm IP54 Black Multicolour",
+      "fullName": "Ledvance/Osram SMART+ MATTER Planon Slim 98x20cm IP54 Black Multicolour",
       "modelNumber": "4058075862968",
       "protocol": [
         "Matter over WiFi"
