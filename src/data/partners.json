@@ -120,6 +120,11 @@
             "name": "IoTorero",
             "logo": "iotorero.png",
             "link": "https://www.home-assistant.io/integrations/iotorero/"
+        },
+        {
+            "name": "Ledvance/Osram",
+            "logo": "ledvance-osram.png",
+            "link": "https://www.ledvance.com/"
         }
     ]
 }
