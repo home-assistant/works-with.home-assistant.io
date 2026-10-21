@@ -1,0 +1,48 @@
+{
+  "companyName": "Everything Smart Technology",
+  "brand": "everything-smart-technology",
+  "devices": [
+    {
+      "deviceName": "Everything Presence Lite",
+      "fullName": "Everything Smart Technology Everything Presence Lite",
+      "modelNumber": "",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://shop.everythingsmart.io/products/everything-presence-lite",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Everything Presence One",
+      "fullName": "Everything Smart Technology Everything Presence One",
+      "modelNumber": "",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://shop.everythingsmart.io/products/everything-presence-one-kit",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Everything Presence Pro",
+      "fullName": "Everything Smart Technology Everything Presence Pro",
+      "modelNumber": "",
+      "protocol": [
+        "ESPHome"
+      ],
+      "websiteLink": "https://shop.everythingsmart.io/products/everything-presence-pro",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [],
+      "functionalityRemark": ""
+    }
+  ]
+}
