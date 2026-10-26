@@ -24,8 +24,31 @@ section.contact-form {
         }
     }
 
+    // Keep a step clear of the sticky header (73px mobile, 120px desktop) when the form scrolls
+    // to it on Next or Previous.
+    .hsf-step {
+        scroll-margin-top: 90px;
+
+        @include mixins.bp(desktop) {
+            scroll-margin-top: 140px;
+        }
+    }
+
     .hsf-richtext p {
         margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // Section headings within the form ("Tell us about yourself", "Privacy"). HubSpot renders
+    // them as h3, which the site sizes for page sections, so bring them down to h4 size.
+    .hsf-heading {
+        font-size: var(--typography-h4-font-size);
+        font-weight: var(--typography-h4-font-weight);
+        line-height: var(--typography-h4-line-height);
+        margin-top: 10px;
     }
 
     .hsf-label {
@@ -42,6 +65,11 @@ section.contact-form {
     .hsf-consent {
         color: var(--color-secondary);
         font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .hsf-consent a {
+        color: var(--brand-color-home-assistant-blue);
     }
 
     .hsf-input {
@@ -80,9 +108,27 @@ section.contact-form {
     }
 
     .hsf-progress-bar {
-        accent-color: #18bcf2;
+        appearance: none;
+        background: #e6ebef;
+        border: 0;
+        border-radius: 3px;
         height: 6px;
+        overflow: hidden;
         width: 100%;
+
+        &::-webkit-progress-bar {
+            background: #e6ebef;
+        }
+
+        &::-webkit-progress-value {
+            background: var(--brand-color-home-assistant-blue);
+            border-radius: 3px;
+        }
+
+        &::-moz-progress-bar {
+            background: var(--brand-color-home-assistant-blue);
+            border-radius: 3px;
+        }
     }
 
     .hsf-nav {
