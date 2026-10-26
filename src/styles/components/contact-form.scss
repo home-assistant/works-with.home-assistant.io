@@ -1,0 +1,159 @@
+@use "../mixins";
+
+// Site styles for the HubSpot form rendered by @openhomefoundation/astro-hubspot-forms.
+// The package ships no visual CSS; it renders native elements with `hsf-*` classes.
+section.contact-form {
+    margin: 60px 0;
+    position: relative;
+    z-index: 2;
+
+    @include mixins.bp(desktop) {
+        margin: 100px 0;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        margin: 0 auto;
+        max-width: 720px;
+        padding: 30px 20px;
+
+        @include mixins.bp(desktop) {
+            padding: 50px;
+        }
+    }
+
+    // Keep a step clear of the sticky header (73px mobile, 120px desktop) when the form scrolls
+    // to it on Next or Previous.
+    .hsf-step {
+        scroll-margin-top: 90px;
+
+        @include mixins.bp(desktop) {
+            scroll-margin-top: 140px;
+        }
+    }
+
+    .hsf-richtext p {
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // Section headings within the form ("Tell us about yourself", "Privacy"). HubSpot renders
+    // them as h3, which the site sizes for page sections, so bring them down to h4 size.
+    .hsf-heading {
+        font-size: var(--typography-h4-font-size);
+        font-weight: var(--typography-h4-font-weight);
+        line-height: var(--typography-h4-line-height);
+        margin-top: 10px;
+    }
+
+    .hsf-label {
+        font-weight: 500;
+    }
+
+    .hsf-required {
+        color: #db4437;
+        margin-left: 4px;
+    }
+
+    .hsf-description,
+    .hsf-progress,
+    .hsf-consent {
+        color: var(--color-secondary);
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .hsf-consent a {
+        color: var(--brand-color-home-assistant-blue);
+    }
+
+    .hsf-input {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font: inherit;
+        padding: 0.75rem 1rem;
+
+        &:focus {
+            border-color: #18bcf2;
+            box-shadow: 0 0 0 3px rgba(24, 188, 242, 0.1);
+            outline: none;
+        }
+
+        &[aria-invalid="true"] {
+            border-color: #db4437;
+        }
+    }
+
+    textarea.hsf-input {
+        min-height: 140px;
+        resize: vertical;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        accent-color: #18bcf2;
+        margin-top: 0.2em;
+    }
+
+    .hsf-field-error,
+    .hsf-error {
+        color: #db4437;
+        font-size: 0.875rem;
+    }
+
+    .hsf-progress-bar {
+        appearance: none;
+        background: #e6ebef;
+        border: 0;
+        border-radius: 3px;
+        height: 6px;
+        overflow: hidden;
+        width: 100%;
+
+        &::-webkit-progress-bar {
+            background: #e6ebef;
+        }
+
+        &::-webkit-progress-value {
+            background: var(--brand-color-home-assistant-blue);
+            border-radius: 3px;
+        }
+
+        &::-moz-progress-bar {
+            background: var(--brand-color-home-assistant-blue);
+            border-radius: 3px;
+        }
+    }
+
+    .hsf-nav {
+        margin-top: 10px;
+    }
+
+    .button {
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 500;
+
+        &:disabled {
+            cursor: progress;
+            opacity: 0.6;
+        }
+    }
+
+    .hsf-previous {
+        background: transparent;
+        box-shadow: inset 0 0 0 2px var(--brand-color-home-assistant-blue);
+        color: var(--brand-color-home-assistant-blue);
+    }
+
+    [data-submitting] .hsf-submit {
+        animation-play-state: paused;
+    }
+}

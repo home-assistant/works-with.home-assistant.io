@@ -2,6 +2,7 @@
 const EXCLUDED = new Set([
 	"./404.astro",
 	"./resources/badge-and-brand-guidelines.astro",
+	"./contact.astro",
 ]);
 
 const pageToRoute = (path) => {
