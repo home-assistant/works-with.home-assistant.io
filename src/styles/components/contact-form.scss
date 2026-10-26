@@ -1,0 +1,113 @@
+@use "../mixins";
+
+// Site styles for the HubSpot form rendered by @openhomefoundation/astro-hubspot-forms.
+// The package ships no visual CSS; it renders native elements with `hsf-*` classes.
+section.contact-form {
+    margin: 60px 0;
+    position: relative;
+    z-index: 2;
+
+    @include mixins.bp(desktop) {
+        margin: 100px 0;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        margin: 0 auto;
+        max-width: 720px;
+        padding: 30px 20px;
+
+        @include mixins.bp(desktop) {
+            padding: 50px;
+        }
+    }
+
+    .hsf-richtext p {
+        margin-bottom: 12px;
+    }
+
+    .hsf-label {
+        font-weight: 500;
+    }
+
+    .hsf-required {
+        color: #db4437;
+        margin-left: 4px;
+    }
+
+    .hsf-description,
+    .hsf-progress,
+    .hsf-consent {
+        color: var(--color-secondary);
+        font-size: 0.875rem;
+    }
+
+    .hsf-input {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font: inherit;
+        padding: 0.75rem 1rem;
+
+        &:focus {
+            border-color: #18bcf2;
+            box-shadow: 0 0 0 3px rgba(24, 188, 242, 0.1);
+            outline: none;
+        }
+
+        &[aria-invalid="true"] {
+            border-color: #db4437;
+        }
+    }
+
+    textarea.hsf-input {
+        min-height: 140px;
+        resize: vertical;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        accent-color: #18bcf2;
+        margin-top: 0.2em;
+    }
+
+    .hsf-field-error,
+    .hsf-error {
+        color: #db4437;
+        font-size: 0.875rem;
+    }
+
+    .hsf-progress-bar {
+        accent-color: #18bcf2;
+        height: 6px;
+        width: 100%;
+    }
+
+    .hsf-nav {
+        margin-top: 10px;
+    }
+
+    .button {
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 500;
+
+        &:disabled {
+            cursor: progress;
+            opacity: 0.6;
+        }
+    }
+
+    .hsf-previous {
+        background: transparent;
+        box-shadow: inset 0 0 0 2px var(--brand-color-home-assistant-blue);
+        color: var(--brand-color-home-assistant-blue);
+    }
+
+    [data-submitting] .hsf-submit {
+        animation-play-state: paused;
+    }
+}
