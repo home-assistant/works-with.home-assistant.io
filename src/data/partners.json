@@ -125,6 +125,11 @@
             "name": "Ledvance/Osram",
             "logo": "ledvance-osram.png",
             "link": "https://www.ledvance.com/"
+        },
+        {
+            "name": "Everything Smart Home",
+            "logo": "everything-smart-home.png",
+            "link": "https://www.home-assistant.io/integrations/everything_smart_home/"
         }
     ]
 }
