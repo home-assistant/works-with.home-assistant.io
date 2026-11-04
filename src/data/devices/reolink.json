@@ -3,8 +3,8 @@
   "brand": "reolink",
   "devices": [
     {
-      "deviceName": "Video Doorbell",
-      "fullName": "Reolink Video Doorbell",
+      "deviceName": "Video Doorbell WiFi",
+      "fullName": "Reolink Video Doorbell WiFi",
       "modelNumber": "",
       "protocol": [
         "WiFi"
@@ -14,18 +14,15 @@
       "secondaryDeviceType": [
         "Doorbell"
       ],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
       "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
     },
     {
-      "deviceName": "Video Doorbell",
-      "fullName": "Reolink Video Doorbell",
+      "deviceName": "Video Doorbell (Battery)",
+      "fullName": "Reolink Video Doorbell (Battery)",
       "modelNumber": "",
       "protocol": [
         "WiFi"
@@ -73,10 +70,7 @@
       "websiteLink": "https://reolink.com/product/reolink-duo-3-poe/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
@@ -92,10 +86,7 @@
       "websiteLink": "https://reolink.com/product/reolink-trackmix-poe/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
@@ -111,10 +102,7 @@
       "websiteLink": "https://reolink.com/product/rlc-823s2/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
@@ -130,10 +118,7 @@
       "websiteLink": "https://reolink.com/gb/product/rlc-1224a/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
@@ -169,10 +154,7 @@
       "secondaryDeviceType": [
         "Floodlight"
       ],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
@@ -188,10 +170,7 @@
       "websiteLink": "https://reolink.com/product/reolink-trackmix-wifi/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
