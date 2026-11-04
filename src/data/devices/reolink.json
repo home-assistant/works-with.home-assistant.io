@@ -18,7 +18,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "Video Doorbell (Battery)",
@@ -74,7 +74,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "TrackMix PoE",
@@ -90,7 +90,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "RLC-823S2",
@@ -106,7 +106,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "RLC-1224A",
@@ -122,7 +122,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "Home Hub",
@@ -158,7 +158,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "TrackMix WiFi",
@@ -174,7 +174,7 @@
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     }
   ]
 }
