@@ -3,8 +3,8 @@
   "brand": "reolink",
   "devices": [
     {
-      "deviceName": "Video Doorbell",
-      "fullName": "Reolink Video Doorbell",
+      "deviceName": "Video Doorbell WiFi",
+      "fullName": "Reolink Video Doorbell WiFi",
       "modelNumber": "",
       "protocol": [
         "WiFi"
@@ -14,18 +14,15 @@
       "secondaryDeviceType": [
         "Doorbell"
       ],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
-      "deviceName": "Video Doorbell",
-      "fullName": "Reolink Video Doorbell",
+      "deviceName": "Video Doorbell (Battery)",
+      "fullName": "Reolink Video Doorbell (Battery)",
       "modelNumber": "",
       "protocol": [
         "WiFi"
@@ -73,14 +70,11 @@
       "websiteLink": "https://reolink.com/product/reolink-duo-3-poe/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "TrackMix PoE",
@@ -92,14 +86,11 @@
       "websiteLink": "https://reolink.com/product/reolink-trackmix-poe/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "RLC-823S2",
@@ -111,14 +102,11 @@
       "websiteLink": "https://reolink.com/product/rlc-823s2/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "RLC-1224A",
@@ -130,14 +118,11 @@
       "websiteLink": "https://reolink.com/gb/product/rlc-1224a/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "Home Hub",
@@ -169,14 +154,11 @@
       "secondaryDeviceType": [
         "Floodlight"
       ],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     },
     {
       "deviceName": "TrackMix WiFi",
@@ -188,14 +170,11 @@
       "websiteLink": "https://reolink.com/product/reolink-trackmix-wifi/",
       "deviceType": "Camera",
       "secondaryDeviceType": [],
-      "relatedProducts": {
-        "text": "Reolink Home Hub",
-        "url": "https://reolink.com/product/reolink-home-hub/"
-      },
+      "relatedProducts": "",
       "region": [
         "Worldwide"
       ],
-      "functionalityRemark": "Requires local storage of some sort, such as the hub, NVR or SD cards. Two-way audio not available within Home Assistant."
+      "functionalityRemark": "Two way audio available via Home Assistant Labs"
     }
   ]
 }
