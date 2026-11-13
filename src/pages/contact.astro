@@ -1,0 +1,30 @@
+---
+import { HubSpotForm } from "@openhomefoundation/astro-hubspot-forms";
+import "@openhomefoundation/astro-hubspot-forms/layout.css";
+import Base from "../layouts/Base.astro";
+
+// The partnership enquiry form in the Open Home Foundation HubSpot account.
+// Its fields, steps and thank-you message are managed in HubSpot's form editor.
+const HUBSPOT_PORTAL_ID = "146078899";
+const HUBSPOT_FORM_ID = "70ee1690-62fb-45a8-b1af-abf89ff2f137";
+---
+
+<Base
+	title="Get in touch"
+	description="Tell us how you'd like to partner with Home Assistant and the Open Home Foundation."
+	noindex
+>
+	<div class="wrapper wrapper-a">
+		<section class="contact-form">
+			<div class="container">
+				<div class="card">
+					<HubSpotForm
+						portalId={HUBSPOT_PORTAL_ID}
+						formId={HUBSPOT_FORM_ID}
+						classes={{ button: "button", submit: "animated", next: "animated" }}
+					/>
+				</div>
+			</div>
+		</section>
+	</div>
+</Base>
