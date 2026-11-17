@@ -83,6 +83,11 @@ section.logo-slider {
 
         a {
             color: inherit;
+            background-size: 100% 1px;
+
+            &:hover {
+                background-size: 0% 1px;
+            }
 
             &:after {
                 width: 100%;
