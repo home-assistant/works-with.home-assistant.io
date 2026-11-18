@@ -1,0 +1,180 @@
+{
+  "companyName": "Aeotec",
+  "brand": "aeotec",
+  "devices": [
+    {
+      "deviceName": "Door Window Sensor 8",
+      "fullName": "Aeotec Door Window Sensor 8",
+      "modelNumber": "ZWA055",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/door-window-sensor-8/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Supports Z-Wave Plus Long Range (LR)."
+    },
+    {
+      "deviceName": "MultiSensor 8",
+      "fullName": "Aeotec MultiSensor 8",
+      "modelNumber": "ZWA066",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/multisensor-8/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Motion",
+        "Temperature",
+        "Humidity",
+        "Light"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Supports Z-Wave Plus Long Range (LR)."
+    },
+    {
+      "deviceName": "Water Sensor 8",
+      "fullName": "Aeotec Water Sensor 8",
+      "modelNumber": "ZWA056",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/water-sensor-8/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Leak"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Supports Z-Wave Plus Long Range (LR)."
+    },
+    {
+      "deviceName": "aërQ 8 Temperature and Humidity Sensor",
+      "fullName": "Aeotec aërQ 8 Temperature and Humidity Sensor",
+      "modelNumber": "ZWA057",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/aerq-8/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Temperature",
+        "Humidity"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": "Supports Z-Wave Plus Long Range (LR)."
+    },
+    {
+      "deviceName": "SmokeShield",
+      "fullName": "Aeotec SmokeShield",
+      "modelNumber": "ZWA050",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/smokeshield/",
+      "deviceType": "Smoke alarm",
+      "secondaryDeviceType": [],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Pico Switch",
+      "fullName": "Aeotec Pico Switch",
+      "modelNumber": "ZGA002",
+      "protocol": [
+        "Zigbee"
+      ],
+      "websiteLink": "https://aeotec.com/products/Aeotec-Smartthings-Pico-Switch/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "On / Off"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Recessed Door Sensor 7",
+      "fullName": "Aeotec Recessed Door Sensor 7",
+      "modelNumber": "ZW187",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/aeotec-recessed-door-sensor-7/",
+      "deviceType": "Sensor",
+      "secondaryDeviceType": [
+        "Open / close"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "Siren 6",
+      "fullName": "Aeotec Siren 6",
+      "modelNumber": "ZW164",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/aeotec-siren-6/",
+      "deviceType": "Speaker",
+      "secondaryDeviceType": [
+        "Siren"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    },
+    {
+      "deviceName": "WallMote Quad",
+      "fullName": "Aeotec WallMote Quad",
+      "modelNumber": "ZW130",
+      "protocol": [
+        "Z-Wave"
+      ],
+      "websiteLink": "https://aeotec.com/products/aeotec-wallmote-quad/",
+      "deviceType": "Switch",
+      "secondaryDeviceType": [
+        "Button",
+        "Wall"
+      ],
+      "relatedProducts": "",
+      "region": [
+        "Europe",
+        "USA"
+      ],
+      "functionalityRemark": ""
+    }
+  ]
+}

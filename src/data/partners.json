@@ -130,6 +130,11 @@
             "name": "Everything Smart Home",
             "logo": "everything-smart-home.png",
             "link": "https://www.home-assistant.io/integrations/everything_smart_home/"
+        },
+        {
+            "name": "Aeotec",
+            "logo": "aeotec.png",
+            "link": "https://www.home-assistant.io/integrations/aeotec/"
         }
     ]
 }
