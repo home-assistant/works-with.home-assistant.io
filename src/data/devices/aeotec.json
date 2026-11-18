@@ -119,25 +119,6 @@
       "functionalityRemark": ""
     },
     {
-      "deviceName": "Pico Duo Switch",
-      "fullName": "Aeotec Pico Duo Switch",
-      "modelNumber": "ZGA003",
-      "protocol": [
-        "Zigbee"
-      ],
-      "websiteLink": "https://aeotec.com/products/Aeotec-Smartthings-Pico-Switch/",
-      "deviceType": "Switch",
-      "secondaryDeviceType": [
-        "On / Off"
-      ],
-      "relatedProducts": "",
-      "region": [
-        "Europe",
-        "USA"
-      ],
-      "functionalityRemark": ""
-    },
-    {
       "deviceName": "Recessed Door Sensor 7",
       "fullName": "Aeotec Recessed Door Sensor 7",
       "modelNumber": "ZW187",
