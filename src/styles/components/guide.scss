@@ -28,6 +28,17 @@ section.guide-hero {
     .meta {
         color: var(--color-secondary);
         font-size: 1.2rem;
+        max-width: 42rem;
+        margin-inline: auto;
+        text-wrap: balance;
+
+        a:not(.button):not(.nounderline) {
+            background-size: 100% 1px;
+
+            &:hover {
+                background-size: 0% 1px;
+            }
+        }
     }
 }
 
