@@ -13,7 +13,7 @@
     },
     {
         "title": "Available to access firmware updates directly in Home Assistant",
-        "content": "Ideally, all devices should be able to access over-the-air (OTA) firmware updates from within our system. If this isn't possible, you must provide a way to alert users about firmware updates."
+        "content": "Ideally, all devices should be able to access over-the-air (OTA) firmware updates from within our system. If this isn’t possible, you must provide a way to alert users about firmware updates."
     },
     {
         "items": [
