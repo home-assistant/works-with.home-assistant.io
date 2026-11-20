@@ -1,0 +1,464 @@
+---
+import Base from "../layouts/Base.astro";
+import GuideToc from "../components/GuideToc.astro";
+
+const OHF_PRIVACY_POLICY = "https://www.openhomefoundation.org/privacy-policy/";
+
+const toc = [
+  { id: "summary", label: "Summary" },
+  {
+    id: "data-processing-activities",
+    label: "Data processing activities",
+    children: [
+      { id: "initial-inquiry", label: "Initial inquiry and contact form" },
+      { id: "waiting-lists", label: "Non-WWHA inquiry waiting lists" },
+      { id: "device-intake", label: "Device Compatibility Form" },
+      { id: "certification-agreement", label: "Certification agreement" },
+      { id: "invoicing", label: "Invoicing and payment" },
+      { id: "device-testing", label: "Device testing and logistics" },
+      { id: "creator-collaboration", label: "Creator collaboration" },
+      { id: "user-research", label: "User research" },
+      { id: "communications", label: "Partner and creator communications" },
+    ],
+  },
+  { id: "international-transfers", label: "International data transfers" },
+  { id: "retention", label: "Retention periods" },
+  { id: "your-rights", label: "Your rights" },
+  { id: "relationship", label: "Relationship to the Open Home Foundation Privacy Policy" },
+];
+---
+
+<Base
+  title="Privacy policy"
+  description="How the Open Home Foundation processes personal data as part of the Works with Home Assistant program."
+>
+  <div class="wrapper wrapper-overflow-visible">
+    <section class="guide-hero">
+      <div class="container">
+        <h1 id="privacy-policy">Privacy policy</h1>
+        <p class="meta">
+          This privacy policy supplements the main <a
+            href={OHF_PRIVACY_POLICY}
+            target="_blank"
+            rel="noopener noreferrer">Open Home Foundation Privacy Policy</a
+          > and applies specifically to the Works with Home Assistant (WWHA) program.
+        </p>
+      </div>
+    </section>
+
+    <article class="guide">
+      <div class="guide-layout container">
+        <GuideToc toc={toc} />
+
+        <div class="guide-panels">
+          <section class="guide-panel">
+            <h2 id="summary">Summary</h2>
+            <hr />
+            <p>
+              We, the Open Home Foundation, Grabenstrasse 25, 6340 Baar,
+              Switzerland, are the operator of the Works with Home Assistant
+              (WWHA) program and are responsible for the data processing
+              described in this privacy policy, unless stated otherwise below.
+            </p>
+            <p>
+              We process personal data in accordance with the Swiss Federal Act
+              on Data Protection (FADP) and, where applicable, the EU General
+              Data Protection Regulation (GDPR). References to GDPR legal bases
+              below apply where the GDPR is applicable.
+            </p>
+            <p>
+              Privacy is one of the Open Home Foundation&rsquo;s three
+              fundamental principles at the core of everything we do. We
+              therefore minimize the amount of data we collect as much as
+              possible, and where we do collect data, it is done with a
+              preference for self-hosted and/or privacy-focused tools.
+            </p>
+            <p>
+              This policy applies to inquiries, device intake, testing,
+              certification, and creator and launch activity carried out under
+              the WWHA program. It supplements, and does not replace, the main <a
+                href={OHF_PRIVACY_POLICY}
+                target="_blank"
+                rel="noopener noreferrer">Open Home Foundation Privacy Policy</a
+              >, which continues to apply to anything not specifically addressed
+              here &ndash; such as general website analytics, social media
+              links, or job applications.
+            </p>
+            <p>
+              This policy covers prospective and certified device partners going
+              through the WWHA certification pipeline; installers, training
+              providers, and certification bodies submitting inquiries via WWHA
+              waiting list forms; creators and content partners involved in
+              launch collaborations; and volunteer testers assigned to partner
+              devices during testing.
+            </p>
+          </section>
+
+          <section class="guide-panel">
+            <h2 class="part-title" id="data-processing-activities">
+              Data processing activities
+            </h2>
+
+            <h3 id="initial-inquiry">Initial inquiry and contact form</h3>
+            <p>
+              If you contact us about the WWHA program &ndash; via our website
+              contact form, email, or another channel &ndash; the personal data
+              you provide us with will be processed. This includes your name,
+              company name, email address, phone number, region, and the content
+              of your inquiry. We use this information to assess your inquiry,
+              respond appropriately, and route it to the correct team or
+              process. Inquiries are managed using HubSpot, our customer
+              relationship management platform.
+            </p>
+            <p>
+              For inquiries made on your own behalf with a view to a
+              partnership, the legal basis for this processing is the
+              implementation of necessary pre-contractual measures within the
+              meaning of Article 6(1)(b) of the GDPR. Where you are a contact
+              acting on behalf of a company, the legal basis is instead our
+              legitimate interest under Article 6(1)(f) of the GDPR in
+              addressing business inquiries of this kind.
+            </p>
+
+            <h3 id="waiting-lists">Non-WWHA inquiry waiting lists</h3>
+            <p>
+              Inquiries that are not a fit for WWHA certification &ndash; for
+              example, from installers, training providers, certification
+              bodies, creators, resellers, distributors, integrators, or other
+              speculative or commercial inquiries &ndash; are routed according
+              to our internal Partner Inquiry Decision Tree. Where relevant, we
+              may ask whether you would like to be added to a waiting list so we
+              can contact you as a formal program develops.
+            </p>
+            <p>
+              Our installer inquiry form specifically asks for two separate
+              consents: (1) to be contacted in future about installer-related
+              programs as they develop, and (2) to be contacted about taking
+              part in our user research study. The legal basis for this
+              processing is your consent pursuant to Article 6(1)(a) of the
+              GDPR, which you may withdraw at any time.
+            </p>
+            <p>
+              We do not send general marketing or promotional communications.
+              All of our follow-up communication relates directly to your
+              inquiry or your expressed interests. The one exception is an
+              invitation to take part in a research study: where this has not
+              already been covered by consent given on a form, we will only
+              extend such an invitation after separately requesting your express
+              consent, via a dedicated form created for that purpose.
+            </p>
+
+            <h3 id="device-intake">Device Compatibility Form and product intake</h3>
+            <p>
+              Once a prospective partner progresses toward certification, we ask
+              for a structured device list &ndash; the Device Compatibility Form
+              &ndash; covering product details, safety and protocol
+              certifications, firmware and integration information, and device
+              similarity to existing certified products. This form is submitted
+              and stored using Google Forms and Google Sheets, and primarily
+              collects product and technical data, though it also includes the
+              submitter&rsquo;s business contact details.
+            </p>
+            <p>
+              We use this data to assess device eligibility and prioritize
+              devices for testing. Where you submit this information on behalf
+              of a manufacturer or other corporate partner, the legal basis for
+              processing your business contact details is our legitimate
+              interest under Article 6(1)(f) of the GDPR in progressing the
+              certification process.
+            </p>
+
+            <h3 id="certification-agreement">Certification agreement</h3>
+            <p>
+              Once a partner is confirmed following a Working Group vote, we
+              send a certification agreement for signature via DocuSign. We
+              process the signatory&rsquo;s name, job title, email address,
+              company legal details, signature, and related sign-off metadata,
+              such as the time and IP address of signing, recorded by DocuSign.
+            </p>
+            <p>
+              Where you are personally party to the agreement, the legal basis
+              for this processing is the performance of a contract within the
+              meaning of Article 6(1)(b) of the GDPR. Where you are an employee
+              or representative signing on behalf of a company, the legal basis
+              is instead our legitimate interest under Article 6(1)(f) of the
+              GDPR in administering the certification process.
+            </p>
+
+            <h3 id="invoicing">Invoicing and payment</h3>
+            <p>
+              Once the certification agreement is signed, we process billing
+              contact details &ndash; such as name, email, and finance
+              department information &ndash; to raise and manage the annual
+              certification fee invoice. Where you are personally party to the
+              certification agreement, the legal basis is Article 6(1)(b) GDPR.
+              Where you act on behalf of a company, the legal basis is our
+              legitimate interest under Article 6(1)(f) GDPR in administering
+              invoicing and payments. Where processing is necessary to comply
+              with applicable legal obligations, we rely on Article 6(1)(c)
+              GDPR. As with other business and accounting records, this data is
+              subject to statutory retention requirements &ndash; see <a
+                href="#retention">&lsquo;Retention periods&rsquo;</a
+              > below.
+            </p>
+
+            <h3 id="device-testing">Device testing and logistics</h3>
+            <p>
+              Once a partner&rsquo;s devices are ready for testing, we
+              coordinate shipping and testing logistics between the partner and
+              our volunteer testers or, where applicable, a third-party testing
+              body.
+            </p>
+            <p>
+              Where a device is tested by Open Home Foundation salaried staff
+              and volunteer staff, we only give the partner the contact and
+              shipping details reasonably necessary for delivery. These
+              typically include the tester&rsquo;s full name and home address
+              and, where required for shipping or delivery coordination, their
+              email address and/or phone number. Where a device is tested by a
+              third-party testing body, we instead share that body&rsquo;s
+              business address, email address, and phone number, and potentially
+              the name of the employee receiving the shipment, rather than any
+              individual&rsquo;s personal details.
+            </p>
+            <p>
+              Correspondence relating to testing is managed via email (<a href="mailto:partner@openhomefoundation.org">partner@openhomefoundation.org</a> and <a href="mailto:testing@openhomefoundation.org">testing@openhomefoundation.org</a>) and via dedicated, invite-only Slack channels. The legal basis
+              for processing and sharing these contact and shipping details is
+              our legitimate interest under Article 6(1)(f) of the GDPR in
+              coordinating device testing and the associated logistics. Where
+              processing is necessary for the performance of a contract with the
+              individual concerned, Article 6(1)(b) of the GDPR may additionally
+              apply.
+            </p>
+
+            <h3 id="creator-collaboration">
+              Creator collaboration and launch activities
+            </h3>
+            <p>
+              Where a partner&rsquo;s launch involves creator collaboration, we
+              process creator contact details, social or platform handles,
+              shipping addresses for sample or press kit fulfilment, content
+              preferences, and &ndash; where a creator is given a dedicated WWHA
+              partner role &ndash; their Discord username.
+            </p>
+            <p>
+              Where you take part in creator collaboration in a personal
+              capacity, the legal basis for this processing may be the
+              performance of a contract within the meaning of Article 6(1)(b) of
+              the GDPR. Where you act on behalf of an organization, our
+              legitimate interest under Article 6(1)(f) of the GDPR in
+              coordinating co-marketing activity will generally be the more
+              appropriate basis. Where your participation is based on consent
+              &ndash; for example, via our Creator Network sign-up form &ndash;
+              you may withdraw that consent at any time.
+            </p>
+
+            <h3 id="user-research">Participation in user research</h3>
+            <p>
+              We occasionally invite WWHA-adjacent contacts, such as installers,
+              to participate in research studies to improve our program.
+              Participation is entirely voluntary, and participants receive
+              study-specific privacy information when they sign up. When you
+              participate, we process the data you provide &ndash; such as
+              feedback, usage habits, or contact details &ndash; in accordance
+              with the specific research privacy notice provided to you at the
+              start of each study (see also our <a
+                href="https://www.openhomefoundation.org/user-research-agreement/"
+                target="_blank"
+                rel="noopener noreferrer">User Research Agreement</a
+              >).
+            </p>
+            <p>
+              The legal basis for the processing of personal data in connection
+              with participation in user research is your consent pursuant to
+              Article 6(1)(a) of the GDPR. You may withdraw your consent at any
+              time.
+            </p>
+
+            <h3 id="communications">Partner and creator communications</h3>
+            <p>
+              As part of the WWHA program, we send certified partners a
+              quarterly newsletter covering foundation and WWHA-related updates,
+              such as new launches and partner milestones, and as a reminder for
+              partners to update us on any relevant developments on their side.
+              This communication is operational in nature: it is sent only to
+              partners with an active certification agreement, as part of
+              maintaining that ongoing relationship, rather than for general
+              marketing or promotional purposes.
+            </p>
+            <p>
+              The legal basis for this processing is our legitimate interest
+              under Article 6(1)(f) of the GDPR in maintaining an active
+              partnership relationship and keeping certified partners informed.
+              Partners may ask to stop receiving this newsletter at any time by
+              contacting us at <a href="mailto:hello@openhomefoundation.org">hello@openhomefoundation.org</a> without affecting their certification status.
+            </p>
+            <p>
+              No regular communication is sent to creators beyond the
+              operational communication necessary to plan and facilitate device
+              launch collaborations.
+            </p>
+          </section>
+
+          <section class="guide-panel">
+            <h2 id="international-transfers">International data transfers</h2>
+            <hr />
+            <p>
+              We operate from Switzerland. In delivering the WWHA program, we
+              use service providers based outside Switzerland and the European
+              Economic Area, including HubSpot, DocuSign, and Discord, each
+              based in the United States.
+            </p>
+            <p>
+              For transfers to HubSpot, HubSpot is certified under the EU-U.S.
+              Data Privacy Framework, the UK Extension to the EU-U.S. Data
+              Privacy Framework, and the Swiss-U.S. Data Privacy Framework,
+              supplemented by Standard Contractual Clauses and a UK Addendum.
+            </p>
+            <p>
+              For transfers to DocuSign, DocuSign relies on its approved Binding
+              Corporate Rules for Processors, together with Standard Contractual
+              Clauses, including the additional terms required under the Swiss
+              FADP.
+            </p>
+            <p>
+              For transfers to Discord, Discord is certified under the EU-U.S.
+              Data Privacy Framework, the UK Extension to the EU-U.S. Data
+              Privacy Framework, and the Swiss-U.S. Data Privacy Framework,
+              supplemented by Standard Contractual Clauses under Module Two.
+            </p>
+            <p>
+              For transfers to Google, used for our Device Compatibility Form
+              and associated file storage (Google Forms, Sheets, and Drive),
+              Google LLC is certified under the EU-U.S. Data Privacy Framework,
+              the UK Extension to the EU-U.S. Data Privacy Framework, and the
+              Swiss-U.S. Data Privacy Framework, supplemented by Google&rsquo;s
+              own Standard Contractual Clauses where applicable.
+            </p>
+            <p>
+              For transfers to Slack, used for internal and partner-dedicated
+              testing coordination channels, Slack Technologies, LLC is
+              certified under the EU-U.S. Data Privacy Framework, the UK
+              Extension to the EU-U.S. Data Privacy Framework, and the Swiss-U.S.
+              Data Privacy Framework through its parent company, Salesforce,
+              supplemented by Standard Contractual Clauses and Salesforce&rsquo;s
+              approved EU and UK Processor Binding Corporate Rules.
+            </p>
+            <p>
+              For transfers to Asana, used for marketing and launch task
+              management, Asana, Inc. is self-certified under the EU-U.S. Data
+              Privacy Framework, the UK Extension to the EU-U.S. Data Privacy
+              Framework, and the Swiss-U.S. Data Privacy Framework, supplemented
+              by Standard Contractual Clauses.
+            </p>
+            <p>
+              <em
+                >Where required, we implement additional appropriate safeguards
+                to ensure an adequate level of protection for personal data
+                transferred internationally.</em
+              >
+            </p>
+          </section>
+
+          <section class="guide-panel">
+            <h2 id="retention">Retention periods</h2>
+            <hr />
+            <p>
+              We retain personal data only for as long as necessary for the
+              purposes described in this notice, including compliance with
+              applicable legal retention obligations and, where necessary, the
+              establishment, exercise, or defence of legal claims.
+            </p>
+            <p>
+              Invoicing, accounting, and other records subject to statutory
+              retention requirements are retained for the applicable statutory
+              period, including 10 years where required by Swiss law.
+              Certification agreements and related records are retained for the
+              duration of the contractual relationship and thereafter to the
+              extent necessary to meet applicable retention obligations or to
+              establish, exercise, or defend legal claims. Records retained
+              solely for these purposes are restricted from routine operational
+              use. If we no longer need this data to provide services to you, it
+              will be blocked &ndash; meaning it may then only be used to fulfil
+              retention obligations or to defend and enforce our legal interests
+              &ndash; until there is no longer any legal obligation or
+              legitimate interest in retaining it.
+            </p>
+            <p>
+              Other categories of WWHA data are retained according to their
+              operational purpose, rather than the period above:
+            </p>
+            <ul>
+              <li>
+                <strong>Inquiry and waiting list data:</strong> We retain this data
+                while the inquiry remains active or the relevant waiting list continues
+                to serve its stated purpose. We periodically review whether continued
+                retention is necessary and delete or anonymize data that is no longer
+                needed. Where retention is based on consent, withdrawal ends that
+                processing unless another lawful ground requires limited further
+                retention.
+              </li>
+              <li>
+                <strong>Device testing records:</strong> We retain these records for
+                the duration of the relevant certification and thereafter only where
+                necessary for certification reviews, handling challenges or legal
+                claims, or compliance with applicable legal obligations. Personal
+                contact and shipping details are deleted when no longer needed for
+                these purposes.
+              </li>
+              <li>
+                <strong>Creator collaboration data:</strong> We retain this data for
+                the duration of the relevant launch or project and any necessary follow-up.
+                We then delete or anonymize it unless continued retention is necessary
+                to meet legal obligations or to establish, exercise, or defend legal
+                claims. Any continued participation in the Creator Network is treated
+                separately from the individual launch or project.
+              </li>
+            </ul>
+          </section>
+
+          <section class="guide-panel">
+            <h2 id="your-rights">Your rights</h2>
+            <hr />
+            <p>
+              This policy relies on the data subject rights set out in the main <a
+                href={OHF_PRIVACY_POLICY}
+                target="_blank"
+                rel="noopener noreferrer">Open Home Foundation Privacy Policy</a
+              > under applicable data protection law, including the Swiss FADP and,
+              where applicable, the GDPR. These include the rights of access, correction,
+              deletion and restriction and, subject to the applicable statutory conditions,
+              data portability, as well as the right to withdraw consent at any time
+              where processing is based on consent.
+            </p>
+            <p>
+              Please refer to the main <a
+                href={OHF_PRIVACY_POLICY}
+                target="_blank"
+                rel="noopener noreferrer">Open Home Foundation Privacy Policy</a
+              > for full details of these rights and how to exercise them. To exercise
+              any of these rights in connection with the WWHA program, please contact
+              us at <a href="mailto:hello@openhomefoundation.org">hello@openhomefoundation.org</a>.
+            </p>
+          </section>
+
+          <section class="guide-panel">
+            <h2 id="relationship">
+              Relationship to the Open Home Foundation Privacy Policy
+            </h2>
+            <hr />
+            <p>
+              This policy supplements, and does not replace, the main <a
+                href={OHF_PRIVACY_POLICY}
+                target="_blank"
+                rel="noopener noreferrer">Open Home Foundation Privacy Policy</a
+              >. Anything not covered here &ndash; such as general website
+              analytics, social media links, or job applications &ndash; falls
+              under the main foundation policy.
+            </p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </div>
+</Base>

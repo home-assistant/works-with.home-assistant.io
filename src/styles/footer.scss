@@ -38,9 +38,23 @@
         max-width: 30rem;
         text-wrap: balance;
         margin-top: 1.5rem;
+    }
 
-        a {
-            text-decoration: underline;
+    .footer-legal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        margin-top: 1.5rem;
+        font-size: 14px;
+    }
+
+    // Footer links: reverse of the global animated underline from
+    // typography.scss — underlined by default, retracts on hover.
+    a:not(.button):not(.nounderline) {
+        background-size: 100% 1px;
+
+        &:hover {
+            background-size: 0% 1px;
         }
     }
 
